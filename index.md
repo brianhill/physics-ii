@@ -22,8 +22,8 @@ Detailed daily schedules will be kept retrospectively:
 
 ## Texts
 
-* For quantum mechanics: [*Six Ideas that Shaped Physics*, 4th Edition, Volumes Q and R](http://www.physics.pomona.edu/sixideas/) by Thomas Moore
-* For relativity: [*Six Ideas that Shaped Physics*, 4th Edition, Volumes R](http://www.physics.pomona.edu/sixideas/) by Thomas Moore and/or [Spacetime Physics, 2nd Edition](http://www.eftaylor.com/spacetimephysics/) by Edwin F. Taylor and John Archibald Wheeler
+* For quantum mechanics: [*Six Ideas that Shaped Physics*, 4th Edition, Volume Q](http://www.physics.pomona.edu/sixideas/) by Thomas Moore
+* For relativity: [*Six Ideas that Shaped Physics*, 4th Edition, Volume R](http://www.physics.pomona.edu/sixideas/) by Thomas Moore and/or [Spacetime Physics, 2nd Edition](http://www.eftaylor.com/spacetimephysics/) by Edwin F. Taylor and John Archibald Wheeler
 
 ## Grading and Assignments
 
@@ -34,9 +34,9 @@ It has been suggested that we have more, lower-stakes exams than we did in the f
 * 30% for final (near the end of term 5)
 * 20% thorough preparation for class and leadership of course 
 
-There will be many problem sets and problem set solutions, and reviewing them will be valuable. To be organized, I recommend locating a three-ring binder and a three-ring hole punch.
+There will be many problem sets and problem set solutions, and reviewing them will be valuable. To be organized, locate a three-ring binder and a three-ring hole punch, and file everything chronologically.
 
-Problem sets should be on standard 8 1/2 x 11 paper. Multi-page problem sets should be stapled. Corrections should be erased (if done in pencil) or recopied (if done in pen). To make nice diagrams and graphs, you will very often need a ruler. The nicest technical work is facilitated by engineering pads, such as: [Roaring Spring Engineering Pad at Amazon](https://a.co/d/9vkXSes). You are meant to use one side of engineering paper. It might seem wasteful of trees and money, but it pays off in clarity and organization.
+Problem sets should be on standard 8 1/2 x 11 paper. Multi-page problem sets should be stapled. Corrections should be erased (if done in pencil) or recopied (if done in pen). To make nice diagrams and graphs, you will very often need a ruler. The nicest technical work is facilitated by engineering pads, such as these [Roaring Spring Engineering Pads at Amazon](https://a.co/d/9vkXSes), and done with a mechanical pencil and with a ruler at hand. You are meant to only use one side of engineering paper. It might seem wasteful of trees and money, but it pays off in clarity and organization.
 
 ## Absences (and late work)
 
