@@ -1,4 +1,4 @@
-# Modern Introductory Physics, Part II: Quantum Mechanics &amp; Relativity
+# Modern Introductory Physics, Part II: Quantum Mechanics &amp; Relativity &mdash
 
 *Unofficial Course Title: Quantum Mechanics &amp; Relativity*
 
@@ -8,11 +8,27 @@
 
 ## Syllabus
 
-A [PDF of the Syllabus - FORTHCOMING](./PhysicsIISyllabus.pdf) containing essentially the same information as is on these web pages.
+A [PDF of the Syllabus](./PhysicsIISyllabus.pdf) containing essentially the same information as is on these web pages.
 
 ## Overview
 
-FORTHCOMING
+In the fall semester, we laid the foundation for quantum mechanics and relativity by taking a modern approach to classical mechanics. We covered the same material as is commonly covered in the first semester of college physics, but we did it with an emphasis on three principles that transcend Newtonian mechanics:
+
+* Conservation of momentum
+* Conservation of energy
+* Conservation of angular momentum
+ 
+We will begin the second semester straight with chapter Q1 of Volume Q of Six Ideas that Shaped Physics. Volume Q is devoted to quantum mechanics. I anticipate that it will occupy us for 9-10 of our 14 weeks, leaving us with only 4-5 weeks for relativity. Normally one does not get to study quantum mechanics or relativity until the second year of physics. To get to quantum mechanics so quickly, we are short-circuiting past electromagnetism. The cost of this is that we have not encountered electromagnetic waves! So to understand quantum-mechanical waves we will first immerse ourselves in other, simple examples of waves, such as waves on a guitar string. Actually understanding waves depends on an understanding of the harmonic oscillator, the coupled harmonic oscillator, and the infinite coupled harmonic oscillator. I will build a bridge between that material and waves so that waves are less mysterious
+
+By the end of our quantum mechanics studies, you will be able to do probabilistic calculations using the strange mixture of deterministic time evolution punctuated by non-deterministic measurement events. You will understand how particles behave like waves, including doing all the unexpected things that waves do &mdash; most notably taking many routes to a destination and exhibiting interference patterns.
+
+For the last third of the semester, we will tear ourselves away from quantum mechanics, and study Einstein's theory of Special Relativity. The three paradoxes in this theory will be forced upon us: (1) Time dilation, (2) Length contraction, (3)The relativity of simultaneity. Together these three paradoxical behaviors allow the speed of light to be constant, regardless of who measures its speed and how fast the measurer is moving. 
+
+In sum, in this course you will encounter behaviors and theories so strange and wonderful that no human could have thought them up. Instead, nature rubbed the behaviors in our faces, and eventually, almost miraculously, in the early 20th century, physicists were able to understand and articulate what nature was showing them. The goal of the modern introductory physics sequence is to share these behaviors and theories with you.
+
+## Prerequisite / Joining the Class
+
+The prerequisite for the second semester in this sequence is the heaviest I have ever set for a Deep Springs class: one semester of college-level, calculus-based physics. If you had AP physics in high school and at the end they said you were ready for the second semester of college physics, then you are quite likely prepared. The best way of determining whether you are ready for the class is to self-assess by setting aside two hours to take fall semester's final exam. Copies of final exam are on the fall semester course website. If you can do the final exam and get half of the points, you should join the class!
 
 ## Daily Schedules
 
@@ -25,18 +41,16 @@ Detailed daily schedules will be kept retrospectively:
 * For quantum mechanics: [*Six Ideas that Shaped Physics*, 4th Edition, Volume Q](http://www.physics.pomona.edu/sixideas/) by Thomas Moore
 * For relativity: [*Six Ideas that Shaped Physics*, 4th Edition, Volume R](http://www.physics.pomona.edu/sixideas/) by Thomas Moore and/or [Spacetime Physics, 2nd Edition](http://www.eftaylor.com/spacetimephysics/) by Edwin F. Taylor and John Archibald Wheeler
 
-## Grading and Assignments
+## Grading
 
-It has been suggested that we have more, lower-stakes exams than we did in the fall semester. I am game to revise the grading method below, and we will discuss this early in Term 4:
+* 40% assignments (last semester we alternated between assignments and presentations &mdash; this semester I would like to have assignments and presentations for *every* class)
+* 20% (total) for two exams in Term 4 (10% each)
+* 20% (total) for two exams in Term 5 (10% each)
+* 20% thorough preparation for class and leadership of course
 
-* 30% assignments
-* 20% for midterm (near the end of term 4)
-* 30% for final (near the end of term 5)
-* 20% thorough preparation for class and leadership of course 
+## Problem Sets / Handouts / Being Neat and Organized
 
-There will be many problem sets and problem set solutions, and reviewing them will be valuable. To be organized, locate a three-ring binder and a three-ring hole punch, and file everything chronologically.
-
-Problem sets should be on standard 8 1/2 x 11 paper. Multi-page problem sets should be stapled. Corrections should be erased (if done in pencil) or recopied (if done in pen). To make nice diagrams and graphs, you will very often need a ruler. The nicest technical work is facilitated by engineering pads, such as these [Roaring Spring Engineering Pads at Amazon](https://a.co/d/9vkXSes), and done with a mechanical pencil and with a ruler at hand. You are meant to only use one side of engineering paper. It might seem wasteful of trees and money, but it pays off in clarity and organization.
+There will be around 20 problem sets and problem set solutions and 4 exams and exam solutions, and many handouts, and reviewing them will be valuable. To be organized, locate a three-ring binder and a three-ring hole punch, and file everything chronologically. Reverse-chronoligical is actually the most convenient, because you always open your binder to what you are currently working on. Problem sets should be on standard 8 1/2 x 11 paper. Multi-page problem sets should be stapled. Corrections should be erased (if done in pencil) or recopied (if done in pen). To make nice diagrams and graphs, you will very often need a ruler. The nicest technical work is facilitated by engineering pads, such as these [Roaring Spring Engineering Pads at Amazon](https://a.co/d/9vkXSes), and done with a mechanical pencil and with a ruler at hand. You are meant to only use one side of engineering paper. It might seem wasteful of trees and money, but it pays off in clarity and organization.
 
 ## Absences (and late work)
 
