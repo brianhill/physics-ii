@@ -2,12 +2,39 @@
 
 Course [home page](./)
 
-### Week 1 &mdash; Waves
+### Week 1 &mdash; Waves &mdash; Principle of Superposition
 
-* Tuesday, Jan. 9 &mdash; Read Sections Q1.1-Q1.3 of *Six Ideas* Unit Q &mdash; Choose a problem to present from the end of Chapter Q1 and pair up with someone to discuss both problems and then present one of your two problems jointly &mdash; Study and complete the handout/worksheet on compression waves that I set out across from the copier
+* Tuesday, Jan. 9 &mdash; Study *Six Ideas* Q1.1 to Q1.3 &mdash; Choose a problem to present from the end of Chapter Q1 and pair up with someone to discuss both problems and then present one of your two problems jointly &mdash; Study and complete the handout/worksheet on compression waves that I set out across from the copier
+* Friday, Jan. 12 &mdash; Finish *Six Ideas* Q1 &mdash; Finish "The Bridge" handout &mdash; Look ahead to *Six Ideas* Q2 Section 1 &mdash; Problem Set 1 [Due Friday](./assignments/AssignmentFor2024-01-12.nb.pdf)
 
-Note: The last problem on the final was partly preparation for what you are now doing with waves &mdash; Wasn't it remarkable that not only *A* sin &omega;*t*  and *B* cos &omega;*t* were solutions of the harmonic oscillator problem, *but also, any combination of those two solutions was a solution?* &mdash; This is the &ldquo;principle of superposition,&rdquo; and the principle is applicable to a large class of differential equations, of which the harmonic oscillator equation and the wave equation are prime examples.
+### Week 2 &mdash; Standing Waves &mdash; Interference
 
-* Friday, Jan. 12 &mdash; Finish *Six Ideas* Q1 &mdash; Finish "The Bridge" handout &mdash; Look ahead to *Six Ideas* Q2 Section 1 &mdash; Problem Set 1 [For Friday](./assignments/AssignmentFor2024-01-12.nb.pdf)
+* Tuesday, Jan. 16 &mdash; Study *Six Ideas Q2.1 to Q2.3* &mdash; Presentations on weakly coupled harmonic oscillator &mdash; Problem Set 2 [Due Tuesday](./assignments/AssignmentFor2024-01-16.nb.pdf)
 
 <img src="./resources/CompressionWave.jpeg" alt="Model of a Compression Wave" width="85%">
+
+* Friday, Jan. 19 &mdash; Six Ideas Q3
+
+### Week 3 &mdash; Light is a Particle &mdash; Particles Behave Like Waves
+
+* Tuesday, Jan. 23 &mdash; Six Ideas Q4
+* Friday, Jan. 26 &mdash; Six Ideas Q5
+
+### Week 4 &mdash; Exam 1 &mdash; Spin
+
+* Tuesday, Jan. 30 &mdash; Exam 1
+* Friday, Feb. 2 &mdash; Six Ideas Q6
+
+### Week 5 &mdash;
+
+* Tuesday, Feb. 6 &mdash;
+* Friday, Feb. 9 &mdash;
+
+### Week 6 &mdash;
+
+* Tuesday, Feb. 13 &mdash;
+* Friday, Feb. 16 &mdash;
+
+### Week 7 &mdash; Exam 2
+
+* Tuesday, Feb. 20 &mdash; Exam 2

@@ -1,0 +1,526 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     23602,        518]
+NotebookOptionsPosition[     21905,        477]
+NotebookOutlinePosition[     22353,        495]
+CellTagsIndexPosition[     22310,        492]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[TextData[StyleBox["Quantum Physics, Preparation for Tuesday, Jan. 16",
+ FontSize->30,
+ FontWeight->"Regular"]], "Chapter",
+ CellChangeTimes->CompressedData["
+1:eJxTTMoPSmViYGAQBmIQHW3awCoh/Nbx0r1tbCB6xap55opA+kJcsx2ITpu0
+dh6Izpp+FUz36B2tOAmkrxS5VoHocruFl+xF3jpGLr4GpsVOiUvtAdJ3L2SD
+6YSoD3ufib519JH6AaYnPy6MFxYHmqNSB6anNXdvCJN46ziJ5RqYdktmbngI
+pP+EXQLTW4ofX6+RfOv4amnQDRC9mmPqgssybx2vRj0D0/uyHlycKPvWMajB
+4RKIvlL/7yCn3FvHB1NZDoFoE6t5c+XlgfyshWDa0Kkq0U/hraNLQheYbsvM
+cnsHpHlk8sF02L+Y+/813jpWbXr9AETHWZwTz9R869grpSEBogEE2JMK
+  "],ExpressionUUID->"0a9f033e-46a1-4578-becc-919930044f24"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Study Q2.1 to Q2.3 from ",
+ StyleBox["Six Ideas",
+  FontSlant->"Italic"]
+}], "Section",
+ CellChangeTimes->CompressedData["
+1:eJxTTMoPSmViYGAQAWIQ/W5quaui8FvHM+eD3ED0tsLWZBC9gekemJ6X8Lf6
+JJB+1Ha9BkTb3J/sbCfy1vEHz2wwLaj1SmoPiG/4Hkz7pe5NBNGnJyolgWjF
+fYv3PRN96zjlUsUBEN0gbxIiLP7W8YRfeCiIPpN5IgZEp+mcA9OXNFOXh0m8
+dZT7XQqmHzhoNz4E0i826oDph6oHb9RIvnW8oe96G0Svrpq+8LLMW0emLxMW
+gehF07MPccq9dXzjVwqmG3aZSCjIv3V0uWUGpicUX0/0U3jrKPPrC5huiNug
+/Q5IW7BvB9M9B9Y+/K/x1tFWW/cRiJ6lvEwiU/Ot457AX2B6EfeatCwg/dDF
+Ix1EAwAofpkE
+  "],ExpressionUUID->"39b67822-fab3-4af4-9957-995e6360c459"],
+
+Cell["\<\
+For most classes, we will do an entire chapter. This is the way Moore\
+\[CloseCurlyQuote]s book is meant to be used. However, if anyone starts to \
+feel thrown under the bus, we certainly will ease off and make time to \
+consolidate. It is a bit much to include Q2.4 (resonance) for Tuesday, so \
+just do Q2.1 to Q2.3.\
+\>", "Text",
+ CellChangeTimes->CompressedData["
+1:eJxTTMoPSmViYGAQA2IQ/aTtYvIk2beOtuYLU0H0g02XMkG01CWhLBBttHvp
+AxB9qUn8IYhe8vnJExD95mag8GQgHXcmXxpErzDLlwPRP/dsUAPRWmbu6iC6
+/NQzXRAdELrCEUTfdrSJBdFdc+dkgOhuSZd6EM2+9F0jiH75n+0jp9xbxy1T
+Mn6C6C5RvX9y8m8dme/zsMoD6QPeicl+Cm8dT9/4lAmiZecbLQXRknwBy0G0
+iNMunXdAet6vMDsQfWaOtQeI5jJ4CKb3RTSeANHb38o9BNG/T095CqI1vLa+
+Bqs33/YdRL9McvkJov1bSh//13jrmHg56AuIXvHvrGSm5ltHsT/3VUD0jdJd
+GVlAeobRySIQzfMq+Fc1kFadUvUHRAMAPzSxcg==
+  "],ExpressionUUID->"3b6a5969-ad38-4c54-8c4f-74267108b137"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Presentations", "Section",
+ CellChangeTimes->{{3.902343723737052*^9, 3.902343730587866*^9}, {
+  3.9023439641701307`*^9, 3.902343966937828*^9}, {3.902344048197321*^9, 
+  3.902344075298213*^9}, {3.902688246879025*^9, 3.9026882554290752`*^9}, {
+  3.902927393209742*^9, 3.9029273996228228`*^9}, {3.9031854584896*^9, 
+  3.9031854607388773`*^9}, {3.9053588870400476`*^9, 3.905358891225012*^9}, {
+  3.905677023539398*^9, 3.905677069281822*^9}, {3.9074281558454227`*^9, 
+  3.907428161470359*^9}, {3.907428478145879*^9, 3.9074284793275337`*^9}, {
+  3.908631668220731*^9, 3.90863167193327*^9}, {3.9092519999699707`*^9, 
+  3.909252000149877*^9}},ExpressionUUID->"faa93989-4709-458d-af5a-\
+643fa1caea91"],
+
+Cell[TextData[StyleBox["Let\[CloseCurlyQuote]s have both presentations and \
+problem sets for next time. I have an idea for Tuesday to have just two big \
+presentation teams and presentations. I\[CloseCurlyQuote]m going to give each \
+team half of a big and interesting problem.",
+ FontSize->16]], "Subsection",
+ CellChangeTimes->{{3.9074286536229877`*^9, 3.907428656727818*^9}, {
+  3.907429229771274*^9, 3.907429232718843*^9}, {3.908062793474523*^9, 
+  3.90806279383449*^9}, {3.9083975809381*^9, 3.908397587477563*^9}, {
+  3.9086306108124533`*^9, 3.908630615614965*^9}, {3.90925198993496*^9, 
+  3.90925199791092*^9}, {3.9095795885835*^9, 3.909579588853516*^9}, {
+  3.913809919674613*^9, 3.913809921381164*^9}, {3.913810893967939*^9, 
+  3.9138109371452847`*^9}, {3.913811120201602*^9, 3.9138111641117487`*^9}, {
+  3.9138221596566067`*^9, 3.913822161635638*^9}, {3.914025274033771*^9, 
+  3.914025282585927*^9}, {3.914027932136347*^9, 3.914028033839139*^9}, {
+  3.914063855102929*^9, 
+  3.914063904504581*^9}},ExpressionUUID->"4b5e1d1e-d4b4-4ea0-87e7-\
+a89a447c5038"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["For Problem Set 2", "Section",
+ CellChangeTimes->{{3.902343723737052*^9, 3.902343730587866*^9}, {
+   3.9023439641701307`*^9, 3.902343966937828*^9}, {3.902344048197321*^9, 
+   3.902344075298213*^9}, {3.902688246879025*^9, 3.9026882554290752`*^9}, {
+   3.902927393209742*^9, 3.9029273996228228`*^9}, {3.9031854584896*^9, 
+   3.9031854607388773`*^9}, {3.9053588870400476`*^9, 3.905358891225012*^9}, {
+   3.9071613707674503`*^9, 3.9071613718924923`*^9}, {3.907817203385817*^9, 
+   3.9078172036221523`*^9}, {3.908397850368978*^9, 3.9083978506054487`*^9}, {
+   3.908975480013135*^9, 3.9089754804388247`*^9}, 3.913809991562726*^9, {
+   3.914025287063518*^9, 
+   3.914025287355214*^9}},ExpressionUUID->"e0d51dc0-12b2-43d1-9537-\
+65a0b526a33d"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[StyleBox["Energy in Coupled Oscillators",
+ FontSize->16,
+ FontWeight->"Regular"]], "Subsection",
+ CellChangeTimes->{{3.907161511820457*^9, 3.907161517693348*^9}, {
+   3.9071757851311502`*^9, 3.907175786965211*^9}, 3.907818209992303*^9, {
+   3.9078191362206*^9, 3.90781913785112*^9}, {3.907819172116008*^9, 
+   3.907819176110496*^9}, {3.907820387875669*^9, 3.907820402108921*^9}, {
+   3.9078209817646646`*^9, 3.907821007358383*^9}, {3.907821038037771*^9, 
+   3.907821042290193*^9}, {3.907821088606534*^9, 3.9078210900352592`*^9}, {
+   3.907821135428946*^9, 3.907821158579274*^9}, {3.907821196245142*^9, 
+   3.907821237363723*^9}, {3.907821349401204*^9, 3.907821396425806*^9}, {
+   3.907821450908679*^9, 3.907821516779191*^9}, {3.908397878489965*^9, 
+   3.908397951028851*^9}, {3.908398041423287*^9, 3.9083980586136217`*^9}, {
+   3.908398130040098*^9, 3.908398139118972*^9}, {3.908398169156537*^9, 
+   3.908398192128955*^9}, {3.908398252159361*^9, 3.908398411595109*^9}, {
+   3.908398456684402*^9, 3.9083985365937967`*^9}, {3.908398607154119*^9, 
+   3.908398652335915*^9}, {3.908630830378921*^9, 3.90863084576903*^9}, {
+   3.908975491833612*^9, 3.908975522492631*^9}, {3.908975666045314*^9, 
+   3.9089757110427523`*^9}, {3.908976051229232*^9, 3.908976178825238*^9}, {
+   3.913810107870986*^9, 3.913810533475247*^9}, {3.913810634111455*^9, 
+   3.913810644069963*^9}, {3.913810679147831*^9, 3.91381071872521*^9}, {
+   3.9138108312992373`*^9, 3.913810888253944*^9}, {3.913810965406918*^9, 
+   3.9138110212439537`*^9}, {3.913811051361785*^9, 3.91381106657822*^9}, {
+   3.9138110987262697`*^9, 3.913811100703505*^9}, {3.91402529255657*^9, 
+   3.914025351909107*^9}, {3.914025416733687*^9, 3.9140259055200663`*^9}, {
+   3.9140259368748493`*^9, 3.914025951556254*^9}, 3.9140259961955843`*^9, {
+   3.914027092732191*^9, 
+   3.914027097367485*^9}},ExpressionUUID->"645a6d31-b536-4db6-a578-\
+555885cde4ff"],
+
+Cell[TextData[{
+ StyleBox["1. Go back to \[OpenCurlyDoubleQuote]The Bridge.\
+\[CloseCurlyDoubleQuote] One of the problems that was considered in the \
+bridge was the problem of two masses coupled with three springs.\n\nAs the \
+most simplified version of this problem, we let all three springs have the \
+same spring constant, ",
+  FontSize->16,
+  FontWeight->"Regular"],
+ Cell[BoxData[
+  FormBox["k", TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "9a2a99fc-42e0-4af9-a49a-16a1a364cb16"],
+ ",",
+ StyleBox[" we let both masses be the same, ",
+  FontSize->16,
+  FontWeight->"Regular"],
+ Cell[BoxData[
+  FormBox["m", TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "bab2185a-4ef2-4973-8821-bbf333440446"],
+ ", and we defined ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SuperscriptBox[
+     SubscriptBox["\[Omega]", "0"], "2"], "=", 
+    RowBox[{"k", "/", "m"}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "6f5d487c-b856-42fe-a33b-1505816b0450"],
+ ".\n\nWe argued that there are two solutions, one where the masses move back \
+and forth together. A solution like this is called a \
+\[OpenCurlyDoubleQuote]mode.\[CloseCurlyDoubleQuote] The first mode was:\n\n\
+",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SubscriptBox["x", "1"], "(", "t", ")"}], "=", 
+    RowBox[{
+    "A", "\[VeryThinSpace]", "cos\[Omega]", "\[VeryThinSpace]", "t"}]}], 
+   TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "024fb164-262a-4f66-a63b-474531f42294"],
+ "\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SubscriptBox["x", "2"], "(", "t", ")"}], "=", 
+    RowBox[{
+    "A", "\[VeryThinSpace]", "cos\[Omega]", "\[VeryThinSpace]", "t"}]}], 
+   TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "dbe57076-6c32-4a71-ae45-74cdc88de058"],
+ "\n\nand ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[Omega]", "=", 
+    SubscriptBox["\[Omega]", "0"]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "2dd0c585-7bc7-4c79-b960-d0e8b28f0de3"],
+ ". (The first mode also has the same thing but with sin instead of cos as \
+another solution.)\n\nThe second mode had the two masses moving in opposite \
+directions. ",
+ StyleBox["The second mode was:",
+  FontSlant->"Italic"],
+ "\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SubscriptBox["x", "1"], "(", "t", ")"}], "=", 
+    RowBox[{
+    "A", "\[VeryThinSpace]", "cos\[Omega]", "\[VeryThinSpace]", "t"}]}], 
+   TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "b2ab2f2b-6e26-4b14-9cd5-232f15c2ac73"],
+ "\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SubscriptBox["x", "2"], "(", "t", ")"}], "=", 
+    RowBox[{
+     RowBox[{"-", "A"}], "\[VeryThinSpace]\[VeryThinSpace]", "cos", 
+     "\[VeryThinSpace]", "\[Omega]", "\[VeryThinSpace]", "t"}]}], 
+   TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "ad66a189-6cb8-4f8f-9d15-4d53e7606d41"],
+ "\n\nand ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[Omega]", "=", 
+    RowBox[{
+     SqrtBox["3"], 
+     SubscriptBox["\[Omega]", "0"]}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "7baadae6-1cdb-44dc-8512-73f8f263836d"],
+ ". (The second mode also sine instead of cosine as another solution.)\n\nIn \
+class on Friday, we studied the first mode. ",
+ StyleBox["For this problem use the second mode (with the cosine solution).",
+  FontSlant->"Italic"],
+ "\n\n(a) Using the second mode, how much is the left spring stretched at \
+time ",
+ Cell[BoxData[
+  FormBox["t", TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "1f018594-73c8-429e-85e9-7bd06b89331c"],
+ "? The energy in a spring is ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    FractionBox["1", "2"], "k", "\[VeryThinSpace]", 
+    SuperscriptBox["x", "2"]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "9b3b34dc-6a60-4f49-8224-b743129771f6"],
+ " where ",
+ Cell[BoxData[
+  FormBox["x", TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "1c3e996e-2dc2-4368-a063-d3a1d5cf4b72"],
+ " is how much it is stretched (or compressed). What is the energy in the \
+left spring?\n\n(b) Repeat (a) for the right spring. You should get similar \
+answers to (a).\n\n(c) Repeat (a) for the center spring. This spring will be \
+different than (a) or (b).\n\n(d) All all of (a), (b), and (c) up and \
+simplify. This is the potential energy stored in the springs.\n\n(e) What is ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SubscriptBox["v", "1"], "(", "t", ")"}], "=", 
+    RowBox[{
+     FractionBox["d", 
+      RowBox[{"d", "\[VeryThinSpace]", "t"}]], 
+     RowBox[{
+      RowBox[{
+       SubscriptBox["x", "1"], "(", "t", ")"}], "?"}]}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "f6480e4b-d878-4f09-89b7-d854e3efce7d"],
+ " What is the kinetic energy of mass 1, which is ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    FractionBox["1", "2"], "m", "\[VeryThinSpace]", 
+    SuperscriptBox[
+     SubscriptBox["v", "1"], "2"]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "49a323ee-13e8-4a16-a07f-e8b554752baf"],
+ Cell[BoxData[
+  FormBox["?", TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "825e68fb-a0c0-407a-9a4b-6e36886dbff9"],
+ "\n\n(f) Repeat (e), but for ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["v", "2"], "(", "t", ")"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "ac11c516-22b2-4bb0-8290-03c95889625d"],
+ " and ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    FractionBox["1", "2"], "m", "\[VeryThinSpace]", 
+    SuperscriptBox[
+     SubscriptBox["v", "2"], "2"]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "5f3e85ee-0fed-45bb-80f1-9087f88dc314"],
+ "?\n\n(g) Now add all the energies you found in (d), (e), and (f) up. Use \
+that for the second mode ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SuperscriptBox["\[Omega]", "2"], "=", 
+    RowBox[{
+     RowBox[{"3", 
+      SuperscriptBox[
+       SubscriptBox["\[Omega]", "0"], "2"]}], "=", 
+     RowBox[{"3", " ", 
+      RowBox[{"k", "/", "m"}]}]}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "20e173a5-3464-4596-b986-881916bc57c3"],
+ " and use a standard trig identity. If you don\[CloseCurlyQuote]t get a \
+super-simple answer check your work.\n\nThis problem was designed to help you \
+see how energy can be traded back and forth between potential energy and \
+kinetic energy such that total energy is conserved. We could repeat it for \
+one of our solutions to the infinite coupled harmonic oscillator problem. \
+Alternatively, instead of going straight to the infinite case, we could do \
+other interesting cases. For example, a super-interesting case is where the \
+spring in the middle is weak compared to the other two springs."
+}], "Text",
+ CellChangeTimes->{{3.907161511820457*^9, 3.907161517693348*^9}, {
+   3.9071757851311502`*^9, 3.907175786965211*^9}, 3.907818209992303*^9, {
+   3.9078191362206*^9, 3.90781913785112*^9}, {3.907819172116008*^9, 
+   3.907819176110496*^9}, {3.907820387875669*^9, 3.907820402108921*^9}, {
+   3.9078209817646646`*^9, 3.907821007358383*^9}, {3.907821038037771*^9, 
+   3.907821042290193*^9}, {3.907821088606534*^9, 3.9078210900352592`*^9}, {
+   3.907821135428946*^9, 3.907821158579274*^9}, {3.907821196245142*^9, 
+   3.907821237363723*^9}, {3.907821349401204*^9, 3.907821396425806*^9}, {
+   3.907821450908679*^9, 3.907821516779191*^9}, {3.908397878489965*^9, 
+   3.908397951028851*^9}, {3.908398041423287*^9, 3.9083980586136217`*^9}, {
+   3.908398130040098*^9, 3.908398139118972*^9}, {3.908398169156537*^9, 
+   3.908398192128955*^9}, {3.908398252159361*^9, 3.908398411595109*^9}, {
+   3.908398456684402*^9, 3.9083985365937967`*^9}, {3.908398607154119*^9, 
+   3.908398652335915*^9}, {3.908630830378921*^9, 3.90863084576903*^9}, {
+   3.908975491833612*^9, 3.908975522492631*^9}, {3.908975666045314*^9, 
+   3.9089757110427523`*^9}, {3.908976051229232*^9, 3.908976178825238*^9}, {
+   3.913810107870986*^9, 3.913810533475247*^9}, {3.913810634111455*^9, 
+   3.913810644069963*^9}, {3.913810679147831*^9, 3.91381071872521*^9}, {
+   3.9138108312992373`*^9, 3.913810888253944*^9}, {3.913810965406918*^9, 
+   3.9138110212439537`*^9}, {3.913811051361785*^9, 3.91381106657822*^9}, {
+   3.9138110987262697`*^9, 3.913811100703505*^9}, {3.91402529255657*^9, 
+   3.914025351909107*^9}, {3.914025416733687*^9, 3.9140259055200663`*^9}, {
+   3.9140259368748493`*^9, 3.914025951556254*^9}, {3.914026019012967*^9, 
+   3.914026072855555*^9}, {3.914026106430505*^9, 3.914026130449438*^9}, {
+   3.914026208355076*^9, 3.914026244119854*^9}, {3.914026307769273*^9, 
+   3.914027083466579*^9}, {3.9140283167673187`*^9, 3.914028324824379*^9}, {
+   3.914063911428418*^9, 3.914064004128717*^9}, {3.914064053156898*^9, 
+   3.9140640851647577`*^9}, {3.91406412889511*^9, 3.914064264169484*^9}, {
+   3.914064642029578*^9, 3.914064713802072*^9}, {3.914064787024961*^9, 
+   3.914064788474443*^9}},ExpressionUUID->"39d27db8-d434-4145-a2f0-\
+e127dbf23fb1"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[StyleBox["Energy in Coupled Oscillators",
+ FontSize->16,
+ FontWeight->"Regular"]], "Subsection",
+ CellChangeTimes->{{3.907161511820457*^9, 3.907161517693348*^9}, {
+   3.9071757851311502`*^9, 3.907175786965211*^9}, 3.907818209992303*^9, {
+   3.9078191362206*^9, 3.90781913785112*^9}, {3.907819172116008*^9, 
+   3.907819176110496*^9}, {3.907820387875669*^9, 3.907820402108921*^9}, {
+   3.9078209817646646`*^9, 3.907821007358383*^9}, {3.907821038037771*^9, 
+   3.907821042290193*^9}, {3.907821088606534*^9, 3.9078210900352592`*^9}, {
+   3.907821135428946*^9, 3.907821158579274*^9}, {3.907821196245142*^9, 
+   3.907821237363723*^9}, {3.907821349401204*^9, 3.907821396425806*^9}, {
+   3.907821450908679*^9, 3.907821516779191*^9}, {3.908397878489965*^9, 
+   3.908397951028851*^9}, {3.908398041423287*^9, 3.9083980586136217`*^9}, {
+   3.908398130040098*^9, 3.908398139118972*^9}, {3.908398169156537*^9, 
+   3.908398192128955*^9}, {3.908398252159361*^9, 3.908398411595109*^9}, {
+   3.908398456684402*^9, 3.9083985365937967`*^9}, {3.908398607154119*^9, 
+   3.908398652335915*^9}, {3.908630830378921*^9, 3.90863084576903*^9}, {
+   3.908975491833612*^9, 3.908975522492631*^9}, {3.908975666045314*^9, 
+   3.9089757110427523`*^9}, {3.908976051229232*^9, 3.908976178825238*^9}, {
+   3.913810107870986*^9, 3.913810533475247*^9}, {3.913810634111455*^9, 
+   3.913810644069963*^9}, {3.913810679147831*^9, 3.91381071872521*^9}, {
+   3.9138108312992373`*^9, 3.913810888253944*^9}, {3.913810965406918*^9, 
+   3.9138110212439537`*^9}, {3.913811051361785*^9, 3.91381106657822*^9}, {
+   3.9138110987262697`*^9, 3.913811100703505*^9}, {3.91402529255657*^9, 
+   3.914025351909107*^9}, {3.914025416733687*^9, 3.9140259055200663`*^9}, {
+   3.9140259368748493`*^9, 3.914025951556254*^9}, 3.9140259961955843`*^9, {
+   3.914027092732191*^9, 
+   3.914027097367485*^9}},ExpressionUUID->"14d10e55-818a-4e9b-b649-\
+9dbf0ce9ade1"],
+
+Cell["\<\
+2. Moore Q2T.3 and Q2T.4, a couple of quick superposition problems.
+
+3. Moore Q2B.2, a more detailed superposition problem\
+\>", "Text",
+ CellChangeTimes->{{3.9140275544257727`*^9, 3.914027601937613*^9}, {
+  3.914027664703047*^9, 3.914027666089014*^9}, {3.914064282574464*^9, 
+  3.914064294837758*^9}},ExpressionUUID->"7a9505a8-ce72-4e9e-9e20-\
+a26de249faba"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[StyleBox["Fundamental modes and harmonics of a string",
+ FontSize->16,
+ FontWeight->"Regular"]], "Subsection",
+ CellChangeTimes->{{3.907161511820457*^9, 3.907161517693348*^9}, {
+   3.9071757851311502`*^9, 3.907175786965211*^9}, 3.907818209992303*^9, {
+   3.9078191362206*^9, 3.90781913785112*^9}, {3.907819172116008*^9, 
+   3.907819176110496*^9}, {3.907820387875669*^9, 3.907820402108921*^9}, {
+   3.9078209817646646`*^9, 3.907821007358383*^9}, {3.907821038037771*^9, 
+   3.907821042290193*^9}, {3.907821088606534*^9, 3.9078210900352592`*^9}, {
+   3.907821135428946*^9, 3.907821158579274*^9}, {3.907821196245142*^9, 
+   3.907821237363723*^9}, {3.907821349401204*^9, 3.907821396425806*^9}, {
+   3.907821450908679*^9, 3.907821516779191*^9}, {3.908397878489965*^9, 
+   3.908397951028851*^9}, {3.908398041423287*^9, 3.9083980586136217`*^9}, {
+   3.908398130040098*^9, 3.908398139118972*^9}, {3.908398169156537*^9, 
+   3.908398192128955*^9}, {3.908398252159361*^9, 3.908398411595109*^9}, {
+   3.908398456684402*^9, 3.9083985365937967`*^9}, {3.908398607154119*^9, 
+   3.908398652335915*^9}, {3.908630830378921*^9, 3.90863084576903*^9}, {
+   3.908975491833612*^9, 3.908975522492631*^9}, {3.908975666045314*^9, 
+   3.9089757110427523`*^9}, {3.908976051229232*^9, 3.908976178825238*^9}, {
+   3.913810107870986*^9, 3.913810533475247*^9}, {3.913810634111455*^9, 
+   3.913810644069963*^9}, {3.913810679147831*^9, 3.91381071872521*^9}, {
+   3.9138108312992373`*^9, 3.913810888253944*^9}, {3.913810965406918*^9, 
+   3.9138110212439537`*^9}, {3.913811051361785*^9, 3.91381106657822*^9}, {
+   3.9138110987262697`*^9, 3.913811100703505*^9}, {3.91402529255657*^9, 
+   3.914025351909107*^9}, {3.914025416733687*^9, 3.9140259055200663`*^9}, {
+   3.9140259368748493`*^9, 3.914025951556254*^9}, 3.9140259961955843`*^9, {
+   3.914027092732191*^9, 3.914027097367485*^9}, {3.91402767248398*^9, 
+   3.914027687396467*^9}, {3.914028107060235*^9, 
+   3.91402811121894*^9}},ExpressionUUID->"a2748fbd-f5ce-413a-89c3-\
+f2711c769025"],
+
+Cell[TextData[{
+ "4. Moore Q2M.2, a guitar string\n\n5. Repeat Moore Q2M.2, but consider the \
+\[OpenCurlyDoubleQuote]third harmonic\[CloseCurlyDoubleQuote] of the string. \
+The third harmonic is the name for the harmonic with two nodes. There won\
+\[CloseCurlyQuote]t be a new tension! That was already determined in Q2M.2. \
+But there will be new tones. The figures to look at are Figure Q2.7 and \
+Figure Q2.8 with ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"n", "=", "3"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "336ce7bf-c0b7-436f-bf88-daa1c2aaa1ef"],
+ ". What are the new frequencies corresponding to the third harmonic of E and \
+the third harmonic of G? For the musicians only: the third harmonic is the \
+perfect 5th but an octave up. What notes are the perfect fifth of E and the \
+perfect 5th of G?"
+}], "Text",
+ CellChangeTimes->{{3.9140275544257727`*^9, 3.914027601937613*^9}, {
+  3.914027664703047*^9, 3.9140277145791063`*^9}, {3.914028044898438*^9, 
+  3.9140281519651957`*^9}, {3.914028188443185*^9, 3.914028251222569*^9}, {
+  3.9140643064247923`*^9, 3.914064380700243*^9}, {3.914064470299799*^9, 
+  3.914064493046905*^9}, {3.9140645735321074`*^9, 
+  3.914064576299279*^9}},ExpressionUUID->"b37ecefb-9306-4c1b-bed8-\
+3e114edb1ab0"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{808, 905},
+WindowMargins->{{Automatic, 864}, {Automatic, 43}},
+PrintingCopies->1,
+PrintingPageRange->{1, Automatic},
+FrontEndVersion->"13.3 for Mac OS X ARM (64-bit) (July 24, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"94a17dbf-c624-4e0e-b97a-5ea811487e94"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 587, 10, 64, "Chapter",ExpressionUUID->"0a9f033e-46a1-4578-becc-919930044f24"],
+Cell[CellGroupData[{
+Cell[1192, 36, 582, 13, 67, "Section",ExpressionUUID->"39b67822-fab3-4af4-9957-995e6360c459"],
+Cell[1777, 51, 847, 15, 81, "Text",ExpressionUUID->"3b6a5969-ad38-4c54-8c4f-74267108b137"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2661, 71, 698, 10, 67, "Section",ExpressionUUID->"faa93989-4709-458d-af5a-643fa1caea91"],
+Cell[3362, 83, 1065, 16, 93, "Subsection",ExpressionUUID->"4b5e1d1e-d4b4-4ea0-87e7-a89a447c5038"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4464, 104, 741, 11, 67, "Section",ExpressionUUID->"e0d51dc0-12b2-43d1-9537-65a0b526a33d"],
+Cell[CellGroupData[{
+Cell[5230, 119, 1908, 28, 49, "Subsection",ExpressionUUID->"645a6d31-b536-4db6-a578-555885cde4ff"],
+Cell[7141, 149, 9078, 221, 1031, "Text",ExpressionUUID->"39d27db8-d434-4145-a2f0-e127dbf23fb1"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[16256, 375, 1908, 28, 49, "Subsection",ExpressionUUID->"14d10e55-818a-4e9b-b649-9dbf0ce9ade1"],
+Cell[18167, 405, 369, 8, 81, "Text",ExpressionUUID->"7a9505a8-ce72-4e9e-9e20-a26de249faba"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[18573, 418, 2016, 29, 49, "Subsection",ExpressionUUID->"a2748fbd-f5ce-413a-89c3-f2711c769025"],
+Cell[20592, 449, 1273, 23, 196, "Text",ExpressionUUID->"b37ecefb-9306-4c1b-bed8-3e114edb1ab0"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
