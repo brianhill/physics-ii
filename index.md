@@ -10,6 +10,12 @@
 
 A [PDF of the Syllabus](./PhysicsIISyllabus.pdf) containing essentially the same information as is on these web pages.
 
+## Daily Schedules
+
+Detailed daily schedules will be kept retrospectively:
+
+* [Daily Schedule-Term 4](https://brianhill.github.io/physics-ii/daily_schedule-term_4.html)
+
 ## Overview
 
 In the fall semester, we laid the foundation for quantum mechanics and relativity by taking a modern approach to classical mechanics. We covered the same material as is commonly covered in the first semester of college physics, but we did it with an emphasis on three principles that transcend Newtonian mechanics:
@@ -28,13 +34,7 @@ In sum, in this course you will encounter behaviors and theories so strange and 
 
 ## Prerequisite / Joining the Class
 
-The prerequisite for the second semester in this sequence is the heaviest I have ever set for a Deep Springs class: one semester of college-level, calculus-based physics. If you had AP physics in high school and at the end they said you were ready for the second semester of college physics, then you are quite likely prepared. The best way of determining whether you are ready for the class is to self-assess by setting aside two hours to take fall semester's final exam. Copies of final exam are on the fall semester course website. If you can do the final exam and get half of the points, you should join the class!
-
-## Daily Schedules
-
-Detailed daily schedules will be kept retrospectively:
-
-* [Daily Schedule-Term 4](https://brianhill.github.io/physics-ii/daily_schedule-term_4.html)
+The prerequisite for the second semester in this sequence is the heaviest I have ever set for a Deep Springs class: one semester of college-level, calculus-based physics. If you had AP physics in high school and at the end they said you were ready for the second semester of college physics, then you are quite likely prepared. The best way of determining whether you are ready for the class is to self-assess by setting aside two hours to take fall semester's final exam. Copies of the final exam are on the [fall semester course website](https://brianhill.github.io/physics/). If you can do the final exam and get half of the points, you should join the class!
 
 ## Texts
 

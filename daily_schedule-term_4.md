@@ -11,7 +11,7 @@ Course [home page](./)
 
 * Tuesday, Jan. 16 &mdash; Study *Six Ideas Q2.1 to Q2.3* &mdash; Presentations on weakly coupled harmonic oscillator &mdash; Problem Set 2 [Due Tuesday](./assignments/AssignmentFor2024-01-16.nb.pdf)
 
-<img src="./resources/CompressionWave.jpeg" alt="Model of a Compression Wave" width="85%">
+<img src="./resources/WeaklyCoupledPendula.png" alt="Weakly Coupled Pendula" width="85%">
 
 * Friday, Jan. 19 &mdash; Six Ideas Q3
 

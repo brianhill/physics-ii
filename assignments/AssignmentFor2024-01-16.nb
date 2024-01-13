@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     23602,        518]
-NotebookOptionsPosition[     21905,        477]
-NotebookOutlinePosition[     22353,        495]
-CellTagsIndexPosition[     22310,        492]
+NotebookDataLength[     23585,        518]
+NotebookOptionsPosition[     21888,        477]
+NotebookOutlinePosition[     22336,        495]
+CellTagsIndexPosition[     22293,        492]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -461,15 +461,15 @@ Figure Q2.8 with ",
   "336ce7bf-c0b7-436f-bf88-daa1c2aaa1ef"],
  ". What are the new frequencies corresponding to the third harmonic of E and \
 the third harmonic of G? For the musicians only: the third harmonic is the \
-perfect 5th but an octave up. What notes are the perfect fifth of E and the \
-perfect 5th of G?"
+perfect 5th but an octave up."
 }], "Text",
  CellChangeTimes->{{3.9140275544257727`*^9, 3.914027601937613*^9}, {
   3.914027664703047*^9, 3.9140277145791063`*^9}, {3.914028044898438*^9, 
   3.9140281519651957`*^9}, {3.914028188443185*^9, 3.914028251222569*^9}, {
   3.9140643064247923`*^9, 3.914064380700243*^9}, {3.914064470299799*^9, 
-  3.914064493046905*^9}, {3.9140645735321074`*^9, 
-  3.914064576299279*^9}},ExpressionUUID->"b37ecefb-9306-4c1b-bed8-\
+  3.914064493046905*^9}, {3.9140645735321074`*^9, 3.914064576299279*^9}, {
+  3.914064832249434*^9, 
+  3.914064832833171*^9}},ExpressionUUID->"b37ecefb-9306-4c1b-bed8-\
 3e114edb1ab0"]
 }, Open  ]]
 }, Open  ]]
@@ -516,7 +516,7 @@ Cell[18167, 405, 369, 8, 81, "Text",ExpressionUUID->"7a9505a8-ce72-4e9e-9e20-a26
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[18573, 418, 2016, 29, 49, "Subsection",ExpressionUUID->"a2748fbd-f5ce-413a-89c3-f2711c769025"],
-Cell[20592, 449, 1273, 23, 196, "Text",ExpressionUUID->"b37ecefb-9306-4c1b-bed8-3e114edb1ab0"]
+Cell[20592, 449, 1256, 23, 173, "Text",ExpressionUUID->"b37ecefb-9306-4c1b-bed8-3e114edb1ab0"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
