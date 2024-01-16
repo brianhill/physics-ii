@@ -9,21 +9,22 @@ Course [home page](./)
 
 ### Week 2 &mdash; Standing Waves &mdash; Interference
 
-* Tuesday, Jan. 16 &mdash; Study *Six Ideas Q2.1 to Q2.3* &mdash; Presentations on weakly coupled harmonic oscillator &mdash; Problem Set 2 [Due Tuesday](./assignments/AssignmentFor2024-01-16.nb.pdf)
+DELAYED: Enough people are out sick at the moment that I think it is best if we delay Problem Set 2 to Tuesday! Use the extra time to do a great job on your weakly coupled harmonic oscillator presentations. Make handouts to distribute to the people who can't attend. Meanwhile, I will prepare some more material on torsion waves. It isn't essential, but it is valuable. If you are curious about what a torsion wave is, here is a [torsion wave video](https://youtu.be/MrZcMTLK6W4)
+
+* Tuesday, Jan. 16 &mdash; Presentations on weakly coupled harmonic oscillator &mdash; Torsion waves &mdash; Resonance
+* Friday, Jan. 19 &mdash; Six Ideas Q2 &mdash; Problem Set 2 [Now due Friday](./assignments/AssignmentFor2024-01-16.nb.pdf)
 
 <img src="./resources/WeaklyCoupledPendula.png" alt="Weakly Coupled Pendula" width="85%">
 
-* Friday, Jan. 19 &mdash; Six Ideas Q3
+### Week 3 &mdash; Interference &mdash; Light is a Particle
 
-### Week 3 &mdash; Light is a Particle &mdash; Particles Behave Like Waves
+* Tuesday, Jan. 23 &mdash; Six Ideas Q3
+* Friday, Jan. 26 &mdash; Six Ideas Q4
 
-* Tuesday, Jan. 23 &mdash; Six Ideas Q4
-* Friday, Jan. 26 &mdash; Six Ideas Q5
+### Week 4 &mdash; Particles Behave Like Waves &mdash; Exam 1
 
-### Week 4 &mdash; Exam 1 &mdash; Spin
-
-* Tuesday, Jan. 30 &mdash; Exam 1
-* Friday, Feb. 2 &mdash; Six Ideas Q6
+* Tuesday, Jan. 30 &mdash; Six Ideas Q5
+* Friday, Feb. 2 &mdash; Exam 1
 
 ### Week 5 &mdash;
 
