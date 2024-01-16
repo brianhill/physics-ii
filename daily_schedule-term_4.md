@@ -9,9 +9,9 @@ Course [home page](./)
 
 ### Week 2 &mdash; Standing Waves &mdash; Interference
 
-DELAYED: Enough people are out sick at the moment that I think it is best if we delay Problem Set 2 to Friday! Use the extra time to do a great job on your weakly coupled harmonic oscillator presentations. Make handouts to distribute to the people who can't attend. Meanwhile, I will prepare some more material on torsion waves. It isn't essential, but it is valuable. If you are curious about what a torsion wave is, here is a [torsion wave video](https://youtu.be/MrZcMTLK6W4)
+DELAYED: Enough people are out sick at the moment that I think it is best if we delay Problem Set 2 to Friday! Use the extra time to do a great job on your weakly coupled harmonic oscillator presentations. Make handouts to distribute to the people who can't attend. Meanwhile, I will prepare some more material on torsion waves. It isn't essential, but it is valuable. If you are curious about what a torsion wave is, here is a [torsion wave video](https://youtu.be/MrZcMTLK6W4).
 
-* Tuesday, Jan. 16 &mdash; Presentations on weakly coupled harmonic oscillator &mdash; Torsion waves &mdash; Resonance
+* Tuesday, Jan. 16 &mdash; Presentations on weakly coupled harmonic oscillator &mdash; Torsion wave theory and [Torsion wave animation](./resources/TorsionWaveAnimation.nb.pdf) &mdash; Resonance
 * Friday, Jan. 19 &mdash; Six Ideas Q2 &mdash; Problem Set 2 [Now due Friday](./assignments/AssignmentFor2024-01-16.nb.pdf)
 
 <img src="./resources/WeaklyCoupledPendula.png" alt="Weakly Coupled Pendula" width="85%">
