@@ -12,7 +12,7 @@ Course [home page](./)
 * Tuesday, Jan. 16 &mdash; Theory and simulation presentations for the [weakly coupled harmonic oscillator](./resources/WeaklyCoupledAnimation.nb.pdf) &mdash; Torsion wave theory, [torsion wave video](https://youtu.be/MrZcMTLK6W4), and [torsion wave animation](./resources/TorsionWaveAnimation.nb.pdf)
 * Friday, Jan. 19 &mdash; Six Ideas Q2.1 to Q2.3 &mdash; [New presentations and Problem Set 2](./assignments/AssignmentFor2024-01-19.nb.pdf) for Friday
 
-<img src="./resources/TorsionWave.png" alt="Torsion Wave" width="60%">
+<img src="./resources/TorsionWave.png" alt="Torsion Wave" width="85%">
 
 ### Week 3 &mdash; Interference &mdash; Light is a Particle
 

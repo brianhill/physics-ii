@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     23913,        515]
-NotebookOptionsPosition[     22217,        474]
-NotebookOutlinePosition[     22669,        492]
-CellTagsIndexPosition[     22626,        489]
+NotebookDataLength[     24002,        518]
+NotebookOptionsPosition[     22306,        477]
+NotebookOutlinePosition[     22758,        495]
+CellTagsIndexPosition[     22715,        492]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -52,19 +52,20 @@ Ix1EAwAofpkE
 
 Cell["\<\
 It is a bit much to include Q2.4 (resonance) for one class. Moore only gives \
-the resonance formula, Eq. 2.9. He doesn\[CloseCurlyQuote]t derive it because \
-it is decently tough. So just study Q2.1 to Q2.3. On the other hand, I am \
-going to have you look ahead a bit to Q3 for the presentations....\
+the resonance formula, Eq. Q2.9. He doesn\[CloseCurlyQuote]t derive it \
+because deriving it is decently tough. So just study Q2.1 to Q2.3. On the \
+other hand, I am going to have you look ahead a bit to Q3 for the \
+presentations....\
 \>", "Text",
  CellChangeTimes->CompressedData["
-1:eJxTTMoPSmViYGCQAGIQ/aTtYvIk2beOtuYLU0H0g02XMkG01CWhLBBttHvp
+1:eJxTTMoPSmViYGCQBGIQ/aTtYvIk2beOtuYLU0H0g02XMkG01CWhLBBttHvp
 AxB9qUn8IYhe8vnJExD95mag8GQgHXcmXxpErzDLlwPRP/dsUAPRWmbu6iC6
 /NQzXRAdELrCEUTfdrSJBdFdc+dkgOhuSZd6EM2+9F0jiH75n+0jp9xbxy1T
 Mn6C6C5RvX9y8m8dme/zsMoD6QPeicl+Cm8dT9/4lAmiZecbLQXRknwBy0G0
 iNMunXdAet6vMDsQfWaOtQeI5jJ4CKb3RTSeANHb38o9BNG/T095CqI1vLa+
 Bqs33/YdRL9McvkJov1bSh//13jrmHg56AuIXvHvrGSm5ltHsT/3VUD0jdJd
 GVlAeobRySIQzfMq+Fc1kFadUvUHROt5ns411nrraNbhVA6iTaZelzMF0lsl
-TTRBNAA+sb2z
+TTRB9C1pp2YzIC31M7oFRAMAVUzEfA==
   "],ExpressionUUID->"3b6a5969-ad38-4c54-8c4f-74267108b137"]
 }, Open  ]],
 
@@ -99,8 +100,8 @@ Moore is showing in Figure Q3.2, p. 37. If you put \
 your search terms, you will find lots of choices. You are looking for one \
 that involves a single slit.\n\nThere are two very interesting cases even \
 with the just a single slit: if the wavelength is short (compared to the \
-width of the slit), and if the wavelength is long compared to the width of \
-the slit. Figure Q3.2 is showing the long wavelength case find a video (or \
+width of the slit), and if the wavelength is long (compared to the width of \
+the slit). Figure Q3.2 is showing the long wavelength case find a video (or \
 videos) that demonstrate both cases.\n\nGroup 2: Collaborate on finding a \
 video that shows what Moore is showing in Figure Q3.3, p. 37. A really good \
 video and associated explanation will show what happens when the wavelength \
@@ -109,12 +110,13 @@ slits.",
   FontSize->16]
 }], "Text",
  CellChangeTimes->CompressedData["
-1:eJxTTMoPSmViYGAQBmIQ3fp+s+oVmbeOnl7iaiDafd2OXBB9mEE8D0R76+uf
+1:eJxTTMoPSmViYGAQAWIQ3fp+s+oVmbeOnl7iaiDafd2OXBB9mEE8D0R76+uf
 5JR766iyxQpMv2KZ57gWSBt55DuB6AX/I7nk5d86nl77GUwbvt5b5Kfw1tFJ
 bW8xiOZYMynjHZBmDJgNpvOmff3/X+OtY72RDgOD5lvH6J/7KkG09jKVehDd
 Vsw2DUQXTW6eDaLfMH39yQqk1cJNfoHo5SKO6plA+tX+IA0Q/SWmpTgLSFvd
 smoA0Ubej/9WA+l2VQGWGiCtUKjWb6z11rHkydHFIPrRXQMBEyAtxTVHHkTv
-1OBWBdG2rj+8QXRs3oEoEB32TisGRK+/dz8RRMvuFk0D0QDWjIVt
+1OBWBdG2rj+8QXRs3oEoEB32TisGRK+/dz8RRMvuFk0D0XFzFJrMgPTxLzvA
+NABtmY0b
   "],ExpressionUUID->"4b5e1d1e-d4b4-4ea0-87e7-a89a447c5038"]
 }, Open  ]],
 
@@ -457,8 +459,8 @@ Figure Q2.8 with ",
   "336ce7bf-c0b7-436f-bf88-daa1c2aaa1ef"],
  ". What are the new frequencies corresponding to the third harmonic of E and \
 the third harmonic of G? For the musicians only: the third harmonic is the \
-perfect 5th but an octave up. Through a pleasant numerical accident, the 5th \
-differs   differs only slightly from the perfect 5th."
+perfect 5th but an octave up. Due to a pleasant numerical accident, the 5th \
+differs only slightly from the perfect 5th."
 }], "Text",
  CellChangeTimes->{{3.914027554425773*^9, 3.914027601937613*^9}, {
   3.914027664703047*^9, 3.9140277145791063`*^9}, {3.914028044898438*^9, 
@@ -466,7 +468,8 @@ differs   differs only slightly from the perfect 5th."
   3.9140643064247923`*^9, 3.914064380700243*^9}, {3.914064470299799*^9, 
   3.914064493046905*^9}, {3.9140645735321074`*^9, 3.914064576299279*^9}, {
   3.914064832249434*^9, 3.914064832833171*^9}, {3.914443143379498*^9, 
-  3.9144431887061043`*^9}},ExpressionUUID->"b37ecefb-9306-4c1b-bed8-\
+  3.9144431887061043`*^9}, {3.914445786279846*^9, 
+  3.914445799913061*^9}},ExpressionUUID->"b37ecefb-9306-4c1b-bed8-\
 3e114edb1ab0"]
 }, Open  ]]
 }, Open  ]]
@@ -495,25 +498,25 @@ Cell[CellGroupData[{
 Cell[580, 22, 607, 11, 64, "Chapter",ExpressionUUID->"0a9f033e-46a1-4578-becc-919930044f24"],
 Cell[CellGroupData[{
 Cell[1212, 37, 582, 13, 67, "Section",ExpressionUUID->"39b67822-fab3-4af4-9957-995e6360c459"],
-Cell[1797, 52, 863, 15, 81, "Text",ExpressionUUID->"3b6a5969-ad38-4c54-8c4f-74267108b137"]
+Cell[1797, 52, 895, 16, 81, "Text",ExpressionUUID->"3b6a5969-ad38-4c54-8c4f-74267108b137"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2697, 72, 690, 10, 67, "Section",ExpressionUUID->"faa93989-4709-458d-af5a-643fa1caea91"],
-Cell[3390, 84, 1825, 33, 396, "Text",ExpressionUUID->"4b5e1d1e-d4b4-4ea0-87e7-a89a447c5038"]
+Cell[2729, 73, 690, 10, 67, "Section",ExpressionUUID->"faa93989-4709-458d-af5a-643fa1caea91"],
+Cell[3422, 85, 1844, 34, 396, "Text",ExpressionUUID->"4b5e1d1e-d4b4-4ea0-87e7-a89a447c5038"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[5252, 122, 779, 11, 67, "Section",ExpressionUUID->"e0d51dc0-12b2-43d1-9537-65a0b526a33d"],
+Cell[5303, 124, 779, 11, 67, "Section",ExpressionUUID->"e0d51dc0-12b2-43d1-9537-65a0b526a33d"],
 Cell[CellGroupData[{
-Cell[6056, 137, 2139, 31, 115, "Subsection",ExpressionUUID->"645a6d31-b536-4db6-a578-555885cde4ff"],
-Cell[8198, 170, 8229, 196, 962, "Text",ExpressionUUID->"39d27db8-d434-4145-a2f0-e127dbf23fb1"]
+Cell[6107, 139, 2139, 31, 115, "Subsection",ExpressionUUID->"645a6d31-b536-4db6-a578-555885cde4ff"],
+Cell[8249, 172, 8229, 196, 962, "Text",ExpressionUUID->"39d27db8-d434-4145-a2f0-e127dbf23fb1"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[16464, 371, 1896, 28, 49, "Subsection",ExpressionUUID->"14d10e55-818a-4e9b-b649-9dbf0ce9ade1"],
-Cell[18363, 401, 396, 9, 81, "Text",ExpressionUUID->"7a9505a8-ce72-4e9e-9e20-a26de249faba"]
+Cell[16515, 373, 1896, 28, 49, "Subsection",ExpressionUUID->"14d10e55-818a-4e9b-b649-9dbf0ce9ade1"],
+Cell[18414, 403, 396, 9, 81, "Text",ExpressionUUID->"7a9505a8-ce72-4e9e-9e20-a26de249faba"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[18796, 415, 2004, 29, 49, "Subsection",ExpressionUUID->"a2748fbd-f5ce-413a-89c3-f2711c769025"],
-Cell[20803, 446, 1374, 23, 196, "Text",ExpressionUUID->"b37ecefb-9306-4c1b-bed8-3e114edb1ab0"]
+Cell[18847, 417, 2004, 29, 49, "Subsection",ExpressionUUID->"a2748fbd-f5ce-413a-89c3-f2711c769025"],
+Cell[20854, 448, 1412, 24, 196, "Text",ExpressionUUID->"b37ecefb-9306-4c1b-bed8-3e114edb1ab0"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
