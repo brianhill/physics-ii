@@ -1,0 +1,201 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      8740,        193]
+NotebookOptionsPosition[      7507,        160]
+NotebookOutlinePosition[      7959,        178]
+CellTagsIndexPosition[      7916,        175]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[TextData[StyleBox["Quantum Physics, Preparation for Tuesday, Jan. 23",
+ FontSize->30,
+ FontWeight->"Regular"]], "Chapter",
+ CellChangeTimes->CompressedData["
+1:eJxTTMoPSmViYGAQBWIQHW3awCoh/Nbx0r1tbCB6xap55opA+kJcsx2ITpu0
+dh6Izpp+FUz36B2tOAmkrxS5VoHocruFl+xF3jpGLr4GpsVOiUvtAdJ3L2SD
+6YSoD3ufib519JH6AaYnPy6MFxYHmqNSB6anNXdvCJN46ziJ5RqYdktmbngI
+pP+EXQLTW4ofX6+RfOv4amnQDRC9mmPqgssybx2vRj0D0/uyHlycKPvWMajB
+4RKIvlL/7yCn3FvHB1NZDoFoE6t5c+XlgfyshWDa0Kkq0U/hraNLQheYbsvM
+cnsHpHlk8sF02L+Y+/813jpWbXr9AETHWZwTz9R869grpSEBoh+keeQYa711
+PH2jHEy3TZiSuhZIG62anQaiAWmUopg=
+  "],ExpressionUUID->"0a9f033e-46a1-4578-becc-919930044f24"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Study Q3.1 to Q2.5 from ",
+ StyleBox["Six Ideas",
+  FontSlant->"Italic"]
+}], "Section",
+ CellChangeTimes->CompressedData["
+1:eJxTTMoPSmViYGAQBWIQ/W5quaui8FvHM+eD3ED0tsLWZBC9gekemJ6X8Lf6
+JJB+1Ha9BkTb3J/sbCfy1vEHz2wwLaj1SmoPiG/4Hkz7pe5NBNGnJyolgWjF
+fYv3PRN96zjlUsUBEN0gbxIiLP7W8YRfeCiIPpN5IgZEp+mcA9OXNFOXh0m8
+dZT7XQqmHzhoNz4E0i826oDph6oHb9RIvnW8oe96G0Svrpq+8LLMW0emLxMW
+gehF07MPccq9dXzjVwqmG3aZSCjIv3V0uWUGpicUX0/0U3jrKPPrC5huiNug
+/Q5IW7BvB9M9B9Y+/K/x1tFWW/cRiJ6lvEwiU/Ot457AX2B6EfeatCwg/dDF
+Ix1E266OnrdW663jJL8VYBoA/eyhFg==
+  "],ExpressionUUID->"39b67822-fab3-4af4-9957-995e6360c459"],
+
+Cell["\<\
+Q3.5 is advanced, go easy on yourself and focus on only Q3.1 to Q3.4 if \
+necessary.
+
+Q3.6 is cool but quite advanced. It is how you apply some of these ideas to \
+circular lenses instead of slits. As we noted for the advanced material on \
+resonance in Section Q2.4, it isn\[CloseCurlyQuote]t critical for our quantum \
+mechanics studies, and you are free to skip it.\
+\>", "Text",
+ CellChangeTimes->CompressedData["
+1:eJwdyk0ow2EAx/FFiJaD17blj/Iyi6WZ7eAlz1p5K2YiJWqW2lZaqbXiICxp
+bowcGMqyi0heaiRHbA7mYDjMMmr4r7ylzTLPz+Hb5/ItHDCqBxM4HA6fBoNT
+l9rZPJbUydcG4f2OVw/53gwDlBw67qF3IjcA1z+CQfh605E5R+33GAXQKTMy
+MHK0XQJFssZSaD5/qoCqLieBd6S2D1qXl3RwhqccgymO8DgMxZPfUhmW7Np0
+EWjNFv8y+SxJ9HOT8qknrRptWwFL3L53PcxbkTggL121AbMUrvIw1R7troee
+pZommFYZ+Pe4Z/wUHrBMAP64bY9Q2LL38v/L979haEAZge0W00NcyBLNlfoT
+On8vePoyluTE/EXQZ3LpDNRFydkw5D53RkepxbaRGBQ3u4eqRCyRTSvMUDp/
+zVRT93jSMngrUEzKqPxIrwXaF+Srm9SGl68t+AfpjM1h
+  "],ExpressionUUID->"3b6a5969-ad38-4c54-8c4f-74267108b137"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Presentations", "Section",
+ CellChangeTimes->{{3.902343723737052*^9, 3.902343730587866*^9}, {
+  3.9023439641701307`*^9, 3.902343966937828*^9}, {3.902344048197321*^9, 
+  3.902344075298213*^9}, {3.902688246879025*^9, 3.902688255429075*^9}, {
+  3.902927393209742*^9, 3.9029273996228228`*^9}, {3.9031854584896*^9, 
+  3.9031854607388773`*^9}, {3.905358887040047*^9, 3.905358891225012*^9}, {
+  3.905677023539398*^9, 3.905677069281822*^9}, {3.907428155845423*^9, 
+  3.907428161470359*^9}, {3.907428478145879*^9, 3.907428479327534*^9}, {
+  3.908631668220731*^9, 3.90863167193327*^9}, {3.9092519999699707`*^9, 
+  3.909252000149877*^9}},ExpressionUUID->"faa93989-4709-458d-af5a-\
+643fa1caea91"],
+
+Cell[TextData[StyleBox["Ethan and Hexi: Presentation on a Python program to \
+do the in-class exercise from the last class\nBrian: Mathematics of Section \
+Q3.5\nEmma: Applications of Section Q3.6 to laboratory class on cloning",
+ FontSize->16]], "Text",
+ CellChangeTimes->CompressedData["
+1:eJxTTMoPSmViYGAQB2IQ3fp+s+oVmbeOnl7iaiDafd2OXBB9mEE8D0R76+uf
+5JR766iyxQpMv2KZ57gWSBt55DuB6AX/I7nk5d86nl77GUwbvt5b5Kfw1tFJ
+bW8xiOZYMynjHZBmDJgNpvOmff3/X+OtY72RDgOD5lvH6J/7KkG09jKVehDd
+Vsw2DUQXTW6eDaLfMH39yQqk1cJNfoHo5SKO6plA+tX+IA0Q/SWmpTgLSFvd
+smoA0Ubej/9WA+l2VQGWGiCtUKjWb6z11rHkydHFIPrRXQMBEyAtxTVHHkTv
+1OBWBdG2rj+8QXRs3oEoEB32TisGRK+/dz8RRMvuFk0D0XFzFJrMgPTxLzvA
+tICAZc5aIN3Rd6YATH+ZOxFEc1kengai8790zwHRn8wXgWkAIJelig==
+  "],ExpressionUUID->"4f1640a5-ee3d-4e22-b74f-dace00734250"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["For Problem Set 3", "Section",
+ CellChangeTimes->{{3.902343723737052*^9, 3.902343730587866*^9}, {
+   3.9023439641701307`*^9, 3.902343966937828*^9}, {3.902344048197321*^9, 
+   3.902344075298213*^9}, {3.902688246879025*^9, 3.902688255429075*^9}, {
+   3.902927393209742*^9, 3.9029273996228228`*^9}, {3.9031854584896*^9, 
+   3.9031854607388773`*^9}, {3.905358887040047*^9, 3.905358891225012*^9}, {
+   3.9071613707674522`*^9, 3.9071613718924947`*^9}, {3.907817203385817*^9, 
+   3.907817203622153*^9}, {3.908397850368978*^9, 3.9083978506054506`*^9}, {
+   3.908975480013135*^9, 3.908975480438824*^9}, 3.913809991562726*^9, {
+   3.914025287063518*^9, 3.914025287355214*^9}, {3.914439626346298*^9, 
+   3.914439630982443*^9}, {3.914689365971838*^9, 
+   3.9146893660493383`*^9}},ExpressionUUID->"e0d51dc0-12b2-43d1-9537-\
+65a0b526a33d"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[StyleBox["The rain in Spain",
+ FontSize->16,
+ FontWeight->"Regular"]], "Subsection",
+ CellChangeTimes->{{3.907161511820457*^9, 3.907161517693348*^9}, {
+   3.9071757851311502`*^9, 3.907175786965211*^9}, 3.907818209992303*^9, {
+   3.9078191362206*^9, 3.90781913785112*^9}, {3.907819172116008*^9, 
+   3.907819176110496*^9}, {3.907820387875669*^9, 3.907820402108921*^9}, {
+   3.907820981764664*^9, 3.907821007358383*^9}, {3.907821038037771*^9, 
+   3.907821042290193*^9}, {3.907821088606534*^9, 3.9078210900352592`*^9}, {
+   3.907821135428946*^9, 3.907821158579274*^9}, {3.907821196245142*^9, 
+   3.907821237363723*^9}, {3.907821349401204*^9, 3.907821396425806*^9}, {
+   3.907821450908679*^9, 3.907821516779191*^9}, {3.908397878489965*^9, 
+   3.908397951028851*^9}, {3.908398041423287*^9, 3.908398058613622*^9}, {
+   3.908398130040098*^9, 3.908398139118972*^9}, {3.908398169156537*^9, 
+   3.908398192128955*^9}, {3.908398252159361*^9, 3.908398411595109*^9}, {
+   3.908398456684402*^9, 3.908398536593797*^9}, {3.908398607154119*^9, 
+   3.908398652335915*^9}, {3.908630830378921*^9, 3.90863084576903*^9}, {
+   3.908975491833612*^9, 3.908975522492631*^9}, {3.908975666045314*^9, 
+   3.908975711042753*^9}, {3.908976051229232*^9, 3.908976178825238*^9}, {
+   3.913810107870986*^9, 3.913810533475247*^9}, {3.913810634111455*^9, 
+   3.913810644069963*^9}, {3.913810679147831*^9, 3.91381071872521*^9}, {
+   3.9138108312992373`*^9, 3.913810888253944*^9}, {3.913810965406918*^9, 
+   3.913811021243954*^9}, {3.913811051361785*^9, 3.91381106657822*^9}, {
+   3.9138110987262697`*^9, 3.913811100703505*^9}, {3.91402529255657*^9, 
+   3.914025351909107*^9}, {3.914025416733687*^9, 3.9140259055200663`*^9}, {
+   3.9140259368748474`*^9, 3.914025951556254*^9}, 3.914025996195584*^9, {
+   3.914027092732191*^9, 3.914027097367485*^9}, {3.914689729790235*^9, 
+   3.9146897317581453`*^9}},ExpressionUUID->"14d10e55-818a-4e9b-b649-\
+9dbf0ce9ade1"],
+
+Cell["1. Falls mainly on the plain", "Text",
+ CellChangeTimes->{{3.914027554425773*^9, 3.914027601937613*^9}, {
+   3.914027664703047*^9, 3.914027666089014*^9}, {3.914064282574464*^9, 
+   3.914064294837758*^9}, 3.914441391782222*^9, {3.91468973440301*^9, 
+   3.914689742479237*^9}},ExpressionUUID->"7a9505a8-ce72-4e9e-9e20-\
+a26de249faba"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{808, 905},
+WindowMargins->{{Automatic, 191}, {Automatic, 43}},
+PrintingCopies->1,
+PrintingPageRange->{1, Automatic},
+FrontEndVersion->"14.0 for Mac OS X ARM (64-bit) (December 12, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"94a17dbf-c624-4e0e-b97a-5ea811487e94"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 624, 11, 64, "Chapter",ExpressionUUID->"0a9f033e-46a1-4578-becc-919930044f24"],
+Cell[CellGroupData[{
+Cell[1229, 37, 602, 13, 67, "Section",ExpressionUUID->"39b67822-fab3-4af4-9957-995e6360c459"],
+Cell[1834, 52, 962, 18, 127, "Text",ExpressionUUID->"3b6a5969-ad38-4c54-8c4f-74267108b137"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2833, 75, 690, 10, 67, "Section",ExpressionUUID->"faa93989-4709-458d-af5a-643fa1caea91"],
+Cell[3526, 87, 775, 12, 84, "Text",ExpressionUUID->"4f1640a5-ee3d-4e22-b74f-dace00734250"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4338, 104, 831, 12, 67, "Section",ExpressionUUID->"e0d51dc0-12b2-43d1-9537-65a0b526a33d"],
+Cell[CellGroupData[{
+Cell[5194, 120, 1932, 28, 49, "Subsection",ExpressionUUID->"14d10e55-818a-4e9b-b649-9dbf0ce9ade1"],
+Cell[7129, 150, 338, 5, 35, "Text",ExpressionUUID->"7a9505a8-ce72-4e9e-9e20-a26de249faba"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+

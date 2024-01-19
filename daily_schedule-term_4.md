@@ -10,13 +10,11 @@ Course [home page](./)
 ### Week 2 &mdash; Standing Waves &mdash; Interference
 
 * Tuesday, Jan. 16 &mdash; Theory and simulation presentations for the [weakly coupled harmonic oscillator](./resources/WeaklyCoupledAnimation.nb.pdf) &mdash; Torsion wave theory, [torsion wave video](https://youtu.be/MrZcMTLK6W4), and [torsion wave animation](./resources/TorsionWaveAnimation.nb.pdf)
-* Friday, Jan. 19 &mdash; Six Ideas Q2.1 to Q2.3 &mdash; [New presentations and Problem Set 2](./assignments/AssignmentFor2024-01-19.nb.pdf) for Friday
-
-<img src="./resources/TorsionWave.png" alt="Torsion Wave" width="85%">
+* Friday, Jan. 19 &mdash; Study Six Ideas Sections Q2.1 to Q2.3 &mdash; Discussion of Problem Set 2, especially harmonics on a guitar string and modes of an organ pipe &mdash; Presentation from Group 1 on [Single-Slit interference](https://youtu.be/Haa1a58k8kg) &mdash; Presentation from Group 2 on [Double-Slit interference](https://youtu.be/egRFqSKFmWQ) &mdash; [Problem Set 2](./assignments/AssignmentFor2024-01-19.nb.pdf) for Friday
 
 ### Week 3 &mdash; Interference &mdash; Light is a Particle
 
-* Tuesday, Jan. 23 &mdash; Six Ideas Q3
+* Tuesday, Jan. 23 &mdash; Study Six Ideas Sections Q3.1 to Q3.5 (Q3.5 is advanced, go easy on yourself and focus on only Q3.1 to Q3.4 if necessary) &mdash; Presentation from Ethan and Hexi on a Python program to do the in-class exercise from last Friday &mdash; Presentation from Brian on Section Q3.5 &mdash; Presentation from Emma on applications of Section Q3.6 to laboratory class on cloning &mdash; Additional presentations TBD &mdash; [Problem Set 3](./assignments/AssignmentFor2024-01-23.nb.pdf) for Tuesday
 * Friday, Jan. 26 &mdash; Six Ideas Q4
 
 ### Week 4 &mdash; Particles Behave Like Waves &mdash; Exam 1
@@ -37,3 +35,5 @@ Course [home page](./)
 ### Week 7 &mdash; Exam 2
 
 * Tuesday, Feb. 20 &mdash; Exam 2
+
+<img src="./resources/TorsionWave.png" alt="Torsion Wave" width="85%">
