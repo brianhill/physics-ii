@@ -36,4 +36,4 @@ Course [home page](./)
 
 * Tuesday, Feb. 20 &mdash; Exam 2
 
-<img src="./resources/TorsionWave.png" alt="Torsion Wave" width="85%">
+<img src="./resources/BlackBodyRadiation.png" alt="Black Body Radiation" width="75%">
