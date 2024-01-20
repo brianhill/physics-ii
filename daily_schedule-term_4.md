@@ -14,7 +14,7 @@ Course [home page](./)
 
 ### Week 3 &mdash; Interference &mdash; Light is a Particle
 
-* Tuesday, Jan. 23 &mdash; Study Six Ideas Sections Q3.1 to Q3.5 (Q3.5 is advanced, go easy on yourself and focus on only Q3.1 to Q3.4 if necessary) &mdash; Presentation from Ethan and Hexi on a Python program to do the in-class exercise from last Friday &mdash; Presentation from Brian on Section Q3.5 &mdash; Presentation from Emma on applications of Section Q3.6 to laboratory class on cloning &mdash; Additional presentations TBD &mdash; [Problem Set 3](./assignments/AssignmentFor2024-01-23.nb.pdf) for Tuesday
+* Tuesday, Jan. 23 &mdash; Study Six Ideas Sections Q3.1 to Q3.5 (Q3.6 is advanced) &mdash; Presentation from Ethan (with Hexi and Miles if out of quarantine): Presentation of a Python program that does the in-class exercise from the last class &mdash; Presentation from Emma on applications of Section Q3.6 to laboratory class on cloning &mdash; Presentation from Brian (looking ahead to Q4.1): Light is a Wave and The Electromagnetic Spectrum &mdash; Additional presentations TBD &mdash; [Problem Set 3](./assignments/AssignmentFor2024-01-23.nb.pdf) for Tuesday
 * Friday, Jan. 26 &mdash; Six Ideas Q4
 
 ### Week 4 &mdash; Particles Behave Like Waves &mdash; Exam 1

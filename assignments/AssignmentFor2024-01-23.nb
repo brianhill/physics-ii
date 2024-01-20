@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      8740,        193]
-NotebookOptionsPosition[      7507,        160]
-NotebookOutlinePosition[      7959,        178]
-CellTagsIndexPosition[      7916,        175]
+NotebookDataLength[     13205,        269]
+NotebookOptionsPosition[     11740,        232]
+NotebookOutlinePosition[     12194,        250]
+CellTagsIndexPosition[     12151,        247]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -36,38 +36,36 @@ PH2jHEy3TZiSuhZIG62anQaiAWmUopg=
 Cell[CellGroupData[{
 
 Cell[TextData[{
- "Study Q3.1 to Q2.5 from ",
+ "Study Q3.1 to Q3.5 from ",
  StyleBox["Six Ideas",
   FontSlant->"Italic"]
 }], "Section",
  CellChangeTimes->CompressedData["
-1:eJxTTMoPSmViYGAQBWIQ/W5quaui8FvHM+eD3ED0tsLWZBC9gekemJ6X8Lf6
+1:eJxTTMoPSmViYGAQA2IQ/W5quaui8FvHM+eD3ED0tsLWZBC9gekemJ6X8Lf6
 JJB+1Ha9BkTb3J/sbCfy1vEHz2wwLaj1SmoPiG/4Hkz7pe5NBNGnJyolgWjF
 fYv3PRN96zjlUsUBEN0gbxIiLP7W8YRfeCiIPpN5IgZEp+mcA9OXNFOXh0m8
 dZT7XQqmHzhoNz4E0i826oDph6oHb9RIvnW8oe96G0Svrpq+8LLMW0emLxMW
 gehF07MPccq9dXzjVwqmG3aZSCjIv3V0uWUGpicUX0/0U3jrKPPrC5huiNug
 /Q5IW7BvB9M9B9Y+/K/x1tFWW/cRiJ6lvEwiU/Ot457AX2B6EfeatCwg/dDF
-Ix1E266OnrdW663jJL8VYBoA/eyhFg==
+Ix1E266OnrdW663jJL8VYDrVNMlwL5Cu6UkD0wBJbKgN
   "],ExpressionUUID->"39b67822-fab3-4af4-9957-995e6360c459"],
 
 Cell["\<\
-Q3.5 is advanced, go easy on yourself and focus on only Q3.1 to Q3.4 if \
-necessary.
-
 Q3.6 is cool but quite advanced. It is how you apply some of these ideas to \
-circular lenses instead of slits. As we noted for the advanced material on \
-resonance in Section Q2.4, it isn\[CloseCurlyQuote]t critical for our quantum \
-mechanics studies, and you are free to skip it.\
+circular lenses instead of slits. Just as we noted for the advanced material \
+on resonance in Section Q2.4, it isn\[CloseCurlyQuote]t critical for our \
+quantum mechanics studies, and you are free to skip it.\
 \>", "Text",
  CellChangeTimes->CompressedData["
-1:eJwdyk0ow2EAx/FFiJaD17blj/Iyi6WZ7eAlz1p5K2YiJWqW2lZaqbXiICxp
-bowcGMqyi0heaiRHbA7mYDjMMmr4r7ylzTLPz+Hb5/ItHDCqBxM4HA6fBoNT
-l9rZPJbUydcG4f2OVw/53gwDlBw67qF3IjcA1z+CQfh605E5R+33GAXQKTMy
-MHK0XQJFssZSaD5/qoCqLieBd6S2D1qXl3RwhqccgymO8DgMxZPfUhmW7Np0
-EWjNFv8y+SxJ9HOT8qknrRptWwFL3L53PcxbkTggL121AbMUrvIw1R7troee
-pZommFYZ+Pe4Z/wUHrBMAP64bY9Q2LL38v/L979haEAZge0W00NcyBLNlfoT
-On8vePoyluTE/EXQZ3LpDNRFydkw5D53RkepxbaRGBQ3u4eqRCyRTSvMUDp/
-zVRT93jSMngrUEzKqPxIrwXaF+Srm9SGl68t+AfpjM1h
+1:eJwdymkow2EAx/HlDMsLZ5v8Ua4tFsP2wpFnKVc5IyXKtNpEKyXFCzmSeMdI
+bmXZG5Gz5kjxAhvaJGMvWBvl+CtXGsLz24tvnzffKLm6TOHG4XAYGnT0muoH
+w1mSKZ1VwJtlswryzQENULypvYHmrlAbnHtzOODTZWngELXWqA6DOomagc6t
+pVgolOTGwdaju0RYUqEj0EoyamD/5IQSDvByOqC39rkT3v95vfgwLFnVKJ2w
+P1j0y0SwxP2a6xlB3S2sqy+KZInB8qqC4dNiLeT5l8zDIJk+4Zk69VWZBY0T
+6XnQN8nmcqeq8wBusIwNfhs0tzC+YO3R9UvXP+G9PMcJi3ta7H/xLKk7K3uH
+ut9jnkrAkpCf62hoadErG6ij4sNmyH0o/2qnxmjafqAo39CUImSJpE/WClOH
+L5g06hovVQCvwmTdEirfWd0Dp0akMwvU7MePRegRt7O8Td3fO12Bq8lLehho
+P9mCysXGc2iNGXA59jBuhX4yk8t/0OHxKw==
   "],ExpressionUUID->"3b6a5969-ad38-4c54-8c4f-74267108b137"]
 }, Open  ]],
 
@@ -82,21 +80,34 @@ Cell["Presentations", "Section",
   3.905677023539398*^9, 3.905677069281822*^9}, {3.907428155845423*^9, 
   3.907428161470359*^9}, {3.907428478145879*^9, 3.907428479327534*^9}, {
   3.908631668220731*^9, 3.90863167193327*^9}, {3.9092519999699707`*^9, 
-  3.909252000149877*^9}},ExpressionUUID->"faa93989-4709-458d-af5a-\
+  3.909252000149877*^9}, {3.9147198074569263`*^9, 
+  3.914719809661566*^9}},ExpressionUUID->"faa93989-4709-458d-af5a-\
 643fa1caea91"],
 
-Cell[TextData[StyleBox["Ethan and Hexi: Presentation on a Python program to \
-do the in-class exercise from the last class\nBrian: Mathematics of Section \
-Q3.5\nEmma: Applications of Section Q3.6 to laboratory class on cloning",
+Cell[TextData[StyleBox["Ethan (with Hexi and Miles if out of quarantine): \
+Presentation of a Python program that does the in-class exercise from the \
+last class\n\nEmma: Applications of Section Q3.6 to laboratory instruments \
+used in the cloning class\n\nBrian (looking ahead to Q4.1):  Light is a Wave \
+and The Electromagnetic Spectrum\n\nSomeone else: Would someone (or some \
+small group) like to give a historical introduction to the material in \
+Section Q4.2? A variety of questions could be researched (not all!). What is \
+Planck\[CloseCurlyQuote]s constant? What is the \
+\[OpenCurlyDoubleQuote]ultraviolet catastrophe?\[CloseCurlyDoubleQuote] What \
+did one of the original photoelectric effect apparatuses look like? Can we \
+look at a copy of one of the papers (perhaps in translation) mentioned in \
+Q4.2?",
  FontSize->16]], "Text",
  CellChangeTimes->CompressedData["
-1:eJxTTMoPSmViYGAQB2IQ3fp+s+oVmbeOnl7iaiDafd2OXBB9mEE8D0R76+uf
-5JR766iyxQpMv2KZ57gWSBt55DuB6AX/I7nk5d86nl77GUwbvt5b5Kfw1tFJ
-bW8xiOZYMynjHZBmDJgNpvOmff3/X+OtY72RDgOD5lvH6J/7KkG09jKVehDd
-Vsw2DUQXTW6eDaLfMH39yQqk1cJNfoHo5SKO6plA+tX+IA0Q/SWmpTgLSFvd
-smoA0Ubej/9WA+l2VQGWGiCtUKjWb6z11rHkydHFIPrRXQMBEyAtxTVHHkTv
-1OBWBdG2rj+8QXRs3oEoEB32TisGRK+/dz8RRMvuFk0D0XFzFJrMgPTxLzvA
-tICAZc5aIN3Rd6YATH+ZOxFEc1kengai8790zwHRn8wXgWkAIJelig==
+1:eJwdxVtIU2EAB/CTnELny5BSvG7GNucFpmsqW/rwSZF1QGKJK52C4h3ddAtS
+i4wuFgk2DfayFaVgiC4J9+DQ6UAkQ0EEnwRvqyfrTNSNMpD5/b+HH7/MBqux
+KYbjuKsUfnU4o9xME8ntO0kqfOvrbCde4pIsWNBofsRliEThNbAP+I/EQ9eW
+W8vwp+gDiUwmklXPCbvgt99WIRdJmcpvx7FTI60h+oW7LrbFGYlG1SLp1+Zx
+XLZIak4XenHuuKIfD9gvObHt/QsX/hMTOb1IV5l0//GXyySrjX6waFTjsPml
+vZ1u2DI8w1rh59lj+mullH9Cl3er3l3LEcnDX8tjOLidL9XRUyRuGfap45W4
+9OY/AddaAtW4KpRjxtM7u/U4fe5KM65zy58X0b+HZ9lSqb7DQ38ztNbFDn8Y
+xhL9khNbw4NufFw8yq5IPVrGwR5uA9cFqtL89ECGmR0SOnNxaYNDg/e4bzo8
+P7BRiO9PRPX4M79egh3K6zfwSIJVwNpsnRH3+XYqcWLk6SSubOGnccnfZC/W
+zOyznaZ7i/ht4/AK5httR9hV/oh9DmTb++U=
   "],ExpressionUUID->"4f1640a5-ee3d-4e22-b74f-dace00734250"]
 }, Open  ]],
 
@@ -118,7 +129,7 @@ Cell["For Problem Set 3", "Section",
 
 Cell[CellGroupData[{
 
-Cell[TextData[StyleBox["The rain in Spain",
+Cell[TextData[StyleBox["Some Basic Problems with Single and Double Slits",
  FontSize->16,
  FontWeight->"Regular"]], "Subsection",
  CellChangeTimes->{{3.907161511820457*^9, 3.907161517693348*^9}, {
@@ -145,21 +156,82 @@ Cell[TextData[StyleBox["The rain in Spain",
    3.914025351909107*^9}, {3.914025416733687*^9, 3.9140259055200663`*^9}, {
    3.9140259368748474`*^9, 3.914025951556254*^9}, 3.914025996195584*^9, {
    3.914027092732191*^9, 3.914027097367485*^9}, {3.914689729790235*^9, 
-   3.9146897317581453`*^9}},ExpressionUUID->"14d10e55-818a-4e9b-b649-\
+   3.9146897317581453`*^9}, {3.914722046747615*^9, 3.9147220506395493`*^9}, {
+   3.914722493104393*^9, 
+   3.914722498908587*^9}},ExpressionUUID->"14d10e55-818a-4e9b-b649-\
 9dbf0ce9ade1"],
 
-Cell["1. Falls mainly on the plain", "Text",
+Cell["\<\
+1. Q3B.4 A double-slit problem
+2. Q3B.12 A single-slit problem, where the slit is narrow, but not so narrow \
+that its width is negligible
+3. Q3M.2 Another two-source problem, except the two sources are antennas. \
+First draw a top view of the situation that is consistent with the problem \
+description.\
+\>", "Text",
  CellChangeTimes->{{3.914027554425773*^9, 3.914027601937613*^9}, {
    3.914027664703047*^9, 3.914027666089014*^9}, {3.914064282574464*^9, 
    3.914064294837758*^9}, 3.914441391782222*^9, {3.91468973440301*^9, 
-   3.914689742479237*^9}},ExpressionUUID->"7a9505a8-ce72-4e9e-9e20-\
+   3.914689742479237*^9}, {3.914722073149221*^9, 3.914722107869542*^9}, {
+   3.9147221455701*^9, 3.914722186846393*^9}, {3.914722338118928*^9, 
+   3.914722452062908*^9}, 3.914722601645062*^9, {3.9147229161327887`*^9, 
+   3.914722925055081*^9}},ExpressionUUID->"7a9505a8-ce72-4e9e-9e20-\
 a26de249faba"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[StyleBox["A Challenging, Multi-Part Problem",
+ FontSize->16,
+ FontWeight->"Regular"]], "Subsection",
+ CellChangeTimes->{{3.907161511820457*^9, 3.907161517693348*^9}, {
+   3.9071757851311502`*^9, 3.907175786965211*^9}, 3.907818209992303*^9, {
+   3.9078191362206*^9, 3.90781913785112*^9}, {3.907819172116008*^9, 
+   3.907819176110496*^9}, {3.907820387875669*^9, 3.907820402108921*^9}, {
+   3.907820981764664*^9, 3.907821007358383*^9}, {3.907821038037771*^9, 
+   3.907821042290193*^9}, {3.907821088606534*^9, 3.9078210900352592`*^9}, {
+   3.907821135428946*^9, 3.907821158579274*^9}, {3.907821196245142*^9, 
+   3.907821237363723*^9}, {3.907821349401204*^9, 3.907821396425806*^9}, {
+   3.907821450908679*^9, 3.907821516779191*^9}, {3.908397878489965*^9, 
+   3.908397951028851*^9}, {3.908398041423287*^9, 3.908398058613622*^9}, {
+   3.908398130040098*^9, 3.908398139118972*^9}, {3.908398169156537*^9, 
+   3.908398192128955*^9}, {3.908398252159361*^9, 3.908398411595109*^9}, {
+   3.908398456684402*^9, 3.908398536593797*^9}, {3.908398607154119*^9, 
+   3.908398652335915*^9}, {3.908630830378921*^9, 3.90863084576903*^9}, {
+   3.908975491833612*^9, 3.908975522492631*^9}, {3.908975666045314*^9, 
+   3.908975711042753*^9}, {3.908976051229232*^9, 3.908976178825238*^9}, {
+   3.913810107870986*^9, 3.913810533475247*^9}, {3.913810634111455*^9, 
+   3.913810644069963*^9}, {3.913810679147831*^9, 3.91381071872521*^9}, {
+   3.9138108312992373`*^9, 3.913810888253944*^9}, {3.913810965406918*^9, 
+   3.913811021243954*^9}, {3.913811051361785*^9, 3.91381106657822*^9}, {
+   3.9138110987262697`*^9, 3.913811100703505*^9}, {3.91402529255657*^9, 
+   3.914025351909107*^9}, {3.914025416733687*^9, 3.9140259055200663`*^9}, {
+   3.9140259368748474`*^9, 3.914025951556254*^9}, 3.914025996195584*^9, {
+   3.914027092732191*^9, 3.914027097367485*^9}, {3.914689729790235*^9, 
+   3.9146897317581453`*^9}, {3.914722046747615*^9, 3.9147220506395493`*^9}, {
+   3.914722193911318*^9, 3.914722196475933*^9}, {3.9147225028697853`*^9, 
+   3.9147225460013437`*^9}},ExpressionUUID->"0e3b7560-01bb-405a-b20c-\
+420f80f49277"],
+
+Cell["\<\
+4. Q3D.4 The intensity pattern of a wide slit (Rebecca asked how the wide \
+slit can be understood)\
+\>", "Text",
+ CellChangeTimes->{{3.914027554425773*^9, 3.914027601937613*^9}, {
+   3.914027664703047*^9, 3.914027666089014*^9}, {3.914064282574464*^9, 
+   3.914064294837758*^9}, 3.914441391782222*^9, {3.91468973440301*^9, 
+   3.914689742479237*^9}, {3.914722073149221*^9, 3.914722107869542*^9}, {
+   3.9147221455701*^9, 3.914722199400567*^9}, {3.914722551650429*^9, 
+   3.914722599079234*^9}, {3.9147226415398607`*^9, 3.914722642257236*^9}, {
+   3.914723078093812*^9, 
+   3.9147230784668083`*^9}},ExpressionUUID->"db7db473-68fd-4663-bb6f-\
+fa0c432bbd7d"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
 },
 WindowSize->{808, 905},
-WindowMargins->{{Automatic, 191}, {Automatic, 43}},
+WindowMargins->{{838, Automatic}, {-165, Automatic}},
 PrintingCopies->1,
 PrintingPageRange->{1, Automatic},
 FrontEndVersion->"14.0 for Mac OS X ARM (64-bit) (December 12, 2023)",
@@ -180,18 +252,22 @@ Notebook[{
 Cell[CellGroupData[{
 Cell[580, 22, 624, 11, 64, "Chapter",ExpressionUUID->"0a9f033e-46a1-4578-becc-919930044f24"],
 Cell[CellGroupData[{
-Cell[1229, 37, 602, 13, 67, "Section",ExpressionUUID->"39b67822-fab3-4af4-9957-995e6360c459"],
-Cell[1834, 52, 962, 18, 127, "Text",ExpressionUUID->"3b6a5969-ad38-4c54-8c4f-74267108b137"]
+Cell[1229, 37, 614, 13, 67, "Section",ExpressionUUID->"39b67822-fab3-4af4-9957-995e6360c459"],
+Cell[1846, 52, 934, 16, 81, "Text",ExpressionUUID->"3b6a5969-ad38-4c54-8c4f-74267108b137"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2833, 75, 690, 10, 67, "Section",ExpressionUUID->"faa93989-4709-458d-af5a-643fa1caea91"],
-Cell[3526, 87, 775, 12, 84, "Text",ExpressionUUID->"4f1640a5-ee3d-4e22-b74f-dace00734250"]
+Cell[2817, 73, 741, 11, 67, "Section",ExpressionUUID->"faa93989-4709-458d-af5a-643fa1caea91"],
+Cell[3561, 86, 1533, 24, 300, "Text",ExpressionUUID->"4f1640a5-ee3d-4e22-b74f-dace00734250"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[4338, 104, 831, 12, 67, "Section",ExpressionUUID->"e0d51dc0-12b2-43d1-9537-65a0b526a33d"],
+Cell[5131, 115, 831, 12, 67, "Section",ExpressionUUID->"e0d51dc0-12b2-43d1-9537-65a0b526a33d"],
 Cell[CellGroupData[{
-Cell[5194, 120, 1932, 28, 49, "Subsection",ExpressionUUID->"14d10e55-818a-4e9b-b649-9dbf0ce9ade1"],
-Cell[7129, 150, 338, 5, 35, "Text",ExpressionUUID->"7a9505a8-ce72-4e9e-9e20-a26de249faba"]
+Cell[5987, 131, 2065, 30, 49, "Subsection",ExpressionUUID->"14d10e55-818a-4e9b-b649-9dbf0ce9ade1"],
+Cell[8055, 163, 840, 15, 104, "Text",ExpressionUUID->"7a9505a8-ce72-4e9e-9e20-a26de249faba"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8932, 183, 2100, 30, 49, "Subsection",ExpressionUUID->"0e3b7560-01bb-405a-b20c-420f80f49277"],
+Cell[11035, 215, 665, 12, 35, "Text",ExpressionUUID->"db7db473-68fd-4663-bb6f-fa0c432bbd7d"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
