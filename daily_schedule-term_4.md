@@ -14,8 +14,8 @@ Course [home page](./)
 
 ### Week 3 &mdash; Interference &mdash; Light is a Particle
 
-* Tuesday, Jan. 23 &mdash; Study Six Ideas Sections Q3.1 to Q3.5 (Q3.6 is advanced) &mdash; Advanced discussion of last problem on Problem Set 3 &mdash; Presentation from Ethan (with Hexi and Miles if out of quarantine): a Python program that does the in-class exercise from the last class &mdash; Presentation from Emma on applications of Section Q3.6 to laboratory class on cloning &mdash; Presentation from Brian (looking ahead to Q4.1): Light is a wave and the wave theory explains the entire electromagnetic spectrum &mdash; Presentation from Trey: the ultraviolet catastrophe vs. the actual black-body radiation spectrum &mdash; Presentations from Rebecca and Hexi (who need to coordinate and divide the historical material): experimental apparatus that discovered the photoelectric effect, a significant paper (in translation), and the hypothesis of quanta and *h,* Planck's constant &mdash; [Problem Set 3](./assignments/AssignmentFor2024-01-23.nb.pdf) for Tuesday
-* Friday, Jan. 26 &mdash; Six Ideas Q4
+* Tuesday, Jan. 23 &mdash; Study Six Ideas Sections Q3.1 to Q3.5 (Q3.6 is advanced) &mdash; Advanced discussion of last problem on Problem Set 3 &mdash; Presentation from Ethan (with Hexi and Miles if out of quarantine): a Python program that does the in-class exercise from the last class &mdash; Presentation from Emma on applications of Section Q3.6 to laboratory class on cloning &mdash; Presentation from Brian (looking ahead to Q4.1): [Light is a wave](./resources/LightIsAWave.nb.pdf) and the wave theory explains the entire electromagnetic spectrum &mdash; Presentation from Trey: the ultraviolet catastrophe vs. the actual black-body radiation spectrum &mdash; [Problem Set 3](./assignments/AssignmentFor2024-01-23.nb.pdf) for Tuesday
+* Friday, Jan. 26 &mdash; Six Ideas Q4 &mdash; Short presentation from Miles on the rare condition of tetrachromacy &mdash; Presentations from Rebecca and Hexi (who will coordinate and divide the historical material): Experimental apparatus that discovered the photoelectric effect, a significant paper (possibly in translation) from circa 1900, and the hypothesis of quanta and *h,* Planck's constant &mdash; Presentation from Ren and Miles: a problem from Q4 of their choice &mdash; [Problem Set 4](./assignments/AssignmentFor2024-01-26.nb.pdf) for Friday
 
 ### Week 4 &mdash; Particles Behave Like Waves &mdash; Exam 1
 
@@ -36,4 +36,4 @@ Course [home page](./)
 
 * Tuesday, Feb. 20 &mdash; Exam 2
 
-<img src="./resources/BlackBodyRadiation.png" alt="Black Body Radiation" width="75%">
+<img src="./resources/BlackBodyRadiationII.png" alt="Black Body Radiation" width="75%">
