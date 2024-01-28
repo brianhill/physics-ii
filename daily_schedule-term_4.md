@@ -19,7 +19,7 @@ Course [home page](./)
 
 ### Week 4 &mdash; Particles Behave Like Waves &mdash; Exam 1
 
-* Tuesday, Jan. 30 &mdash; Six Ideas Q5
+* Tuesday, Jan. 30 &mdash; Six Ideas Q5 &mdash; Presentations / Review of Q1 to Q4 &mdash; [Problem Set 5](./assignments/AssignmentFor2024-01-30.nb.pdf)
 * Friday, Feb. 2 &mdash; Exam 1
 
 ### Week 5 &mdash;
