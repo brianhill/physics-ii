@@ -19,12 +19,12 @@ Course [home page](./)
 
 ### Week 4 &mdash; Particles Behave Like Waves &mdash; Exam 1
 
-* Tuesday, Jan. 30 &mdash; Six Ideas Q5 &mdash; Presentations / Review of Q1 to Q4 &mdash; [Problem Set 5](./assignments/AssignmentFor2024-01-30.nb.pdf)
+* Tuesday, Jan. 30 &mdash; Six Ideas Q5 &mdash; Black-body radiation and the resulting appearance of [bluish stars, white and yellowish stars, and reddish stars](./resources/BlackBodyRadiationII.png) &mdash; Presentations on Q1 to Q4: Emma and Ethan, Q1R.1, a slightly tricky Doppler shift problem; Hexi and Miles, Q2R.2, pulsation frequency of variable stars; Rebecca and Ren, Q3R.1, passing by foghorns; Trey, the energy levels and photon spectrum of hydrogen &mdash; [Problem Set 5](./assignments/AssignmentFor2024-01-30.nb.pdf) for Tuesday &mdash; Discussion of interference patterns in the first problem of Problem Set 5 &mdash; A look ahead at Q6, spin, beginning with a comparison of the units of angular momentum with the units of *h*
 * Friday, Feb. 2 &mdash; Exam 1
 
-### Week 5 &mdash;
+### Week 5 &mdash; Spin and Complex Arithmetic
 
-* Tuesday, Feb. 6 &mdash;
+* Tuesday, Feb. 6 &mdash; Let's start into both Q6 and QA: Study Sections Q6.1, Q6.2 and Q6.3 and QA.1 and QA.2 &mdash; Presentation from Emma, how the Balmer, Lyman, and Paschen wavelengths from Hydrogen were observed and cataloged &mdash; [Problem Set 6 - FORTHCOMING](http://404notfound.kr) for Tuesday
 * Friday, Feb. 9 &mdash;
 
 ### Week 6 &mdash;
@@ -36,4 +36,4 @@ Course [home page](./)
 
 * Tuesday, Feb. 20 &mdash; Exam 2
 
-<img src="./resources/BlackBodyRadiationII.png" alt="Black Body Radiation" width="75%">
+<img src="./resources/SternGerlach.png" alt="Stern-Gerlach schematic" width="75%">
