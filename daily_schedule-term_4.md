@@ -20,7 +20,7 @@ Course [home page](./)
 ### Week 4 &mdash; Particles Behave Like Waves &mdash; Exam 1
 
 * Tuesday, Jan. 30 &mdash; Six Ideas Q5 &mdash; Black-body radiation and the resulting appearance of [bluish stars, white and yellowish stars, and reddish stars](./resources/BlackBodyRadiationII.png) &mdash; Presentations on Q1 to Q4: Emma and Ethan, Q1R.1, a slightly tricky Doppler shift problem; Hexi and Miles, Q2R.2, pulsation frequency of variable stars; Rebecca and Ren, Q3R.1, passing by foghorns; Trey, the energy levels and photon spectrum of hydrogen &mdash; [Problem Set 5](./assignments/AssignmentFor2024-01-30.nb.pdf) for Tuesday &mdash; Discussion of interference patterns in the first problem of Problem Set 5 &mdash; A look ahead at Q6, spin, beginning with a comparison of the units of angular momentum with the units of *h*
-* Friday, Feb. 2 &mdash; Exam 1
+* Friday, Feb. 2 &mdash; [Exam 1](./exams/Exam1.nb.pdf)
 
 ### Week 5 &mdash; Spin and Complex Arithmetic
 
