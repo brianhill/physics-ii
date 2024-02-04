@@ -1,0 +1,489 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     23357,        481]
+NotebookOptionsPosition[     21625,        439]
+NotebookOutlinePosition[     22079,        457]
+CellTagsIndexPosition[     22036,        454]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[TextData[StyleBox["Quantum Physics, Preparation for Tuesday, Jan. 30",
+ FontSize->30,
+ FontWeight->"Regular"]], "Chapter",
+ CellChangeTimes->CompressedData["
+1:eJxTTMoPSmViYGAQB2IQHW3awCoh/Nbx0r1tbCB6xap55opA+kJcsx2ITpu0
+dh6Izpp+FUz36B2tOAmkrxS5VoHocruFl+xF3jpGLr4GpsVOiUvtAdJ3L2SD
+6YSoD3ufib519JH6AaYnPy6MFxYHmqNSB6anNXdvCJN46ziJ5RqYdktmbngI
+pP+EXQLTW4ofX6+RfOv4amnQDRC9mmPqgssybx2vRj0D0/uyHlycKPvWMajB
+4RKIvlL/7yCn3FvHB1NZDoFoE6t5c+XlgfyshWDa0Kkq0U/hraNLQheYbsvM
+cnsHpHlk8sF02L+Y+/813jpWbXr9AETHWZwTz9R869grpSEBoh+keeQYa711
+PH2jHEy3TZiSuhZIG62anQai3XKbysO0gf5q2QCmvy1yOcOp89ZR/VYvmAYA
+t4CxrQ==
+  "],ExpressionUUID->"0a9f033e-46a1-4578-becc-919930044f24"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Study Q5 from ",
+ StyleBox["Six Ideas",
+  FontSlant->"Italic"]
+}], "Section",
+ CellChangeTimes->{{3.902343723737052*^9, 3.902343730587866*^9}, {
+   3.9023439641701307`*^9, 3.902343966937828*^9}, {3.902688223918044*^9, 
+   3.902688230735215*^9}, {3.902927388621001*^9, 3.902927388845333*^9}, {
+   3.903185111317635*^9, 3.9031851114748497`*^9}, {3.903185677918617*^9, 
+   3.903185681080297*^9}, {3.903796725116959*^9, 3.9037967397757053`*^9}, {
+   3.904412321628845*^9, 3.904412330728367*^9}, {3.904412390262915*^9, 
+   3.90441239044292*^9}, {3.905074491161355*^9, 3.905074491686904*^9}, {
+   3.9053588573516693`*^9, 3.905358857396717*^9}, {3.905676998035874*^9, 
+   3.905677018162091*^9}, {3.907427596733724*^9, 3.907427604529786*^9}, {
+   3.90806273936226*^9, 3.908062739665884*^9}, {3.908632769647766*^9, 
+   3.9086327697141438`*^9}, {3.909251854732857*^9, 3.909251855655531*^9}, {
+   3.9095791015115356`*^9, 3.909579101719631*^9}, {3.9138096774297543`*^9, 
+   3.913809681411528*^9}, {3.914025157191846*^9, 3.9140251598224773`*^9}, {
+   3.91402782937642*^9, 3.914027834258408*^9}, {3.914689778864653*^9, 
+   3.914689781259591*^9}, {3.914721675069018*^9, 3.914721675204649*^9}, 
+   3.9150355861516733`*^9, {3.9154028556756287`*^9, 
+   3.915402855738867*^9}},ExpressionUUID->"39b67822-fab3-4af4-9957-\
+995e6360c459"],
+
+Cell["\<\
+This is the last chapter in our accumulation of \
+\[OpenCurlyDoubleQuote]bizarre phenomena\[CloseCurlyDoubleQuote] that are \
+unexplainable by classical theory.
+
+In Q6, we will launch into the quantum theory, which manages to explain every \
+bizarre phenomenon that you have seen. Developing and understanding the \
+theory will take us many weeks.\
+\>", "Text",
+ CellChangeTimes->CompressedData["
+1:eJxTTMoPSmViYGBQBGIQ/aTtYvIk2beOtuYLU0H0g02XMkG01CWhLBBttHvp
+AxB9qUn8IYhe8vnJExD95mag8GQgHXcmXxpErzDLlwPRP/dsUAPRWmbu6iC6
+/NQzXRAdELrCEUTfdrSJBdFdc+dkgOhuSZd6EM2+9F0jiH75n+0jp9xbxy1T
+Mn6C6C5RvX9y8m8dme/zsMoD6QPeicl+Cm8dT9/4lAmiZecbLQXRknwBy0G0
+iNMunXdAet6vMDsQfWaOtQeI5jJ4CKb3RTSeANHb38o9BNG/T095CqI1vLa+
+Bqs33/YdRL9McvkJov1bSh//13jrmHg56AuIXvHvrGSm5ltHsT/3VUD0jdJd
+GVlAeobRySIQzfMq+Fc1kFadUvUHROt5ns411nrraNbhVA6iTaZelzMF0lsl
+TTRB9C1pp2YzIC31M7oFRM+bZr5gLZB2eP11PYhmUd+3aS+QPnL4/GYQvcVw
+wy4QLfz43B4QnbE+5yqIvq3aDaZnvZp9G0RzO10E00pHlVTuAOmSO7pqIDrv
+oMeMMG2guU+4l4JoVofTFzl13jp+OJL0AEQDAB7RBxc=
+  "],ExpressionUUID->"3b6a5969-ad38-4c54-8c4f-74267108b137"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Presentations / Review for Exam", "Section",
+ CellChangeTimes->{{3.902343723737052*^9, 3.902343730587866*^9}, {
+  3.9023439641701307`*^9, 3.902343966937828*^9}, {3.902344048197321*^9, 
+  3.902344075298213*^9}, {3.902688246879025*^9, 3.902688255429075*^9}, {
+  3.902927393209742*^9, 3.9029273996228228`*^9}, {3.9031854584896*^9, 
+  3.9031854607388773`*^9}, {3.905358887040047*^9, 3.905358891225012*^9}, {
+  3.905677023539398*^9, 3.905677069281822*^9}, {3.907428155845423*^9, 
+  3.907428161470359*^9}, {3.907428478145879*^9, 3.907428479327534*^9}, {
+  3.908631668220731*^9, 3.90863167193327*^9}, {3.9092519999699707`*^9, 
+  3.909252000149877*^9}, {3.914719807456927*^9, 3.914719809661566*^9}, {
+  3.9154030139654922`*^9, 
+  3.915403023146639*^9}},ExpressionUUID->"faa93989-4709-458d-af5a-\
+643fa1caea91"],
+
+Cell[TextData[{
+ StyleBox["The exam will cover all of Q1 to Q5. It was suggested on Friday \
+that Tuesday\[CloseCurlyQuote]s presentations relate to the exam. Therefore, \
+while you are busting your brain cells understanding Q5, \
+let\[CloseCurlyQuote]s have four detailed and careful presentations on Q1 to \
+Q4.\n\nNB: To make Tuesday interesting, these problems are lots harder than \
+typical exam problems would be. Sorry if that defeats the purpose of the \
+review. Also, I assigned you alphabetically. If you want to trade with \
+someone, you can (provided you give them lots of lead time and they agree).\n\
+\nEmma and Ethan: Q1R.1, a slightly tricky Doppler shift problem\nHexi and \
+Miles: Q2R.2, p. 32, pulsation frequency of variable stars\nRebecca and Ren: \
+Q3R.1, p. 51, passing by foghorns\nTrey (and Jay if she wants to join in): We \
+are out of \[OpenCurlyDoubleQuote]rich context\[CloseCurlyDoubleQuote] \
+problems from Moore for Q4. So here is a rich context problem for Q4 from \
+me...\n\nThe energy levels of the hydrogen atom are of the form\n\n",
+  FontSize->16],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["E", "n"], "=", 
+    RowBox[{
+     RowBox[{"-", "1"}], 
+     RowBox[{"Ry", " ", "/", " ", 
+      SuperscriptBox["n", "2"]}]}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "083061ed-ff32-4e02-8272-859bd345e0cf"],
+ "\n\nwith ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"n", "=", "1"}], ",", " ", "2", ",", " ", "3", ",", " ", 
+    RowBox[{"etc", "."}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "c338b092-4ae0-4403-a24c-dd9144385887"],
+ "\n\nLike the eV, the Rydberg, abbreviated Ry, is a useful unit. 1 Ry = 13.6 \
+eV = ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"2.178", "\[Times]", 
+    SuperscriptBox["10", 
+     RowBox[{"-", "18"}]]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "5fe7947b-e810-4759-9a44-be3813f4384d"],
+ " J.\n\nIf a single photon is liberated when Hydrogen goes from energy level \
+",
+ Cell[BoxData[
+  FormBox["n", TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "d20ac647-f1cd-4710-9836-f3fe4c084fe8"],
+ " to Hydrogen energy level ",
+ Cell[BoxData[
+  FormBox["m", TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "34acbf93-1e3d-4671-bee5-7d5ce4a1c751"],
+ ", and energy is conserved, then the photon must carry away the energy \
+(continued on reverse):\n",
+ StyleBox["\n-",
+  FontSize->16],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"1", "Ry", " ", 
+    RowBox[{"(", 
+     RowBox[{
+      FractionBox["1", 
+       SuperscriptBox["n", "2"]], "-", 
+      FractionBox["1", 
+       SuperscriptBox["m", "2"]]}], ")"}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "e2623076-67a1-43b6-945b-1b1249012572"],
+ StyleBox["\n\nMake a table of these energies in eV for\n\n",
+  FontSize->16],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"n", "=", "5"}], ",", " ", "4", ",", " ", "3", ",", " ", 
+    RowBox[{"or", " ", "2"}], ",", " ", 
+    RowBox[{
+     RowBox[{"with", " ", "m"}], "=", "1"}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "f619ed35-2deb-4a54-add9-85f57eecde08"],
+ ",\n\nand\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"n", "=", "6"}], ",", "5", ",", " ", "4", ",", " ", 
+    RowBox[{"or", " ", "3"}], ","}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "9c5d379b-3299-4156-a12b-dbfdb447d3ce"],
+ " with ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"m", "=", "2"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "7810d9bf-6543-4ab9-b36c-34427b58bc14"],
+ ",\n\nand\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"n", "=", "7"}], ",", " ", "6", ",", " ", "5", ",", " ", 
+    RowBox[{"or", " ", "4"}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "0fd92f26-a6e1-4733-926e-62ca35d2f471"],
+ ", with ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"m", "=", "3"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "c5a3547b-d157-460d-b009-fc41d293bf95"],
+ " .\n\nAlso make a second table that converts the above energies to \
+wavelengths in nm. Finally, categorize the photons. Are they infrared, \
+visible, ultraviolet? For any that are visible, what color are they?\n\nIf \
+you are feeling expository, explain to your fellow physicists why there is a \
+minus sign in ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["E", "n"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "9e5fcbb5-cd69-41ed-b64a-0aba59ff571e"],
+ "."
+}], "Text",
+ InitializationCell->True,
+ CellChangeTimes->CompressedData["
+1:eJwdym1IU2EAxfGb3F6cRCNKy6Zb4ObUwXSuRJ3F1aLZcITJpjYHiZbZ3MyJ
+pYn2armgnNG+aNIbWeSyUExLcySWURFCZUmprfKDdperK2lQ6zn3w+HHgf/G
+Qlt2cRBFUSoyePpHl/SNiGUyd4bJ4I67vWVwiAqzQp1S+Tw4kmWiulN4Z+g2
+xk1UaW3p8EogTyAWs8wL9y/ehNmBCr2EZdJlA3a4oqO5xEdcsquF1+qaDwTk
+LFOvUlBUDMvsWXxcDeNuRtXDBvsyF6y4eLIFfg+aX1xKlBnVf2D7Gib6AHFm
+MFsOOdMpeykxZTzlGFTpvvw9SjwjFdK1RMkh2YXEWJap/Dp8HXo/xQvVxHBB
+qxj2yUOkMG37gg4WWD350OCLNcHOicm9MOLR2n3Q3Co5sZn4jOvlFQqTLW7i
+2fMvy3m5y04oSB5yQRt3rhX+TLrGq9/gH4beI9QoNHsMogGiJ9LE69OVxcG0
+wiYlnKLuq2F/w+gmmHs7kAyv0q81sEmaug02r7bpoCpGnQ1r+iZyYOh83R2Y
+s5/uhJrf67uhsuszr8u4exA6ipwjkC6q8MMW7WFe9at40Ud0Ux94Q7MC7YY4
+lnnnd96DMm5llZE43R/B21wZqIZzecoayHmyvMEKlmkMtrCwzVFACYgHRxTL
+4VNdfijs0QjWQddYaQRMiK6VwBvFDhU0ZH5LgkG5s6lw3PtECzvGEnPgwyrn
+LWiR0dPwX3njHCwxWzlYNdmzwP9VW6gQ4vFLdhrWvX8rhnMZdAIMf0Bvhfpe
+JgP+B3kLaIg=
+  "],ExpressionUUID->"4f1640a5-ee3d-4e22-b74f-dace00734250"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["For Problem Set 5", "Section",
+ CellChangeTimes->{{3.902343723737052*^9, 3.902343730587866*^9}, {
+   3.9023439641701307`*^9, 3.902343966937828*^9}, {3.902344048197321*^9, 
+   3.902344075298213*^9}, {3.902688246879025*^9, 3.902688255429075*^9}, {
+   3.902927393209742*^9, 3.9029273996228228`*^9}, {3.9031854584896*^9, 
+   3.9031854607388773`*^9}, {3.905358887040047*^9, 3.905358891225012*^9}, {
+   3.907161370767453*^9, 3.907161371892496*^9}, {3.907817203385817*^9, 
+   3.907817203622153*^9}, {3.908397850368978*^9, 3.908397850605451*^9}, {
+   3.908975480013135*^9, 3.908975480438824*^9}, 3.913809991562726*^9, {
+   3.914025287063518*^9, 3.914025287355214*^9}, {3.914439626346298*^9, 
+   3.914439630982443*^9}, {3.914689365971838*^9, 3.9146893660493383`*^9}, {
+   3.91503638438058*^9, 3.9150363844229403`*^9}, {3.915404626934729*^9, 
+   3.915404627137566*^9}},ExpressionUUID->"e0d51dc0-12b2-43d1-9537-\
+65a0b526a33d"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[StyleBox["Interference Patterns",
+ FontSize->16,
+ FontWeight->"Regular"]], "Subsection",
+ CellChangeTimes->{{3.907161511820457*^9, 3.907161517693348*^9}, {
+   3.9071757851311502`*^9, 3.907175786965211*^9}, 3.907818209992303*^9, {
+   3.9078191362206*^9, 3.90781913785112*^9}, {3.907819172116008*^9, 
+   3.907819176110496*^9}, {3.907820387875669*^9, 3.907820402108921*^9}, {
+   3.907820981764664*^9, 3.907821007358383*^9}, {3.907821038037771*^9, 
+   3.907821042290193*^9}, {3.907821088606534*^9, 3.9078210900352592`*^9}, {
+   3.907821135428946*^9, 3.907821158579274*^9}, {3.907821196245142*^9, 
+   3.907821237363723*^9}, {3.907821349401204*^9, 3.907821396425806*^9}, {
+   3.907821450908679*^9, 3.907821516779191*^9}, {3.908397878489965*^9, 
+   3.908397951028851*^9}, {3.908398041423287*^9, 3.908398058613622*^9}, {
+   3.908398130040098*^9, 3.908398139118972*^9}, {3.908398169156537*^9, 
+   3.908398192128955*^9}, {3.908398252159361*^9, 3.908398411595109*^9}, {
+   3.908398456684402*^9, 3.908398536593797*^9}, {3.908398607154119*^9, 
+   3.908398652335915*^9}, {3.908630830378921*^9, 3.90863084576903*^9}, {
+   3.908975491833612*^9, 3.908975522492631*^9}, {3.908975666045314*^9, 
+   3.908975711042753*^9}, {3.908976051229232*^9, 3.908976178825238*^9}, {
+   3.913810107870986*^9, 3.913810533475247*^9}, {3.913810634111455*^9, 
+   3.913810644069963*^9}, {3.913810679147831*^9, 3.91381071872521*^9}, {
+   3.9138108312992373`*^9, 3.913810888253944*^9}, {3.913810965406918*^9, 
+   3.913811021243954*^9}, {3.913811051361785*^9, 3.91381106657822*^9}, {
+   3.9138110987262697`*^9, 3.913811100703505*^9}, {3.91402529255657*^9, 
+   3.914025351909107*^9}, {3.914025416733687*^9, 3.9140259055200663`*^9}, {
+   3.914025936874846*^9, 3.914025951556254*^9}, 3.914025996195584*^9, {
+   3.914027092732191*^9, 3.914027097367485*^9}, {3.914689729790235*^9, 
+   3.914689731758145*^9}, {3.914722046747615*^9, 3.9147220506395493`*^9}, {
+   3.914722493104393*^9, 3.914722498908587*^9}, {3.915036891845689*^9, 
+   3.9150368958269*^9}, {3.915037024343502*^9, 3.91503702475231*^9}, {
+   3.9150376744444027`*^9, 3.915037675054278*^9}, {3.91540499571329*^9, 
+   3.91540499994322*^9}},ExpressionUUID->"14d10e55-818a-4e9b-b649-\
+9dbf0ce9ade1"],
+
+Cell["1. Q5T.8, p. 82, matching interference patterns to cases", "Text",
+ CellChangeTimes->{{3.914027554425773*^9, 3.914027601937613*^9}, {
+   3.914027664703047*^9, 3.914027666089014*^9}, {3.914064282574464*^9, 
+   3.914064294837758*^9}, 3.914441391782222*^9, {3.91468973440301*^9, 
+   3.914689742479237*^9}, {3.914722073149221*^9, 3.914722107869542*^9}, {
+   3.9147221455701*^9, 3.914722186846393*^9}, {3.914722338118928*^9, 
+   3.914722452062908*^9}, 3.914722601645062*^9, {3.9147229161327887`*^9, 
+   3.914722925055081*^9}, {3.915036721207067*^9, 3.9150367440671883`*^9}, {
+   3.9150368210921*^9, 3.915036876015964*^9}, {3.915037046933207*^9, 
+   3.91503754596103*^9}, {3.915037689586566*^9, 3.915037838546407*^9}, {
+   3.91503788478733*^9, 3.915037885436859*^9}, {3.915037935447002*^9, 
+   3.915037936832982*^9}, {3.915404676675138*^9, 3.915404708161542*^9}, {
+   3.915404744344537*^9, 3.9154047743587723`*^9}, {3.915404823481412*^9, 
+   3.915404982617275*^9}},ExpressionUUID->"fb5fabc1-ba5b-48aa-964b-\
+716d3fe3caeb"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[StyleBox["The de Broglie Wavelength",
+ FontSize->16,
+ FontWeight->"Regular"]], "Subsection",
+ CellChangeTimes->{{3.907161511820457*^9, 3.907161517693348*^9}, {
+   3.9071757851311502`*^9, 3.907175786965211*^9}, 3.907818209992303*^9, {
+   3.9078191362206*^9, 3.90781913785112*^9}, {3.907819172116008*^9, 
+   3.907819176110496*^9}, {3.907820387875669*^9, 3.907820402108921*^9}, {
+   3.907820981764664*^9, 3.907821007358383*^9}, {3.907821038037771*^9, 
+   3.907821042290193*^9}, {3.907821088606534*^9, 3.9078210900352592`*^9}, {
+   3.907821135428946*^9, 3.907821158579274*^9}, {3.907821196245142*^9, 
+   3.907821237363723*^9}, {3.907821349401204*^9, 3.907821396425806*^9}, {
+   3.907821450908679*^9, 3.907821516779191*^9}, {3.908397878489965*^9, 
+   3.908397951028851*^9}, {3.908398041423287*^9, 3.908398058613622*^9}, {
+   3.908398130040098*^9, 3.908398139118972*^9}, {3.908398169156537*^9, 
+   3.908398192128955*^9}, {3.908398252159361*^9, 3.908398411595109*^9}, {
+   3.908398456684402*^9, 3.908398536593797*^9}, {3.908398607154119*^9, 
+   3.908398652335915*^9}, {3.908630830378921*^9, 3.90863084576903*^9}, {
+   3.908975491833612*^9, 3.908975522492631*^9}, {3.908975666045314*^9, 
+   3.908975711042753*^9}, {3.908976051229232*^9, 3.908976178825238*^9}, {
+   3.913810107870986*^9, 3.913810533475247*^9}, {3.913810634111455*^9, 
+   3.913810644069963*^9}, {3.913810679147831*^9, 3.91381071872521*^9}, {
+   3.9138108312992373`*^9, 3.913810888253944*^9}, {3.913810965406918*^9, 
+   3.913811021243954*^9}, {3.913811051361785*^9, 3.91381106657822*^9}, {
+   3.9138110987262697`*^9, 3.913811100703505*^9}, {3.91402529255657*^9, 
+   3.914025351909107*^9}, {3.914025416733687*^9, 3.9140259055200663`*^9}, {
+   3.914025936874846*^9, 3.914025951556254*^9}, 3.914025996195584*^9, {
+   3.914027092732191*^9, 3.914027097367485*^9}, {3.914689729790235*^9, 
+   3.914689731758145*^9}, {3.914722046747615*^9, 3.9147220506395493`*^9}, {
+   3.914722493104393*^9, 3.914722498908587*^9}, {3.915036891845689*^9, 
+   3.9150368958269*^9}, {3.915037024343502*^9, 3.91503702475231*^9}, {
+   3.9150376744444027`*^9, 3.915037675054278*^9}, {3.915405003002212*^9, 
+   3.9154050125191717`*^9}},ExpressionUUID->"5c867c8c-48e5-4768-9ae7-\
+52470f78d37e"],
+
+Cell["\<\
+2. Q5B.2, p. 83, the de Broglie wavelength of an electron with 3.2keV of energy
+3. Q5B.6, p. 83, the de Broglie wavelength of a thermal neutron\
+\>", "Text",
+ CellChangeTimes->{{3.914027554425773*^9, 3.914027601937613*^9}, {
+   3.914027664703047*^9, 3.914027666089014*^9}, {3.914064282574464*^9, 
+   3.914064294837758*^9}, 3.914441391782222*^9, {3.91468973440301*^9, 
+   3.914689742479237*^9}, {3.914722073149221*^9, 3.914722107869542*^9}, {
+   3.9147221455701*^9, 3.914722186846393*^9}, {3.914722338118928*^9, 
+   3.914722452062908*^9}, 3.914722601645062*^9, {3.9147229161327887`*^9, 
+   3.914722925055081*^9}, {3.915036721207067*^9, 3.9150367440671883`*^9}, {
+   3.9150368210921*^9, 3.915036876015964*^9}, {3.915037046933207*^9, 
+   3.91503754596103*^9}, {3.915037689586566*^9, 3.915037838546407*^9}, {
+   3.91503788478733*^9, 3.915037885436859*^9}, {3.915037935447002*^9, 
+   3.915037936832982*^9}, {3.915404676675138*^9, 3.915404708161542*^9}, {
+   3.915404744344537*^9, 3.9154047743587723`*^9}, {3.915404823481412*^9, 
+   3.915404986590542*^9}, {3.915405021173622*^9, 3.9154050217124557`*^9}, {
+   3.915405936319797*^9, 
+   3.9154059374001083`*^9}},ExpressionUUID->"8c4247d2-a174-47bb-90eb-\
+82963ca2f488"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[StyleBox["Interference patterns and the de Broglie wavelength",
+ FontSize->16,
+ FontWeight->"Regular"]], "Subsection",
+ CellChangeTimes->{{3.907161511820457*^9, 3.907161517693348*^9}, {
+   3.9071757851311502`*^9, 3.907175786965211*^9}, 3.907818209992303*^9, {
+   3.9078191362206*^9, 3.90781913785112*^9}, {3.907819172116008*^9, 
+   3.907819176110496*^9}, {3.907820387875669*^9, 3.907820402108921*^9}, {
+   3.907820981764664*^9, 3.907821007358383*^9}, {3.907821038037771*^9, 
+   3.907821042290193*^9}, {3.907821088606534*^9, 3.9078210900352592`*^9}, {
+   3.907821135428946*^9, 3.907821158579274*^9}, {3.907821196245142*^9, 
+   3.907821237363723*^9}, {3.907821349401204*^9, 3.907821396425806*^9}, {
+   3.907821450908679*^9, 3.907821516779191*^9}, {3.908397878489965*^9, 
+   3.908397951028851*^9}, {3.908398041423287*^9, 3.908398058613622*^9}, {
+   3.908398130040098*^9, 3.908398139118972*^9}, {3.908398169156537*^9, 
+   3.908398192128955*^9}, {3.908398252159361*^9, 3.908398411595109*^9}, {
+   3.908398456684402*^9, 3.908398536593797*^9}, {3.908398607154119*^9, 
+   3.908398652335915*^9}, {3.908630830378921*^9, 3.90863084576903*^9}, {
+   3.908975491833612*^9, 3.908975522492631*^9}, {3.908975666045314*^9, 
+   3.908975711042753*^9}, {3.908976051229232*^9, 3.908976178825238*^9}, {
+   3.913810107870986*^9, 3.913810533475247*^9}, {3.913810634111455*^9, 
+   3.913810644069963*^9}, {3.913810679147831*^9, 3.91381071872521*^9}, {
+   3.9138108312992373`*^9, 3.913810888253944*^9}, {3.913810965406918*^9, 
+   3.913811021243954*^9}, {3.913811051361785*^9, 3.91381106657822*^9}, {
+   3.9138110987262697`*^9, 3.913811100703505*^9}, {3.91402529255657*^9, 
+   3.914025351909107*^9}, {3.914025416733687*^9, 3.9140259055200663`*^9}, {
+   3.914025936874846*^9, 3.914025951556254*^9}, 3.914025996195584*^9, {
+   3.914027092732191*^9, 3.914027097367485*^9}, {3.914689729790235*^9, 
+   3.914689731758145*^9}, {3.914722046747615*^9, 3.9147220506395493`*^9}, {
+   3.914722493104393*^9, 3.914722498908587*^9}, {3.915036891845689*^9, 
+   3.9150368958269*^9}, {3.915037024343502*^9, 3.91503702475231*^9}, {
+   3.9150376744444027`*^9, 3.915037675054278*^9}, {3.915405003002212*^9, 
+   3.9154050485986853`*^9}},ExpressionUUID->"e8c01dde-1f1a-4549-9cc1-\
+33b29152d590"],
+
+Cell[TextData[{
+ "4. Q5M.3, p. 84, interference pattern using 50 keV electrons.\n5. Q5R.1, p. \
+85, a world in which ",
+ Cell[BoxData[
+  FormBox["h", TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "2aabd6dc-ebd3-45ee-b6ca-53447b6830c4"],
+ " is more than ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["10", "33"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "9537ed25-a2ea-48ed-925d-7173835d495b"],
+ " times to its actual value"
+}], "Text",
+ CellChangeTimes->{{3.914027554425773*^9, 3.914027601937613*^9}, {
+   3.914027664703047*^9, 3.914027666089014*^9}, {3.914064282574464*^9, 
+   3.914064294837758*^9}, 3.914441391782222*^9, {3.91468973440301*^9, 
+   3.914689742479237*^9}, {3.914722073149221*^9, 3.914722107869542*^9}, {
+   3.9147221455701*^9, 3.914722186846393*^9}, {3.914722338118928*^9, 
+   3.914722452062908*^9}, 3.914722601645062*^9, {3.9147229161327887`*^9, 
+   3.914722925055081*^9}, {3.915036721207067*^9, 3.9150367440671883`*^9}, {
+   3.9150368210921*^9, 3.915036876015964*^9}, {3.915037046933207*^9, 
+   3.91503754596103*^9}, {3.915037689586566*^9, 3.915037838546407*^9}, {
+   3.91503788478733*^9, 3.915037885436859*^9}, {3.915037935447002*^9, 
+   3.915037936832982*^9}, {3.915404676675138*^9, 3.915404708161542*^9}, {
+   3.915404744344537*^9, 3.9154047743587723`*^9}, {3.915404823481412*^9, 
+   3.915404986590542*^9}, {3.915405027518559*^9, 3.9154050969534693`*^9}, {
+   3.9154059014659977`*^9, 
+   3.9154059427645817`*^9}},ExpressionUUID->"61bda64f-dc43-435d-a961-\
+c7568201c82c"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{808, 905},
+WindowMargins->{{Automatic, 529}, {Automatic, 165}},
+PrintingCopies->10,
+PrintingPageRange->{1, Automatic},
+FrontEndVersion->"14.0 for Mac OS X ARM (64-bit) (December 12, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"94a17dbf-c624-4e0e-b97a-5ea811487e94"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 661, 12, 64, "Chapter",ExpressionUUID->"0a9f033e-46a1-4578-becc-919930044f24"],
+Cell[CellGroupData[{
+Cell[1266, 38, 1333, 22, 67, "Section",ExpressionUUID->"39b67822-fab3-4af4-9957-995e6360c459"],
+Cell[2602, 62, 1063, 20, 127, "Text",ExpressionUUID->"3b6a5969-ad38-4c54-8c4f-74267108b137"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3702, 87, 808, 12, 67, "Section",ExpressionUUID->"faa93989-4709-458d-af5a-643fa1caea91"],
+Cell[4513, 101, 5510, 136, 1027, "Text",ExpressionUUID->"4f1640a5-ee3d-4e22-b74f-dace00734250",
+ InitializationCell->True]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[10060, 242, 922, 13, 67, "Section",ExpressionUUID->"e0d51dc0-12b2-43d1-9537-65a0b526a33d"],
+Cell[CellGroupData[{
+Cell[11007, 259, 2223, 32, 49, "Subsection",ExpressionUUID->"14d10e55-818a-4e9b-b649-9dbf0ce9ade1"],
+Cell[13233, 293, 1022, 14, 35, "Text",ExpressionUUID->"fb5fabc1-ba5b-48aa-964b-716d3fe3caeb"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[14292, 312, 2231, 32, 49, "Subsection",ExpressionUUID->"5c867c8c-48e5-4768-9ae7-52470f78d37e"],
+Cell[16526, 346, 1221, 19, 58, "Text",ExpressionUUID->"8c4247d2-a174-47bb-90eb-82963ca2f488"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[17784, 370, 2257, 32, 49, "Subsection",ExpressionUUID->"e8c01dde-1f1a-4549-9cc1-33b29152d590"],
+Cell[20044, 404, 1541, 30, 58, "Text",ExpressionUUID->"61bda64f-dc43-435d-a961-c7568201c82c"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+

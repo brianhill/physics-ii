@@ -24,7 +24,7 @@ Course [home page](./)
 
 ### Week 5 &mdash; Spin and Complex Arithmetic
 
-* Tuesday, Feb. 6 &mdash; Let's start into both Q6 and QA: Study Sections Q6.1, Q6.2 and Q6.3 and QA.1 and QA.2 &mdash; Presentation from Emma, how the Balmer, Lyman, and Paschen wavelengths from Hydrogen were observed and cataloged &mdash; [Problem Set 6 - FORTHCOMING](http://404notfound.kr) for Tuesday
+* Tuesday, Feb. 6 &mdash; Let's start into both Q6 and complex variables: Study Sections Q6.1, Q6.2 and Q6.3 and the complex variables sections I photocopied for you &mdash; Presentation from Emma, how the Balmer, Lyman, and Paschen wavelengths from Hydrogen were observed and cataloged &mdash; [Problem Set 6](./assignments/AssignmentFor2024-02-06.nb.pdf) for Tuesday
 * Friday, Feb. 9 &mdash;
 
 ### Week 6 &mdash;
