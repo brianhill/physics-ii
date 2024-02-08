@@ -25,7 +25,7 @@ Course [home page](./)
 ### Week 5 &mdash; Spin and Complex Variables
 
 * Tuesday, Feb. 6 &mdash; We will start into both Q6 and complex variables: Study Sections Q6.1, Q6.2 and Q6.3 of Moore and Sections 1-4 of Churchill, Brown, and Verhey, *Complex Variables and Applications* &mdash; Presentation from Emma, how the Balmer, Lyman, and Paschen wavelengths from Hydrogen were observed and cataloged &mdash; [Problem Set 6](./assignments/AssignmentFor2024-02-06.nb.pdf) for Tuesday &mdash; [Angular Momentum and Magnetic Moment](./resources/AngularMomentumAndMagneticMoment.nb.pdf)
-* Friday, Feb. 9 &mdash; Finish Q6 of Moore and Sections 5 and 6 of Churchill, Brown, and Verhey &mdash; [Problem Set 7](./assignments/AssignmentFor2024-02-09.nb.pdf) for Friday
+* Friday, Feb. 9 &mdash; Finish Q6 of Moore and Sections 5 and 6 of Churchill, Brown, and Verhey &mdash; [Problem Set 7](./assignments/AssignmentFor2024-02-09.nb.pdf) for Friday &mdash; Presentation ideas: (1) Angular momentum, torque, and precession; the relevant material was Volume C, Chapter C6 of *Six Ideas;* (2) Magnetism, electromagnets, and the magnetic field in the Stern-Gerlach apparatus; the relevant material is Section Q6.3, perhaps [a photo of this nature](./resources/MagneticField.jpeg), plus illustrations and examples like [this material](https://ece.northeastern.edu/fac-ece/nian/mom/electromagnets.html) from a Nanhua University course; (3) I will say a little more about magnetic moments and doing a look ahead to Chapter Q7; (4) We could close with a look even farther ahead to Section Q8.4, Schrödinger's Cat; this is advanced stuff, and in fact, Moore has marked Q8 as optional
 
 ### Week 6 &mdash;
 
