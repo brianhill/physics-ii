@@ -1,0 +1,546 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     24932,        538]
+NotebookOptionsPosition[     23404,        499]
+NotebookOutlinePosition[     23859,        517]
+CellTagsIndexPosition[     23816,        514]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[TextData[StyleBox["Quantum Physics, Preparation for Friday, Feb. 9",
+ FontSize->30,
+ FontWeight->"Regular"]], "Chapter",
+ CellChangeTimes->CompressedData["
+1:eJxTTMoPSmViYGCQBGIQHW3awCoh/Nbx0r1tbCB6xap55opA+kJcsx2ITpu0
+dh6Izpp+FUz36B2tOAmkrxS5VoHocruFl+xF3jpGLr4GpsVOiUvtAdJ3L2SD
+6YSoD3ufib519JH6AaYnPy6MFxYHmqNSB6anNXdvCJN46ziJ5RqYdktmbngI
+pP+EXQLTW4ofX6+RfOv4amnQDRC9mmPqgssybx2vRj0D0/uyHlycKPvWMajB
+4RKIvlL/7yCn3FvHB1NZDoFoE6t5c+XlgfyshWDa0Kkq0U/hraNLQheYbsvM
+cnsHpHlk8sF02L+Y+/813jpWbXr9AETHWZwTz9R869grpSEBoh+keeQYa711
+PH2jHEy3TZiSuhZIG62anQai3XKbysO0gf5q2QCmvy1yOcOp89ZR/VYvmPZ6
+v9fFWPeto43VczDtoXTyzSwQ397xLYgGAN/4wFg=
+  "],ExpressionUUID->"0a9f033e-46a1-4578-becc-919930044f24"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Study the Rest of Q6 from ",
+ StyleBox["Six Ideas",
+  FontSlant->"Italic"]
+}], "Section",
+ CellChangeTimes->{{3.902343723737052*^9, 3.902343730587866*^9}, {
+   3.9023439641701307`*^9, 3.902343966937828*^9}, {3.902688223918044*^9, 
+   3.902688230735215*^9}, {3.902927388621001*^9, 3.902927388845333*^9}, {
+   3.903185111317635*^9, 3.9031851114748497`*^9}, {3.903185677918617*^9, 
+   3.903185681080297*^9}, {3.903796725116959*^9, 3.9037967397757053`*^9}, {
+   3.904412321628845*^9, 3.904412330728367*^9}, {3.904412390262915*^9, 
+   3.90441239044292*^9}, {3.905074491161355*^9, 3.905074491686904*^9}, {
+   3.9053588573516693`*^9, 3.905358857396717*^9}, {3.905676998035874*^9, 
+   3.905677018162091*^9}, {3.907427596733724*^9, 3.907427604529786*^9}, {
+   3.90806273936226*^9, 3.908062739665884*^9}, {3.908632769647766*^9, 
+   3.9086327697141438`*^9}, {3.909251854732857*^9, 3.909251855655531*^9}, {
+   3.9095791015115356`*^9, 3.909579101719631*^9}, {3.9138096774297543`*^9, 
+   3.913809681411528*^9}, {3.914025157191846*^9, 3.9140251598224773`*^9}, {
+   3.91402782937642*^9, 3.914027834258408*^9}, {3.914689778864653*^9, 
+   3.914689781259591*^9}, {3.914721675069018*^9, 3.914721675204649*^9}, 
+   3.9150355861516733`*^9, {3.915402855675628*^9, 3.915402855738867*^9}, {
+   3.916012075535839*^9, 3.916012084873894*^9}, {3.91601212294357*^9, 
+   3.916012123079932*^9}, {3.916224367912758*^9, 
+   3.916224368564904*^9}},ExpressionUUID->"39b67822-fab3-4af4-9957-\
+995e6360c459"],
+
+Cell["\<\
+Do as much review of torque and angular momentum as you have to to understand \
+the Stern-Gerlach apparatus.\
+\>", "Text",
+ InitializationCell->True,
+ CellChangeTimes->CompressedData["
+1:eJwdzFtIk2EAxvGhqSzFi8xiip8H5jEnOW0TPOA7BE1BzUiKSHEifBNtEIlU
+gqhDRC8UnSGeg5bzIhRTg6XDaEE1NTaRrAluOAO118w8MBX1fXbx8Lt5+Icr
+1UUVHgKBQMwGnc2W8s4QStLlryqgfcKqgkHWK5VQ+kFnh9bG6w74+r/TCf/8
+vBPQxSyZVwdDvUzNQdfMeBSMk2VHw9pvvyWw8J6eQBtJewRbB/p52CbKqoc+
+up0GuHnu/U/IUTKp5V2wNTDhjAulxHPNzyuUOZdXVp4fRol5ZU8FQ4akOijy
+LxyBVxWG+B3m4HFxBpzvT82Bl2863BrvN3yB7ynngCdm7QaMyZ3adv/l00dw
+U5nlggWamvXzGErKlor2of5sQaSKpeTa6ZoYrtQY+Epmj/TrE+i3dff4BTNS
++/wUJtw2VyfFUSJrUdTC5O4f3C3mlCg5Fv4KVjTJmEGuhxo4+FI+/JaZuX0w
+Bi9FGydmmaZP39/BycRxAwxYX5yB/FjVMrRFtrnt3eqzQV+FxW3E5wjxKvPp
+qiQKPv6Y01N8g3WdvjrolWm2COMp2TUp7bDAyOcmSSiZ1bfXwTejKX97mf6G
+0j347IHmENZNd5zAC702H9E=
+  "],ExpressionUUID->"3b6a5969-ad38-4c54-8c4f-74267108b137"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Continue Studying Churchill, Brown, and Verhey (CBV)", "Section",
+ CellChangeTimes->{{3.902343723737052*^9, 3.902343730587866*^9}, {
+   3.9023439641701307`*^9, 3.902343966937828*^9}, {3.902688223918044*^9, 
+   3.902688230735215*^9}, {3.902927388621001*^9, 3.902927388845333*^9}, {
+   3.903185111317635*^9, 3.9031851114748497`*^9}, {3.903185677918617*^9, 
+   3.903185681080297*^9}, {3.903796725116959*^9, 3.9037967397757053`*^9}, {
+   3.904412321628845*^9, 3.904412330728367*^9}, {3.904412390262915*^9, 
+   3.90441239044292*^9}, {3.905074491161355*^9, 3.905074491686904*^9}, {
+   3.9053588573516693`*^9, 3.905358857396717*^9}, {3.905676998035874*^9, 
+   3.905677018162091*^9}, {3.907427596733724*^9, 3.907427604529786*^9}, {
+   3.90806273936226*^9, 3.908062739665884*^9}, {3.908632769647766*^9, 
+   3.9086327697141438`*^9}, {3.909251854732857*^9, 3.909251855655531*^9}, {
+   3.9095791015115356`*^9, 3.909579101719631*^9}, {3.9138096774297543`*^9, 
+   3.913809681411528*^9}, {3.914025157191846*^9, 3.9140251598224773`*^9}, {
+   3.91402782937642*^9, 3.914027834258408*^9}, {3.914689778864653*^9, 
+   3.914689781259591*^9}, {3.914721675069018*^9, 3.914721675204649*^9}, 
+   3.9150355861516733`*^9, {3.915402855675628*^9, 3.915402855738867*^9}, {
+   3.916012075535839*^9, 3.916012084873894*^9}, {3.91601212294357*^9, 
+   3.916012123079932*^9}, {3.916012523822936*^9, 3.91601253322706*^9}, {
+   3.916012605030512*^9, 3.916012605531473*^9}, {3.916012648341316*^9, 
+   3.916012677040611*^9}, {3.9160127976189737`*^9, 3.916012805857299*^9}, {
+   3.916013644257639*^9, 3.916013650006707*^9}, {3.9162245384469643`*^9, 
+   3.9162245461733923`*^9}, {3.916224583805204*^9, 
+   3.916224585784284*^9}},ExpressionUUID->"1003eebb-cfa2-419d-aae6-\
+c5974152eceb"],
+
+Cell["\<\
+You have already studied Sections 1-4 of CBV. Continue into Sections 5 and 6. \
+That will be enough complex variables to get you going in quantum mechanics. \
+As interesting as Sections 7 and 8 are, we won\[CloseCurlyQuote]t need them. \
+\
+\>", "Text",
+ InitializationCell->True,
+ CellChangeTimes->CompressedData["
+1:eJwdzF1IU2EAxvFhrZizLjKVo3is4dxcTmzOs4syfIeQGaQpSREGmw3OpFpE
+IpQgK5HQi8CWSJoaNNpNKEsTlg4rg2qabBKZE9xwBWqv2BdxbKjvs4uH383D
+/7DVUWNLkslkGjYYaw82dGVTUmp6YoMRb8gOM0MHGqHhlTsCQ3cyovDp71gM
+/vh6NvUB89K0Iwt6BAcPpfHhPKgTTmpg88fvelh9zkNgmByvhx2P+0TYyZW3
+wr3udSdc2d7zU8FTMuISJdiRVrjF51CyaylFnsOcPG1pOHOIksD8LzvMHjC4
+Ibe/+hk8aPYVrDP7N+tOwOm+YxUwuSia0H/e+R6OUT4K/wdc36C2cnQt8Te9
+/AdXrOUSrGprWt7WUmKZq/kDPVsznD2fkvT4Ui6cb/KJjcwew4cbMGW1dvM2
+U+26FYeFpwJXi3WUCPfMzdD48AtfwhzljPlwIct8V2BmShfbYH+3afA5s2zt
+7xDcrfF7J5hTb2dfwJGjwz6YuvxpHIpDVz7DsLoz4aPV3jBUmoMJVe9UuYvM
+m4v6PHjtdUVP3RHWjSndUF4WCCoKKNmYskZglV+sLNZTMuG53wInbRe6YEv9
+dS8sUkpxmC4K+4xMRYmdgzMDahV80+7UwkFLtw5ezhDlvcyx2tI0uANzMy4u
+
+  "],ExpressionUUID->"9e431e2d-18b8-4124-b6d3-8d34cd1c6e1a"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["For Problem Set 7", "Section",
+ CellChangeTimes->{{3.902343723737052*^9, 3.902343730587866*^9}, {
+   3.9023439641701307`*^9, 3.902343966937828*^9}, {3.902344048197321*^9, 
+   3.902344075298213*^9}, {3.902688246879025*^9, 3.902688255429075*^9}, {
+   3.902927393209742*^9, 3.9029273996228228`*^9}, {3.9031854584896*^9, 
+   3.9031854607388773`*^9}, {3.905358887040047*^9, 3.905358891225012*^9}, {
+   3.907161370767453*^9, 3.907161371892496*^9}, {3.907817203385817*^9, 
+   3.907817203622153*^9}, {3.908397850368978*^9, 3.908397850605451*^9}, {
+   3.908975480013135*^9, 3.908975480438824*^9}, 3.913809991562726*^9, {
+   3.914025287063518*^9, 3.914025287355214*^9}, {3.914439626346298*^9, 
+   3.914439630982443*^9}, {3.914689365971838*^9, 3.9146893660493383`*^9}, {
+   3.91503638438058*^9, 3.9150363844229403`*^9}, {3.915404626934729*^9, 
+   3.915404627137566*^9}, {3.9160129529132*^9, 3.916012953068987*^9}, {
+   3.916224693033696*^9, 
+   3.91622469327033*^9}},ExpressionUUID->"e0d51dc0-12b2-43d1-9537-\
+65a0b526a33d"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[StyleBox["Complex variables, powers, exponentials, and \
+derivatives",
+ FontSize->16,
+ FontWeight->"Regular"]], "Subsection",
+ CellChangeTimes->{{3.907161511820457*^9, 3.907161517693348*^9}, {
+   3.9071757851311502`*^9, 3.907175786965211*^9}, 3.907818209992303*^9, {
+   3.9078191362206*^9, 3.90781913785112*^9}, {3.907819172116008*^9, 
+   3.907819176110496*^9}, {3.907820387875669*^9, 3.907820402108921*^9}, {
+   3.907820981764664*^9, 3.907821007358383*^9}, {3.907821038037771*^9, 
+   3.907821042290193*^9}, {3.907821088606534*^9, 3.9078210900352592`*^9}, {
+   3.907821135428946*^9, 3.907821158579274*^9}, {3.907821196245142*^9, 
+   3.907821237363723*^9}, {3.907821349401204*^9, 3.907821396425806*^9}, {
+   3.907821450908679*^9, 3.907821516779191*^9}, {3.908397878489965*^9, 
+   3.908397951028851*^9}, {3.908398041423287*^9, 3.908398058613622*^9}, {
+   3.908398130040098*^9, 3.908398139118972*^9}, {3.908398169156537*^9, 
+   3.908398192128955*^9}, {3.908398252159361*^9, 3.908398411595109*^9}, {
+   3.908398456684402*^9, 3.908398536593797*^9}, {3.908398607154119*^9, 
+   3.908398652335915*^9}, {3.908630830378921*^9, 3.90863084576903*^9}, {
+   3.908975491833612*^9, 3.908975522492631*^9}, {3.908975666045314*^9, 
+   3.908975711042753*^9}, {3.908976051229232*^9, 3.908976178825238*^9}, {
+   3.913810107870986*^9, 3.913810533475247*^9}, {3.913810634111455*^9, 
+   3.913810644069963*^9}, {3.913810679147831*^9, 3.91381071872521*^9}, {
+   3.9138108312992373`*^9, 3.913810888253944*^9}, {3.913810965406918*^9, 
+   3.913811021243954*^9}, {3.913811051361785*^9, 3.91381106657822*^9}, {
+   3.9138110987262697`*^9, 3.913811100703505*^9}, {3.91402529255657*^9, 
+   3.914025351909107*^9}, {3.914025416733687*^9, 3.9140259055200663`*^9}, {
+   3.914025936874846*^9, 3.914025951556254*^9}, 3.914025996195584*^9, {
+   3.914027092732191*^9, 3.914027097367485*^9}, {3.914689729790235*^9, 
+   3.914689731758145*^9}, {3.914722046747615*^9, 3.9147220506395493`*^9}, {
+   3.914722493104393*^9, 3.914722498908587*^9}, {3.915036891845689*^9, 
+   3.9150368958269*^9}, {3.915037024343502*^9, 3.91503702475231*^9}, {
+   3.9150376744444027`*^9, 3.915037675054278*^9}, {3.91540499571329*^9, 
+   3.91540499994322*^9}, {3.916012997305713*^9, 3.916013003481572*^9}, {
+   3.916224696647458*^9, 3.916224698748835*^9}, {3.916226083811907*^9, 
+   3.916226091304624*^9}},ExpressionUUID->"14d10e55-818a-4e9b-b649-\
+9dbf0ce9ade1"],
+
+Cell[TextData[{
+ "1. In the last problem on Problem Set 6, you found that\n\n(",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SuperscriptBox[
+     RowBox[{
+      RowBox[{
+       RowBox[{"cos", " ", "\[Theta]"}], " ", "+", " ", 
+       RowBox[{"i", "\[VeryThinSpace]", "sin\[Theta]"}]}], ")"}], "3"], "=", 
+    RowBox[{"cos3\[Theta]", "+", 
+     RowBox[{
+     "i", "\[VeryThinSpace]", "sin", "\[VeryThinSpace]", "3", 
+      "\[Theta]"}]}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "ef785b67-0620-4b88-b2f3-0cfe8b17a623"],
+ "\n\nYou used trig identities to do it. Now we will stand this problem on \
+its head. We will derive trig identities from the general formula:\n\n(",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SuperscriptBox[
+     RowBox[{
+      RowBox[{
+       RowBox[{"cos", " ", "\[Theta]"}], " ", "+", " ", 
+       RowBox[{"i", "\[VeryThinSpace]", "sin\[Theta]"}]}], ")"}], "n"], "=", 
+    RowBox[{
+     RowBox[{"cos", "\[VeryThinSpace]", "n", "\[VeryThinSpace]", "\[Theta]"}],
+      "+", 
+     RowBox[{
+     "i", "\[VeryThinSpace]", "sin", "\[VeryThinSpace]", "n", 
+      "\[VeryThinSpace]", "\[Theta]"}]}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "01dda4f4-e0dc-4fcb-a686-3094717cd16b"],
+ "\n\n(a) Write down the equation above for ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"n", "=", "2"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "45e95751-602e-45fc-b8d9-f11adf281173"],
+ " and FOIL the square into four terms, two of which are the same. Now it \
+must be true that the real part of the LHS equals the real part of the RHS. \
+It must also be true that the imaginary part of the LHS equals the imaginary \
+part of the RHS. Use those two facts to write down trig identities for ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"cos", "\[VeryThinSpace]", "2", "\[VeryThinSpace]", "\[Theta]"}], 
+   TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "5020c06c-3edb-47a3-a90b-010a695dbb57"],
+ " and ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"sin", "\[VeryThinSpace]", "2", "\[VeryThinSpace]", "\[Theta]"}], 
+   TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "df746194-8d2c-42dc-ba5c-5b65e46a2013"],
+ ".\n\n(b) Write down the equation above for ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"n", "=", "4"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "d73c6bcf-c3a0-4a9d-84e7-abd78fe06e2f"],
+ ". Expand the LHS into 16 terms, a bunch of which are the same, but save \
+yourself a bunch of time, by using using the fourth row of Pascal\
+\[CloseCurlyQuote]s triangle, which is 1   4   6   4   1. As in part (a) use \
+the real part of the resulting equation and the imaginary part to get trig \
+identities for ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"cos", "\[VeryThinSpace]", "4", "\[VeryThinSpace]", "\[Theta]"}], 
+   TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "02f6e7f4-99f9-475b-8921-d7add83056d3"],
+ " and ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"sin", "\[VeryThinSpace]", "4", "\[VeryThinSpace]", "\[Theta]"}], 
+   TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "f769c879-ac64-41e1-a25c-bf0886f51a9e"],
+ ".\n\n(CONT\[CloseCurlyQuote]D on reverse)\n\n2. Problem 2 on p. 17 of CBV\n\
+\n3. Assuming ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+   "i", ",", " ", "p", ",", " ", "\[Omega]", ",", " ", "E", ",", " ", 
+    RowBox[{"and", " ", "\[HBar]"}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "2c810037-bea8-4db2-80de-fb841d790ba5"],
+ " are constants and that the usual rules for taking derivatives of \
+exponentials remain true for complex exponentials, what are the following \
+derivatives:\n\n(a) ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"i\[HBar]", 
+    FractionBox["d", 
+     RowBox[{"d", "\[VeryThinSpace]", "t"}]], 
+    SuperscriptBox["e", 
+     RowBox[{
+      RowBox[{"-", "i"}], "\[VeryThinSpace]", "E", "\[VeryThinSpace]", 
+      RowBox[{"t", "/", "\[HBar]"}]}]]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "32d9c2ad-54af-475e-acd9-b0b899866c04"],
+ "\n\n(b) ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"-", "i\[HBar]"}], 
+    FractionBox["d", 
+     RowBox[{"d", "\[VeryThinSpace]", "x"}]], 
+    SuperscriptBox["e", 
+     RowBox[{"i", "\[VeryThinSpace]", "p", "\[VeryThinSpace]", 
+      RowBox[{"x", "/", "\[HBar]"}]}]]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "953aff91-dec4-4b4f-8d31-23a1d0cd0b37"],
+ "\n\n(c) ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"-", 
+     FractionBox[
+      SuperscriptBox["\[HBar]", "2"], 
+      RowBox[{"2", "m"}]]}], 
+    FractionBox[
+     SuperscriptBox["d", "2"], 
+     RowBox[{"d", "\[VeryThinSpace]", 
+      SuperscriptBox["x", "2"]}]], 
+    SuperscriptBox["e", 
+     RowBox[{"i", "\[VeryThinSpace]", "p", "\[VeryThinSpace]", 
+      RowBox[{"x", "/", "\[HBar]"}]}]]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "14e718d7-a92c-4cdc-bf13-fa14f6d3649b"],
+ "\n\n(d) ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"i\[HBar]", " ", 
+     RowBox[{
+      FractionBox["\[PartialD]", 
+       RowBox[{"\[PartialD]", "\[VeryThinSpace]", "t"}]], 
+      RowBox[{"(", "\[VeryThinSpace]", 
+       RowBox[{
+        SuperscriptBox["e", 
+         RowBox[{
+          RowBox[{"-", "i"}], "\[VeryThinSpace]", "E", "\[VeryThinSpace]", 
+          RowBox[{"t", "/", "\[HBar]"}]}]], 
+        SuperscriptBox["e", 
+         RowBox[{"i", "\[VeryThinSpace]", "p", "\[VeryThinSpace]", 
+          RowBox[{"x", "/", "\[HBar]"}]}]]}], ")"}]}]}], "=", 
+    RowBox[{
+     RowBox[{"-", 
+      FractionBox[
+       SuperscriptBox["\[HBar]", "2"], 
+       RowBox[{"2", "m"}]]}], 
+     RowBox[{
+      FractionBox[
+       SuperscriptBox["\[PartialD]", "2"], 
+       RowBox[{"\[PartialD]", "\[VeryThinSpace]", 
+        SuperscriptBox["x", "2"]}]], 
+      RowBox[{"(", 
+       RowBox[{
+        SuperscriptBox["e", 
+         RowBox[{
+          RowBox[{"-", "i"}], "\[VeryThinSpace]", "E", "\[VeryThinSpace]", 
+          RowBox[{"t", "/", "\[HBar]"}]}]], 
+        SuperscriptBox["e", 
+         RowBox[{"i", "\[VeryThinSpace]", "p", "\[VeryThinSpace]", 
+          RowBox[{"x", "/", "\[HBar]"}]}]]}], ")"}]}]}]}], TraditionalForm]],
+  ExpressionUUID->"2c57ca25-b8b3-4f1b-a368-4396da400eb7"],
+ "\n\nIn the last equation I switched from ",
+ Cell[BoxData[
+  FormBox["d", TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "39eeb010-a629-475f-94d4-5615a0a1b76d"],
+ " to \[PartialD] because both ",
+ Cell[BoxData[
+  FormBox["t", TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "747a5302-ab1d-49f7-80b0-8c4b2f3284cc"],
+ " and ",
+ Cell[BoxData[
+  FormBox["x", TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "bd583f19-afb7-49f7-ae10-06f5eb22e17f"],
+ " are present in the function you are differentiating, but the derivatives \
+work exactly the same way as they did in parts (a) and (c).\n\n(e) Assuming \
+",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SuperscriptBox["e", 
+     RowBox[{
+      RowBox[{"-", "i"}], "\[VeryThinSpace]", "E", "\[VeryThinSpace]", 
+      RowBox[{"t", "/", "\[HBar]"}]}]], 
+    SuperscriptBox["e", 
+     RowBox[{"i", "\[VeryThinSpace]", "p", "\[VeryThinSpace]", 
+      RowBox[{"x", "/", "\[HBar]"}]}]]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "8f3500c5-9844-4eac-8ece-794744942eb4"],
+ " is some kind of wave function, and (d) is some kind of wave equation, what \
+must the relationship between ",
+ Cell[BoxData[
+  FormBox["E", TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "4c51530a-b569-4fb9-8d9f-9c0ddab3f278"],
+ " and ",
+ Cell[BoxData[
+  FormBox["p", TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "ab7f13b7-aa2c-423b-a331-1b269a550855"],
+ " be for the equation to be satisfied?"
+}], "Text",
+ CellChangeTimes->{{3.914027554425773*^9, 3.914027601937613*^9}, {
+   3.914027664703047*^9, 3.914027666089014*^9}, {3.914064282574464*^9, 
+   3.914064294837758*^9}, 3.914441391782222*^9, {3.91468973440301*^9, 
+   3.914689742479237*^9}, {3.914722073149221*^9, 3.914722107869542*^9}, {
+   3.9147221455701*^9, 3.914722186846393*^9}, {3.914722338118928*^9, 
+   3.914722452062908*^9}, 3.914722601645062*^9, {3.9147229161327887`*^9, 
+   3.914722925055081*^9}, {3.915036721207067*^9, 3.9150367440671883`*^9}, {
+   3.9150368210921*^9, 3.915036876015964*^9}, {3.915037046933207*^9, 
+   3.91503754596103*^9}, {3.915037689586566*^9, 3.915037838546407*^9}, {
+   3.91503788478733*^9, 3.915037885436859*^9}, {3.915037935447002*^9, 
+   3.915037936832982*^9}, {3.915404676675138*^9, 3.915404708161542*^9}, {
+   3.915404744344537*^9, 3.9154047743587723`*^9}, {3.915404823481412*^9, 
+   3.915404982617275*^9}, {3.9160130114584513`*^9, 3.916013060588373*^9}, {
+   3.916013170606229*^9, 3.916013179719303*^9}, {3.9162247402978354`*^9, 
+   3.916225194201651*^9}, {3.916225331976372*^9, 3.916225612189252*^9}, {
+   3.9162256424857388`*^9, 3.916226056969962*^9}, {3.916226393805756*^9, 
+   3.916226397203864*^9}, {3.9162266125522957`*^9, 
+   3.916226621082836*^9}},ExpressionUUID->"fb5fabc1-ba5b-48aa-964b-\
+716d3fe3caeb"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[StyleBox[" Quantum Mechanics With the Stern-Gerlach Apparatus",
+ FontSize->16,
+ FontWeight->"Regular"]], "Subsection",
+ CellChangeTimes->{{3.907161511820457*^9, 3.907161517693348*^9}, {
+   3.9071757851311502`*^9, 3.907175786965211*^9}, 3.907818209992303*^9, {
+   3.9078191362206*^9, 3.90781913785112*^9}, {3.907819172116008*^9, 
+   3.907819176110496*^9}, {3.907820387875669*^9, 3.907820402108921*^9}, {
+   3.907820981764664*^9, 3.907821007358383*^9}, {3.907821038037771*^9, 
+   3.907821042290193*^9}, {3.907821088606534*^9, 3.9078210900352592`*^9}, {
+   3.907821135428946*^9, 3.907821158579274*^9}, {3.907821196245142*^9, 
+   3.907821237363723*^9}, {3.907821349401204*^9, 3.907821396425806*^9}, {
+   3.907821450908679*^9, 3.907821516779191*^9}, {3.908397878489965*^9, 
+   3.908397951028851*^9}, {3.908398041423287*^9, 3.908398058613622*^9}, {
+   3.908398130040098*^9, 3.908398139118972*^9}, {3.908398169156537*^9, 
+   3.908398192128955*^9}, {3.908398252159361*^9, 3.908398411595109*^9}, {
+   3.908398456684402*^9, 3.908398536593797*^9}, {3.908398607154119*^9, 
+   3.908398652335915*^9}, {3.908630830378921*^9, 3.90863084576903*^9}, {
+   3.908975491833612*^9, 3.908975522492631*^9}, {3.908975666045314*^9, 
+   3.908975711042753*^9}, {3.908976051229232*^9, 3.908976178825238*^9}, {
+   3.913810107870986*^9, 3.913810533475247*^9}, {3.913810634111455*^9, 
+   3.913810644069963*^9}, {3.913810679147831*^9, 3.91381071872521*^9}, {
+   3.9138108312992373`*^9, 3.913810888253944*^9}, {3.913810965406918*^9, 
+   3.913811021243954*^9}, {3.913811051361785*^9, 3.91381106657822*^9}, {
+   3.9138110987262697`*^9, 3.913811100703505*^9}, {3.91402529255657*^9, 
+   3.914025351909107*^9}, {3.914025416733687*^9, 3.9140259055200663`*^9}, {
+   3.914025936874846*^9, 3.914025951556254*^9}, 3.914025996195584*^9, {
+   3.914027092732191*^9, 3.914027097367485*^9}, {3.914689729790235*^9, 
+   3.914689731758145*^9}, {3.914722046747615*^9, 3.9147220506395493`*^9}, {
+   3.914722493104393*^9, 3.914722498908587*^9}, {3.915036891845689*^9, 
+   3.9150368958269*^9}, {3.915037024343502*^9, 3.91503702475231*^9}, {
+   3.9150376744444027`*^9, 3.915037675054278*^9}, {3.91540499571329*^9, 
+   3.91540499994322*^9}, {3.916012997305713*^9, 3.916013003481572*^9}, {
+   3.916013147451878*^9, 3.916013156272139*^9}, 3.916225942124301*^9, {
+   3.916226268743414*^9, 
+   3.91622629904097*^9}},ExpressionUUID->"877fda25-8664-4b02-b24c-\
+a710450cce35"],
+
+Cell["\<\
+4. Q6B.2, p. 99
+5. Q6B.4, p. 99
+6. Q6M.4, p. 99 classical precession, review Section Q6.3 before attempting \
+this problem\
+\>", "Text",
+ CellChangeTimes->{{3.914027554425773*^9, 3.914027601937613*^9}, {
+   3.914027664703047*^9, 3.914027666089014*^9}, {3.914064282574464*^9, 
+   3.914064294837758*^9}, 3.914441391782222*^9, {3.91468973440301*^9, 
+   3.914689742479237*^9}, {3.914722073149221*^9, 3.914722107869542*^9}, {
+   3.9147221455701*^9, 3.914722186846393*^9}, {3.914722338118928*^9, 
+   3.914722452062908*^9}, 3.914722601645062*^9, {3.9147229161327887`*^9, 
+   3.914722925055081*^9}, {3.915036721207067*^9, 3.9150367440671883`*^9}, {
+   3.9150368210921*^9, 3.915036876015964*^9}, {3.915037046933207*^9, 
+   3.91503754596103*^9}, {3.915037689586566*^9, 3.915037838546407*^9}, {
+   3.91503788478733*^9, 3.915037885436859*^9}, {3.915037935447002*^9, 
+   3.915037936832982*^9}, {3.915404676675138*^9, 3.915404708161542*^9}, {
+   3.915404744344537*^9, 3.9154047743587723`*^9}, {3.915404823481412*^9, 
+   3.915404982617275*^9}, {3.9160130114584513`*^9, 3.916013060588373*^9}, {
+   3.916013182417132*^9, 3.9160132021405993`*^9}, {3.916013279195743*^9, 
+   3.916013303977547*^9}, {3.916013342490182*^9, 3.916013512620882*^9}, {
+   3.9160139376585703`*^9, 3.91601394250543*^9}, {3.916014030403563*^9, 
+   3.916014251259389*^9}, {3.916014296308814*^9, 3.916014414684978*^9}, {
+   3.916014581368967*^9, 3.916014637935748*^9}, {3.9162262531065474`*^9, 
+   3.916226259979986*^9}, {3.916226316671084*^9, 3.91622631896768*^9}, {
+   3.916226381404449*^9, 3.916226418712573*^9}, {3.9162264742786083`*^9, 
+   3.916226518792973*^9}, {3.916226560240786*^9, 
+   3.916226567305512*^9}},ExpressionUUID->"19581813-8f39-469d-97ad-\
+eb1372b32991"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{808, 905},
+WindowMargins->{{426, Automatic}, {-314, Automatic}},
+PrintingCopies->10,
+PrintingPageRange->{1, Automatic},
+FrontEndVersion->"14.0 for Mac OS X ARM (64-bit) (December 12, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"94a17dbf-c624-4e0e-b97a-5ea811487e94"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 691, 12, 64, "Chapter",ExpressionUUID->"0a9f033e-46a1-4578-becc-919930044f24"],
+Cell[CellGroupData[{
+Cell[1296, 38, 1488, 24, 67, "Section",ExpressionUUID->"39b67822-fab3-4af4-9957-995e6360c459"],
+Cell[2787, 64, 892, 17, 58, "Text",ExpressionUUID->"3b6a5969-ad38-4c54-8c4f-74267108b137",
+ InitializationCell->True]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3716, 86, 1749, 24, 67, "Section",ExpressionUUID->"1003eebb-cfa2-419d-aae6-c5974152eceb"],
+Cell[5468, 112, 1059, 20, 58, "Text",ExpressionUUID->"9e431e2d-18b8-4124-b6d3-8d34cd1c6e1a",
+ InitializationCell->True]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6564, 137, 1019, 15, 67, "Section",ExpressionUUID->"e0d51dc0-12b2-43d1-9537-65a0b526a33d"],
+Cell[CellGroupData[{
+Cell[7608, 156, 2406, 35, 49, "Subsection",ExpressionUUID->"14d10e55-818a-4e9b-b649-9dbf0ce9ade1"],
+Cell[10017, 193, 9145, 231, 935, "Text",ExpressionUUID->"fb5fabc1-ba5b-48aa-964b-716d3fe3caeb"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[19199, 429, 2424, 35, 49, "Subsection",ExpressionUUID->"877fda25-8664-4b02-b24c-a710450cce35"],
+Cell[21626, 466, 1738, 28, 81, "Text",ExpressionUUID->"19581813-8f39-469d-97ad-eb1372b32991"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+

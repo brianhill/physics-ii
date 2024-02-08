@@ -22,10 +22,10 @@ Course [home page](./)
 * Tuesday, Jan. 30 &mdash; Six Ideas Q5 &mdash; Black-body radiation and the resulting appearance of [bluish stars, white and yellowish stars, and reddish stars](./resources/BlackBodyRadiationII.png) &mdash; Presentations on Q1 to Q4: Emma and Ethan, Q1R.1, a slightly tricky Doppler shift problem; Hexi and Miles, Q2R.2, pulsation frequency of variable stars; Rebecca and Ren, Q3R.1, passing by foghorns; Trey, the energy levels and photon spectrum of hydrogen &mdash; [Problem Set 5](./assignments/AssignmentFor2024-01-30.nb.pdf) for Tuesday &mdash; Discussion of interference patterns in the first problem of Problem Set 5 &mdash; A look ahead at Q6, spin, beginning with a comparison of the units of angular momentum with the units of *h*
 * Friday, Feb. 2 &mdash; [Exam 1](./exams/Exam1.nb.pdf)
 
-### Week 5 &mdash; Spin and Complex Arithmetic
+### Week 5 &mdash; Spin and Complex Variables
 
-* Tuesday, Feb. 6 &mdash; Let's start into both Q6 and complex variables: Study Sections Q6.1, Q6.2 and Q6.3 and the complex variables sections I photocopied for you &mdash; Presentation from Emma, how the Balmer, Lyman, and Paschen wavelengths from Hydrogen were observed and cataloged &mdash; [Problem Set 6](./assignments/AssignmentFor2024-02-06.nb.pdf) for Tuesday &mdash; [Angular Momentum and Magnetic Moment](./resources/AngularMomentumAndMagneticMoment.nb.pdf)
-* Friday, Feb. 9 &mdash;
+* Tuesday, Feb. 6 &mdash; We will start into both Q6 and complex variables: Study Sections Q6.1, Q6.2 and Q6.3 of Moore and Sections 1-4 of Churchill, Brown, and Verhey, *Complex Variables and Applications* &mdash; Presentation from Emma, how the Balmer, Lyman, and Paschen wavelengths from Hydrogen were observed and cataloged &mdash; [Problem Set 6](./assignments/AssignmentFor2024-02-06.nb.pdf) for Tuesday &mdash; [Angular Momentum and Magnetic Moment](./resources/AngularMomentumAndMagneticMoment.nb.pdf)
+* Friday, Feb. 9 &mdash; Finish Q6 of Moore and Sections 5 and 6 of Churchill, Brown, and Verhey &mdash; [Problem Set 7](./assignments/AssignmentFor2024-02-09.nb.pdf) for Friday
 
 ### Week 6 &mdash;
 
@@ -36,4 +36,4 @@ Course [home page](./)
 
 * Tuesday, Feb. 20 &mdash; Exam 2
 
-<img src="./resources/SternGerlach.png" alt="Stern-Gerlach schematic" width="75%">
+<img src="./resources/MagneticField.jpeg" alt="Compasses in the vicinity of a bar magnet" width="75%">
