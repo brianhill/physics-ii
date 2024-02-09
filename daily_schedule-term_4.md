@@ -2,6 +2,8 @@
 
 Course [home page](./)
 
+See also [Daily Schedule-Term 5](./daily_schedule-term_5.html)
+
 ### Week 1 &mdash; Waves &mdash; Principle of Superposition
 
 * Tuesday, Jan. 9 &mdash; Study *Six Ideas* Q1.1 to Q1.3 &mdash; Choose a problem to present from the end of Chapter Q1 and pair up with someone to discuss both problems and then present one of your two problems jointly &mdash; Study and complete the handout/worksheet on compression waves that I set out across from the copier
@@ -24,12 +26,12 @@ Course [home page](./)
 
 ### Week 5 &mdash; Spin and Complex Variables
 
-* Tuesday, Feb. 6 &mdash; We will start into both Q6 and complex variables &mdash; Study Sections Q6.1, Q6.2 and Q6.3 of Moore &mdash; Study Sections 1-4 of Churchill, Brown, and Verhey, *Complex Variables and Applications* &mdash; Presentation from Emma, how the Balmer, Lyman, and Paschen wavelengths from Hydrogen were observed and cataloged &mdash; [Problem Set 6](./assignments/AssignmentFor2024-02-06.nb.pdf) for Tuesday &mdash; Lecture and handout on [Spin Angular Momentum and Magnetic Moment of the Electron](./resources/AngularMomentumAndMagneticMoment.nb.pdf)
-* Friday, Feb. 9 &mdash; Finish studying Chapter Q6 of Moore &mdash; Study Sections 5 and 6 of Churchill, Brown, and Verhey &mdash; [Problem Set 7](./assignments/AssignmentFor2024-02-09.nb.pdf) for Friday &mdash; Presentation ideas: (1) Angular momentum, torque, and precession; the relevant material was Volume C, Chapter C6 of *Six Ideas;* (2) Magnetism, electromagnets, and the magnetic field in the Stern-Gerlach apparatus; the relevant material is Section Q6.3, perhaps [a photo like this one by Dana Mason](./resources/MagneticField.jpeg), plus illustrations and examples like [this material](./resources/BE-Ch12-MagneticCircuits.pdf) from a Nanhua University course; (3) I will say a little more about magnetic moments and then do a look ahead to Chapter Q7; (4) We could close with a look even farther ahead to Section Q8.4, Schrödinger's Cat; this is advanced stuff, and in fact, Moore has marked Q8 as optional
+* Tuesday, Feb. 6 &mdash; We will start into both Q6 and complex variables &mdash; Study Sections Q6.1, Q6.2 and Q6.3 of Moore &mdash; Study Sections 1-4 of Churchill, Brown, and Verhey, *Complex Variables and Applications* &mdash; Presentation from Emma, how the Balmer, Lyman, and Paschen wavelengths from Hydrogen were observed and cataloged &mdash; [Problem Set 6](./assignments/AssignmentFor2024-02-06.nb.pdf) for Tuesday &mdash; Lecture and handout on [Electron Spin and Magnetic Moment](./resources/ElectronSpinAndMagneticMoment.nb.pdf) &mdash; It is annoying just how many web sources there are with oversimplified versions of the Stern-Gerlach apparatus (so many that it is almost impossible to see how it is actually done) &mdash; Here is a description of an actual [MIT Stern-Gerlach lab](./resources/MITSternGerlachLab.pdf)
+* Friday, Feb. 9 &mdash; Finish studying Chapter Q6 of Moore &mdash; Study Sections 5 and 6 of Churchill, Brown, and Verhey &mdash; [Problem Set 7](./assignments/AssignmentFor2024-02-09.nb.pdf) for Friday &mdash; Presentations: (1) Rebecca and Ren will cover angular momentum, torque, and precession, relying substantially on Volume C, Chapter C6 of *Six Ideas;* (2) Ethan and Hexi will flesh out your understanding of magnetism, electromagnets, and the magnetic field in the Stern-Gerlach apparatus using the relevant material from Section Q6.3, photos like [this one by Dana Mason](./resources/MagneticField.jpeg), [this diagram and photo of a C-shaped electromagnet](./resources/Electromagnet.png), and additional illustrations and examples from this material from [a Nanhua University course](./resources/BE-Ch12-MagneticCircuit.pdf); (3) Brian will say a more about magnetic moments and then do a look ahead Chapter Q7, [Them's the Rules](./resources/ThemsTheRules.nb.pdf); (4) Ethan and Hexi will look even farther ahead to Section Q8.4 and Q8.5, Schrödinger's Cat and the Collapse Rule; this is advanced stuff, and in fact, Moore has marked all of Q8 as optional
 
-### Week 6 &mdash;
+### Week 6 &mdash; Them's the Rules
 
-* Tuesday, Feb. 13 &mdash;
+* Tuesday, Feb. 13 &mdash; Study Chapter Q7 of Moore
 * Friday, Feb. 16 &mdash;
 
 ### Week 7 &mdash; Exam 2

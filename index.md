@@ -15,6 +15,7 @@ A [PDF of the Syllabus](./PhysicsIISyllabus.pdf) containing essentially the same
 Detailed daily schedules will be kept retrospectively:
 
 * [Daily Schedule-Term 4](https://brianhill.github.io/physics-ii/daily_schedule-term_4.html)
+* [Daily Schedule-Term 5](https://brianhill.github.io/physics-ii/daily_schedule-term_5.html)
 
 ## Overview
 
