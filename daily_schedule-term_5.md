@@ -7,12 +7,12 @@ See also [Daily Schedule-Term 4](./daily_schedule-term_4.html)
 ### Week 8 &mdash;
 
 * Tuesday, Mar. 12 &mdash;
-* Friday, Mar. 15 &mdash; Exam 3
+* Friday, Mar. 15 &mdash;
 
 ### Week 9 &mdash;
 
 * Tuesday, Mar. 19 &mdash;
-* Friday, Mar. 22 &mdash; Exam 3
+* Friday, Mar. 22 &mdash;
 ### Week 10 &mdash; Finish Quantum Mechanics
 
 * Tuesday, Mar. 26 &mdash;
