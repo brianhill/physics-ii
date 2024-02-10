@@ -24,22 +24,18 @@ See also [Daily Schedule-Term 5](./daily_schedule-term_5.html)
 * Tuesday, Jan. 30 &mdash; Six Ideas Q5 &mdash; Black-body radiation and the resulting appearance of [bluish stars, white and yellowish stars, and reddish stars](./resources/BlackBodyRadiationII.png) &mdash; Presentations on Q1 to Q4: Emma and Ethan, Q1R.1, a slightly tricky Doppler shift problem; Hexi and Miles, Q2R.2, pulsation frequency of variable stars; Rebecca and Ren, Q3R.1, passing by foghorns; Trey, the energy levels and photon spectrum of hydrogen &mdash; [Problem Set 5](./assignments/AssignmentFor2024-01-30.nb.pdf) for Tuesday &mdash; Discussion of interference patterns in the first problem of Problem Set 5 &mdash; A look ahead at Q6, spin, beginning with a comparison of the units of angular momentum with the units of *h*
 * Friday, Feb. 2 &mdash; [Exam 1](./exams/Exam1.nb.pdf)
 
-### Week 5 &mdash; Spin and Complex Variables
+### Week 5 &mdash; Complex Variables &mdash; The Stern-Gerlach Experiment
 
 * Tuesday, Feb. 6 &mdash; We will start into both Q6 and complex variables &mdash; Study Sections Q6.1, Q6.2 and Q6.3 of Moore &mdash; Study Sections 1-4 of Churchill, Brown, and Verhey, *Complex Variables and Applications* &mdash; Presentation from Emma, how the Balmer, Lyman, and Paschen wavelengths from Hydrogen were observed and cataloged &mdash; [Problem Set 6](./assignments/AssignmentFor2024-02-06.nb.pdf) for Tuesday &mdash; Lecture and handout on [Electron Spin and Magnetic Moment](./resources/ElectronSpinAndMagneticMoment.nb.pdf) &mdash; It is annoying just how many web sources there are with oversimplified versions of the Stern-Gerlach apparatus (so many that it is almost impossible to see how it is actually done) &mdash; Here is a description of an actual [MIT Stern-Gerlach lab](./resources/MITSternGerlachLab.pdf)
 * Friday, Feb. 9 &mdash; Finish studying Chapter Q6 of Moore &mdash; Study Sections 5 and 6 of Churchill, Brown, and Verhey &mdash; [Problem Set 7](./assignments/AssignmentFor2024-02-09.nb.pdf) for Friday &mdash; Presentations: (1) Rebecca and Ren will cover angular momentum, torque, and precession, relying substantially on Volume C, Chapter C6 of *Six Ideas;* (2) Ethan and Hexi will flesh out your understanding of magnetism, electromagnets, and the magnetic field in the Stern-Gerlach apparatus using the relevant material from Section Q6.3, photos like [this one by Dana Mason](./resources/MagneticField.jpeg), [this diagram and photo of a C-shaped electromagnet](./resources/Electromagnet.png), and additional illustrations and examples from [this material from a Nanhua University course](./resources/BE-Ch12-MagneticCircuits.pdf); (3) Brian will say a more about magnetic moments and then do a look ahead Chapter Q7, [Them's the Rules](./resources/ThemsTheRules.nb.pdf); 
 
-### Week 6 &mdash; Them's the Rules
+### Week 6 &mdash; The Rules for Two-State Systems &mdash; The Wave Function
 
-* Tuesday, Feb. 13 &mdash; Study Chapter Q7 of Moore &mdash; Presentations: (1) Ren and Hexi, Q7D.3 (2) Rebecca and Emma, Q7R.3 (3) Miles and Trey will look ahead to Sections Q8.4 and Q8.5, Schrödinger's Cat and the Collapse Rule; this is advanced stuff, and in fact, Moore has marked all of Q8 as optional &mdash; [Problem Set 8 - FORTHCOMING](./assignments/AssignmentFor2024-02-13.nb.pdf)
-* Friday, Feb. 16 &mdash;
+* Tuesday, Feb. 13 &mdash; Study Chapter Q7 of Moore &mdash; Presentations: (1) Ren and Hexi, Q7D.3 (2) Rebecca and Emma, Q7R.3 (3) Miles and Trey, Sections Q8.4 and Q8.5, Schrödinger's cat, the multiverse interpretation of quantum mechanics! &mdash; [Problem Set 8](./assignments/AssignmentFor2024-02-13.nb.pdf)
+* Friday, Feb. 16 &mdash; Q9 or do we need more time on Q7?
 
 ### Week 7 &mdash; Exam 2
 
 * Tuesday, Feb. 20 &mdash; Exam 2
 
-<img src="./resources/MagneticField.jpeg" alt="Compasses in the vicinity of a bar magnet" width="60%">
-
-Photo by [Dana Mason on flickr.com](https://www.flickr.com/photos/daynoir/2180507211/)
-
-<img src="./resources/Electromagnet.png" alt="Electromagnet illustrations" width="85%">
+<img src="./resources/SchrodingersCat.png" alt="Schrodinger's Cat" width="100%">
