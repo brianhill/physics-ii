@@ -32,7 +32,7 @@ See also [Daily Schedule-Term 5](./daily_schedule-term_5.html)
 ### Week 6 &mdash; The Rules for Two-State Systems &mdash; The Wave Function
 
 * Tuesday, Feb. 13 &mdash; Study Chapter Q7 of Moore &mdash; Presentations: (1) Ren and Hexi, Q7D.3 (2) Rebecca and Emma, Q7R.3 (3) Miles and Trey, Sections Q8.4 and Q8.5, Schrödinger's cat, the multiverse interpretation of quantum mechanics! &mdash; [Problem Set 8](./assignments/AssignmentFor2024-02-13.nb.pdf)
-* Friday, Feb. 16 &mdash; Q9 or do we need more time on Q7?
+* Friday, Feb. 16 &mdash; Q9 &mdash; [Problem Set 9 and plan for Friday - FORTHCOMING](./AssignmentFor2024-02-16.nb.pdf)
 
 ### Week 7 &mdash; Exam 2
 
