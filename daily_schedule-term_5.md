@@ -6,11 +6,11 @@ See also [Daily Schedule-Term 4](./daily_schedule-term_4.html)
 
 *A VERY TENTATIVE OUTLINE FOLLOWS*
 
-*WE MUST BE WILLING TO SLOW DOWN IF THIS TURNS OUT TO BE TOO FAST, AND FRANKLY, THAT IS REALISTIC*
+*WE MUST BE WILLING TO SLOW DOWN IF THIS TURNS OUT TO BE TOO FAST A PACE*
 
-### Week 8 &mdash; Wave Functions
+### Week 8 &mdash; Continue Wave Functions
 
-* Tuesday, Mar. 12 &mdash; Q9
+* Tuesday, Mar. 12 &mdash; Finish Q9 and start Q10 &mdash; [Veritasium video on walkers](https://youtu.be/WIyTZDHuarQ) found by Miles
 * Friday, Mar. 15 &mdash; Q10
 
 ### Week 9 &mdash;
