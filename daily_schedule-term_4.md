@@ -32,7 +32,7 @@ See also [Daily Schedule-Term 5](./daily_schedule-term_5.html)
 ### Week 6 &mdash; The Rules for Two-State Systems &mdash; The Wave Function
 
 * Tuesday, Feb. 13 &mdash; Study Chapter Q7 of Moore &mdash; Presentations: (1) Ren and Hexi, Q7D.3 (2) Rebecca and Emma, Q7R.3 (3) Miles and Trey, Sections Q8.4 and Q8.5, Schrödinger's cat, the multiverse interpretation of quantum mechanics! &mdash; [Problem Set 8](./assignments/AssignmentFor2024-02-13.nb.pdf)
-* Friday, Feb. 16 &mdash; Sections Q9.1 to Q9.3 &mdash; [Problem Set 9 for Friday](./assignments/AssignmentFor2024-02-16.nb.pdf) &mdash; Deriving *S<sub>y</sub>* &mdash; Spin-1 Systems &mdash; Group velocity vs. phase velocity of the electron &mdash; The complete wave function for the electron &mdash; A [Group velocity vs. phase velocity video](https://youtu.be/EIqKG5TiSYs) &mdash; The Heisenberg Uncertainty Principle
+* Friday, Feb. 16 &mdash; Sections Q9.1 to Q9.3 &mdash; [Problem Set 9 for Friday](./assignments/AssignmentFor2024-02-16.nb.pdf) &mdash; Deriving *S<sub>y</sub>* &mdash; Spin-1 Systems &mdash; Group velocity vs. phase velocity of the electron &mdash; A [Group velocity vs. phase velocity video](https://youtu.be/EIqKG5TiSYs) &mdash; [Waves on a pond video](https://www.youtube.com/watch?v=dESm6VjfSNs) &mdash; [Boat waves in a canal](https://www.youtube.com/watch?v=lWi_KpBy8kU) &mdash; The complete wave function for one electron &mdash; Position and momentum cannot be simultaneously specified &mdash; The Heisenberg Uncertainty Principle (if time)
 
 ### Week 7 &mdash; Exam 2
 
