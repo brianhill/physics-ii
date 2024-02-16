@@ -38,4 +38,4 @@ See also [Daily Schedule-Term 5](./daily_schedule-term_5.html)
 
 * Tuesday, Feb. 20 &mdash; Exam 2
 
-<img src="./resources/SchrodingersCat.png" alt="Schrodinger's Cat" width="100%">
+<img src="./resources/GroupVelocity.png" alt="Group velocity" width="100%">
