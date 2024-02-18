@@ -10,17 +10,17 @@ See also [Daily Schedule-Term 4](./daily_schedule-term_4.html)
 
 ### Week 8 &mdash; Continue Wave Functions
 
-* Tuesday, Mar. 12 &mdash; Finish Q9 and start Q10 &mdash; [Veritasium video on walkers](https://youtu.be/WIyTZDHuarQ) found by Miles
-* Friday, Mar. 15 &mdash; Q10
+* Tuesday, Mar. 12 &mdash; Finish Q9 and start Q10 &mdash; Position and momentum cannot be simultaneously specified &mdash; The Heisenberg Uncertainty Principle &mdash; [Veritasium video on walkers](https://youtu.be/WIyTZDHuarQ) found by Miles &mdash; [Problem Set 10 - FORTHCOMING](./assignments/AssignmentFor2024-03-12.nb.pdf)
+* Friday, Mar. 15 &mdash; Finish Q10
 
-### Week 9 &mdash;
+### Week 9 &mdash; The Hydrogen Atom and the Schr&ouml;dinger Equation
 
 * Tuesday, Mar. 19 &mdash; Q11
 * Friday, Mar. 22 &mdash; Q12
 
 ### Week 10 &mdash; Last Class on Quantum Mechanics? &mdash; Exam 3
 
-* Tuesday, Mar. 26 &mdash; Q13
+* Tuesday, Mar. 26 &mdash; Review day or buffer day in case we need to slow down while getting through Q12
 * Friday, Mar. 29 &mdash; Exam 3
 
 ### Week 11 &mdash; Leave Quantum Mechanics and Start Relativity?
