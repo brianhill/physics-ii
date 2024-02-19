@@ -10,7 +10,7 @@ See also [Daily Schedule-Term 4](./daily_schedule-term_4.html)
 
 ### Week 8 &mdash; Continue Wave Functions
 
-* Tuesday, Mar. 12 &mdash; Finish Q9 and start Q10 &mdash; Position and momentum cannot be simultaneously specified &mdash; The Heisenberg Uncertainty Principle &mdash; [Veritasium video on walkers](https://youtu.be/WIyTZDHuarQ) found by Miles &mdash; [Problem Set 10 - FORTHCOMING](./assignments/AssignmentFor2024-03-12.nb.pdf)
+* Tuesday, Mar. 12 &mdash; Finish Q9 and start Q10 &mdash; *S<sub>x</sub>&thinsp;*, *S<sub>y</sub>&thinsp;*, and *S<sub>z</sub>* cannot be simultaneously specified &mdash; Position and momentum cannot be simultaneously specified! &mdash; The Heisenberg Uncertainty Principle &mdash; [Veritasium video on walkers](https://youtu.be/WIyTZDHuarQ) found by Miles &mdash; [Problem Set 10 - FORTHCOMING](./assignments/AssignmentFor2024-03-12.nb.pdf)
 * Friday, Mar. 15 &mdash; Finish Q10
 
 ### Week 9 &mdash; The Hydrogen Atom and the Schr&ouml;dinger Equation
