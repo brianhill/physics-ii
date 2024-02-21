@@ -1,3 +1,11 @@
+## SHAKESPEARE FESTIVAL
+
+February 21-23
+
+## SPRING BREAK
+
+February 24-March 10
+
 ## Modern Introductory Physics Part II &mdash; Daily Schedule Term 5
 
 Course [home page](./)
