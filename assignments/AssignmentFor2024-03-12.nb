@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      4971,        111]
-NotebookOptionsPosition[      4216,         88]
-NotebookOutlinePosition[      4669,        106]
-CellTagsIndexPosition[      4626,        103]
+NotebookDataLength[     30041,        792]
+NotebookOptionsPosition[     28597,        757]
+NotebookOutlinePosition[     29050,        775]
+CellTagsIndexPosition[     29007,        772]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -35,7 +35,9 @@ v9fFWPeto43VczC9bm+xiZHeW8eM+xVgOnv1zao3QPqDPnc1iI7JbL05Vf+t
 o7xQ7i0QDQDzJM/m
   "],ExpressionUUID->"0a9f033e-46a1-4578-becc-919930044f24"],
 
-Cell["Finish Q9 and Start Q10", "Section",
+Cell[CellGroupData[{
+
+Cell["In Moore, Finish Q9 and Start Q10", "Section",
  CellChangeTimes->{{3.902343723737052*^9, 3.902343730587866*^9}, {
    3.9023439641701307`*^9, 3.902343966937828*^9}, {3.902688223918044*^9, 
    3.902688230735215*^9}, {3.902927388621001*^9, 3.902927388845333*^9}, {
@@ -55,9 +57,25 @@ Cell["Finish Q9 and Start Q10", "Section",
    3.916012075535839*^9, 3.916012084873894*^9}, {3.91601212294357*^9, 
    3.916012123079932*^9}, {3.916534183914886*^9, 3.916534185322226*^9}, {
    3.916915675636177*^9, 3.916915675995758*^9}, {3.916915774104886*^9, 
-   3.9169157798406677`*^9}, {3.9172625636769*^9, 
-   3.9172625761182947`*^9}},ExpressionUUID->"39b67822-fab3-4af4-9957-\
+   3.9169157798406677`*^9}, {3.9172625636769*^9, 3.9172625761182942`*^9}, {
+   3.918207364278386*^9, 3.918207367133877*^9}, {3.918207436865808*^9, 
+   3.918207473514449*^9}},ExpressionUUID->"39b67822-fab3-4af4-9957-\
 995e6360c459"],
+
+Cell[TextData[{
+ "Study Moore through p. 154. You should have ",
+ StyleBox["deja vu",
+  FontSlant->"Italic"],
+ " while reading g p. 154, because you did it as Problem 2(d) on the Feb. \
+20th exam. This would be a great time to re-do Problem 2 if you missed any \
+part of it, or even if you didn\[CloseCurlyQuote]t miss anything. What you \
+did in Problem 2 is central to everything else we will do with wave functions."
+}], "Text",
+ CellChangeTimes->{{3.9182075201140833`*^9, 3.918207560737755*^9}, {
+  3.9182076953932858`*^9, 
+  3.918207819497903*^9}},ExpressionUUID->"9a43ca96-fdb2-427e-96b5-\
+946222a01695"]
+}, Open  ]],
 
 Cell[CellGroupData[{
 
@@ -79,10 +97,661 @@ Cell["For Problem Set 10", "Section",
    3.9172625827988234`*^9}},ExpressionUUID->"e0d51dc0-12b2-43d1-9537-\
 65a0b526a33d"],
 
-Cell["FORTHCOMING", "Text",
- CellChangeTimes->{{3.9172626085415773`*^9, 
-  3.917262612737834*^9}},ExpressionUUID->"de7016df-c905-403f-b97f-\
-f49f62162ec1"]
+Cell[TextData[{
+ "In the last problem set, you did Q9M.5 on p. 148. Eq. Q9.21 was:\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SubsuperscriptBox["\[Integral]", 
+      RowBox[{"-", "\[Infinity]"}], "\[Infinity]"], 
+     RowBox[{
+      SuperscriptBox["e", 
+       RowBox[{
+        RowBox[{"-", 
+         SuperscriptBox["x", "2"]}], "/", 
+        SuperscriptBox["a", "2"]}]], "d", "\[VeryThinSpace]", "x"}]}], " ", 
+    "=", " ", 
+    RowBox[{"a", 
+     SqrtBox["\[Pi]"]}]}], TraditionalForm]],ExpressionUUID->
+  "761753c6-f6b4-4f48-9606-fb25469a1320"],
+ "\n\nAnother utterly equivalent way of writing Q9.21 is:\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SubsuperscriptBox["\[Integral]", 
+      RowBox[{"-", "\[Infinity]"}], "\[Infinity]"], 
+     RowBox[{
+      SuperscriptBox["e", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", 
+          SuperscriptBox["x", "2"]}], "/", "2"}], "b"}]], "d", 
+      "\[VeryThinSpace]", "x"}]}], " ", "=", 
+    SqrtBox[
+     RowBox[{"2", "\[Pi]", "\[VeryThinSpace]", "b"}]]}], TraditionalForm]],
+  ExpressionUUID->"0172ef43-21c6-4ce0-ac26-1e263746f226"],
+ "\n\nand that is the way I usually try to memorize it because most closely \
+corresponds to a neat trick for deriving the integral. If you guys ask me, I \
+will show you the trick. Or you can just take it on faith.\n\nYet another way \
+of writing the integral is:\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SubsuperscriptBox["\[Integral]", 
+      RowBox[{"-", "\[Infinity]"}], "\[Infinity]"], 
+     RowBox[{
+      SuperscriptBox["e", 
+       RowBox[{
+        RowBox[{"-", "c"}], "\[VeryThinSpace]", 
+        SuperscriptBox["x", "2"]}]], "d", "\[VeryThinSpace]", "x"}]}], " ", 
+    "=", 
+    SqrtBox[
+     RowBox[{"\[Pi]", "\[VeryThinSpace]", "/", "c"}]]}], TraditionalForm]],
+  ExpressionUUID->"85480c9f-7282-4ec1-a49f-c7e241d778c3"],
+ "\n\n1. In the above, ",
+ Cell[BoxData[
+  FormBox["c", TraditionalForm]],ExpressionUUID->
+  "e5947288-5799-489e-a5ae-eab22b5de25d"],
+ " is a constant, and ",
+ Cell[BoxData[
+  FormBox["x", TraditionalForm]],ExpressionUUID->
+  "f22f5f55-c892-4153-8228-5b3e2cf42d5c"],
+ " is the dummy variable of integration. However, the formula is valid for \
+any ",
+ Cell[BoxData[
+  FormBox["c", TraditionalForm]],ExpressionUUID->
+  "9e8b5ac9-a9ba-4943-ac0f-5d17aa278202"],
+ ", so you can think of it as a variable too.\n\n(a) Thinking of ",
+ Cell[BoxData[
+  FormBox["c", TraditionalForm]],ExpressionUUID->
+  "81a090f1-3449-44f5-936a-fd4cc2ec7e08"],
+ " as a variable and taking ",
+ Cell[BoxData[
+  FormBox[
+   FractionBox["\[PartialD]", 
+    RowBox[{"\[PartialD]", "c"}]], TraditionalForm]],ExpressionUUID->
+  "8f40693c-4b96-483a-9ed6-a8c82d6b1966"],
+ "of both sides of the above equation, what new integral do you have the \
+answer for?\n\n(b) Here is an easy integral to do:\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubsuperscriptBox["\[Integral]", 
+     RowBox[{"-", "\[Infinity]"}], "\[Infinity]"], 
+    RowBox[{"x", "\[VeryThinSpace]", 
+     SuperscriptBox["e", 
+      RowBox[{
+       RowBox[{"-", "c"}], "\[VeryThinSpace]", 
+       SuperscriptBox["x", "2"]}]], "d", "\[VeryThinSpace]", "x"}]}], 
+   TraditionalForm]],ExpressionUUID->"5a42ca87-38fd-4e54-a310-9fa6aab40ec7"],
+ "\n\nWhat is it?\n\n2. Thanks to Problem 1, you now know the integrals for \n\
+\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubsuperscriptBox["\[Integral]", 
+     RowBox[{"-", "\[Infinity]"}], "\[Infinity]"], 
+    RowBox[{
+     SuperscriptBox["x", "n"], 
+     SuperscriptBox["e", 
+      RowBox[{
+       RowBox[{"-", "c"}], "\[VeryThinSpace]", 
+       SuperscriptBox["x", "2"]}]], "d", "\[VeryThinSpace]", "x"}]}], 
+   TraditionalForm]],ExpressionUUID->"f0795ec5-6bdc-44ed-81b7-363f627676c6"],
+ "\n\nwith ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"n", "=", "0"}], ",", " ", "1", ",", " ", 
+    RowBox[{"and", " ", "2"}]}], TraditionalForm]],ExpressionUUID->
+  "3ad64cbe-4e30-4f3d-b7f4-4c8c1c5b2783"],
+ ". You can of course put in ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"c", "=", 
+    RowBox[{"1", "/", 
+     SuperscriptBox["a", "2"]}]}], TraditionalForm]],ExpressionUUID->
+  "3ba79a5d-536c-4b36-88ad-3c1886aaf4cf"],
+ " and then you know the integrals for\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubsuperscriptBox["\[Integral]", 
+     RowBox[{"-", "\[Infinity]"}], "\[Infinity]"], 
+    RowBox[{
+     SuperscriptBox["x", "n"], 
+     SuperscriptBox["e", 
+      RowBox[{
+       RowBox[{"-", 
+        SuperscriptBox["x", "2"]}], "/", 
+       SuperscriptBox["a", "2"]}]], "d", "\[VeryThinSpace]", "x"}]}], 
+   TraditionalForm]],ExpressionUUID->"5240c962-0032-4abf-a440-0c56888adfa9"],
+ "\n\nwith ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"n", "=", "0"}], ",", " ", "1", ",", " ", 
+    RowBox[{"and", " ", "2"}]}], TraditionalForm]],ExpressionUUID->
+  "4521dfe7-b91f-4ee7-916c-13703fe47efa"],
+ ".\n\n(a) Normalize the wave function ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"\[Psi]", "(", "x", ")"}], "=", 
+    RowBox[{"N", "\[VeryThinSpace]", 
+     RowBox[{
+      SuperscriptBox["e", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", 
+          SuperscriptBox["x", "2"]}], "/", "2"}], 
+        SuperscriptBox["a", "2"]}]], "."}]}]}], TraditionalForm]],
+  ExpressionUUID->"887d0f0a-91e9-48de-9305-8bb57452b589"],
+ " In other words, find ",
+ Cell[BoxData[
+  FormBox["N", TraditionalForm]],ExpressionUUID->
+  "46c98277-b6c9-488d-803f-a87e034179aa"],
+ ". Do not forget to begin by squaring ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[Psi]", "(", "x", ")"}], TraditionalForm]],ExpressionUUID->
+  "fd7476f1-049e-4b12-a30e-fc7508f533f4"],
+ ". Normalization is always done with the probability, not the probability \
+amplitude. I put in the 2 for your convenience. When you square, it goes \
+away.\n\n(b) Using the normalized wave function, calculate\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubsuperscriptBox["\[Integral]", 
+     RowBox[{"-", "\[Infinity]"}], "\[Infinity]"], 
+    RowBox[{"x", "\[VeryThinSpace]", 
+     SuperscriptBox[
+      RowBox[{"\[LeftBracketingBar]", 
+       RowBox[{"\[Psi]", "(", "x", ")"}], "\[RightBracketingBar]"}], "2"], 
+     "d", "\[VeryThinSpace]", "x"}]}], TraditionalForm]],ExpressionUUID->
+  "fde3552b-1f15-4e7b-ba6b-55929a99bd39"],
+ "\n\nThis is the \[OpenCurlyDoubleQuote]expectation value\
+\[CloseCurlyDoubleQuote] of ",
+ Cell[BoxData[
+  FormBox["x", TraditionalForm]],ExpressionUUID->
+  "7bc86b2e-a86a-4a50-88e0-a5b20b112381"],
+ ". It is, on average, what the electron\[CloseCurlyQuote]s ",
+ Cell[BoxData[
+  FormBox["x", TraditionalForm]],ExpressionUUID->
+  "a930174a-98f0-4143-94ca-833baebb6db9"],
+ "-coordinate is. The notation for the average ",
+ Cell[BoxData[
+  FormBox["x", TraditionalForm]],ExpressionUUID->
+  "57d3c65a-2b72-4a13-8124-a3f616e49188"],
+ "-coordinate is ",
+ Cell[BoxData[
+  FormBox[
+   OverscriptBox["x", "_"], TraditionalForm]],ExpressionUUID->
+  "7a666f9f-2dd6-44b3-9118-23410310a6e0"],
+ ".\n\n(c) Again using the normalized wave function, calculate\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubsuperscriptBox["\[Integral]", 
+     RowBox[{"-", "\[Infinity]"}], "\[Infinity]"], 
+    RowBox[{
+     SuperscriptBox[
+      RowBox[{"x", "\[VeryThinSpace]"}], "2"], 
+     SuperscriptBox[
+      RowBox[{"\[LeftBracketingBar]", 
+       RowBox[{"\[Psi]", "(", "x", ")"}], "\[RightBracketingBar]"}], "2"], 
+     "d", "\[VeryThinSpace]", "x"}]}], TraditionalForm]],ExpressionUUID->
+  "9a262d40-a3b0-4c55-9b1e-04554c0d0a29"],
+ "\n\nThis is the expectation value, or the average measurement of ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["x", "2"], TraditionalForm]],ExpressionUUID->
+  "33dce78a-0d44-49b3-ac3d-dad497e3afb2"],
+ ". The notation for the average measurement of ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["x", "2"], TraditionalForm]],ExpressionUUID->
+  "7b58410a-f3e6-4af1-9b8e-1972e11cad6e"],
+ " is ",
+ Cell[BoxData[
+  FormBox[
+   OverscriptBox[
+    SuperscriptBox["x", "2"], "_"], TraditionalForm]],ExpressionUUID->
+  "9191c5af-32a0-4c9e-b8a4-53a634fd4480"],
+ ".\n\nNOTE: ",
+ Cell[BoxData[
+  FormBox[
+   OverscriptBox[
+    SuperscriptBox["x", "2"], "_"], TraditionalForm]],ExpressionUUID->
+  "6ebb0684-2a3f-4a06-9061-1f198ee14924"],
+ " and ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox[
+    OverscriptBox[
+     RowBox[{" ", "x"}], "_"], "2"], TraditionalForm]],ExpressionUUID->
+  "50a1fa51-1eb8-4ba1-8d74-f0c6b262fb6b"],
+ " are completely different, right?\n\n(d) Whatever you got for (c), take the \
+square root.\n\nNOTE: You now know ",
+ Cell[BoxData[
+  FormBox[
+   SqrtBox[
+    OverscriptBox[
+     SuperscriptBox["x", "2"], "_"]], TraditionalForm]],ExpressionUUID->
+  "0b800f40-2fbd-4cd3-85db-d793060fd654"],
+ ". This slightly whacko combination is known to statisticians as the \
+\[OpenCurlyDoubleQuote]standard deviation\[CloseCurlyDoubleQuote] of ",
+ Cell[BoxData[
+  FormBox["x", TraditionalForm]],ExpressionUUID->
+  "baa2b922-26c5-4137-82b2-a3d0753cf9ab"],
+ ", and statisticians generally denote it as ",
+ Cell[BoxData[
+  FormBox["\[Sigma]", TraditionalForm]],ExpressionUUID->
+  "351e4174-0320-4f1f-a7bb-e1b8e9823c12"],
+ ", but we aren\[CloseCurlyQuote]t statisticians."
+}], "Text",
+ CellChangeTimes->CompressedData["
+1:eJxTTMoPSmViYGAQA2IQPTtE8NFU/beOYXOmg2mLV58mJhq+dby97PF2EL2p
+b+sREG3PEHENRH+0kbkNohWiK/6B6LnMfsxJQPr7ZDkRED0tsVQCRE89oqkL
+oo8snu0Oon97+wSDaKPw6+Eg+vGVM/NB9Oqbh5eA6Eu5WitBNMf18+tAdFbU
+4t8geoWZBWMykLYRnsYOopetPssNoh+bZIiCaBkzXikQ/fL9d10QzZy7OAdE
+G629UQWiXx/rbATRJmsEukH0oQr/SSDasykCTPdyi0wH0TOtX88A0Wa3WeaB
+aPHCq4tA9IG48OnpQHrG5qT5IDr4duxiEP1J6vMxEO1VHnYaRC9NF2bMANK7
+7kzhANH/5slzgmgA1+Wm6w==
+  "],ExpressionUUID->"de7016df-c905-403f-b97f-f49f62162ec1"],
+
+Cell["", "Text",
+ CellChangeTimes->CompressedData["
+1:eJxTTMoPSmViYGAQA2IQPTtE8NFU/beOYXOmg2mLV58mJhq+dby97PF2EL2p
+b+sREG3PEHENRH+0kbkNohWiK/6B6LnMfsxJQPr7ZDkRED0tsVQCRE89oqkL
+oo8snu0Oon97+wSDaKPw6+Eg+vGVM/NB9Oqbh5eA6Eu5WitBNMf18+tAdFbU
+4t8geoWZBWMykLYRnsYOopetPssNoh+bZIiCaBkzXikQ/fL9d10QzZy7OAdE
+G629UQWiXx/rbATRJmsEukH0oQr/SSDasykCTPdyi0wH0TOtX88A0Wa3WeaB
+aPHCq4tA9IG48OnpQHrG5qT5IDr4duxiEP1J6vMxEO1VHnYaRC9NF2bMANK7
+7kzhANF1aZc4QTQA1o+m5g==
+  "],ExpressionUUID->"f1e0aadd-e7a5-4a56-90e6-96bdecf0fd6d"],
+
+Cell["", "PageBreak",
+ PageBreakBelow->True,ExpressionUUID->"892ad2a6-4e8e-4969-adcc-5a1022dde446"],
+
+Cell[TextData[{
+ "3. Let\[CloseCurlyQuote]s do some more integrals. This would be a good time \
+to review changes of variables and integration by parts, if you don\
+\[CloseCurlyQuote]t remember how those techniques are used to do integrals.\n\
+\n(a) Using the same ",
+ Cell[BoxData[
+  FormBox["N", TraditionalForm]],ExpressionUUID->
+  "c765ef2e-88fd-4373-93c6-6ac941f4f24a"],
+ " as you previously had, what is\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubsuperscriptBox["\[Integral]", 
+     RowBox[{"-", "\[Infinity]"}], "\[Infinity]"], 
+    RowBox[{
+     SuperscriptBox["N", "2"], "\[VeryThinSpace]", 
+     SuperscriptBox["e", 
+      RowBox[{
+       RowBox[{"-", 
+        RowBox[{"(", 
+         RowBox[{"x", "-", 
+          SuperscriptBox[
+           SubscriptBox["x", "0"], "2"]}], ")"}]}], "/", 
+       SuperscriptBox["a", "2"]}]], "d", "\[VeryThinSpace]", "x"}]}], 
+   TraditionalForm]],ExpressionUUID->"10e040d1-b7e3-4908-ac6f-79a091825aa8"],
+ "\n\nHINT AND DOUBLE-CHECK: There is a simple change of variables that \
+reduces this to an integral you already calculated. The result is \
+super-simple! Perhaps it is obvious why.\n\n(b) What is\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    OverscriptBox["x", "_"], "=", 
+    RowBox[{
+     SubsuperscriptBox["\[Integral]", 
+      RowBox[{"-", "\[Infinity]"}], "\[Infinity]"], 
+     RowBox[{"x", " ", 
+      SuperscriptBox["N", "2"], " ", 
+      SuperscriptBox["e", 
+       RowBox[{
+        RowBox[{"-", 
+         SuperscriptBox[
+          RowBox[{"(", 
+           RowBox[{"x", "-", 
+            SubscriptBox["x", "0"]}], ")"}], "2"]}], "/", 
+        SuperscriptBox["a", "2"]}]], "d", "\[VeryThinSpace]", "x"}]}]}], 
+   TraditionalForm]],ExpressionUUID->"ffbdcf11-9ae2-4d09-bac9-c9fd104101a2"],
+ "\n\nHINT: The same simple change of variables applies, but this time, the \
+result is not quite so simple.\n\n(c) What is:\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    OverscriptBox[
+     SuperscriptBox["x", "2"], "_"], "=", 
+    RowBox[{
+     SubsuperscriptBox["\[Integral]", 
+      RowBox[{"-", "\[Infinity]"}], "\[Infinity]"], 
+     RowBox[{
+      SuperscriptBox["x", "2"], " ", 
+      SuperscriptBox["N", "2"], " ", 
+      SuperscriptBox["e", 
+       RowBox[{
+        RowBox[{"-", 
+         SuperscriptBox[
+          RowBox[{"(", 
+           RowBox[{"x", "-", 
+            SubscriptBox["x", "0"]}], ")"}], "2"]}], "/", 
+        SuperscriptBox["a", "2"]}]], "d", "\[VeryThinSpace]", "x"}]}]}], 
+   TraditionalForm]],ExpressionUUID->"240c2dd5-7faf-4f45-9505-0a1c2a38bb67"],
+ "\n\n4. The momentum operator is ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    FractionBox["\[HBar]", "i"], 
+    FractionBox["\[PartialD]", 
+     RowBox[{"\[PartialD]", "x"}]]}], TraditionalForm]],ExpressionUUID->
+  "a2d83171-8044-4924-8b54-87e87dcef7c7"],
+ ".\n\n(a) Calculate\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubsuperscriptBox["\[Integral]", 
+     RowBox[{"-", "\[Infinity]"}], "\[Infinity]"], " ", 
+    RowBox[{
+     SuperscriptBox["N", "2"], " ", 
+     SuperscriptBox["e", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", 
+         SuperscriptBox[
+          RowBox[{"(", 
+           RowBox[{"x", "-", 
+            SubscriptBox["x", "0"]}], ")"}], "2"]}], "/", "2"}], 
+       SuperscriptBox["a", "2"]}]], " ", 
+     FormBox[
+      RowBox[{
+       FractionBox["\[HBar]", "i"], 
+       FractionBox["\[PartialD]", 
+        RowBox[{"\[PartialD]", "x"}]]}],
+      TraditionalForm], 
+     SuperscriptBox["e", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", 
+         SuperscriptBox[
+          RowBox[{"(", 
+           RowBox[{"x", "-", 
+            SubscriptBox["x", "0"]}], ")"}], "2"]}], "/", "2"}], 
+       SuperscriptBox["a", "2"]}]], "d", "\[VeryThinSpace]", "x"}]}], 
+   TraditionalForm]],ExpressionUUID->"f206fae4-d3e9-4d1e-ad6f-85e8dda99917"],
+ "\n\nThis is denoted ",
+ Cell[BoxData[
+  FormBox[
+   OverscriptBox["p", "_"], TraditionalForm]],ExpressionUUID->
+  "84716905-3f45-45df-aaff-2a31a4a122c3"],
+ ".\n\n(b) The momentum operator squared is ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"-", 
+     SuperscriptBox["\[HBar]", "2"]}], 
+    FractionBox[
+     SuperscriptBox["\[PartialD]", "2"], 
+     RowBox[{"\[PartialD]", 
+      SuperscriptBox["x", "2"]}]]}], TraditionalForm]],ExpressionUUID->
+  "e8b8fed8-e75e-4e52-b241-8ee1344e4f23"],
+ ". Calculate\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     RowBox[{"-", 
+      SuperscriptBox["\[HBar]", "2"]}], 
+     RowBox[{
+      SubsuperscriptBox["\[Integral]", 
+       RowBox[{"-", "\[Infinity]"}], "\[Infinity]"], " ", 
+      RowBox[{
+       SuperscriptBox["N", "2"], " ", 
+       SuperscriptBox["e", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"-", 
+           SuperscriptBox[
+            RowBox[{"(", 
+             RowBox[{"x", "-", 
+              SubscriptBox["x", "0"]}], ")"}], "2"]}], "/", "2"}], 
+         SuperscriptBox["a", "2"]}]], " ", 
+       RowBox[{
+        FormBox[
+         FractionBox[
+          SuperscriptBox["\[PartialD]", "2"], 
+          RowBox[{"\[PartialD]", 
+           SuperscriptBox["x", "2"]}]],
+         TraditionalForm], 
+        SuperscriptBox["e", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"-", 
+            SuperscriptBox[
+             RowBox[{"(", 
+              RowBox[{"x", "-", 
+               SubscriptBox["x", "0"]}], ")"}], "2"]}], "/", "2"}], 
+          SuperscriptBox["a", "2"]}]]}], "d", "\[VeryThinSpace]", "x"}]}]}], 
+    "=", 
+    RowBox[{
+     SuperscriptBox["\[HBar]", "2"], 
+     RowBox[{
+      SubsuperscriptBox["\[Integral]", 
+       RowBox[{"-", "\[Infinity]"}], "\[Infinity]"], " ", 
+      RowBox[{
+       SuperscriptBox["N", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          FractionBox["\[PartialD]", 
+           RowBox[{"\[PartialD]", "x"}]], 
+          SuperscriptBox["e", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"-", 
+              SuperscriptBox[
+               RowBox[{"(", 
+                RowBox[{"x", "-", 
+                 SubscriptBox["x", "0"]}], ")"}], "2"]}], "/", "2"}], 
+            SuperscriptBox["a", "2"]}]]}], " ", 
+         FormBox[
+          RowBox[{")", 
+           RowBox[{"(", 
+            FractionBox["\[PartialD]", 
+             RowBox[{"\[PartialD]", "x"}]]}]}],
+          TraditionalForm], 
+         SuperscriptBox["e", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"-", 
+             SuperscriptBox[
+              RowBox[{"(", 
+               RowBox[{"x", "-", 
+                SubscriptBox["x", "0"]}], ")"}], "2"]}], "/", "2"}], 
+           SuperscriptBox["a", "2"]}]]}], ")"}], "d", "\[VeryThinSpace]", 
+       "x"}]}]}]}], TraditionalForm]],ExpressionUUID->
+  "ede62093-b1d9-4f72-96b7-7860878d583d"],
+ "\n\nThis is denoted ",
+ Cell[BoxData[
+  FormBox[
+   OverscriptBox[
+    SuperscriptBox["p", "2"], "_"], TraditionalForm]],ExpressionUUID->
+  "8d5bbc12-c5ac-4501-a451-d3c1cd3fadf2"],
+ ". I used integration by parts to get the second form of the integral, \
+because it makes the algebra a tad easier."
+}], "Text",
+ CellChangeTimes->{{3.917262608541578*^9, 3.917262612737834*^9}, {
+   3.918204047591091*^9, 3.918204351114118*^9}, {3.918204453673669*^9, 
+   3.91820459475003*^9}, {3.918204632882439*^9, 3.9182049157611237`*^9}, {
+   3.918204954437941*^9, 3.918205088955562*^9}, {3.9182051236681623`*^9, 
+   3.918205289305247*^9}, {3.918205500863741*^9, 3.918205594384275*^9}, {
+   3.918205630729394*^9, 3.918206206400987*^9}, {3.918206246120321*^9, 
+   3.918206281325906*^9}, {3.918206326494999*^9, 3.918206941104787*^9}, {
+   3.918206985756672*^9, 3.918207036689848*^9}, {3.918207070427203*^9, 
+   3.918207147256456*^9}, {3.918207184412855*^9, 3.918207343748036*^9}, {
+   3.918207845107057*^9, 3.918207958771142*^9}, {3.918208012305532*^9, 
+   3.918208088521021*^9}, {3.918208146483491*^9, 3.918208146765904*^9}, {
+   3.91820818462641*^9, 3.918208199351025*^9}, {3.918208240151759*^9, 
+   3.918208278670055*^9}, {3.918216378730316*^9, 3.918216443084423*^9}, {
+   3.918216474933023*^9, 3.918216759597039*^9}, {3.9182167947020617`*^9, 
+   3.918217224606402*^9}, {3.918217284651944*^9, 3.918217284813435*^9}, 
+   3.918217330026648*^9},ExpressionUUID->"b40d39a7-7092-4d3a-8e5f-\
+4a71fe3e60d8"],
+
+Cell[CellGroupData[{
+
+Cell["", "PageBreak",
+ PageBreakBelow->True,ExpressionUUID->"c2278abe-ef8c-4377-b91b-899027edc09b"],
+
+Cell[TextData[{
+ "5. In this problem you will derive a version of the Heisenberg Uncertainty \
+Principle. You\[CloseCurlyQuote]ll do the special case with ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["x", "0"], "=", "0"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "8ee02271-1aa0-4d9e-b49a-1e5df05f6719"],
+ ".\n\n(a) Take your answer for 3(c) with ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["x", "0"], "=", "0"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "8c67a576-3685-4427-a072-5238c380d7c9"],
+ ". In the special case that ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    OverscriptBox["x", "_"], "=", "0"}], TraditionalForm]],ExpressionUUID->
+  "e56ab356-8925-4249-8d9f-a63191c93a6b"],
+ ", which is the case you are dealing with now, ",
+ Cell[BoxData[
+  FormBox[
+   SqrtBox[
+    OverscriptBox[
+     SuperscriptBox["x", "2"], "_"]], TraditionalForm]],ExpressionUUID->
+  "f2e801b5-f098-43b9-8ba1-58e774e1ef70"],
+ " gets its own symbol. It is ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[CapitalDelta]", "\[VeryThinSpace]", "x"}], TraditionalForm]],
+  ExpressionUUID->"bc42af69-75cd-4a2f-9ace-dd7491da3d79"],
+ ". What is ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[CapitalDelta]", "\[VeryThinSpace]", "x"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "da8f7bba-2990-4abb-8240-079285f42029"],
+ "?\n\nNOTE: Now you know part of what goes into Eq. Q9.17.\n\n(b) Take your \
+answer to 4(b). In the special case that ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    OverscriptBox["p", "_"], "=", "0"}], TraditionalForm]],ExpressionUUID->
+  "b853766b-9ed2-4d2e-8ab3-5eda1789e347"],
+ ", which is the case you are dealing with right now, ",
+ Cell[BoxData[
+  FormBox[
+   SqrtBox[
+    OverscriptBox[
+     SuperscriptBox["p", "2"], "_"]], TraditionalForm]],ExpressionUUID->
+  "234e1969-8f9d-4b9d-818f-1b399d9c1acb"],
+ " also gets its own symbol. It is ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[CapitalDelta]", "\[VeryThinSpace]", "p"}], TraditionalForm]],
+  ExpressionUUID->"9fef574b-3640-4071-b694-18549de3478e"],
+ ". What is ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[CapitalDelta]", "\[VeryThinSpace]", "p"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "98dac9a5-6194-45ee-a782-246da0f4844e"],
+ "?\n\n(c) Well, you have  ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[CapitalDelta]", "\[VeryThinSpace]", "x"}], TraditionalForm]],
+  ExpressionUUID->"5625804c-f6cc-4e57-9db4-4ca9ec0a4ad0"],
+ " and ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[CapitalDelta]", "\[VeryThinSpace]", "p"}], TraditionalForm]],
+  ExpressionUUID->"0613444e-f953-4606-bdcc-f6bdfece6a8e"],
+ ". What is ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{" ", 
+    RowBox[{
+     RowBox[{
+      FormBox[
+       RowBox[{"\[CapitalDelta]", "\[VeryThinSpace]", "x"}],
+       TraditionalForm], "\[CenterDot]", "\[CapitalDelta]"}], 
+     "\[VeryThinSpace]", "p"}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "7bbae19b-cda1-46da-8c52-037f448ef36a"],
+ "?\n\nNOTE: Compare with Eq. 9.17. Note that the Heisenberg Uncertainty \
+Principle has an inequality in it. The function you used, a Gaussian, is the \
+best that can be done. For any other function, ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{" ", 
+    RowBox[{
+     RowBox[{
+      FormBox[
+       RowBox[{"\[CapitalDelta]", "\[VeryThinSpace]", "x"}],
+       TraditionalForm], "\[CenterDot]", "\[CapitalDelta]"}], 
+     "\[VeryThinSpace]", "p"}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "2d112240-87a7-4a4e-9f2f-45c2250b38eb"],
+ " is larger.\n\nFINAL NOTE: I will introduce a non-zero ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["p", "0"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "dedade68-8f31-4e3c-9508-115f7dfb39bc"],
+ " and allow ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["x", "0"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "3946169a-9fef-48f6-ae76-1b7f38b99cae"],
+ " to be non-zero as well, and derive the slightly more general version of \
+the result that you just got in class on Tuesday, but I have to define and \
+discuss ",
+ Cell[BoxData[
+  FormBox[
+   FormBox[
+    RowBox[{"\[CapitalDelta]", "\[VeryThinSpace]", "x"}],
+    TraditionalForm], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "da530410-8032-487d-98cc-96ecc138278e"],
+ " and ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[CapitalDelta]", "\[VeryThinSpace]", "p"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "872720ff-001f-4ee6-9ce3-04a82d356fa9"],
+ " for the more general case first."
+}], "Text",
+ CellChangeTimes->CompressedData["
+1:eJwdx08oQwEAx/E3U1stsTZNa4mDFmtkzVpMWikxUaZtEbWJLVlakuXGbQn5
+sz+MrfZmWUOypJzEmgNS2oyek51YS+YwtZL3e4dvn771ltmhyTKCIMR00D/M
+f3e35LWGPS+j+rOwYW7Na6lI9gKerZ0nYBdheobfGgkF60adf3CfPcC20Ba3
+aoXQY56vge5EoxwmSH8PLOn69VBhzBhhNnUfhLHXmzB8sjdFITfzeAKnR8gS
+PFSpWRO0GoGHAyOxBx7MKm3VUKKqEMOPr6Icsu3kDFQcvyzCXNK1BJVHVSvw
+2jm4CXuXTYyrPKEX7nTkfFBFlQegyJEOwatxo9dK64tbglBPjZGwIP5Jwr4F
+wx08sApYNtrLt20ujHJ2GVMN8UrY6Qjw4W86LIIuqUwKQ7fHMjinm2pmvm1d
+CbtPhe3wHwXfwcY=
+  "],ExpressionUUID->"5a78ced2-7610-4c48-95a3-71a1ea8c38f1"]
+}, Open  ]]
 }, Open  ]]
 }, Open  ]]
 },
@@ -107,10 +776,22 @@ CellTagsIndex->{}
 Notebook[{
 Cell[CellGroupData[{
 Cell[580, 22, 730, 13, 64, "Chapter",ExpressionUUID->"0a9f033e-46a1-4578-becc-919930044f24"],
-Cell[1313, 37, 1571, 22, 67, "Section",ExpressionUUID->"39b67822-fab3-4af4-9957-995e6360c459"],
 Cell[CellGroupData[{
-Cell[2909, 63, 1121, 16, 53, "Section",ExpressionUUID->"e0d51dc0-12b2-43d1-9537-65a0b526a33d"],
-Cell[4033, 81, 155, 3, 35, "Text",ExpressionUUID->"de7016df-c905-403f-b97f-f49f62162ec1"]
+Cell[1335, 39, 1677, 23, 67, "Section",ExpressionUUID->"39b67822-fab3-4af4-9957-995e6360c459"],
+Cell[3015, 64, 610, 12, 104, "Text",ExpressionUUID->"9a43ca96-fdb2-427e-96b5-946222a01695"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3662, 81, 1121, 16, 67, "Section",ExpressionUUID->"e0d51dc0-12b2-43d1-9537-65a0b526a33d"],
+Cell[4786, 99, 9655, 264, 1459, "Text",ExpressionUUID->"de7016df-c905-403f-b97f-f49f62162ec1"],
+Cell[14444, 365, 505, 9, 35, "Text",ExpressionUUID->"f1e0aadd-e7a5-4a56-90e6-96bdecf0fd6d"],
+Cell[14952, 376, 99, 1, 4, "PageBreak",ExpressionUUID->"892ad2a6-4e8e-4969-adcc-5a1022dde446",
+ PageBreakBelow->True],
+Cell[15054, 379, 8200, 226, 833, "Text",ExpressionUUID->"b40d39a7-7092-4d3a-8e5f-4a71fe3e60d8"],
+Cell[CellGroupData[{
+Cell[23279, 609, 99, 1, 4, "PageBreak",ExpressionUUID->"c2278abe-ef8c-4377-b91b-899027edc09b",
+ PageBreakBelow->True],
+Cell[23381, 612, 5176, 140, 468, "Text",ExpressionUUID->"5a78ced2-7610-4c48-95a3-71a1ea8c38f1"]
+}, Open  ]]
 }, Open  ]]
 }, Open  ]]
 }

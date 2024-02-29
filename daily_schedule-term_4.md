@@ -36,6 +36,6 @@ See also [Daily Schedule-Term 5](./daily_schedule-term_5.html)
 
 ### Week 7 &mdash; Exam 2
 
-* Tuesday, Feb. 20 &mdash; Exam 2 covering Problem Sets 6, 7, 8, and 9, Moore, Chapters Q6, Q7, and Q9, and Churchill, Brown, and Verhey, Sections 1-6
+* Tuesday, Feb. 20 &mdash;  [Exam 2](./exams/Exam2.nb.pdf) covering Problem Sets 6, 7, 8, and 9, Moore, Chapters Q6, Q7, and Q9, and Churchill, Brown, and Verhey, Sections 1-6
 
 <img src="./resources/GroupVelocity2.png" alt="Group velocity" width="100%">

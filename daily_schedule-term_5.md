@@ -1,24 +1,14 @@
-## SHAKESPEARE FESTIVAL
-
-February 21-23
-
-## SPRING BREAK
-
-February 24-March 10
-
 ## Modern Introductory Physics Part II &mdash; Daily Schedule Term 5
 
 Course [home page](./)
 
 See also [Daily Schedule-Term 4](./daily_schedule-term_4.html)
 
-*A VERY TENTATIVE OUTLINE FOLLOWS*
-
-*WE MUST BE WILLING TO SLOW DOWN IF THIS TURNS OUT TO BE TOO FAST A PACE*
+*A TENTATIVE OUTLINE FOLLOWS. THERE IS A FORK IN THE ROAD AT THE BEGINNING OF APRIL*
 
 ### Week 8 &mdash; Continue Wave Functions
 
-* Tuesday, Mar. 12 &mdash; Finish Q9 and start Q10 &mdash; *S<sub>x</sub>&thinsp;*, *S<sub>y</sub>&thinsp;*, and *S<sub>z</sub>* cannot be simultaneously specified &mdash; Position and momentum cannot be simultaneously specified! &mdash; The Heisenberg Uncertainty Principle &mdash; [Veritasium video on walkers](https://youtu.be/WIyTZDHuarQ) found by Miles &mdash; [Problem Set 10 - FORTHCOMING](./assignments/AssignmentFor2024-03-12.nb.pdf)
+* Tuesday, Mar. 12 &mdash; Finish Q9 and start Q10 &mdash; Study Moore through p. 154 &mdash; *S<sub>x</sub>&thinsp;*, *S<sub>y</sub>&thinsp;*, and *S<sub>z</sub>* cannot be simultaneously specified &mdash; Position and momentum cannot be simultaneously specified! &mdash; Changes of variables in integrals &mdash; Integration by parts &mdash; The momentum operator &mdash; The Heisenberg Uncertainty Principle &mdash; [Problem Set 10](./assignments/AssignmentFor2024-03-12.nb.pdf) for Tuesday
 * Friday, Mar. 15 &mdash; Finish Q10
 
 ### Week 9 &mdash; The Hydrogen Atom and the Schr&ouml;dinger Equation
@@ -29,7 +19,7 @@ See also [Daily Schedule-Term 4](./daily_schedule-term_4.html)
 ### Week 10 &mdash; Last Class on Quantum Mechanics? &mdash; Exam 3
 
 * Tuesday, Mar. 26 &mdash; Review day or buffer day in case we need to slow down while getting through Q12
-* Friday, Mar. 29 &mdash; Exam 3
+* Friday, Mar. 29 &mdash; Exam 3 covering Problem Sets 10-14 and Moore Chapters Q10, Q11, and Q12
 
 ### Week 11 &mdash; Leave Quantum Mechanics and Start Relativity?
 
