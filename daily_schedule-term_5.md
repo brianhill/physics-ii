@@ -8,7 +8,7 @@ See also [Daily Schedule-Term 4](./daily_schedule-term_4.html)
 
 ### Week 8 &mdash; Continue Wave Functions
 
-* Tuesday, Mar. 12 &mdash; Finish Q9 and start Q10 &mdash; Study Moore through p. 154 &mdash; *S<sub>x</sub>&thinsp;*, *S<sub>y</sub>&thinsp;*, and *S<sub>z</sub>* cannot be simultaneously specified &mdash; Position and momentum cannot be simultaneously specified! &mdash; Changes of variables in integrals &mdash; Integration by parts &mdash; The momentum operator &mdash; The Heisenberg Uncertainty Principle &mdash; [Problem Set 10](./assignments/AssignmentFor2024-03-12.nb.pdf) for Tuesday
+* Tuesday, Mar. 12 &mdash; Finish Q9 and start Q10 &mdash; Study Moore through p. 154 &mdash; *S<sub>x</sub>&thinsp;*, *S<sub>y</sub>&thinsp;*, and *S<sub>z</sub>* cannot be simultaneously specified &mdash; Position and momentum cannot be simultaneously specified! &mdash; Changes of variables in integrals &mdash; Integration by parts &mdash; The momentum operator &mdash; The [Heisenberg Uncertainty Principle](./resources/HeisenbergUncertaintyPrinciple.nb.pdf) &mdash; [Problem Set 10](./assignments/AssignmentFor2024-03-12.nb.pdf) for Tuesday
 * Friday, Mar. 15 &mdash; Finish Q10
 
 ### Week 9 &mdash; The Hydrogen Atom and the Schr&ouml;dinger Equation
