@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     97247,       1783]
-NotebookOptionsPosition[     95382,       1742]
-NotebookOutlinePosition[     95836,       1760]
-CellTagsIndexPosition[     95793,       1757]
+NotebookDataLength[     98476,       1812]
+NotebookOptionsPosition[     96610,       1771]
+NotebookOutlinePosition[     97064,       1789]
+CellTagsIndexPosition[     97021,       1786]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -1484,15 +1484,18 @@ this transition happens quickly compared to the transition from ",
   FormBox[
    RowBox[{
     SubscriptBox["E", "2"], "->", 
-    SubscriptBox["E", "1"]}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+    SubscriptBox["E", "1"]}], TraditionalForm]],ExpressionUUID->
   "0bdc0f4b-412a-4b71-9d12-90d530921a15"],
  ".\n\nBrian had a whacky analogy involving chukars. If the chukars reproduce \
 a lot faster than the hunters cull them, the population will grow \
 exponentially until something else comes into play (like the carrying \
 capacity of the ecosystem), and a large population of chukars will be present \
-in equilibrium. \n\nAnalogously to chukars, the material being pumped is \
-chosen so that lots of transitions from ",
+in equilibrium. \n\nIt would be fairly easy to make the chukars analogy more \
+precise using population dynamics models that are studied in classes like \
+Andy\[CloseCurlyQuote]s ecological modeling class, but it was intended just \
+to build intuition, so probably there is no need to make it more precise.\n\n\
+Analogously to chukars, the material being pumped is chosen so that \
+transitions from ",
  Cell[BoxData[
   FormBox[
    SubscriptBox["E", "3"], TraditionalForm]],ExpressionUUID->
@@ -1502,7 +1505,8 @@ chosen so that lots of transitions from ",
   FormBox[
    SubscriptBox["E", "2"], TraditionalForm]],ExpressionUUID->
   "cb806df7-8038-4ffa-8075-a65d5f466785"],
- " will occur, and occur much more readily than the transitions from ",
+ " will occur quickly, and in particular occur much more quickly and readily \
+than the transitions from ",
  Cell[BoxData[
   FormBox[
    SubscriptBox["E", "2"], TraditionalForm]],ExpressionUUID->
@@ -1518,7 +1522,10 @@ accumulate in state ",
   FormBox[
    SubscriptBox["E", "2"], TraditionalForm]],ExpressionUUID->
   "b2bfe40a-dc94-4bcf-8f30-794c27718bdd"],
- ".\n\nNow we have a material with far more atoms in state ",
+ ", just like a large number of chukars would accumulate if the hunter \
+culling rate were low compared to the reproduction rate.\n\nAssuming the \
+above properties are satisified by the material,  it will have far more atoms \
+in state ",
  Cell[BoxData[
   FormBox[
    SubscriptBox["E", "2"], TraditionalForm]],ExpressionUUID->
@@ -1528,7 +1535,7 @@ accumulate in state ",
   FormBox[
    SubscriptBox["E", "1"], TraditionalForm]],ExpressionUUID->
   "b14e729e-ef60-4840-a754-ab920b062b39"],
- ". This material is ready for lasing to occur in it."
+ ". The material is ready for lasing to occur in it."
 }], "Text",
  CellChangeTimes->{{3.9195066434964857`*^9, 3.9195069298722267`*^9}, {
   3.919507035943145*^9, 3.919507085181478*^9}, {3.919507127099791*^9, 
@@ -1536,7 +1543,8 @@ accumulate in state ",
   3.919507389524014*^9, 3.919507400096596*^9}, {3.919507692852813*^9, 
   3.919507737975986*^9}, {3.919507783507575*^9, 3.919507783697631*^9}, {
   3.919611569075592*^9, 3.919611628410412*^9}, {3.919611742964861*^9, 
-  3.919611938865479*^9}},ExpressionUUID->"80131080-c156-42c4-8831-\
+  3.919611938865479*^9}, {3.91961342140326*^9, 
+  3.919613663293435*^9}},ExpressionUUID->"80131080-c156-42c4-8831-\
 5cbd55968e43"]
 }, Open  ]],
 
@@ -1551,13 +1559,15 @@ Cell[TextData[{
  "In addition to choosing the material to be pumped for the above properties, \
 the material has to be shaped into a lasing cavity.\n\nWe have been doing \
 lots of quantons -in-a-box problems. A lasing cavity could be shaped like a \
-box. In practice it is usually shaped as a cylinder. Also, in a lasing cavity \
-the quantons are photons.\n\nThe pump light comes in through the side walls \
-of the cylinder. The end caps are silvered. This is how you make a mirrored \
-box that the photons cannot get out of.\n\nFor photons in a box, or any \
-quantons in a box, we know they have wave functions for each energy level. To \
-not confuse the photons energy levels with the atomic energy levels, let\
-\[CloseCurlyQuote]s call the photons\[CloseCurlyQuote] energy levels ",
+rectangular or cubical box. In practice it is usually shaped as a cylinder. \
+Also, in a lasing cavity the quantons are photons, so we can quit saying \
+\[OpenCurlyDoubleQuote]quantons.\[CloseCurlyDoubleQuote]\n\nThe pump light \
+comes in through the side walls of the cylinder. The end caps are silvered. \
+This is how you make a mirrored cylinder that the photons accumulate in.\n\n\
+For photons in a box, or any quantons in a box, we know they have \
+wavefunctions for each energy level. To not confuse the photons energy levels \
+with the atomic energy levels, let\[CloseCurlyQuote]s call the photon energy \
+levels ",
  Cell[BoxData[
   FormBox[
    SubscriptBox["\[Epsilon]", "i"], TraditionalForm]],ExpressionUUID->
@@ -1565,10 +1575,9 @@ not confuse the photons energy levels with the atomic energy levels, let\
  ".\n\nThe cavity will have some energy levels ",
  Cell[BoxData[
   FormBox[
-   SubscriptBox["\[Epsilon]", "i"], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+   SubscriptBox["\[Epsilon]", "i"], TraditionalForm]],ExpressionUUID->
   "a77c005f-9f56-4554-a13e-7dcf0cd7c667"],
- " that are at ",
+ " that are equal to ",
  Cell[BoxData[
   FormBox[
    RowBox[{
@@ -1578,14 +1587,12 @@ not confuse the photons energy levels with the atomic energy levels, let\
  ". So the many atoms in the material that are in state ",
  Cell[BoxData[
   FormBox[
-   SubscriptBox["E", "2"], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+   SubscriptBox["E", "2"], TraditionalForm]],ExpressionUUID->
   "3cebe2ab-bb45-4327-8b11-fe5803a6a291"],
  " can transition to state ",
  Cell[BoxData[
   FormBox[
-   SubscriptBox["E", "1"], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+   SubscriptBox["E", "1"], TraditionalForm]],ExpressionUUID->
   "42dbe8a7-8997-431e-b0f4-054c700de2e7"],
  " by emitting a photon with ",
  Cell[BoxData[
@@ -1596,38 +1603,57 @@ not confuse the photons energy levels with the atomic energy levels, let\
      SubscriptBox["E", "2"], "-", 
      SubscriptBox["E", "1"]}]}], TraditionalForm]],ExpressionUUID->
   "16805a42-7190-4050-84ec-7be4960bbf9d"],
- ".\n\nThe remarkable quantum thing that makes lasing possible is that if \
-there are ",
- Cell[BoxData[
-  FormBox["n", TraditionalForm]],ExpressionUUID->
-  "b30c703d-1a52-4608-b1e6-ebde29eed6db"],
- " photons in state with energy ",
+ ". When they do this, the pump light will push them back up to the state \
+with energy ",
  Cell[BoxData[
   FormBox[
-   SubscriptBox["\[Epsilon]", "i"], TraditionalForm]],ExpressionUUID->
+   SubscriptBox["E", "3"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "6f77ced0-f946-4858-8419-1776dc79544c"],
+ ".\n\n",
+ StyleBox["The remarkable quantum thing that makes lasing possible is that if \
+there are ",
+  FontSlant->"Italic"],
+ Cell[BoxData[
+  FormBox["n", TraditionalForm]],
+  FontSlant->"Italic",ExpressionUUID->
+  "b30c703d-1a52-4608-b1e6-ebde29eed6db"],
+ StyleBox[" photons in state with energy ",
+  FontSlant->"Italic"],
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["\[Epsilon]", "i"], TraditionalForm]],
+  FontSlant->"Italic",ExpressionUUID->
   "074f3749-2660-4e1b-a518-1fef56516c3d"],
- " then the probability amplitude for another photon to be emitted into this \
-exact same state is enhanced by a factor of ",
+ StyleBox[" then the probability amplitude for another photon to be emitted \
+into this exact same state is enhanced by a factor of ",
+  FontSlant->"Italic"],
  Cell[BoxData[
   FormBox[
    SqrtBox[
-    RowBox[{"n", " ", "+", " ", "1"}]], TraditionalForm]],ExpressionUUID->
+    RowBox[{"n", " ", "+", " ", "1"}]], TraditionalForm]],
+  FontSlant->"Italic",ExpressionUUID->
   "f9cc9b47-b896-4bc9-8a08-bf16664af3be"],
- ".  This probability amplitude must be squared to get a probability, so the \
-transition probability is enhanced by a factor of ",
+ StyleBox[".  This probability amplitude must be squared to get a \
+probability, so the transition probability is enhanced by a factor of ",
+  FontSlant->"Italic"],
  Cell[BoxData[
   FormBox[
-   RowBox[{"n", "+", "1"}], TraditionalForm]],ExpressionUUID->
+   RowBox[{"n", "+", "1"}], TraditionalForm]],
+  FontSlant->"Italic",ExpressionUUID->
   "b2ca49ce-df05-4b7b-88c1-fc315cb98916"],
- ".\n\nThis enhancement is known as \[OpenCurlyDoubleQuote]stimulated \
+ StyleBox[".",
+  FontSlant->"Italic"],
+ "\n\nThis enhancement is known as \[OpenCurlyDoubleQuote]stimulated \
 emission.\[CloseCurlyDoubleQuote] The term laser is an acronym for \
 \[OpenCurlyDoubleQuote]Light Amplification by  Stimulated Emission of \
 Radiation.\[CloseCurlyDoubleQuote]"
 }], "Text",
  CellChangeTimes->{{3.919507795138756*^9, 3.9195080099974737`*^9}, {
   3.919508047369479*^9, 3.919508378965824*^9}, {3.919611953684613*^9, 
-  3.919612152697488*^9}, {3.9196127709757957`*^9, 
-  3.919612830654819*^9}},ExpressionUUID->"599771d8-d6b9-4141-ab68-\
+  3.919612152697488*^9}, {3.9196127709757957`*^9, 3.919612830654819*^9}, {
+  3.919613672655518*^9, 
+  3.919613785115879*^9}},ExpressionUUID->"599771d8-d6b9-4141-ab68-\
 0601ade3d23d"]
 }, Open  ]],
 
@@ -1640,20 +1666,18 @@ Cell["A Subtlety", "Subsection",
 72c724cf2455"],
 
 Cell[TextData[{
- "In quantum mechanics, there is stimulated absorption as well. The \
-probability to excite an atom in state ",
+ "In quantum mechanics, there is stimulated absorption as well. In \
+particular, the probability to excite an atom in state ",
  Cell[BoxData[
   FormBox[
-   SubscriptBox["E", "1"], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+   SubscriptBox["E", "1"], TraditionalForm]],ExpressionUUID->
   "8d7efca7-9d30-4c92-b9e2-3499a7b26ec4"],
  " into the state ",
  Cell[BoxData[
   FormBox[
-   SubscriptBox["E", "2"], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+   SubscriptBox["E", "2"], TraditionalForm]],ExpressionUUID->
   "723ca300-9a6d-4cb9-ae21-c6521d50e2de"],
- " also is enhanced. It is proportional to ",
+ " by absorption of a photon also is enhanced. It is proportional to ",
  Cell[BoxData[
   FormBox[
    SqrtBox[
@@ -1661,8 +1685,7 @@ probability to excite an atom in state ",
   "0ef11963-18e0-49d7-bfe3-164605e99128"],
  " where ",
  Cell[BoxData[
-  FormBox["n", TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+  FormBox["n", TraditionalForm]],ExpressionUUID->
   "3eb7cdc8-2c96-49ce-86bb-02e184746942"],
  " is the number of photons in the state with ",
  Cell[BoxData[
@@ -1671,21 +1694,18 @@ probability to excite an atom in state ",
     SubscriptBox["\[Epsilon]", "i"], "=", 
     RowBox[{
      SubscriptBox["E", "2"], "-", 
-     SubscriptBox["E", "1"]}]}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+     SubscriptBox["E", "1"]}]}], TraditionalForm]],ExpressionUUID->
   "3bc6a636-c790-4721-96d9-d8fd895dee4e"],
  ".\n\nSo now you see why the population inversion is important. If the \
 populations of ",
  Cell[BoxData[
   FormBox[
-   SubscriptBox["E", "2"], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+   SubscriptBox["E", "2"], TraditionalForm]],ExpressionUUID->
   "72067fa7-088d-401b-ad4a-17a13d732d80"],
  " and ",
  Cell[BoxData[
   FormBox[
-   SubscriptBox["E", "1"], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+   SubscriptBox["E", "1"], TraditionalForm]],ExpressionUUID->
   "79a6cffc-1f4c-4a34-b85d-a4637984e7e1"],
  " were equal, you\[CloseCurlyQuote]d still have enhancement, but equally in \
 both directions (both stimulated emission and stimulated absorption).\n\nWe \
@@ -1694,17 +1714,27 @@ photons to end up in the same photon-in-a-box state."
 }], "Text",
  CellChangeTimes->{{3.919507795138756*^9, 3.9195080099974737`*^9}, {
   3.919508047369479*^9, 3.919508378965824*^9}, {3.919611953684613*^9, 
-  3.919612421290823*^9}},ExpressionUUID->"f15def90-ecbd-437b-a99c-\
+  3.919612421290823*^9}, {3.919613822285231*^9, 
+  3.91961383488516*^9}},ExpressionUUID->"f15def90-ecbd-437b-a99c-\
 68df23b41dc4"]
 }, Open  ]]
 }, Open  ]],
 
 Cell[CellGroupData[{
 
-Cell["WHY?!", "Section",
- CellChangeTimes->{{3.9195077611183457`*^9, 3.919507763074974*^9}, {
+Cell[TextData[{
+ "WHY ",
+ Cell[BoxData[
+  FormBox[
+   SqrtBox[
+    RowBox[{"n", " ", "+", " ", "1"}]], TraditionalForm]],ExpressionUUID->
+  "a4c435be-6847-4cac-a4f7-d98a03d2f69b"],
+ "!?"
+}], "Section",
+ CellChangeTimes->{{3.919507761118346*^9, 3.919507763074974*^9}, {
   3.919508374979086*^9, 3.91950837608176*^9}, {3.919612391691285*^9, 
-  3.919612398881835*^9}},ExpressionUUID->"d4ee3473-05c6-46a0-bdfd-\
+  3.919612398881835*^9}, {3.9196138587826757`*^9, 
+  3.919613868950933*^9}},ExpressionUUID->"d4ee3473-05c6-46a0-bdfd-\
 2d3caa7ab97e"],
 
 Cell[TextData[{
@@ -1720,23 +1750,22 @@ transition probability amplitude you calculate for photons. Again, the ",
   FormBox[
    RowBox[{"n", "+", "1"}], TraditionalForm]],ExpressionUUID->
   "ac4073a7-c19e-4ce5-8f4c-3cb88df362e8"],
- " in this formula is the number of photons present in the final state (which \
-has one more photon in it than it started with).\n\nIn deep contrast, for \
-fermions, such as electrons, you get a factor that is 0 if there is already \
-one fermion in the final state. This is one way of saying that no two \
-fermions can be in the same state. A second one simply will not transition \
-into it. That fact is a famously advanced one, and we\[CloseCurlyQuote]ll \
-just have to accept it as a fact. At least it is easy to precisely state the \
-result, so the proof (which is known as the \
+ " in this formula is the number of photons present in the final state.\n\nIn \
+deep contrast, for fermions, such as electrons, you get a factor that is 0 \
+for adding another fermion if there is already one fermion in the final \
+state. This equivalent to saying that \[OpenCurlyDoubleQuote]no two identical \
+fermions can be in the same state.\[CloseCurlyDoubleQuote] A second one \
+simply will not transition into it. That fact is a famously advanced one, and \
+we\[CloseCurlyQuote]ll just have to accept it as a fact. At least it is easy \
+to precisely state the result, so the proof (which is known as the \
 \[OpenCurlyDoubleQuote]spin-statistics theorem\[CloseCurlyDoubleQuote]) is \
-the part that is advanced. The first two paragraphs of the Wikipedia entry \
-summarize the result well."
+the part that is advanced, not the result."
 }], "Text",
  CellChangeTimes->{{3.919508395453796*^9, 3.9195084524259043`*^9}, {
   3.919512699536666*^9, 3.919512701536845*^9}, {3.919512756915968*^9, 
   3.9195129809068537`*^9}, {3.919612449910755*^9, 3.919612525714394*^9}, {
-  3.919612565821548*^9, 
-  3.919612655160492*^9}},ExpressionUUID->"3a02cea1-9792-423c-ac5b-\
+  3.919612565821548*^9, 3.919612655160492*^9}, {3.9196138849039717`*^9, 
+  3.919613985854459*^9}},ExpressionUUID->"3a02cea1-9792-423c-ac5b-\
 8d391fee01fd"]
 }, Open  ]]
 },
@@ -1770,20 +1799,20 @@ Cell[82700, 1423, 778, 13, 81, "Text",ExpressionUUID->"16154121-c94b-49f9-9981-1
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[83515, 1441, 668, 22, 54, "Subsection",ExpressionUUID->"66d880e7-776e-41c0-8510-35c4d7140d23"],
-Cell[84186, 1465, 3200, 74, 380, "Text",ExpressionUUID->"80131080-c156-42c4-8831-5cbd55968e43"]
+Cell[84186, 1465, 3714, 82, 495, "Text",ExpressionUUID->"80131080-c156-42c4-8831-5cbd55968e43"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[87423, 1544, 169, 3, 54, "Subsection",ExpressionUUID->"d53b7447-1091-4afa-ae3a-f34add207ba9"],
-Cell[87595, 1549, 3482, 81, 520, "Text",ExpressionUUID->"599771d8-d6b9-4141-ab68-0601ade3d23d"]
+Cell[87937, 1552, 169, 3, 54, "Subsection",ExpressionUUID->"d53b7447-1091-4afa-ae3a-f34add207ba9"],
+Cell[88109, 1557, 4051, 99, 566, "Text",ExpressionUUID->"599771d8-d6b9-4141-ab68-0601ade3d23d"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[91114, 1635, 256, 4, 54, "Subsection",ExpressionUUID->"6d54bc56-3a6a-4318-97d3-72c724cf2455"],
-Cell[91373, 1641, 2081, 56, 221, "Text",ExpressionUUID->"f15def90-ecbd-437b-a99c-68df23b41dc4"]
+Cell[92197, 1661, 256, 4, 54, "Subsection",ExpressionUUID->"6d54bc56-3a6a-4318-97d3-72c724cf2455"],
+Cell[92456, 1667, 1984, 51, 221, "Text",ExpressionUUID->"f15def90-ecbd-437b-a99c-68df23b41dc4"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[93503, 1703, 246, 4, 67, "Section",ExpressionUUID->"d4ee3473-05c6-46a0-bdfd-2d3caa7ab97e"],
-Cell[93752, 1709, 1614, 30, 244, "Text",ExpressionUUID->"3a02cea1-9792-423c-ac5b-8d391fee01fd"]
+Cell[94489, 1724, 472, 13, 69, "Section",ExpressionUUID->"d4ee3473-05c6-46a0-bdfd-2d3caa7ab97e"],
+Cell[94964, 1739, 1630, 29, 221, "Text",ExpressionUUID->"3a02cea1-9792-423c-ac5b-8d391fee01fd"]
 }, Open  ]]
 }
 ]

@@ -1,0 +1,160 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 14.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      5680,        152]
+NotebookOptionsPosition[      4701,        125]
+NotebookOutlinePosition[      5155,        143]
+CellTagsIndexPosition[      5112,        140]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Schrodinger\[CloseCurlyQuote]s Equation", "Section",
+ CellChangeTimes->{{3.9196113616839037`*^9, 3.919611364395649*^9}, {
+  3.919614049741705*^9, 
+  3.9196140545920343`*^9}},ExpressionUUID->"e73eea1c-cf69-4399-ab82-\
+8b5244f4a79b"],
+
+Cell["\<\
+In Chapter 10, you are already studying the solution of Schrodinger\
+\[CloseCurlyQuote]s Equation even though Moore is not going to explain it \
+until Chapter 12. Moore often does this (shows you a solution to help you \
+gain intuition before even giving you the full problem).
+
+I\[CloseCurlyQuote]d like to introduce Schrodinger\[CloseCurlyQuote]s \
+Equation now, and in fact, we have already been doing it, so this is mostly a \
+summary of what you know so far.\
+\>", "Text",
+ CellChangeTimes->{{3.9195066434964857`*^9, 3.9195069298722267`*^9}, {
+  3.91961137217327*^9, 3.919611422336157*^9}, {3.919614058856162*^9, 
+  3.91961415844606*^9}},ExpressionUUID->"23ea4677-c6f9-4935-9a9e-\
+c9a3d5b8f635"],
+
+Cell[CellGroupData[{
+
+Cell["De Broglie Waves", "Subsection",
+ CellChangeTimes->{{3.9195077611183457`*^9, 3.919507777058218*^9}, {
+  3.919614164937755*^9, 
+  3.919614173612521*^9}},ExpressionUUID->"375fae2c-411f-4d6f-b7a2-\
+5acc8471d502"],
+
+Cell[TextData[{
+ "Let\[CloseCurlyQuote]s recall de Broglie\[CloseCurlyQuote]s explanation for \
+electron interference. He supposed that an electron was a wave and its \
+wavefunction was\n\n",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["e", 
+    RowBox[{
+     RowBox[{"i", "\[VeryThinSpace]", "p", "\[VeryThinSpace]", 
+      RowBox[{"x", "/", "\[HBar]"}]}], " ", "-", " ", 
+     RowBox[{"i", "\[VeryThinSpace]", "E", "\[VeryThinSpace]", 
+      RowBox[{"t", "/", "\[HBar]"}]}]}]], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "73d841b2-5eb4-4512-abb6-3ae634b44e85"],
+ "\n\nIn this wave function, ",
+ Cell[BoxData[
+  FormBox["p", TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "27a2d058-acdb-4dc7-8e79-4ce64102a2ef"],
+ " is the electron\[CloseCurlyQuote]s momentum and ",
+ Cell[BoxData[
+  FormBox["E", TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "a58a8956-a5f9-4771-b430-74c225cf8ff7"],
+ " is its energy. We know that ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"E", "=", 
+    FractionBox[
+     SuperscriptBox["p", "2"], 
+     RowBox[{"2", "m"}]]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "11589bbe-8f19-4719-bf81-ff098bd1c85c"],
+ " for a free particle."
+}], "Text",
+ CellChangeTimes->{{3.9195066434964857`*^9, 3.9195069298722267`*^9}, {
+   3.919507035943145*^9, 3.919507085181478*^9}, {3.919507127099791*^9, 
+   3.919507198360621*^9}, {3.919507273082975*^9, 3.919507351486359*^9}, {
+   3.919507389524014*^9, 3.919507400096596*^9}, {3.919507692852813*^9, 
+   3.919507737975986*^9}, {3.919507783507575*^9, 3.919507783697631*^9}, {
+   3.919611569075592*^9, 3.919611628410412*^9}, 3.9196116647183447`*^9, {
+   3.919614255739382*^9, 
+   3.919614408206973*^9}},ExpressionUUID->"16154121-c94b-49f9-9981-\
+1d4def4a0b27"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Bohr", "Subsection",
+ CellChangeTimes->{{3.9195077611183457`*^9, 3.919507777058218*^9}, {
+  3.919614164937755*^9, 3.919614173612521*^9}, {3.919614415672009*^9, 
+  3.9196144166875973`*^9}},ExpressionUUID->"68790364-5a58-4085-a270-\
+2d76e658ca36"],
+
+Cell["\<\
+Bohr took this wave idea seriously and saw that he could explain the energy \
+levels of hydrogen by demanding that an integer number of electron \
+wavelengths wrapped around the hydrogen nucleus.
+
+
+...NOT DONE... ...TO BE CONTINUED...\
+\>", "Text",
+ CellChangeTimes->{{3.9195066434964857`*^9, 3.9195069298722267`*^9}, {
+   3.919507035943145*^9, 3.919507085181478*^9}, {3.919507127099791*^9, 
+   3.919507198360621*^9}, {3.919507273082975*^9, 3.919507351486359*^9}, {
+   3.919507389524014*^9, 3.919507400096596*^9}, {3.919507692852813*^9, 
+   3.919507737975986*^9}, {3.919507783507575*^9, 3.919507783697631*^9}, {
+   3.919611569075592*^9, 3.919611628410412*^9}, 3.9196116647183447`*^9, {
+   3.919614255739382*^9, 
+   3.919614515209289*^9}},ExpressionUUID->"74d81eef-1a8c-4452-85d0-\
+b2689984b002"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{808, 911},
+WindowMargins->{{545, Automatic}, {Automatic, 137}},
+PrintingCopies->10,
+PrintingPageRange->{1, Automatic},
+FrontEndVersion->"14.0 for Mac OS X ARM (64-bit) (December 12, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"953cc310-bcd1-4c8c-b35c-728b556b9b82"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 237, 4, 67, "Section",ExpressionUUID->"e73eea1c-cf69-4399-ab82-8b5244f4a79b"],
+Cell[820, 28, 710, 13, 150, "Text",ExpressionUUID->"23ea4677-c6f9-4935-9a9e-c9a3d5b8f635"],
+Cell[CellGroupData[{
+Cell[1555, 45, 215, 4, 54, "Subsection",ExpressionUUID->"375fae2c-411f-4d6f-b7a2-5acc8471d502"],
+Cell[1773, 51, 1804, 43, 155, "Text",ExpressionUUID->"16154121-c94b-49f9-9981-1d4def4a0b27"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3614, 99, 251, 4, 54, "Subsection",ExpressionUUID->"68790364-5a58-4085-a270-2d76e658ca36"],
+Cell[3868, 105, 805, 16, 127, "Text",ExpressionUUID->"74d81eef-1a8c-4452-85d0-b2689984b002"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
