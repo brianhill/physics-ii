@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     98476,       1812]
-NotebookOptionsPosition[     96610,       1771]
-NotebookOutlinePosition[     97064,       1789]
-CellTagsIndexPosition[     97021,       1786]
+NotebookDataLength[     98608,       1810]
+NotebookOptionsPosition[     96739,       1769]
+NotebookOutlinePosition[     97193,       1787]
+CellTagsIndexPosition[     97150,       1784]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -26,13 +26,13 @@ Cell["Lasers", "Section",
 8b5244f4a79b"],
 
 Cell["\<\
-We would like to understand just the basics, which is: how is a material \
+We would like to understand just the basic idea, which is: how is a material \
 arranged so as to get a huge number of photons into a single quantum state, a \
 teeny bit of which are bled off to make the laser beam.\
 \>", "Text",
  CellChangeTimes->{{3.9195066434964857`*^9, 3.9195069298722267`*^9}, {
-  3.91961137217327*^9, 
-  3.919611422336157*^9}},ExpressionUUID->"23ea4677-c6f9-4935-9a9e-\
+  3.91961137217327*^9, 3.919611422336157*^9}, {3.919621431699439*^9, 
+  3.9196214473313627`*^9}},ExpressionUUID->"23ea4677-c6f9-4935-9a9e-\
 c9a3d5b8f635"],
 
 Cell[CellGroupData[{
@@ -47,30 +47,26 @@ Cell[TextData[{
 of the atoms in a material to be in a state with energy ",
  Cell[BoxData[
   FormBox[
-   SubscriptBox["E", "2"], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+   SubscriptBox["E", "2"], TraditionalForm]],ExpressionUUID->
   "c0ff64b3-13d5-4398-ad47-46a3f62b8e04"],
  " vs. a state with energy ",
  Cell[BoxData[
   FormBox[
-   SubscriptBox["E", "1"], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+   SubscriptBox["E", "1"], TraditionalForm]],ExpressionUUID->
   "f2851236-bd74-49e6-88ef-fdb13c4166e7"],
  " where ",
  Cell[BoxData[
   FormBox[
-   SubscriptBox["E", "2"], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+   SubscriptBox["E", "2"], TraditionalForm]],ExpressionUUID->
   "58b55e9d-b0de-4621-a215-09ba28354be6"],
  " is greater than ",
  Cell[BoxData[
   FormBox[
-   SubscriptBox["E", "1"], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+   SubscriptBox["E", "1"], TraditionalForm]],ExpressionUUID->
   "cf0652e3-0b5d-403b-9c9c-0a2983574eb9"],
  ". What does \[OpenCurlyDoubleQuote]unnatural\[CloseCurlyDoubleQuote] mean. \
 Well, the more technical term is \[OpenCurlyDoubleQuote]population inversion.\
-\[CloseCurlyDoubleQuote]\n\nNormally, if a material has two energy levels, ",
+\[CloseCurlyDoubleQuote] Normally, if a material has two energy levels, ",
  Cell[BoxData[
   FormBox[
    SubscriptBox["E", "2"], TraditionalForm]],ExpressionUUID->
@@ -132,8 +128,8 @@ like in a fluorescent tube. The energy-level diagram for the three states \
 looks like:"
 }], "Text",
  CellChangeTimes->{{3.9195066434964857`*^9, 3.9195069298722267`*^9}, {
-  3.9196114301326838`*^9, 
-  3.9196115601744556`*^9}},ExpressionUUID->"4485f60d-e0aa-4e48-b963-\
+  3.9196114301326833`*^9, 3.9196115601744556`*^9}, {3.9196214682161818`*^9, 
+  3.919621469091247*^9}},ExpressionUUID->"4485f60d-e0aa-4e48-b963-\
 444c1538e09c"],
 
 Cell[BoxData[
@@ -1416,7 +1412,7 @@ fq9e33of9TcBLmj/ALmyhTM=
       "], "RGB", "XYZ"], Interleaving -> True],
    Selectable->False],
   DefaultBaseStyle->"ImageGraphics",
-  ImageSize->{411.71015625000007`, Automatic},
+  ImageSize->{350.21796875000007`, Automatic},
   ImageSizeRaw->{946., 964.},
   PlotRange->{{0, 946.}, {0, 964.}}]], "Input",ExpressionUUID->"ef92adfc-83e2-\
 4b51-982b-42c1ebbb5ebd"],
@@ -1524,7 +1520,7 @@ accumulate in state ",
   "b2bfe40a-dc94-4bcf-8f30-794c27718bdd"],
  ", just like a large number of chukars would accumulate if the hunter \
 culling rate were low compared to the reproduction rate.\n\nAssuming the \
-above properties are satisified by the material,  it will have far more atoms \
+above properties are satisfied by the material,  it will have far more atoms \
 in state ",
  Cell[BoxData[
   FormBox[
@@ -1538,13 +1534,13 @@ in state ",
  ". The material is ready for lasing to occur in it."
 }], "Text",
  CellChangeTimes->{{3.9195066434964857`*^9, 3.9195069298722267`*^9}, {
-  3.919507035943145*^9, 3.919507085181478*^9}, {3.919507127099791*^9, 
-  3.919507198360621*^9}, {3.919507273082975*^9, 3.919507351486359*^9}, {
-  3.919507389524014*^9, 3.919507400096596*^9}, {3.919507692852813*^9, 
-  3.919507737975986*^9}, {3.919507783507575*^9, 3.919507783697631*^9}, {
-  3.919611569075592*^9, 3.919611628410412*^9}, {3.919611742964861*^9, 
-  3.919611938865479*^9}, {3.91961342140326*^9, 
-  3.919613663293435*^9}},ExpressionUUID->"80131080-c156-42c4-8831-\
+   3.919507035943145*^9, 3.919507085181478*^9}, {3.919507127099791*^9, 
+   3.919507198360621*^9}, {3.919507273082975*^9, 3.919507351486359*^9}, {
+   3.919507389524014*^9, 3.919507400096596*^9}, {3.919507692852813*^9, 
+   3.919507737975986*^9}, {3.919507783507575*^9, 3.919507783697631*^9}, {
+   3.919611569075592*^9, 3.919611628410412*^9}, {3.919611742964861*^9, 
+   3.919611938865479*^9}, {3.91961342140326*^9, 3.919613663293435*^9}, 
+   3.919621514966216*^9},ExpressionUUID->"80131080-c156-42c4-8831-\
 5cbd55968e43"]
 }, Open  ]],
 
@@ -1558,7 +1554,7 @@ f34add207ba9"],
 Cell[TextData[{
  "In addition to choosing the material to be pumped for the above properties, \
 the material has to be shaped into a lasing cavity.\n\nWe have been doing \
-lots of quantons -in-a-box problems. A lasing cavity could be shaped like a \
+lots of quantons-in-a-box problems. A lasing cavity could be shaped like a \
 rectangular or cubical box. In practice it is usually shaped as a cylinder. \
 Also, in a lasing cavity the quantons are photons, so we can quit saying \
 \[OpenCurlyDoubleQuote]quantons.\[CloseCurlyDoubleQuote]\n\nThe pump light \
@@ -1603,12 +1599,11 @@ levels ",
      SubscriptBox["E", "2"], "-", 
      SubscriptBox["E", "1"]}]}], TraditionalForm]],ExpressionUUID->
   "16805a42-7190-4050-84ec-7be4960bbf9d"],
- ". When they do this, the pump light will push them back up to the state \
+ ". After they do this, the pump light will push them back up to the state \
 with energy ",
  Cell[BoxData[
   FormBox[
-   SubscriptBox["E", "3"], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+   SubscriptBox["E", "3"], TraditionalForm]],ExpressionUUID->
   "6f77ced0-f946-4858-8419-1776dc79544c"],
  ".\n\n",
  StyleBox["The remarkable quantum thing that makes lasing possible is that if \
@@ -1650,10 +1645,11 @@ emission.\[CloseCurlyDoubleQuote] The term laser is an acronym for \
 Radiation.\[CloseCurlyDoubleQuote]"
 }], "Text",
  CellChangeTimes->{{3.919507795138756*^9, 3.9195080099974737`*^9}, {
-  3.919508047369479*^9, 3.919508378965824*^9}, {3.919611953684613*^9, 
-  3.919612152697488*^9}, {3.9196127709757957`*^9, 3.919612830654819*^9}, {
-  3.919613672655518*^9, 
-  3.919613785115879*^9}},ExpressionUUID->"599771d8-d6b9-4141-ab68-\
+   3.919508047369479*^9, 3.919508378965824*^9}, {3.919611953684613*^9, 
+   3.919612152697488*^9}, {3.9196127709757957`*^9, 3.919612830654819*^9}, {
+   3.919613672655518*^9, 3.919613785115879*^9}, 3.919621525820127*^9, {
+   3.919621605279908*^9, 
+   3.919621605982068*^9}},ExpressionUUID->"599771d8-d6b9-4141-ab68-\
 0601ade3d23d"]
 }, Open  ]],
 
@@ -1708,16 +1704,17 @@ populations of ",
    SubscriptBox["E", "1"], TraditionalForm]],ExpressionUUID->
   "79a6cffc-1f4c-4a34-b85d-a4637984e7e1"],
  " were equal, you\[CloseCurlyQuote]d still have enhancement, but equally in \
-both directions (both stimulated emission and stimulated absorption).\n\nWe \
-need both stimulated emission and the population inversion to cause a lot of \
-photons to end up in the same photon-in-a-box state."
+both directions (both stimulated emission and stimulated absorption). ",
+ StyleBox["We need both stimulated emission and the population inversion to \
+cause a lot of photons to end up in the same photon-in-a-box state.",
+  FontSlant->"Italic"]
 }], "Text",
  CellChangeTimes->{{3.919507795138756*^9, 3.9195080099974737`*^9}, {
   3.919508047369479*^9, 3.919508378965824*^9}, {3.919611953684613*^9, 
-  3.919612421290823*^9}, {3.919613822285231*^9, 
-  3.91961383488516*^9}},ExpressionUUID->"f15def90-ecbd-437b-a99c-\
+  3.919612421290823*^9}, {3.919613822285231*^9, 3.91961383488516*^9}, {
+  3.919621942090994*^9, 
+  3.919621942740608*^9}},ExpressionUUID->"f15def90-ecbd-437b-a99c-\
 68df23b41dc4"]
-}, Open  ]]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1730,10 +1727,10 @@ Cell[TextData[{
     RowBox[{"n", " ", "+", " ", "1"}]], TraditionalForm]],ExpressionUUID->
   "a4c435be-6847-4cac-a4f7-d98a03d2f69b"],
  "!?"
-}], "Section",
+}], "Subsection",
  CellChangeTimes->{{3.919507761118346*^9, 3.919507763074974*^9}, {
   3.919508374979086*^9, 3.91950837608176*^9}, {3.919612391691285*^9, 
-  3.919612398881835*^9}, {3.9196138587826757`*^9, 
+  3.919612398881835*^9}, {3.919613858782676*^9, 
   3.919613868950933*^9}},ExpressionUUID->"d4ee3473-05c6-46a0-bdfd-\
 2d3caa7ab97e"],
 
@@ -1768,9 +1765,10 @@ the part that is advanced, not the result."
   3.919613985854459*^9}},ExpressionUUID->"3a02cea1-9792-423c-ac5b-\
 8d391fee01fd"]
 }, Open  ]]
+}, Open  ]]
 },
 WindowSize->{808, 911},
-WindowMargins->{{545, Automatic}, {Automatic, 137}},
+WindowMargins->{{544, Automatic}, {Automatic, 137}},
 PrintingCopies->10,
 PrintingPageRange->{1, Automatic},
 FrontEndVersion->"14.0 for Mac OS X ARM (64-bit) (December 12, 2023)",
@@ -1790,29 +1788,29 @@ CellTagsIndex->{}
 Notebook[{
 Cell[CellGroupData[{
 Cell[580, 22, 153, 3, 67, "Section",ExpressionUUID->"e73eea1c-cf69-4399-ab82-8b5244f4a79b"],
-Cell[736, 27, 412, 8, 58, "Text",ExpressionUUID->"23ea4677-c6f9-4935-9a9e-c9a3d5b8f635"],
+Cell[736, 27, 464, 8, 58, "Text",ExpressionUUID->"23ea4677-c6f9-4935-9a9e-c9a3d5b8f635"],
 Cell[CellGroupData[{
-Cell[1173, 39, 170, 3, 54, "Subsection",ExpressionUUID->"375fae2c-411f-4d6f-b7a2-5acc8471d502"],
-Cell[1346, 44, 3364, 92, 353, "Text",ExpressionUUID->"4485f60d-e0aa-4e48-b963-444c1538e09c"],
-Cell[4713, 138, 77984, 1283, 433, "Input",ExpressionUUID->"ef92adfc-83e2-4b51-982b-42c1ebbb5ebd"],
-Cell[82700, 1423, 778, 13, 81, "Text",ExpressionUUID->"16154121-c94b-49f9-9981-1d4def4a0b27"]
+Cell[1225, 39, 170, 3, 54, "Subsection",ExpressionUUID->"375fae2c-411f-4d6f-b7a2-5acc8471d502"],
+Cell[1398, 44, 3285, 88, 330, "Text",ExpressionUUID->"4485f60d-e0aa-4e48-b963-444c1538e09c"],
+Cell[4686, 134, 77984, 1283, 370, "Input",ExpressionUUID->"ef92adfc-83e2-4b51-982b-42c1ebbb5ebd"],
+Cell[82673, 1419, 778, 13, 81, "Text",ExpressionUUID->"16154121-c94b-49f9-9981-1d4def4a0b27"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[83515, 1441, 668, 22, 54, "Subsection",ExpressionUUID->"66d880e7-776e-41c0-8510-35c4d7140d23"],
-Cell[84186, 1465, 3714, 82, 495, "Text",ExpressionUUID->"80131080-c156-42c4-8831-5cbd55968e43"]
+Cell[83488, 1437, 668, 22, 54, "Subsection",ExpressionUUID->"66d880e7-776e-41c0-8510-35c4d7140d23"],
+Cell[84159, 1461, 3742, 82, 495, "Text",ExpressionUUID->"80131080-c156-42c4-8831-5cbd55968e43"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[87937, 1552, 169, 3, 54, "Subsection",ExpressionUUID->"d53b7447-1091-4afa-ae3a-f34add207ba9"],
-Cell[88109, 1557, 4051, 99, 566, "Text",ExpressionUUID->"599771d8-d6b9-4141-ab68-0601ade3d23d"]
+Cell[87938, 1548, 169, 3, 54, "Subsection",ExpressionUUID->"d53b7447-1091-4afa-ae3a-f34add207ba9"],
+Cell[88110, 1553, 4096, 99, 566, "Text",ExpressionUUID->"599771d8-d6b9-4141-ab68-0601ade3d23d"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[92197, 1661, 256, 4, 54, "Subsection",ExpressionUUID->"6d54bc56-3a6a-4318-97d3-72c724cf2455"],
-Cell[92456, 1667, 1984, 51, 221, "Text",ExpressionUUID->"f15def90-ecbd-437b-a99c-68df23b41dc4"]
+Cell[92243, 1657, 256, 4, 54, "Subsection",ExpressionUUID->"6d54bc56-3a6a-4318-97d3-72c724cf2455"],
+Cell[92502, 1663, 2066, 53, 198, "Text",ExpressionUUID->"f15def90-ecbd-437b-a99c-68df23b41dc4"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[94605, 1721, 473, 13, 56, "Subsection",ExpressionUUID->"d4ee3473-05c6-46a0-bdfd-2d3caa7ab97e"],
+Cell[95081, 1736, 1630, 29, 221, "Text",ExpressionUUID->"3a02cea1-9792-423c-ac5b-8d391fee01fd"]
 }, Open  ]]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[94489, 1724, 472, 13, 69, "Section",ExpressionUUID->"d4ee3473-05c6-46a0-bdfd-2d3caa7ab97e"],
-Cell[94964, 1739, 1630, 29, 221, "Text",ExpressionUUID->"3a02cea1-9792-423c-ac5b-8d391fee01fd"]
 }, Open  ]]
 }
 ]
