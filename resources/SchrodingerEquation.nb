@@ -10,20 +10,20 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      5680,        152]
-NotebookOptionsPosition[      4701,        125]
-NotebookOutlinePosition[      5155,        143]
-CellTagsIndexPosition[      5112,        140]
+NotebookDataLength[     19276,        533]
+NotebookOptionsPosition[     17839,        498]
+NotebookOutlinePosition[     18293,        516]
+CellTagsIndexPosition[     18250,        513]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
 
 Cell[CellGroupData[{
-Cell["Schrodinger\[CloseCurlyQuote]s Equation", "Section",
+Cell["Schr\[ODoubleDot]dinger\[CloseCurlyQuote]s Equation", "Section",
  CellChangeTimes->{{3.9196113616839037`*^9, 3.919611364395649*^9}, {
-  3.919614049741705*^9, 
-  3.9196140545920343`*^9}},ExpressionUUID->"e73eea1c-cf69-4399-ab82-\
+  3.919614049741705*^9, 3.919614054592035*^9}, {3.9196221245942802`*^9, 
+  3.919622128031563*^9}},ExpressionUUID->"e73eea1c-cf69-4399-ab82-\
 8b5244f4a79b"],
 
 Cell["\<\
@@ -34,11 +34,12 @@ gain intuition before even giving you the full problem).
 
 I\[CloseCurlyQuote]d like to introduce Schrodinger\[CloseCurlyQuote]s \
 Equation now, and in fact, we have already been doing it, so this is mostly a \
-summary of what you know so far.\
+summary of what you know so far, but at the end I go somewhat further.\
 \>", "Text",
  CellChangeTimes->{{3.9195066434964857`*^9, 3.9195069298722267`*^9}, {
   3.91961137217327*^9, 3.919611422336157*^9}, {3.919614058856162*^9, 
-  3.91961415844606*^9}},ExpressionUUID->"23ea4677-c6f9-4935-9a9e-\
+  3.91961415844606*^9}, {3.919622105908215*^9, 
+  3.919622114377983*^9}},ExpressionUUID->"23ea4677-c6f9-4935-9a9e-\
 c9a3d5b8f635"],
 
 Cell[CellGroupData[{
@@ -97,29 +98,401 @@ wavefunction was\n\n",
 
 Cell[CellGroupData[{
 
-Cell["Bohr", "Subsection",
- CellChangeTimes->{{3.9195077611183457`*^9, 3.919507777058218*^9}, {
-  3.919614164937755*^9, 3.919614173612521*^9}, {3.919614415672009*^9, 
-  3.9196144166875973`*^9}},ExpressionUUID->"68790364-5a58-4085-a270-\
-2d76e658ca36"],
+Cell["The Time-Dependent Schr\[ODoubleDot]dinger Equation", "Subsection",
+ CellChangeTimes->{{3.919507761118346*^9, 3.919507777058218*^9}, {
+  3.919614164937755*^9, 3.919614173612521*^9}, {3.919622131041226*^9, 
+  3.919622143911295*^9}},ExpressionUUID->"0d026eb9-57fe-4bab-a704-\
+be49b452a617"],
 
-Cell["\<\
-Bohr took this wave idea seriously and saw that he could explain the energy \
-levels of hydrogen by demanding that an integer number of electron \
-wavelengths wrapped around the hydrogen nucleus.
-
-
-...NOT DONE... ...TO BE CONTINUED...\
-\>", "Text",
+Cell[TextData[{
+ "We can capture the equation\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"E", "=", 
+    RowBox[{
+     FractionBox[
+      SuperscriptBox[
+       SubscriptBox["p", "x"], "2"], 
+      RowBox[{"2", "m"}]], "+", 
+     RowBox[{"V", "(", 
+      RowBox[{"x", ",", "t"}], ")"}]}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "229b88de-78e7-4204-9f1c-57fbbaecf887"],
+ "\n\nby looking at what we would have to do to de Broglie\[CloseCurlyQuote]s \
+waves.\n\nTo get ",
+ Cell[BoxData[
+  FormBox["E", TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "01131905-1bef-4578-89a0-6ac1418a5828"],
+ ", which you are supposed to pretend for a moment that you don\
+\[CloseCurlyQuote]t know, you could apply ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"i\[HBar]", 
+    FractionBox["\[PartialD]", 
+     RowBox[{"\[PartialD]", "t"}]]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "ea0b6d53-0d3b-4830-9215-eee86331e3b7"],
+ " to de Broglie\[CloseCurlyQuote]s wave.\n\nTo get ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["p", "x"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "8f3b4ea0-ce3e-4dc7-be37-3279bbbcea0f"],
+ " which you must also pretend for a moment that you don\[CloseCurlyQuote]t \
+know, you could apply ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    FractionBox["\[HBar]", "i"], 
+    FractionBox["\[PartialD]", 
+     RowBox[{"\[PartialD]", "x"}]]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "dc213506-6a6f-47b4-a525-8196064e0663"],
+ " to de Broglie\[CloseCurlyQuote]s wave. But we want ",
+ Cell[BoxData[
+  FormBox[
+   FractionBox[
+    SuperscriptBox[
+     SubscriptBox["p", "x"], "2"], 
+    RowBox[{"2", "m"}]], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "3ac7550c-f333-40be-9237-e6d9182d390d"],
+ " so we have to apply ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    FractionBox[
+     RowBox[{"-", 
+      SuperscriptBox["\[HBar]", "2"]}], 
+     RowBox[{"2", "m"}]], 
+    FractionBox[
+     SuperscriptBox["\[PartialD]", "2"], 
+     RowBox[{"\[PartialD]", 
+      SuperscriptBox["x", "2"]}]]}], TraditionalForm]],ExpressionUUID->
+  "a1a990bf-b18a-48a7-bb72-0a2d6a825349"],
+ " to the wave. Now that we have figured out what to apply, we can do it to \
+any wavefunction ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[Psi]", "(", 
+    RowBox[{"x", ",", "t"}], ")"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "5b6ce7ae-2ab8-4b34-9cfd-6bf2dcfb0656"],
+ ", not just to de Broglie\[CloseCurlyQuote]s plane waves.\n\nIn other words, \
+we could make the leap that energy equals kinetic energy plus potential \
+energy implies that:\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"i\[HBar]", 
+     FractionBox[
+      RowBox[{"\[PartialD]", 
+       RowBox[{"\[Psi]", "(", 
+        RowBox[{"x", ",", "t"}], ")"}]}], 
+      RowBox[{"\[PartialD]", "t"}]]}], "=", 
+    RowBox[{
+     RowBox[{
+      FractionBox[
+       RowBox[{"-", 
+        SuperscriptBox["\[HBar]", "2"]}], 
+       RowBox[{"2", "m"}]], 
+      FractionBox[
+       RowBox[{
+        SuperscriptBox["\[PartialD]", "2"], 
+        RowBox[{"\[Psi]", "(", 
+         RowBox[{"x", ",", "t"}], ")"}]}], 
+       RowBox[{"\[PartialD]", 
+        SuperscriptBox["x", "2"]}]]}], "+", 
+     RowBox[{
+      RowBox[{"V", "(", 
+       RowBox[{"x", ",", "t"}], ")"}], 
+      RowBox[{"\[Psi]", "(", 
+       RowBox[{"x", ",", "t"}], ")"}]}]}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "513fe521-7047-4b5e-8dfa-d8308422bd14"],
+ "\n\nWe have Schr\[ODoubleDot]dinger\[CloseCurlyQuote]s equation, and \
+shortly you will see that there is a second version of \
+Schr\[ODoubleDot]dinger\[CloseCurlyQuote]s equation."
+}], "Text",
  CellChangeTimes->{{3.9195066434964857`*^9, 3.9195069298722267`*^9}, {
    3.919507035943145*^9, 3.919507085181478*^9}, {3.919507127099791*^9, 
    3.919507198360621*^9}, {3.919507273082975*^9, 3.919507351486359*^9}, {
    3.919507389524014*^9, 3.919507400096596*^9}, {3.919507692852813*^9, 
    3.919507737975986*^9}, {3.919507783507575*^9, 3.919507783697631*^9}, {
    3.919611569075592*^9, 3.919611628410412*^9}, 3.9196116647183447`*^9, {
-   3.919614255739382*^9, 
-   3.919614515209289*^9}},ExpressionUUID->"74d81eef-1a8c-4452-85d0-\
-b2689984b002"]
+   3.919614255739382*^9, 3.919614408206973*^9}, {3.9196221493011923`*^9, 
+   3.9196224621994*^9}, {3.919622941266615*^9, 3.9196230009606733`*^9}, {
+   3.919623287762731*^9, 
+   3.91962338736769*^9}},ExpressionUUID->"044d076d-07a4-4569-8c0e-\
+c76d1b3e16be"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["The Ansatz and the Time-Independent Schr\[ODoubleDot]dinger Equation", \
+"Subsection",
+ CellChangeTimes->{{3.919507761118346*^9, 3.919507777058218*^9}, {
+  3.919614164937755*^9, 3.919614173612521*^9}, {3.919622131041226*^9, 
+  3.919622143911295*^9}, {3.91962247554007*^9, 3.919622477127359*^9}, {
+  3.919622817421266*^9, 
+  3.9196228272184057`*^9}},ExpressionUUID->"98842428-aa25-439b-9700-\
+3144663d4b58"],
+
+Cell[TextData[{
+ "We know that solutions of different energies exist (otherwise we wouldn\
+\[CloseCurlyQuote]t have stable atoms), so we guess that\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"\[Psi]", "(", 
+     RowBox[{"x", ",", "t"}], ")"}], "=", 
+    RowBox[{
+     SuperscriptBox["e", 
+      RowBox[{
+       RowBox[{"-", "i"}], "\[VeryThinSpace]", 
+       SubscriptBox["E", "n"], 
+       RowBox[{"t", "/", "\[HBar]"}]}]], 
+     RowBox[{"\[Psi]", "(", "x", ")"}]}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "d10b65a0-7b29-4fec-b64f-e62f365b94b3"],
+ "        <<<===     the ansatz\n\nwhere ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["E", "n"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "90ee1319-ed27-4cda-907e-6a6a9b0f1034"],
+ " is one of these energies. We plug this guess into\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"i\[HBar]", 
+     FractionBox[
+      RowBox[{"\[PartialD]", 
+       RowBox[{"\[Psi]", "(", 
+        RowBox[{"x", ",", "t"}], ")"}]}], 
+      RowBox[{"\[PartialD]", "t"}]]}], "=", 
+    RowBox[{
+     RowBox[{
+      FractionBox[
+       RowBox[{"-", 
+        SuperscriptBox["\[HBar]", "2"]}], 
+       RowBox[{"2", "m"}]], 
+      FractionBox[
+       RowBox[{
+        SuperscriptBox["\[PartialD]", "2"], 
+        RowBox[{"\[Psi]", "(", 
+         RowBox[{"x", ",", "t"}], ")"}]}], 
+       RowBox[{"\[PartialD]", 
+        SuperscriptBox["x", "2"]}]]}], "+", 
+     RowBox[{
+      RowBox[{"V", "(", 
+       RowBox[{"x", ",", "t"}], ")"}], 
+      RowBox[{"\[Psi]", "(", 
+       RowBox[{"x", ",", "t"}], ")"}]}]}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "22334497-21b1-471d-9418-25002765eb49"],
+ "\n\nand we get\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SubscriptBox["E", "n"], 
+     SuperscriptBox["e", 
+      RowBox[{
+       RowBox[{"-", "i"}], "\[VeryThinSpace]", 
+       SubscriptBox["E", "n"], 
+       RowBox[{"t", "/", "\[HBar]"}]}]], 
+     RowBox[{"\[Psi]", "(", "x", ")"}]}], "=", 
+    RowBox[{
+     RowBox[{
+      FractionBox[
+       RowBox[{"-", 
+        SuperscriptBox["\[HBar]", "2"]}], 
+       RowBox[{"2", "m"}]], 
+      SuperscriptBox["e", 
+       RowBox[{
+        RowBox[{"-", "i"}], "\[VeryThinSpace]", 
+        SubscriptBox["E", "n"], 
+        RowBox[{"t", "/", "\[HBar]"}]}]], 
+      FractionBox[
+       RowBox[{
+        SuperscriptBox["d", "2"], 
+        RowBox[{"\[Psi]", "(", "x", ")"}]}], 
+       SuperscriptBox["dx", "2"]]}], "+", 
+     RowBox[{
+      RowBox[{"V", "(", 
+       RowBox[{"x", ",", "t"}], ")"}], 
+      SuperscriptBox["e", 
+       RowBox[{
+        RowBox[{"-", "i"}], "\[VeryThinSpace]", 
+        SubscriptBox["E", "n"], 
+        RowBox[{"t", "/", "\[HBar]"}]}]], 
+      RowBox[{"\[Psi]", "(", "x", ")"}]}]}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "aa925df3-96bb-4a9f-b92d-518031fedbbd"],
+ "\n\nPROVIDED that ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"V", "(", 
+    RowBox[{"x", ",", "t"}], ")"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "c57e5ead-04d4-4543-90f6-033262433693"],
+ " is in fact time-independent, e.g., ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"V", "(", 
+     RowBox[{"x", ",", "t"}], ")"}], "=", 
+    RowBox[{"V", "(", "x", ")"}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "f7292d42-a8c2-48ea-af01-2da865f868e7"],
+ ", then all the time-dependence in the equation is the same in every term \
+(just ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["e", 
+    RowBox[{
+     RowBox[{"-", "i"}], "\[VeryThinSpace]", 
+     SubscriptBox["E", "n"], 
+     RowBox[{"t", "/", "\[HBar]"}]}]], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "a8c4c91b-db00-437a-a529-c01827d00868"],
+ ") and we can cancel it off, leaving:\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SubscriptBox["E", "n"], 
+     RowBox[{"\[Psi]", "(", "x", ")"}]}], "=", 
+    RowBox[{
+     RowBox[{
+      FractionBox[
+       RowBox[{"-", 
+        SuperscriptBox["\[HBar]", "2"]}], 
+       RowBox[{"2", "m"}]], 
+      FractionBox[
+       RowBox[{
+        SuperscriptBox["d", "2"], 
+        RowBox[{"\[Psi]", "(", "x", ")"}]}], 
+       SuperscriptBox["dx", "2"]]}], "+", 
+     RowBox[{
+      RowBox[{"V", "(", "x", ")"}], 
+      RowBox[{"\[Psi]", "(", "x", ")"}]}]}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "a7c97186-1a88-45c3-97bb-106a0596fbf7"],
+ "\n\nBecause we have two versions of Schr\[ODoubleDot]dinger\
+\[CloseCurlyQuote]s equation, we have to give them different names. This one \
+is the \[OpenCurlyDoubleQuote]time-independent Schr\[ODoubleDot]dinger \
+equation\[CloseCurlyDoubleQuote] and the one we had in the previous \
+sub-section is the \[OpenCurlyDoubleQuote]time-dependent \
+Schr\[ODoubleDot]dinger equation.\[CloseCurlyDoubleQuote]"
+}], "Text",
+ CellChangeTimes->{{3.9195066434964857`*^9, 3.9195069298722267`*^9}, {
+   3.919507035943145*^9, 3.919507085181478*^9}, {3.919507127099791*^9, 
+   3.919507198360621*^9}, {3.919507273082975*^9, 3.919507351486359*^9}, {
+   3.919507389524014*^9, 3.919507400096596*^9}, {3.919507692852813*^9, 
+   3.919507737975986*^9}, {3.919507783507575*^9, 3.919507783697631*^9}, {
+   3.919611569075592*^9, 3.919611628410412*^9}, 3.9196116647183447`*^9, {
+   3.919614255739382*^9, 3.919614408206973*^9}, {3.9196221493011923`*^9, 
+   3.919622918765671*^9}, {3.919623402986972*^9, 3.91962341728376*^9}, {
+   3.919623463178877*^9, 
+   3.9196234690819473`*^9}},ExpressionUUID->"ff0fbf52-074e-45c9-a781-\
+147e38a23f79"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Combining Solutions", "Subsection",
+ CellChangeTimes->{{3.919507761118346*^9, 3.919507777058218*^9}, {
+  3.919614164937755*^9, 3.919614173612521*^9}, {3.919622131041226*^9, 
+  3.919622143911295*^9}, {3.91962247554007*^9, 3.919622477127359*^9}, {
+  3.919622817421266*^9, 3.9196228272184057`*^9}, {3.9196230128839703`*^9, 
+  3.919623019426103*^9}},ExpressionUUID->"f807fa6f-b04c-465f-a363-\
+9d4b9b361b6c"],
+
+Cell[TextData[{
+ "If we have two solutions with energies ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["E", "n"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "d0831523-a882-4bb5-8628-f9ff26ba2a31"],
+ " and ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["E", "m"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "39665fe2-ec24-4145-b7cc-eb420290dccc"],
+ ", we can combine them as follows:\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"\[Psi]", "(", 
+     RowBox[{"x", ",", "t"}], ")"}], "=", 
+    StyleBox[
+     FractionBox[
+      RowBox[{
+       RowBox[{
+        SubscriptBox["a", "n"], 
+        SuperscriptBox["e", 
+         RowBox[{
+          RowBox[{"-", "i"}], "\[VeryThinSpace]", 
+          SubscriptBox["E", "n"], 
+          RowBox[{"t", "/", "\[HBar]"}]}]], 
+        RowBox[{
+         SubscriptBox["\[Psi]", "n"], "(", "x", ")"}]}], " ", "+", 
+       RowBox[{
+        SubscriptBox["a", "m"], 
+        SuperscriptBox["e", 
+         RowBox[{
+          RowBox[{"-", "i"}], "\[VeryThinSpace]", 
+          SubscriptBox["E", "m"], 
+          RowBox[{"t", "/", "\[HBar]"}]}]], 
+        RowBox[{
+         SubscriptBox["\[Psi]", "m"], "(", "x", ")"}], " "}]}], 
+      SqrtBox[
+       RowBox[{
+        SuperscriptBox[
+         RowBox[{"\[LeftBracketingBar]", 
+          SubscriptBox["a", "n"], "\[RightBracketingBar]"}], "2"], "+", 
+        SuperscriptBox[
+         RowBox[{"\[LeftBracketingBar]", 
+          SubscriptBox["a", "m"], "\[RightBracketingBar]"}], "2"]}]]],
+     FontSize->24]}], TraditionalForm]],ExpressionUUID->
+  "ed9e8232-6bcc-4bb7-91fc-a54711c750d2"],
+ "\n\nwhere ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["a", "n"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "a9b6be16-b270-4c5d-a94f-1f3856b699fe"],
+ " and ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["a", "m"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "fce8c402-7817-4e1d-ae3e-aeb3e1a703e6"],
+ " are any constants, and the ",
+ Cell[BoxData[
+  FormBox[
+   SqrtBox[
+    RowBox[{
+     SuperscriptBox[
+      RowBox[{"\[LeftBracketingBar]", 
+       SubscriptBox["a", "n"], "\[RightBracketingBar]"}], "2"], "+", 
+     SuperscriptBox[
+      RowBox[{"\[LeftBracketingBar]", 
+       SubscriptBox["a", "m"], "\[RightBracketingBar]"}], "2"]}]], 
+   TraditionalForm]],ExpressionUUID->"e97ac17d-b636-4f29-bb80-90897b707095"],
+ " in the denominator is there to keep the combination normalized. The \
+important thing about this combination is that it is also a solution of the \
+time-dependent Schr\[ODoubleDot]dinger\[CloseCurlyQuote]s equation!"
+}], "Text",
+ CellChangeTimes->{{3.919623047387286*^9, 3.919623249507094*^9}, {
+  3.9196235000620213`*^9, 3.919623640169423*^9}, {3.919623677793682*^9, 
+  3.919623681254595*^9}},ExpressionUUID->"d0e67fe1-aebc-41bd-a802-\
+d0dffd226e81"]
 }, Open  ]]
 }, Open  ]]
 },
@@ -143,15 +516,23 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 237, 4, 67, "Section",ExpressionUUID->"e73eea1c-cf69-4399-ab82-8b5244f4a79b"],
-Cell[820, 28, 710, 13, 150, "Text",ExpressionUUID->"23ea4677-c6f9-4935-9a9e-c9a3d5b8f635"],
+Cell[580, 22, 295, 4, 67, "Section",ExpressionUUID->"e73eea1c-cf69-4399-ab82-8b5244f4a79b"],
+Cell[878, 28, 797, 14, 150, "Text",ExpressionUUID->"23ea4677-c6f9-4935-9a9e-c9a3d5b8f635"],
 Cell[CellGroupData[{
-Cell[1555, 45, 215, 4, 54, "Subsection",ExpressionUUID->"375fae2c-411f-4d6f-b7a2-5acc8471d502"],
-Cell[1773, 51, 1804, 43, 155, "Text",ExpressionUUID->"16154121-c94b-49f9-9981-1d4def4a0b27"]
+Cell[1700, 46, 215, 4, 54, "Subsection",ExpressionUUID->"375fae2c-411f-4d6f-b7a2-5acc8471d502"],
+Cell[1918, 52, 1804, 43, 155, "Text",ExpressionUUID->"16154121-c94b-49f9-9981-1d4def4a0b27"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[3614, 99, 251, 4, 54, "Subsection",ExpressionUUID->"68790364-5a58-4085-a270-2d76e658ca36"],
-Cell[3868, 105, 805, 16, 127, "Text",ExpressionUUID->"74d81eef-1a8c-4452-85d0-b2689984b002"]
+Cell[3759, 100, 294, 4, 54, "Subsection",ExpressionUUID->"0d026eb9-57fe-4bab-a704-be49b452a617"],
+Cell[4056, 106, 4438, 121, 481, "Text",ExpressionUUID->"044d076d-07a4-4569-8c0e-c76d1b3e16be"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8531, 232, 412, 7, 54, "Subsection",ExpressionUUID->"98842428-aa25-439b-9700-3144663d4b58"],
+Cell[8946, 241, 5573, 159, 515, "Text",ExpressionUUID->"ff0fbf52-074e-45c9-a781-147e38a23f79"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[14556, 405, 409, 6, 54, "Subsection",ExpressionUUID->"f807fa6f-b04c-465f-a363-9d4b9b361b6c"],
+Cell[14968, 413, 2843, 81, 228, "Text",ExpressionUUID->"d0e67fe1-aebc-41bd-a802-d0dffd226e81"]
 }, Open  ]]
 }, Open  ]]
 }
