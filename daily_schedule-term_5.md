@@ -11,7 +11,7 @@ See also [Daily Schedule-Term 4](./daily_schedule-term_4.html)
 
 ### Week 9 &mdash; The Hydrogen Atom, Atomic Spectra, and the Schr&ouml;dinger Equation
 
-* Tuesday, Mar. 19 &mdash; Q10.4 and Q11.1 to Q11.5 &mdash; Presentation: Ren and Rebecca, Using the Pauli Exclusion Principle to discover how much energy it requires to stuff *2N* electrons in a 1-D or 3-D box (ignoring Coulomb repulsion) &mdash; [Problem Set 12](./assignments/AssignmentFor2024-03-19.nb.pdf) for Tuesday
+* Tuesday, Mar. 19 &mdash; Q10.4 and Q11.1 to Q11.5 &mdash; Presentation: Ren and Rebecca, Using the Pauli Exclusion Principle to discover the energy of a [Fermion Gas - FORTHCOMING](./resources/FermionGas.nb.pdf) (ignoring Coulomb repulsion) &mdash; [Problem Set 12](./assignments/AssignmentFor2024-03-19.nb.pdf) for Tuesday
 * Friday, Mar. 22 &mdash; Start Q12
 
 ### Week 10 &mdash; Continue the Schr&ouml;dinger Equation &mdash; Exam 3
@@ -39,4 +39,4 @@ See also [Daily Schedule-Term 4](./daily_schedule-term_4.html)
 ### Week 14 &mdash; Exam 4 &mdash; Final Topic
 
 * Tuesday, Apr. 23 &mdash; Exam 4
-* Friday, Apr. 26 &mdash; A Final Blow-Off Top Topic: Nuclear Magnetic Resonance, aka Magnetic Resonance Imaging (MRI)? The Feynman Path Integral? The Cosmic Speed Limit and the Proof of Time Dilation
+* Friday, Apr. 26 &mdash; A Final Blow-Off Top Topic: Nuclear Magnetic Resonance, aka Magnetic Resonance Imaging (MRI)? The Feynman Path Integral? The Cosmic Speed Limit and the Proof of Time Dilation?
