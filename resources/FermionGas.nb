@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    780797,      12860]
-NotebookOptionsPosition[    779237,      12823]
-NotebookOutlinePosition[    779690,      12841]
-CellTagsIndexPosition[    779647,      12838]
+NotebookDataLength[    782579,      12896]
+NotebookOptionsPosition[    780764,      12854]
+NotebookOutlinePosition[    781217,      12872]
+CellTagsIndexPosition[    781174,      12869]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -32,30 +32,57 @@ Cell[TextData[{
 consequence of the principle is that it costs more and more energy to stuff \
 additional fermions into a box, assuming the first ones occupied the lowest \
 available energy states.\n\nOf course, it costs more energy if they are \
-charged, because like charges repel, but we are ignoring that. We just want \
-to know the total energy cost to stuff ",
+charged, because like charges repel, but we are ignoring the Coulomb \
+repulsion. We just want to know the total energy cost to stuff ",
  Cell[BoxData[
-  FormBox["N", TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+  FormBox["N", TraditionalForm]],ExpressionUUID->
   "0458260d-7b37-451e-ad23-49e6db779f36"],
  " electrons into a box of length ",
  Cell[BoxData[
-  FormBox["L", TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+  FormBox["L", TraditionalForm]],ExpressionUUID->
   "e37cff43-0a2c-4076-acb9-1e77d50f7a74"],
  ". To warm ourselves up to the 3-dimensional case, let\[CloseCurlyQuote]s do \
-the 1-dimensional case first.\n\nAfter doing our calculations, we will apply \
-it to white dwarf stars. These are very dense stars containing only ordinary \
-matter. We\[CloseCurlyQuote]ll treat the white dwarf star as a box and simply \
-estimate the energy required to have all its electrons in this box."
+the 1-dimensional case first."
 }], "Text",
  InitializationCell->True,
  CellChangeTimes->{{3.9195066434964857`*^9, 3.9195069298722267`*^9}, {
   3.91961137217327*^9, 3.919611422336157*^9}, {3.919614058856162*^9, 
   3.91961415844606*^9}, {3.919622105908215*^9, 3.919622114377983*^9}, {
   3.919766272998753*^9, 3.919766459154831*^9}, {3.9197665196352377`*^9, 
-  3.919766693484084*^9}},ExpressionUUID->"23ea4677-c6f9-4935-9a9e-\
+  3.919766693484084*^9}, {3.919767741066225*^9, 3.9197677603476686`*^9}, {
+  3.9197677946159277`*^9, 3.919767795200492*^9}, {3.919767838784522*^9, 
+  3.919767841764604*^9}},ExpressionUUID->"23ea4677-c6f9-4935-9a9e-\
 c9a3d5b8f635"],
+
+Cell[CellGroupData[{
+
+Cell["An Application to Look Forward to", "Subsection",
+ CellChangeTimes->{{3.919507761118346*^9, 3.919507777058218*^9}, {
+  3.919614164937755*^9, 3.919614173612521*^9}, {3.919766464855817*^9, 
+  3.9197664720918813`*^9}, {3.91976699707449*^9, 3.919767001081073*^9}, {
+  3.919767786661254*^9, 
+  3.919767814176343*^9}},ExpressionUUID->"115edd81-2606-4306-9653-\
+44049950d863"],
+
+Cell["\<\
+After doing our calculations, we will apply them to white dwarf stars. These \
+are very dense stars containing only ordinary matter. We\[CloseCurlyQuote]ll \
+treat the white dwarf star as a box and simply estimate the energy required \
+to have all the electrons in this electron in the box. Ignoring the Coulomb \
+repulsion is actually completely reasonable in this case, because the \
+electrons are intermingled with a roughly equal number of protons, and so the \
+Coulomb repulsion is roughly balanced out by the Coulomb attraction.\
+\>", "Text",
+ InitializationCell->True,
+ CellChangeTimes->{{3.9195066434964857`*^9, 3.9195069298722267`*^9}, {
+  3.91961137217327*^9, 3.919611422336157*^9}, {3.919614058856162*^9, 
+  3.91961415844606*^9}, {3.919622105908215*^9, 3.919622114377983*^9}, {
+  3.919766272998753*^9, 3.919766459154831*^9}, {3.9197665196352377`*^9, 
+  3.919766693484084*^9}, {3.919767741066225*^9, 3.9197677603476686`*^9}, {
+  3.919767817745304*^9, 
+  3.919767913835589*^9}},ExpressionUUID->"917bfa85-9ecc-464d-8cf0-\
+4c3e9c5a6a87"]
+}, Open  ]],
 
 Cell[CellGroupData[{
 
@@ -96,18 +123,18 @@ Cell["Defining Terms", "Subsection",
 9ea97a201127"],
 
 Cell["\<\
-Defining our terms. We have been using fermion and electron interchangeably, \
-but an electron is just one example of a fermion. Other examples of fermions \
-are neutrons, protons, muons, and neutrinos. Any particle with spin 1/2 (or \
-spin 3/2, 5/2, etc.) is a fermion.
+We have been using fermion and electron interchangeably, but an electron is \
+just one example of a fermion. Other examples of fermions are neutrons, \
+protons, muons, and neutrinos. Any particle with spin 1/2 (or spin 3/2, 5/2, \
+etc.) is a fermion.
 
 Contrast this with the photon, which has spin 1. Particles with spin 0, spin \
 1 (or spin 2, 3, etc.) are called \[OpenCurlyDoubleQuote]bosons.\
 \[CloseCurlyDoubleQuote] As we were told in the lasing presentation, bosons \
 \[OpenCurlyDoubleQuote]like\[CloseCurlyDoubleQuote] to be in the same state, \
 where \[OpenCurlyDoubleQuote]like\[CloseCurlyDoubleQuote] means that there is \
-an enhanced probability of them ending up in the same state. An example of a \
-boson \
+an enhanced probability of them ending up in the same state. Another example \
+of a boson is the Higgs particle.\
 \>", "Text",
  CellChangeTimes->{{3.9195066434964857`*^9, 3.9195069298722267`*^9}, {
    3.919507035943145*^9, 3.919507085181478*^9}, {3.919507127099791*^9, 
@@ -115,9 +142,11 @@ boson \
    3.919507389524014*^9, 3.919507400096596*^9}, {3.919507692852813*^9, 
    3.919507737975986*^9}, {3.919507783507575*^9, 3.919507783697631*^9}, {
    3.919611569075592*^9, 3.919611628410412*^9}, 3.9196116647183447`*^9, {
-   3.919614255739382*^9, 3.919614408206973*^9}, 3.9197664830156603`*^9, {
+   3.919614255739382*^9, 3.919614408206973*^9}, 3.9197664830156593`*^9, {
    3.919767085655758*^9, 3.919767426589294*^9}, {3.9197674621068*^9, 
-   3.919767462848753*^9}},ExpressionUUID->"0b7e50cc-9157-4ee2-b1aa-\
+   3.919767462848753*^9}, {3.919767514781363*^9, 3.919767517163783*^9}, {
+   3.91976771458506*^9, 
+   3.919767723368103*^9}},ExpressionUUID->"0b7e50cc-9157-4ee2-b1aa-\
 26fdf1e65110"]
 }, Open  ]],
 
@@ -129,15 +158,16 @@ Cell["1-D Fermion Gas", "Subsection",
   3.9197664720918818`*^9}},ExpressionUUID->"375fae2c-411f-4d6f-b7a2-\
 5acc8471d502"],
 
-Cell["", "Text",
+Cell["FORTHCOMING", "Text",
  CellChangeTimes->{{3.9195066434964857`*^9, 3.9195069298722267`*^9}, {
    3.919507035943145*^9, 3.919507085181478*^9}, {3.919507127099791*^9, 
    3.919507198360621*^9}, {3.919507273082975*^9, 3.919507351486359*^9}, {
    3.919507389524014*^9, 3.919507400096596*^9}, {3.919507692852813*^9, 
    3.919507737975986*^9}, {3.919507783507575*^9, 3.919507783697631*^9}, {
    3.919611569075592*^9, 3.919611628410412*^9}, 3.9196116647183447`*^9, {
-   3.919614255739382*^9, 3.919614408206973*^9}, 
-   3.9197664830156603`*^9},ExpressionUUID->"16154121-c94b-49f9-9981-\
+   3.919614255739382*^9, 3.919614408206973*^9}, 3.9197664830156593`*^9, {
+   3.919767923541233*^9, 
+   3.9197679248471537`*^9}},ExpressionUUID->"16154121-c94b-49f9-9981-\
 1d4def4a0b27"],
 
 Cell[BoxData[
@@ -12808,15 +12838,16 @@ Cell["3-D Fermion Gas", "Subsection",
   3.919766492238309*^9}},ExpressionUUID->"0d026eb9-57fe-4bab-a704-\
 be49b452a617"],
 
-Cell["", "Text",
+Cell["FORTHCOMING", "Text",
  CellChangeTimes->{{3.9195066434964857`*^9, 3.9195069298722267`*^9}, {
    3.919507035943145*^9, 3.919507085181478*^9}, {3.919507127099791*^9, 
    3.919507198360621*^9}, {3.919507273082975*^9, 3.919507351486359*^9}, {
    3.919507389524014*^9, 3.919507400096596*^9}, {3.919507692852813*^9, 
    3.919507737975986*^9}, {3.919507783507575*^9, 3.919507783697631*^9}, {
    3.919611569075592*^9, 3.919611628410412*^9}, 3.9196116647183447`*^9, {
-   3.919614255739382*^9, 3.919614408206973*^9}, 
-   3.9197664830156603`*^9},ExpressionUUID->"e74af92c-ffc9-42bb-988c-\
+   3.919614255739382*^9, 3.919614408206973*^9}, 3.9197664830156593`*^9, {
+   3.91976792759217*^9, 
+   3.9197679317207117`*^9}},ExpressionUUID->"e74af92c-ffc9-42bb-988c-\
 15e116521922"]
 }, Open  ]]
 }, Open  ]]
@@ -12842,24 +12873,29 @@ CellTagsIndex->{}
 Notebook[{
 Cell[CellGroupData[{
 Cell[580, 22, 303, 5, 67, "Section",ExpressionUUID->"e73eea1c-cf69-4399-ab82-8b5244f4a79b"],
-Cell[886, 29, 1553, 28, 265, "Text",ExpressionUUID->"23ea4677-c6f9-4935-9a9e-c9a3d5b8f635",
+Cell[886, 29, 1380, 25, 173, "Text",ExpressionUUID->"23ea4677-c6f9-4935-9a9e-c9a3d5b8f635",
  InitializationCell->True],
 Cell[CellGroupData[{
-Cell[2464, 61, 322, 5, 54, "Subsection",ExpressionUUID->"633f3ae9-c6cf-45fe-ba4f-f627137ac5c2"],
-Cell[2789, 68, 1024, 16, 81, "Text",ExpressionUUID->"7ff1e2f4-2aa0-4cc7-a425-b93e37c61088"]
+Cell[2291, 58, 375, 6, 54, "Subsection",ExpressionUUID->"115edd81-2606-4306-9653-44049950d863"],
+Cell[2669, 66, 1054, 17, 127, "Text",ExpressionUUID->"917bfa85-9ecc-464d-8cf0-4c3e9c5a6a87",
+ InitializationCell->True]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[3850, 89, 358, 6, 54, "Subsection",ExpressionUUID->"168c5f5b-9cd5-4020-9e13-9ea97a201127"],
-Cell[4211, 97, 1428, 23, 173, "Text",ExpressionUUID->"0b7e50cc-9157-4ee2-b1aa-26fdf1e65110"]
+Cell[3760, 88, 322, 5, 54, "Subsection",ExpressionUUID->"633f3ae9-c6cf-45fe-ba4f-f627137ac5c2"],
+Cell[4085, 95, 1024, 16, 81, "Text",ExpressionUUID->"7ff1e2f4-2aa0-4cc7-a425-b93e37c61088"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[5676, 125, 260, 4, 54, "Subsection",ExpressionUUID->"375fae2c-411f-4d6f-b7a2-5acc8471d502"],
-Cell[5939, 131, 587, 9, 35, "Text",ExpressionUUID->"16154121-c94b-49f9-9981-1d4def4a0b27"],
-Cell[6529, 142, 771746, 12656, 203, "Input",ExpressionUUID->"d3da45ff-f3ee-40fd-873c-156b3fcb37b5"]
+Cell[5146, 116, 358, 6, 54, "Subsection",ExpressionUUID->"168c5f5b-9cd5-4020-9e13-9ea97a201127"],
+Cell[5507, 124, 1534, 25, 196, "Text",ExpressionUUID->"0b7e50cc-9157-4ee2-b1aa-26fdf1e65110"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[778312, 12803, 307, 5, 54, "Subsection",ExpressionUUID->"0d026eb9-57fe-4bab-a704-be49b452a617"],
-Cell[778622, 12810, 587, 9, 35, "Text",ExpressionUUID->"e74af92c-ffc9-42bb-988c-15e116521922"]
+Cell[7078, 154, 260, 4, 54, "Subsection",ExpressionUUID->"375fae2c-411f-4d6f-b7a2-5acc8471d502"],
+Cell[7341, 160, 650, 10, 35, "Text",ExpressionUUID->"16154121-c94b-49f9-9981-1d4def4a0b27"],
+Cell[7994, 172, 771746, 12656, 203, "Input",ExpressionUUID->"d3da45ff-f3ee-40fd-873c-156b3fcb37b5"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[779777, 12833, 307, 5, 54, "Subsection",ExpressionUUID->"0d026eb9-57fe-4bab-a704-be49b452a617"],
+Cell[780087, 12840, 649, 10, 35, "Text",ExpressionUUID->"e74af92c-ffc9-42bb-988c-15e116521922"]
 }, Open  ]]
 }, Open  ]]
 }
