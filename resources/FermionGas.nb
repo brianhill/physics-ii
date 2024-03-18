@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    782579,      12896]
-NotebookOptionsPosition[    780764,      12854]
-NotebookOutlinePosition[    781217,      12872]
-CellTagsIndexPosition[    781174,      12869]
+NotebookDataLength[    801847,      13415]
+NotebookOptionsPosition[    799350,      13362]
+NotebookOutlinePosition[    799803,      13380]
+CellTagsIndexPosition[    799760,      13377]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -31,18 +31,25 @@ Cell[TextData[{
  "In Section 11.5, Moore states the Pauli Exclusion Principle. An immediate \
 consequence of the principle is that it costs more and more energy to stuff \
 additional fermions into a box, assuming the first ones occupied the lowest \
-available energy states.\n\nOf course, it costs more energy if they are \
+available energy states.\n\nOf course, it costs even more energy if they are \
 charged, because like charges repel, but we are ignoring the Coulomb \
 repulsion. We just want to know the total energy cost to stuff ",
  Cell[BoxData[
   FormBox["N", TraditionalForm]],ExpressionUUID->
-  "0458260d-7b37-451e-ad23-49e6db779f36"],
+  "9f633d71-5456-460b-a21c-1a70f4004f0b"],
  " electrons into a box of length ",
  Cell[BoxData[
   FormBox["L", TraditionalForm]],ExpressionUUID->
-  "e37cff43-0a2c-4076-acb9-1e77d50f7a74"],
- ". To warm ourselves up to the 3-dimensional case, let\[CloseCurlyQuote]s do \
-the 1-dimensional case first."
+  "a29b7827-c056-434c-b075-9faec8093216"],
+ " on each side. To warm ourselves up to the 3-dimensional case, we\
+\[CloseCurlyQuote]ll do the 1-dimensional case first.\n\nAfter doing our \
+calculations, we will apply them to white dwarf stars. These are very dense \
+stars containing only ordinary matter. We\[CloseCurlyQuote]ll treat the white \
+dwarf star as a box and simply estimate the energy required to have all the \
+electrons in this box.\n\nIgnoring the Coulomb repulsion is actually \
+completely reasonable in the case of a white dwarf, because the electrons are \
+intermingled with a roughly equal number of protons, and so the Coulomb \
+repulsion is roughly balanced out by the Coulomb attraction."
 }], "Text",
  InitializationCell->True,
  CellChangeTimes->{{3.9195066434964857`*^9, 3.9195069298722267`*^9}, {
@@ -51,38 +58,9 @@ the 1-dimensional case first."
   3.919766272998753*^9, 3.919766459154831*^9}, {3.9197665196352377`*^9, 
   3.919766693484084*^9}, {3.919767741066225*^9, 3.9197677603476686`*^9}, {
   3.9197677946159277`*^9, 3.919767795200492*^9}, {3.919767838784522*^9, 
-  3.919767841764604*^9}},ExpressionUUID->"23ea4677-c6f9-4935-9a9e-\
+  3.919767841764604*^9}, {3.919787421353408*^9, 
+  3.9197874913062077`*^9}},ExpressionUUID->"23ea4677-c6f9-4935-9a9e-\
 c9a3d5b8f635"],
-
-Cell[CellGroupData[{
-
-Cell["An Application to Look Forward to", "Subsection",
- CellChangeTimes->{{3.919507761118346*^9, 3.919507777058218*^9}, {
-  3.919614164937755*^9, 3.919614173612521*^9}, {3.919766464855817*^9, 
-  3.9197664720918813`*^9}, {3.91976699707449*^9, 3.919767001081073*^9}, {
-  3.919767786661254*^9, 
-  3.919767814176343*^9}},ExpressionUUID->"115edd81-2606-4306-9653-\
-44049950d863"],
-
-Cell["\<\
-After doing our calculations, we will apply them to white dwarf stars. These \
-are very dense stars containing only ordinary matter. We\[CloseCurlyQuote]ll \
-treat the white dwarf star as a box and simply estimate the energy required \
-to have all the electrons in this electron in the box. Ignoring the Coulomb \
-repulsion is actually completely reasonable in this case, because the \
-electrons are intermingled with a roughly equal number of protons, and so the \
-Coulomb repulsion is roughly balanced out by the Coulomb attraction.\
-\>", "Text",
- InitializationCell->True,
- CellChangeTimes->{{3.9195066434964857`*^9, 3.9195069298722267`*^9}, {
-  3.91961137217327*^9, 3.919611422336157*^9}, {3.919614058856162*^9, 
-  3.91961415844606*^9}, {3.919622105908215*^9, 3.919622114377983*^9}, {
-  3.919766272998753*^9, 3.919766459154831*^9}, {3.9197665196352377`*^9, 
-  3.919766693484084*^9}, {3.919767741066225*^9, 3.9197677603476686`*^9}, {
-  3.919767817745304*^9, 
-  3.919767913835589*^9}},ExpressionUUID->"917bfa85-9ecc-464d-8cf0-\
-4c3e9c5a6a87"]
-}, Open  ]],
 
 Cell[CellGroupData[{
 
@@ -94,11 +72,13 @@ Cell["The Pauli Exclusion Principle", "Subsection",
 f627137ac5c2"],
 
 Cell["\<\
-The principle is that \[OpenCurlyDoubleQuote]no two identical fermions can \
-have exactly the same quantum state.\[CloseCurlyDoubleQuote] If we are only \
-dealing with electrons, as Pauli was in 1925, the principle is that \
-\[OpenCurlyDoubleQuote]no two electrons can have exactly the same quantum \
-state.\[CloseCurlyDoubleQuote]\
+The principle that determines the properties of a fermion gas is that \
+\[OpenCurlyDoubleQuote]no two identical fermions can have exactly the same \
+quantum state.\[CloseCurlyDoubleQuote]
+
+If we are only dealing with electrons, as Pauli was in 1925, the principle is \
+more simply stated as \[OpenCurlyDoubleQuote]no two electrons can have \
+exactly the same quantum state.\[CloseCurlyDoubleQuote]\
 \>", "Text",
  CellChangeTimes->{{3.9195066434964857`*^9, 3.9195069298722267`*^9}, {
    3.919507035943145*^9, 3.919507085181478*^9}, {3.919507127099791*^9, 
@@ -106,9 +86,10 @@ state.\[CloseCurlyDoubleQuote]\
    3.919507389524014*^9, 3.919507400096596*^9}, {3.919507692852813*^9, 
    3.919507737975986*^9}, {3.919507783507575*^9, 3.919507783697631*^9}, {
    3.919611569075592*^9, 3.919611628410412*^9}, 3.9196116647183447`*^9, {
-   3.919614255739382*^9, 3.919614408206973*^9}, 3.9197664830156603`*^9, {
+   3.919614255739382*^9, 3.919614408206973*^9}, 3.9197664830156593`*^9, {
    3.919767085655758*^9, 3.919767426589294*^9}, {3.919767457134344*^9, 
-   3.9197674576063347`*^9}},ExpressionUUID->"7ff1e2f4-2aa0-4cc7-a425-\
+   3.919767457606335*^9}, {3.919787503119233*^9, 
+   3.9197875361727552`*^9}},ExpressionUUID->"7ff1e2f4-2aa0-4cc7-a425-\
 b93e37c61088"]
 }, Open  ]],
 
@@ -123,10 +104,11 @@ Cell["Defining Terms", "Subsection",
 9ea97a201127"],
 
 Cell["\<\
-We have been using fermion and electron interchangeably, but an electron is \
-just one example of a fermion. Other examples of fermions are neutrons, \
-protons, muons, and neutrinos. Any particle with spin 1/2 (or spin 3/2, 5/2, \
-etc.) is a fermion.
+We have been using \[OpenCurlyDoubleQuote]fermion\[CloseCurlyDoubleQuote] and \
+\[OpenCurlyDoubleQuote]electron\[CloseCurlyDoubleQuote] interchangeably, but \
+an electron is just one example of a fermion. Other examples of fermions are \
+neutrons, protons, muons, and neutrinos. Any particle with spin 1/2 (or spin \
+3/2, 5/2, etc.) is a fermion.
 
 Contrast this with the photon, which has spin 1. Particles with spin 0, spin \
 1 (or spin 2, 3, etc.) are called \[OpenCurlyDoubleQuote]bosons.\
@@ -145,20 +127,93 @@ of a boson is the Higgs particle.\
    3.919614255739382*^9, 3.919614408206973*^9}, 3.9197664830156593`*^9, {
    3.919767085655758*^9, 3.919767426589294*^9}, {3.9197674621068*^9, 
    3.919767462848753*^9}, {3.919767514781363*^9, 3.919767517163783*^9}, {
-   3.91976771458506*^9, 
-   3.919767723368103*^9}},ExpressionUUID->"0b7e50cc-9157-4ee2-b1aa-\
+   3.91976771458506*^9, 3.919767723368103*^9}, {3.9197875566050043`*^9, 
+   3.91978756310743*^9}},ExpressionUUID->"0b7e50cc-9157-4ee2-b1aa-\
 26fdf1e65110"]
 }, Open  ]],
 
 Cell[CellGroupData[{
 
-Cell["1-D Fermion Gas", "Subsection",
+Cell["Filling the 1-D Fermion Gas", "Subsection",
  CellChangeTimes->{{3.919507761118346*^9, 3.919507777058218*^9}, {
   3.919614164937755*^9, 3.919614173612521*^9}, {3.919766464855817*^9, 
-  3.9197664720918818`*^9}},ExpressionUUID->"375fae2c-411f-4d6f-b7a2-\
+  3.9197664720918813`*^9}, {3.91978947570121*^9, 
+  3.91978947717299*^9}},ExpressionUUID->"375fae2c-411f-4d6f-b7a2-\
 5acc8471d502"],
 
-Cell["FORTHCOMING", "Text",
+Cell[TextData[{
+ "The ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"n", "=", "1"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "8a86852f-3497-45b0-8a94-ef80539c5596"],
+ " state can hold 2 electrons. The ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"n", "=", "2"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "71343ad7-7773-4bd9-861f-064f3f80ff5f"],
+ " state can hold two more. So, if the electron states are filled up to ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"n", "=", Cell[TextData[Cell[BoxData[
+     FormBox["N", TraditionalForm]],
+     FormatType->TraditionalForm,ExpressionUUID->
+     "136fc88b-54ac-406e-a44e-8e700732d830"]],ExpressionUUID->
+     "55ec24d8-0bdc-451a-9b64-162a729accea"]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "4e8bf299-ef45-487c-8b3e-206c8e4f937b"],
+ ", we have ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"2", "N"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "63e72613-8309-4491-acab-2abfac3ea28d"],
+ " electrons, and the total energy cost of stuffing the ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"2", "N"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "8838ecc8-6692-477b-8a4c-8c630a2ac861"],
+ " electrons into the box of length ",
+ Cell[BoxData[
+  FormBox["L", TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "a5c4de00-62a2-4265-984e-4abc1f5a9794"],
+ " is\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["E", "TOTAL"], "=", 
+    RowBox[{
+     RowBox[{"2", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"1", " ", "+", " ", "4", " ", "+", " ", "9", " ", "+"}], 
+         "..."}], " ", "+", " ", 
+        SuperscriptBox["N", "2"]}], ")"}], 
+      FractionBox[
+       SuperscriptBox["h", "2"], 
+       RowBox[{"8", "m", "\[VeryThinSpace]", 
+        SuperscriptBox["L", "2"]}]]}], "=", 
+     RowBox[{"2", 
+      FractionBox[
+       RowBox[{"N", 
+        RowBox[{"(", 
+         RowBox[{"N", "+", "1"}], ")"}], 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"2", "N"}], "+", "1"}], ")"}]}], "6"], 
+      FractionBox[
+       SuperscriptBox["h", "2"], 
+       RowBox[{"8", "m", "\[VeryThinSpace]", 
+        SuperscriptBox["L", "2"]}]]}]}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "43f8e62a-13df-41dc-b27d-75ae35ed4dc9"],
+ "\n\nWe have used the formula for the sum of squares. "
+}], "Text",
  CellChangeTimes->{{3.9195066434964857`*^9, 3.9195069298722267`*^9}, {
    3.919507035943145*^9, 3.919507085181478*^9}, {3.919507127099791*^9, 
    3.919507198360621*^9}, {3.919507273082975*^9, 3.919507351486359*^9}, {
@@ -166,9 +221,214 @@ Cell["FORTHCOMING", "Text",
    3.919507737975986*^9}, {3.919507783507575*^9, 3.919507783697631*^9}, {
    3.919611569075592*^9, 3.919611628410412*^9}, 3.9196116647183447`*^9, {
    3.919614255739382*^9, 3.919614408206973*^9}, 3.9197664830156593`*^9, {
-   3.919767923541233*^9, 
-   3.9197679248471537`*^9}},ExpressionUUID->"16154121-c94b-49f9-9981-\
-1d4def4a0b27"],
+   3.919767923541233*^9, 3.9197679248471537`*^9}, {3.919787665532258*^9, 
+   3.9197878572798853`*^9}, {3.919787892021346*^9, 3.91978808321122*^9}, {
+   3.919788116578587*^9, 3.91978833925679*^9}, {3.919788382325713*^9, 
+   3.919788523440024*^9}, {3.919788556256385*^9, 3.91978865964674*^9}, {
+   3.919788695693274*^9, 3.919788711002841*^9}, {3.919788890323778*^9, 
+   3.919788952821458*^9}, 3.919789987310261*^9, {3.919790024128961*^9, 
+   3.919790028607696*^9}},ExpressionUUID->"16154121-c94b-49f9-9981-\
+1d4def4a0b27"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "The Large-",
+ Cell[BoxData[
+  FormBox["N", TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "cf00b0df-aa4d-4205-8f5d-ec043b034a32"],
+ " Approximation for Filling the 1-D Fermion Gas"
+}], "Subsection",
+ CellChangeTimes->{{3.919507761118346*^9, 3.919507777058218*^9}, {
+  3.919614164937755*^9, 3.919614173612521*^9}, {3.919622131041226*^9, 
+  3.919622143911295*^9}, {3.919766488031982*^9, 3.919766492238309*^9}, {
+  3.9197894808285093`*^9, 3.919789506186154*^9}, {3.919789570696891*^9, 
+  3.919789571080983*^9}, {3.919789964231398*^9, 3.919789967426917*^9}, {
+  3.9197900078817377`*^9, 
+  3.919790007996869*^9}},ExpressionUUID->"930a9b1f-3c89-4b7d-9249-\
+a296f9e10306"],
+
+Cell[TextData[{
+ "If ",
+ Cell[BoxData[
+  FormBox["N", TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "392eb7ed-a4e4-4f34-a710-31ef9768b16e"],
+ " is very large, it is reasonable to simplify ",
+ Cell[BoxData[
+  FormBox[
+   FractionBox[
+    RowBox[{"N", 
+     RowBox[{"(", 
+      RowBox[{"N", "+", "1"}], ")"}], 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"2", "N"}], "+", "1"}], ")"}]}], "6"], TraditionalForm]],
+  ExpressionUUID->"f5138566-80fc-4480-aafb-0a6918a41af5"],
+ " to just ",
+ Cell[BoxData[
+  FormBox[
+   FractionBox[
+    SuperscriptBox["N", "3"], "3"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "f19a627d-b632-4428-a240-eca1cc869489"],
+ " because if ",
+ Cell[BoxData[
+  FormBox["N", TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "d9e7b4a4-52e8-4b70-851b-0f3cd2230b5f"],
+ " is very large, then the ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["N", "2"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "ccf457ca-361a-4e75-88b4-8c7ae8542365"],
+ " and ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["N", "1"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "b5ed0d51-4e26-4ede-8d03-54f31afeb2ab"],
+ " terms are negligible in comparison to the ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["N", "3"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "8fb74351-8e1a-4120-8158-b413e24f4cb1"],
+ " term. So our approximate answer is:\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["E", "TOTAL"], "=", 
+    RowBox[{"2", 
+     FractionBox[
+      SuperscriptBox["N", "3"], "3"], 
+     FractionBox[
+      SuperscriptBox["h", "2"], 
+      RowBox[{"8", "m", "\[VeryThinSpace]", 
+       SuperscriptBox["L", "2"]}]]}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "ee35c870-436e-4656-834e-e757c5044dcf"],
+ "\n\nPeople notice that the energy to put the last electron in was ",
+ Cell[BoxData[
+  FormBox[
+   FractionBox[
+    RowBox[{
+     SuperscriptBox["h", "2"], 
+     SuperscriptBox["N", "2"]}], 
+    RowBox[{"8", "m", "\[VeryThinSpace]", 
+     SuperscriptBox["L", "2"]}]], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "a8d14e1e-a16a-438b-bd55-6f4b49dee6b1"],
+ " and they define that combination to be ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["\[Epsilon]", 
+    StyleBox["F",
+     FontSlant->"Plain"]], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "69b9af6b-69ed-4e9b-bba6-56a46d8cbae4"],
+ " and call it \[OpenCurlyDoubleQuote]the Fermi energy.\
+\[CloseCurlyDoubleQuote] So,\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"N", "=", 
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{
+       FractionBox[
+        RowBox[{"8", "m", "\[VeryThinSpace]", 
+         SuperscriptBox["L", "2"]}], 
+        SuperscriptBox["h", "2"]], 
+       SubscriptBox["\[Epsilon]", 
+        StyleBox["F",
+         FontSlant->"Plain"]]}], ")"}], 
+     RowBox[{"1", "/", "2"}]]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "0a36bf8b-6420-47b5-93f1-b1019177c121"],
+ "\n\nand ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["E", "TOTAL"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "1c818f5c-5b4d-420c-97a4-31ae4b02a1c2"],
+ " can be rewritten as:\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["E", "TOTAL"], "=", 
+    RowBox[{
+     RowBox[{
+      FractionBox["2", "3"], 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{
+         FractionBox[
+          RowBox[{"8", "m", "\[VeryThinSpace]", 
+           SuperscriptBox["L", "2"]}], 
+          SuperscriptBox["h", "2"]], 
+         SubscriptBox["\[Epsilon]", 
+          StyleBox["F",
+           FontSlant->"Plain"]]}], ")"}], 
+       RowBox[{"3", "/", "2"}]], 
+      FractionBox[
+       SuperscriptBox["h", "2"], 
+       RowBox[{"8", "m", "\[VeryThinSpace]", 
+        SuperscriptBox["L", "2"]}]]}], "=", 
+     RowBox[{
+      FractionBox["2", "3"], 
+      SuperscriptBox[
+       RowBox[{"(", 
+        FractionBox[
+         RowBox[{"8", "m", "\[VeryThinSpace]", 
+          SuperscriptBox["L", "2"]}], 
+         SuperscriptBox["h", "2"]], ")"}], 
+       RowBox[{"1", "/", "2"}]], 
+      SuperscriptBox[
+       SubscriptBox["\[Epsilon]", 
+        StyleBox["F",
+         FontSlant->"Plain"]], 
+       RowBox[{"3", "/", "2"}]]}]}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "d0242316-a68f-4990-9a04-ca55294ede50"],
+ "\n\nIn the diagram below, ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["n", "max"], "=", 
+    RowBox[{"2", "N"}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "7034b4b6-b009-4d9d-9c45-d87b9f187f6d"],
+ ", but in the 3-D case, which we\[CloseCurlyQuote]ll do next, ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["n", "max"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "cc660166-1fc7-45c6-926c-2b0c3426c38c"],
+ " and ",
+ Cell[BoxData[
+  FormBox["N", TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "216c4509-d800-4f21-9b9e-32373558a75f"],
+ " do not have such a simple relationship."
+}], "Text",
+ CellChangeTimes->{{3.9195066434964857`*^9, 3.9195069298722267`*^9}, {
+   3.919507035943145*^9, 3.919507085181478*^9}, {3.919507127099791*^9, 
+   3.919507198360621*^9}, {3.919507273082975*^9, 3.919507351486359*^9}, {
+   3.919507389524014*^9, 3.919507400096596*^9}, {3.919507692852813*^9, 
+   3.919507737975986*^9}, {3.919507783507575*^9, 3.919507783697631*^9}, {
+   3.919611569075592*^9, 3.919611628410412*^9}, 3.9196116647183447`*^9, {
+   3.919614255739382*^9, 3.919614408206973*^9}, 3.9197664830156593`*^9, {
+   3.919767923541233*^9, 3.9197679248471537`*^9}, {3.919787665532258*^9, 
+   3.9197878572798853`*^9}, {3.919787892021346*^9, 3.91978808321122*^9}, {
+   3.919788116578587*^9, 3.91978833925679*^9}, {3.919788382325713*^9, 
+   3.919788523440024*^9}, {3.919788556256385*^9, 3.91978865964674*^9}, {
+   3.919788695693274*^9, 3.919788711002841*^9}, {3.919788890323778*^9, 
+   3.919788952821458*^9}, {3.919790010854291*^9, 
+   3.91979002208675*^9}},ExpressionUUID->"5ca98b71-b545-4696-ba6a-\
+e3dc1632cd0d"],
 
 Cell[BoxData[
  GraphicsBox[
@@ -12825,20 +13085,184 @@ fq9e33of9TcBLmj/ALmyhTM=
    Selectable->False],
   DefaultBaseStyle->"ImageGraphics",
   ImageSizeRaw->{2992., 916.},
-  PlotRange->{{0, 2992.}, {0, 916.}}]], "Input",ExpressionUUID->"d3da45ff-\
-f3ee-40fd-873c-156b3fcb37b5"]
+  PlotRange->{{0, 2992.}, {0, 916.}}]], "Input",ExpressionUUID->"b8fc271a-\
+2e82-47fb-bb37-507491118d31"]
 }, Open  ]],
 
 Cell[CellGroupData[{
 
-Cell["3-D Fermion Gas", "Subsection",
+Cell["Filling the 3-D Fermion Gas", "Subsection",
  CellChangeTimes->{{3.919507761118346*^9, 3.919507777058218*^9}, {
   3.919614164937755*^9, 3.919614173612521*^9}, {3.919622131041226*^9, 
-  3.919622143911295*^9}, {3.919766488031982*^9, 
-  3.919766492238309*^9}},ExpressionUUID->"0d026eb9-57fe-4bab-a704-\
+  3.919622143911295*^9}, {3.919766488031982*^9, 3.919766492238309*^9}, {
+  3.9197894808285093`*^9, 
+  3.9197894820767317`*^9}},ExpressionUUID->"0d026eb9-57fe-4bab-a704-\
 be49b452a617"],
 
-Cell["FORTHCOMING", "Text",
+Cell[TextData[{
+ "The 3-D case is distinctly harder than the 1-D case, because it isn\
+\[CloseCurlyQuote]t obvious what energy levels get filled in what order.\n\n\
+Consider the first level. It has \n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["n", "x"], "=", "1"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "c71df900-dc86-48f8-a9a0-80756905388e"],
+ ", ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["n", "y"], "=", "1"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "4149c84f-7012-41a0-949f-453c596a5ba2"],
+ ", and ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["n", "z"], "=", "1"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "3bcaea12-67eb-4a63-aaaa-0cc44ca7be1c"],
+ "\n\nand energy\n\n",
+ Cell[BoxData[
+  FormBox[
+   FractionBox[
+    RowBox[{"3", 
+     SuperscriptBox["h", "2"]}], 
+    RowBox[{"8", "m", "\[VeryThinSpace]", 
+     SuperscriptBox["L", "2"]}]], TraditionalForm]],ExpressionUUID->
+  "7ada37f1-7b3e-4458-947d-8e8cf311e7af"],
+ "\n\nWhere did the 3 come from!? It is ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SuperscriptBox["1", "2"], "+", 
+    SuperscriptBox["1", "2"], "+", 
+    SuperscriptBox["1", "2"]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "2442e8d9-e8f4-4ff8-80c8-649d69c1e9b8"],
+ ".\n\nIt can hold two electrons. There are three second levels:\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["n", "x"], "=", "2"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "fcc8b225-da4c-4559-8180-69f6e9a852c4"],
+ ", ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["n", "y"], "=", "1"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "ce111003-e2e4-4276-b353-7a8afcf72d61"],
+ ", ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["n", "z"], "=", "1"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "80b5d681-cfe3-45a8-b1a3-6db8ca242950"],
+ "\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["n", "x"], "=", "1"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "51f7c903-f0e3-4f03-8ba1-84bc08cebcba"],
+ ", ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["n", "y"], "=", "2"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "203f0c24-d551-4c77-b06b-604a03a9ce90"],
+ ", ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["n", "z"], "=", "1"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "2cacd1a9-823b-455f-afaa-ac8710667ed4"],
+ "\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["n", "x"], "=", "1"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "f0eff747-01a3-4eb8-92fb-aee4aaf847f3"],
+ ", ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["n", "y"], "=", "1"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "df2bd27b-ea33-4d6e-9b44-42d93f42217e"],
+ ", ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["n", "z"], "=", "2"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "ac9e0882-8c39-4e82-94ce-02a3ef8c43f5"],
+ "\n\nThey have energy\n\n",
+ Cell[BoxData[
+  FormBox[
+   FractionBox[
+    RowBox[{"6", 
+     SuperscriptBox["h", "2"]}], 
+    RowBox[{"8", "m", "\[VeryThinSpace]", 
+     SuperscriptBox["L", "2"]}]], TraditionalForm]],ExpressionUUID->
+  "ff6c6f1d-0df7-4fb4-9d6c-01761847809e"],
+ "\n\nWhere did the 6 come from? It is ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SuperscriptBox["2", "2"], "+", 
+    SuperscriptBox["1", "2"], "+", 
+    SuperscriptBox["1", "2"]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "b14a4247-0daa-479a-a759-f837d3f8d010"],
+ ".\n\nIt isn\[CloseCurlyQuote]t obvious what fills up next. Is it the 3 1 1 \
+state and its friends, or is the the 2 2 1 state and its friends? Well, you \
+have to compare ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SuperscriptBox["3", "2"], "+", 
+     SuperscriptBox["1", "2"], "+", 
+     SuperscriptBox["1", "2"]}], "=", "11"}], TraditionalForm]],
+  ExpressionUUID->"147e39d2-2460-489d-9005-72d6dd6bb3cf"],
+ " with ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SuperscriptBox["2", "2"], "+", 
+     SuperscriptBox["2", "2"], "+", 
+     SuperscriptBox["1", "2"]}], "=", "9"}], TraditionalForm]],ExpressionUUID->
+  "be980348-5ae1-4bea-8a26-c73c05d7497c"],
+ ". Ah-ha, 2 2 1 is next, and its friends 2 1 2, and 1 2 2. How about 2 2 2?  \
+Well, ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SuperscriptBox["2", "2"], "+", 
+     SuperscriptBox["2", "2"], "+", 
+     SuperscriptBox["2", "2"]}], "=", "12"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "c51d0834-0e85-4020-890c-4708052a96ae"],
+ " so 3 1 1 is next, and only after we have done 3 1 1, 1 3 1, and 1 1 3 will \
+we get to 2 2 2.\n\nThis business of comparing sums of squares is going to \
+turn into an awful mess. We need to make some kind of approximation that is \
+only going to be valid when ",
+ Cell[BoxData[
+  FormBox["N", TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "95d8e4d7-2cd2-4451-96ad-840141a5ff2f"],
+ " is large, just like we did to get a tidy answer in the 1-D case."
+}], "Text",
  CellChangeTimes->{{3.9195066434964857`*^9, 3.9195069298722267`*^9}, {
    3.919507035943145*^9, 3.919507085181478*^9}, {3.919507127099791*^9, 
    3.919507198360621*^9}, {3.919507273082975*^9, 3.919507351486359*^9}, {
@@ -12846,9 +13270,93 @@ Cell["FORTHCOMING", "Text",
    3.919507737975986*^9}, {3.919507783507575*^9, 3.919507783697631*^9}, {
    3.919611569075592*^9, 3.919611628410412*^9}, 3.9196116647183447`*^9, {
    3.919614255739382*^9, 3.919614408206973*^9}, 3.9197664830156593`*^9, {
-   3.91976792759217*^9, 
-   3.9197679317207117`*^9}},ExpressionUUID->"e74af92c-ffc9-42bb-988c-\
+   3.91976792759217*^9, 3.9197679317207117`*^9}, {3.919788762430169*^9, 
+   3.9197887952014523`*^9}, {3.9197889688945932`*^9, 3.9197893490666*^9}, {
+   3.9197893801393433`*^9, 3.919789456238592*^9}, {3.9197895263489313`*^9, 
+   3.919789605496725*^9}, {3.919789915230339*^9, 
+   3.919789923967168*^9}},ExpressionUUID->"e74af92c-ffc9-42bb-988c-\
 15e116521922"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "The Large-",
+ Cell[BoxData[
+  FormBox["N", TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "cc601e79-1d55-4c57-a969-3d955a61fb8f"],
+ " Approximation for Filling the 3-D Fermion Gas"
+}], "Subsection",
+ CellChangeTimes->{{3.919507761118346*^9, 3.919507777058218*^9}, {
+  3.919614164937755*^9, 3.919614173612521*^9}, {3.919622131041226*^9, 
+  3.919622143911295*^9}, {3.919766488031982*^9, 3.919766492238309*^9}, {
+  3.9197894808285093`*^9, 3.919789506186154*^9}, {3.919789570696891*^9, 
+  3.919789571080983*^9}, {3.919789964231398*^9, 
+  3.919789967426917*^9}},ExpressionUUID->"baa84117-1559-43e2-b09f-\
+17345d632d21"],
+
+Cell["DISCUSSION FORTHCOMING", "Text",
+ CellChangeTimes->{{3.9195066434964857`*^9, 3.9195069298722267`*^9}, {
+   3.919507035943145*^9, 3.919507085181478*^9}, {3.919507127099791*^9, 
+   3.919507198360621*^9}, {3.919507273082975*^9, 3.919507351486359*^9}, {
+   3.919507389524014*^9, 3.919507400096596*^9}, {3.919507692852813*^9, 
+   3.919507737975986*^9}, {3.919507783507575*^9, 3.919507783697631*^9}, {
+   3.919611569075592*^9, 3.919611628410412*^9}, 3.9196116647183447`*^9, {
+   3.919614255739382*^9, 3.919614408206973*^9}, 3.9197664830156593`*^9, {
+   3.91976792759217*^9, 3.9197679317207117`*^9}, {3.919788762430169*^9, 
+   3.91978881408856*^9}, {3.91978896396734*^9, 
+   3.91978896610739*^9}},ExpressionUUID->"4f7f7ee6-271e-4648-8b98-\
+21b0f45a9bd6"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[" White Dwarf Stars", "Subsection",
+ CellChangeTimes->{{3.919507761118346*^9, 3.919507777058218*^9}, {
+  3.919614164937755*^9, 3.919614173612521*^9}, {3.919622131041226*^9, 
+  3.919622143911295*^9}, {3.919766488031982*^9, 3.919766492238309*^9}, {
+  3.919788802568863*^9, 3.9197888057641172`*^9}, {3.919789452591413*^9, 
+  3.919789453265916*^9}},ExpressionUUID->"66538b55-c078-4051-8343-\
+9ce80ee42527"],
+
+Cell["DISCUSSION FORTHCOMING", "Text",
+ CellChangeTimes->{{3.9195066434964857`*^9, 3.9195069298722267`*^9}, {
+   3.919507035943145*^9, 3.919507085181478*^9}, {3.919507127099791*^9, 
+   3.919507198360621*^9}, {3.919507273082975*^9, 3.919507351486359*^9}, {
+   3.919507389524014*^9, 3.919507400096596*^9}, {3.919507692852813*^9, 
+   3.919507737975986*^9}, {3.919507783507575*^9, 3.919507783697631*^9}, {
+   3.919611569075592*^9, 3.919611628410412*^9}, 3.9196116647183447`*^9, {
+   3.919614255739382*^9, 3.919614408206973*^9}, 3.9197664830156593`*^9, {
+   3.91976792759217*^9, 3.9197679317207117`*^9}, {3.919788762430169*^9, 
+   3.91978881408856*^9}, {3.91978896396734*^9, 
+   3.91978896610739*^9}},ExpressionUUID->"cd9f5c7c-f0ee-4bf0-bb4f-\
+7119bda1a1f9"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[" Supernovae", "Subsection",
+ CellChangeTimes->{{3.919507761118346*^9, 3.919507777058218*^9}, {
+  3.919614164937755*^9, 3.919614173612521*^9}, {3.919622131041226*^9, 
+  3.919622143911295*^9}, {3.919766488031982*^9, 3.919766492238309*^9}, {
+  3.919788802568863*^9, 3.9197888057641172`*^9}, {3.919789452591413*^9, 
+  3.919789453265916*^9}, {3.919790269319742*^9, 
+  3.919790271207769*^9}},ExpressionUUID->"1dd478a5-48b0-4697-87bf-\
+a325382d8ead"],
+
+Cell["DISCUSSION FORTHCOMING", "Text",
+ CellChangeTimes->{{3.9195066434964857`*^9, 3.9195069298722267`*^9}, {
+   3.919507035943145*^9, 3.919507085181478*^9}, {3.919507127099791*^9, 
+   3.919507198360621*^9}, {3.919507273082975*^9, 3.919507351486359*^9}, {
+   3.919507389524014*^9, 3.919507400096596*^9}, {3.919507692852813*^9, 
+   3.919507737975986*^9}, {3.919507783507575*^9, 3.919507783697631*^9}, {
+   3.919611569075592*^9, 3.919611628410412*^9}, 3.9196116647183447`*^9, {
+   3.919614255739382*^9, 3.919614408206973*^9}, 3.9197664830156593`*^9, {
+   3.91976792759217*^9, 3.9197679317207117`*^9}, {3.919788762430169*^9, 
+   3.91978881408856*^9}, {3.91978896396734*^9, 
+   3.91978896610739*^9}},ExpressionUUID->"7e1bf1b3-09cd-4f32-acaf-\
+fba938fa156d"]
 }, Open  ]]
 }, Open  ]]
 },
@@ -12873,29 +13381,40 @@ CellTagsIndex->{}
 Notebook[{
 Cell[CellGroupData[{
 Cell[580, 22, 303, 5, 67, "Section",ExpressionUUID->"e73eea1c-cf69-4399-ab82-8b5244f4a79b"],
-Cell[886, 29, 1380, 25, 173, "Text",ExpressionUUID->"23ea4677-c6f9-4935-9a9e-c9a3d5b8f635",
+Cell[886, 29, 1992, 33, 357, "Text",ExpressionUUID->"23ea4677-c6f9-4935-9a9e-c9a3d5b8f635",
  InitializationCell->True],
 Cell[CellGroupData[{
-Cell[2291, 58, 375, 6, 54, "Subsection",ExpressionUUID->"115edd81-2606-4306-9653-44049950d863"],
-Cell[2669, 66, 1054, 17, 127, "Text",ExpressionUUID->"917bfa85-9ecc-464d-8cf0-4c3e9c5a6a87",
- InitializationCell->True]
+Cell[2903, 66, 322, 5, 54, "Subsection",ExpressionUUID->"633f3ae9-c6cf-45fe-ba4f-f627137ac5c2"],
+Cell[3228, 73, 1140, 19, 127, "Text",ExpressionUUID->"7ff1e2f4-2aa0-4cc7-a425-b93e37c61088"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[3760, 88, 322, 5, 54, "Subsection",ExpressionUUID->"633f3ae9-c6cf-45fe-ba4f-f627137ac5c2"],
-Cell[4085, 95, 1024, 16, 81, "Text",ExpressionUUID->"7ff1e2f4-2aa0-4cc7-a425-b93e37c61088"]
+Cell[4405, 97, 358, 6, 54, "Subsection",ExpressionUUID->"168c5f5b-9cd5-4020-9e13-9ea97a201127"],
+Cell[4766, 105, 1677, 26, 196, "Text",ExpressionUUID->"0b7e50cc-9157-4ee2-b1aa-26fdf1e65110"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[5146, 116, 358, 6, 54, "Subsection",ExpressionUUID->"168c5f5b-9cd5-4020-9e13-9ea97a201127"],
-Cell[5507, 124, 1534, 25, 196, "Text",ExpressionUUID->"0b7e50cc-9157-4ee2-b1aa-26fdf1e65110"]
+Cell[6480, 136, 319, 5, 54, "Subsection",ExpressionUUID->"375fae2c-411f-4d6f-b7a2-5acc8471d502"],
+Cell[6802, 143, 3456, 87, 156, "Text",ExpressionUUID->"16154121-c94b-49f9-9981-1d4def4a0b27"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[7078, 154, 260, 4, 54, "Subsection",ExpressionUUID->"375fae2c-411f-4d6f-b7a2-5acc8471d502"],
-Cell[7341, 160, 650, 10, 35, "Text",ExpressionUUID->"16154121-c94b-49f9-9981-1d4def4a0b27"],
-Cell[7994, 172, 771746, 12656, 203, "Input",ExpressionUUID->"d3da45ff-f3ee-40fd-873c-156b3fcb37b5"]
+Cell[10295, 235, 704, 15, 54, "Subsection",ExpressionUUID->"930a9b1f-3c89-4b7d-9249-a296f9e10306"],
+Cell[11002, 252, 6132, 178, 412, "Text",ExpressionUUID->"5ca98b71-b545-4696-ba6a-e3dc1632cd0d"],
+Cell[17137, 432, 771746, 12656, 203, "Input",ExpressionUUID->"b8fc271a-2e82-47fb-bb37-507491118d31"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[779777, 12833, 307, 5, 54, "Subsection",ExpressionUUID->"0d026eb9-57fe-4bab-a704-be49b452a617"],
-Cell[780087, 12840, 649, 10, 35, "Text",ExpressionUUID->"e74af92c-ffc9-42bb-988c-15e116521922"]
+Cell[788920, 13093, 372, 6, 54, "Subsection",ExpressionUUID->"0d026eb9-57fe-4bab-a704-be49b452a617"],
+Cell[789295, 13101, 6139, 176, 789, "Text",ExpressionUUID->"e74af92c-ffc9-42bb-988c-15e116521922"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[795471, 13282, 653, 14, 54, "Subsection",ExpressionUUID->"baa84117-1559-43e2-b09f-17345d632d21"],
+Cell[796127, 13298, 753, 11, 35, "Text",ExpressionUUID->"4f7f7ee6-271e-4648-8b98-21b0f45a9bd6"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[796917, 13314, 407, 6, 54, "Subsection",ExpressionUUID->"66538b55-c078-4051-8343-9ce80ee42527"],
+Cell[797327, 13322, 753, 11, 35, "Text",ExpressionUUID->"cd9f5c7c-f0ee-4bf0-bb4f-7119bda1a1f9"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[798117, 13338, 449, 7, 54, "Subsection",ExpressionUUID->"1dd478a5-48b0-4697-87bf-a325382d8ead"],
+Cell[798569, 13347, 753, 11, 35, "Text",ExpressionUUID->"7e1bf1b3-09cd-4f32-acaf-fba938fa156d"]
 }, Open  ]]
 }, Open  ]]
 }
