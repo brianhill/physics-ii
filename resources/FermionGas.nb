@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    801847,      13415]
-NotebookOptionsPosition[    799350,      13362]
-NotebookOutlinePosition[    799803,      13380]
-CellTagsIndexPosition[    799760,      13377]
+NotebookDataLength[    813044,      13774]
+NotebookOptionsPosition[    810771,      13725]
+NotebookOutlinePosition[    811225,      13743]
+CellTagsIndexPosition[    811182,      13740]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -253,8 +253,7 @@ a296f9e10306"],
 Cell[TextData[{
  "If ",
  Cell[BoxData[
-  FormBox["N", TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+  FormBox["N", TraditionalForm]],ExpressionUUID->
   "392eb7ed-a4e4-4f34-a710-31ef9768b16e"],
  " is very large, it is reasonable to simplify ",
  Cell[BoxData[
@@ -271,31 +270,26 @@ Cell[TextData[{
  Cell[BoxData[
   FormBox[
    FractionBox[
-    SuperscriptBox["N", "3"], "3"], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+    SuperscriptBox["N", "3"], "3"], TraditionalForm]],ExpressionUUID->
   "f19a627d-b632-4428-a240-eca1cc869489"],
  " because if ",
  Cell[BoxData[
-  FormBox["N", TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+  FormBox["N", TraditionalForm]],ExpressionUUID->
   "d9e7b4a4-52e8-4b70-851b-0f3cd2230b5f"],
  " is very large, then the ",
  Cell[BoxData[
   FormBox[
-   SuperscriptBox["N", "2"], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+   SuperscriptBox["N", "2"], TraditionalForm]],ExpressionUUID->
   "ccf457ca-361a-4e75-88b4-8c7ae8542365"],
  " and ",
  Cell[BoxData[
   FormBox[
-   SuperscriptBox["N", "1"], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+   SuperscriptBox["N", "1"], TraditionalForm]],ExpressionUUID->
   "b5ed0d51-4e26-4ede-8d03-54f31afeb2ab"],
  " terms are negligible in comparison to the ",
  Cell[BoxData[
   FormBox[
-   SuperscriptBox["N", "3"], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+   SuperscriptBox["N", "3"], TraditionalForm]],ExpressionUUID->
   "8fb74351-8e1a-4120-8158-b413e24f4cb1"],
  " term. So our approximate answer is:\n\n",
  Cell[BoxData[
@@ -308,8 +302,7 @@ Cell[TextData[{
      FractionBox[
       SuperscriptBox["h", "2"], 
       RowBox[{"8", "m", "\[VeryThinSpace]", 
-       SuperscriptBox["L", "2"]}]]}]}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+       SuperscriptBox["L", "2"]}]]}]}], TraditionalForm]],ExpressionUUID->
   "ee35c870-436e-4656-834e-e757c5044dcf"],
  "\n\nPeople notice that the energy to put the last electron in was ",
  Cell[BoxData[
@@ -319,16 +312,14 @@ Cell[TextData[{
      SuperscriptBox["h", "2"], 
      SuperscriptBox["N", "2"]}], 
     RowBox[{"8", "m", "\[VeryThinSpace]", 
-     SuperscriptBox["L", "2"]}]], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+     SuperscriptBox["L", "2"]}]], TraditionalForm]],ExpressionUUID->
   "a8d14e1e-a16a-438b-bd55-6f4b49dee6b1"],
  " and they define that combination to be ",
  Cell[BoxData[
   FormBox[
    SubscriptBox["\[Epsilon]", 
     StyleBox["F",
-     FontSlant->"Plain"]], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+     FontSlant->"Plain"]], TraditionalForm]],ExpressionUUID->
   "69b9af6b-69ed-4e9b-bba6-56a46d8cbae4"],
  " and call it \[OpenCurlyDoubleQuote]the Fermi energy.\
 \[CloseCurlyDoubleQuote] So,\n\n",
@@ -345,14 +336,12 @@ Cell[TextData[{
        SubscriptBox["\[Epsilon]", 
         StyleBox["F",
          FontSlant->"Plain"]]}], ")"}], 
-     RowBox[{"1", "/", "2"}]]}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+     RowBox[{"1", "/", "2"}]]}], TraditionalForm]],ExpressionUUID->
   "0a36bf8b-6420-47b5-93f1-b1019177c121"],
  "\n\nand ",
  Cell[BoxData[
   FormBox[
-   SubscriptBox["E", "TOTAL"], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+   SubscriptBox["E", "TOTAL"], TraditionalForm]],ExpressionUUID->
   "1c818f5c-5b4d-420c-97a4-31ae4b02a1c2"],
  " can be rewritten as:\n\n",
  Cell[BoxData[
@@ -390,27 +379,23 @@ Cell[TextData[{
        SubscriptBox["\[Epsilon]", 
         StyleBox["F",
          FontSlant->"Plain"]], 
-       RowBox[{"3", "/", "2"}]]}]}]}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+       RowBox[{"3", "/", "2"}]]}]}]}], TraditionalForm]],ExpressionUUID->
   "d0242316-a68f-4990-9a04-ca55294ede50"],
  "\n\nIn the diagram below, ",
  Cell[BoxData[
   FormBox[
    RowBox[{
     SubscriptBox["n", "max"], "=", 
-    RowBox[{"2", "N"}]}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+    RowBox[{"2", "N"}]}], TraditionalForm]],ExpressionUUID->
   "7034b4b6-b009-4d9d-9c45-d87b9f187f6d"],
  ", but in the 3-D case, which we\[CloseCurlyQuote]ll do next, ",
  Cell[BoxData[
   FormBox[
-   SubscriptBox["n", "max"], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+   SubscriptBox["n", "max"], TraditionalForm]],ExpressionUUID->
   "cc660166-1fc7-45c6-926c-2b0c3426c38c"],
  " and ",
  Cell[BoxData[
-  FormBox["N", TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+  FormBox["N", TraditionalForm]],ExpressionUUID->
   "216c4509-d800-4f21-9b9e-32373558a75f"],
  " do not have such a simple relationship."
 }], "Text",
@@ -420,7 +405,7 @@ Cell[TextData[{
    3.919507389524014*^9, 3.919507400096596*^9}, {3.919507692852813*^9, 
    3.919507737975986*^9}, {3.919507783507575*^9, 3.919507783697631*^9}, {
    3.919611569075592*^9, 3.919611628410412*^9}, 3.9196116647183447`*^9, {
-   3.919614255739382*^9, 3.919614408206973*^9}, 3.9197664830156593`*^9, {
+   3.919614255739382*^9, 3.919614408206973*^9}, 3.919766483015659*^9, {
    3.919767923541233*^9, 3.9197679248471537`*^9}, {3.919787665532258*^9, 
    3.9197878572798853`*^9}, {3.919787892021346*^9, 3.91978808321122*^9}, {
    3.919788116578587*^9, 3.91978833925679*^9}, {3.919788382325713*^9, 
@@ -13084,6 +13069,7 @@ fq9e33of9TcBLmj/ALmyhTM=
       "], "RGB", "XYZ"], Interleaving -> True],
    Selectable->False],
   DefaultBaseStyle->"ImageGraphics",
+  ImageSize->{553.84140625, Automatic},
   ImageSizeRaw->{2992., 916.},
   PlotRange->{{0, 2992.}, {0, 916.}}]], "Input",ExpressionUUID->"b8fc271a-\
 2e82-47fb-bb37-507491118d31"]
@@ -13101,29 +13087,26 @@ be49b452a617"],
 
 Cell[TextData[{
  "The 3-D case is distinctly harder than the 1-D case, because it isn\
-\[CloseCurlyQuote]t obvious what energy levels get filled in what order.\n\n\
-Consider the first level. It has \n\n",
+\[CloseCurlyQuote]t obvious what energy levels get filled in what order. \
+Consider the first level. It has  ",
  Cell[BoxData[
   FormBox[
    RowBox[{
-    SubscriptBox["n", "x"], "=", "1"}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+    SubscriptBox["n", "x"], "=", "1"}], TraditionalForm]],ExpressionUUID->
   "c71df900-dc86-48f8-a9a0-80756905388e"],
  ", ",
  Cell[BoxData[
   FormBox[
    RowBox[{
-    SubscriptBox["n", "y"], "=", "1"}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+    SubscriptBox["n", "y"], "=", "1"}], TraditionalForm]],ExpressionUUID->
   "4149c84f-7012-41a0-949f-453c596a5ba2"],
  ", and ",
  Cell[BoxData[
   FormBox[
    RowBox[{
-    SubscriptBox["n", "z"], "=", "1"}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+    SubscriptBox["n", "z"], "=", "1"}], TraditionalForm]],ExpressionUUID->
   "3bcaea12-67eb-4a63-aaaa-0cc44ca7be1c"],
- "\n\nand energy\n\n",
+ ", and energy\n\n",
  Cell[BoxData[
   FormBox[
    FractionBox[
@@ -13138,71 +13121,62 @@ Consider the first level. It has \n\n",
    RowBox[{
     SuperscriptBox["1", "2"], "+", 
     SuperscriptBox["1", "2"], "+", 
-    SuperscriptBox["1", "2"]}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+    SuperscriptBox["1", "2"]}], TraditionalForm]],ExpressionUUID->
   "2442e8d9-e8f4-4ff8-80c8-649d69c1e9b8"],
- ".\n\nIt can hold two electrons. There are three second levels:\n\n",
+ ".\n\nOf course, this level can hold two electrons. There are three second \
+levels:\n\n",
  Cell[BoxData[
   FormBox[
    RowBox[{
-    SubscriptBox["n", "x"], "=", "2"}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+    SubscriptBox["n", "x"], "=", "2"}], TraditionalForm]],ExpressionUUID->
   "fcc8b225-da4c-4559-8180-69f6e9a852c4"],
  ", ",
  Cell[BoxData[
   FormBox[
    RowBox[{
-    SubscriptBox["n", "y"], "=", "1"}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+    SubscriptBox["n", "y"], "=", "1"}], TraditionalForm]],ExpressionUUID->
   "ce111003-e2e4-4276-b353-7a8afcf72d61"],
  ", ",
  Cell[BoxData[
   FormBox[
    RowBox[{
-    SubscriptBox["n", "z"], "=", "1"}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+    SubscriptBox["n", "z"], "=", "1"}], TraditionalForm]],ExpressionUUID->
   "80b5d681-cfe3-45a8-b1a3-6db8ca242950"],
  "\n",
  Cell[BoxData[
   FormBox[
    RowBox[{
-    SubscriptBox["n", "x"], "=", "1"}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+    SubscriptBox["n", "x"], "=", "1"}], TraditionalForm]],ExpressionUUID->
   "51f7c903-f0e3-4f03-8ba1-84bc08cebcba"],
  ", ",
  Cell[BoxData[
   FormBox[
    RowBox[{
-    SubscriptBox["n", "y"], "=", "2"}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+    SubscriptBox["n", "y"], "=", "2"}], TraditionalForm]],ExpressionUUID->
   "203f0c24-d551-4c77-b06b-604a03a9ce90"],
  ", ",
  Cell[BoxData[
   FormBox[
    RowBox[{
-    SubscriptBox["n", "z"], "=", "1"}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+    SubscriptBox["n", "z"], "=", "1"}], TraditionalForm]],ExpressionUUID->
   "2cacd1a9-823b-455f-afaa-ac8710667ed4"],
  "\n",
  Cell[BoxData[
   FormBox[
    RowBox[{
-    SubscriptBox["n", "x"], "=", "1"}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+    SubscriptBox["n", "x"], "=", "1"}], TraditionalForm]],ExpressionUUID->
   "f0eff747-01a3-4eb8-92fb-aee4aaf847f3"],
  ", ",
  Cell[BoxData[
   FormBox[
    RowBox[{
-    SubscriptBox["n", "y"], "=", "1"}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+    SubscriptBox["n", "y"], "=", "1"}], TraditionalForm]],ExpressionUUID->
   "df2bd27b-ea33-4d6e-9b44-42d93f42217e"],
  ", ",
  Cell[BoxData[
   FormBox[
    RowBox[{
-    SubscriptBox["n", "z"], "=", "2"}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+    SubscriptBox["n", "z"], "=", "2"}], TraditionalForm]],ExpressionUUID->
   "ac9e0882-8c39-4e82-94ce-02a3ef8c43f5"],
  "\n\nThey have energy\n\n",
  Cell[BoxData[
@@ -13219,8 +13193,7 @@ Consider the first level. It has \n\n",
    RowBox[{
     SuperscriptBox["2", "2"], "+", 
     SuperscriptBox["1", "2"], "+", 
-    SuperscriptBox["1", "2"]}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+    SuperscriptBox["1", "2"]}], TraditionalForm]],ExpressionUUID->
   "b14a4247-0daa-479a-a759-f837d3f8d010"],
  ".\n\nIt isn\[CloseCurlyQuote]t obvious what fills up next. Is it the 3 1 1 \
 state and its friends, or is the the 2 2 1 state and its friends? Well, you \
@@ -13251,15 +13224,13 @@ Well, ",
      SuperscriptBox["2", "2"], "+", 
      SuperscriptBox["2", "2"], "+", 
      SuperscriptBox["2", "2"]}], "=", "12"}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
-  "c51d0834-0e85-4020-890c-4708052a96ae"],
+  ExpressionUUID->"c51d0834-0e85-4020-890c-4708052a96ae"],
  " so 3 1 1 is next, and only after we have done 3 1 1, 1 3 1, and 1 1 3 will \
 we get to 2 2 2.\n\nThis business of comparing sums of squares is going to \
 turn into an awful mess. We need to make some kind of approximation that is \
 only going to be valid when ",
  Cell[BoxData[
-  FormBox["N", TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+  FormBox["N", TraditionalForm]],ExpressionUUID->
   "95d8e4d7-2cd2-4451-96ad-840141a5ff2f"],
  " is large, just like we did to get a tidy answer in the 1-D case."
 }], "Text",
@@ -13269,12 +13240,13 @@ only going to be valid when ",
    3.919507389524014*^9, 3.919507400096596*^9}, {3.919507692852813*^9, 
    3.919507737975986*^9}, {3.919507783507575*^9, 3.919507783697631*^9}, {
    3.919611569075592*^9, 3.919611628410412*^9}, 3.9196116647183447`*^9, {
-   3.919614255739382*^9, 3.919614408206973*^9}, 3.9197664830156593`*^9, {
+   3.919614255739382*^9, 3.919614408206973*^9}, 3.919766483015659*^9, {
    3.91976792759217*^9, 3.9197679317207117`*^9}, {3.919788762430169*^9, 
-   3.9197887952014523`*^9}, {3.9197889688945932`*^9, 3.9197893490666*^9}, {
+   3.9197887952014527`*^9}, {3.9197889688945932`*^9, 3.9197893490666*^9}, {
    3.9197893801393433`*^9, 3.919789456238592*^9}, {3.9197895263489313`*^9, 
-   3.919789605496725*^9}, {3.919789915230339*^9, 
-   3.919789923967168*^9}},ExpressionUUID->"e74af92c-ffc9-42bb-988c-\
+   3.919789605496725*^9}, {3.919789915230339*^9, 3.919789923967168*^9}, {
+   3.9198580203640137`*^9, 3.9198580314781322`*^9}, {3.919858129515665*^9, 
+   3.9198581335679207`*^9}},ExpressionUUID->"e74af92c-ffc9-42bb-988c-\
 15e116521922"]
 }, Open  ]],
 
@@ -13283,85 +13255,476 @@ Cell[CellGroupData[{
 Cell[TextData[{
  "The Large-",
  Cell[BoxData[
-  FormBox["N", TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+  FormBox["N", TraditionalForm]],ExpressionUUID->
   "cc601e79-1d55-4c57-a969-3d955a61fb8f"],
  " Approximation for Filling the 3-D Fermion Gas"
 }], "Subsection",
  CellChangeTimes->{{3.919507761118346*^9, 3.919507777058218*^9}, {
   3.919614164937755*^9, 3.919614173612521*^9}, {3.919622131041226*^9, 
   3.919622143911295*^9}, {3.919766488031982*^9, 3.919766492238309*^9}, {
-  3.9197894808285093`*^9, 3.919789506186154*^9}, {3.919789570696891*^9, 
+  3.919789480828509*^9, 3.919789506186154*^9}, {3.919789570696891*^9, 
   3.919789571080983*^9}, {3.919789964231398*^9, 
   3.919789967426917*^9}},ExpressionUUID->"baa84117-1559-43e2-b09f-\
 17345d632d21"],
 
-Cell["DISCUSSION FORTHCOMING", "Text",
+Cell[TextData[{
+ "In the preceding sub-section, we saw that the filling order is already not \
+obvious in the 3-D case as soon as you get to 2 1 1, 3 1 1, or 2 2 2.\n\nHere \
+is an extremely creative approximation!\n\nWe notice that ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubsuperscriptBox["n", "x", "2"], 
+    StyleBox["+",
+     FontSize->16], 
+    SubsuperscriptBox["n", "y", "2"], 
+    StyleBox["+",
+     FontSize->16], 
+    SubsuperscriptBox["n", "z", "2"]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "d0fda849-d78f-4615-b12c-54603a7df818"],
+ " looks suspiciously similar to ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SuperscriptBox["x", "2"], "+", 
+    SuperscriptBox["y", "2"], "+", 
+    SuperscriptBox["z", "2"]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "950a4fee-cd44-47f6-a8ee-cc51655d0b01"],
+ " which we would call a radius-squared, or just ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["r", "2"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "274bebab-daa0-403f-9eae-6b3efb5691a3"],
+ ". Of course, it isn\[CloseCurlyQuote]t the same at all, but this causes us \
+to think of ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubsuperscriptBox["n", "x", "2"], 
+    StyleBox["+",
+     FontSize->16], 
+    SubsuperscriptBox["n", "y", "2"], 
+    StyleBox["+",
+     FontSize->16], 
+    SubsuperscriptBox["n", "z", "2"]}], TraditionalForm]],ExpressionUUID->
+  "bdc81063-67c8-4173-94d8-ba4a3833db8d"],
+ " as a radius-squared, and what is happening is that the energy levels are \
+filling up by increasing radius.\n\nFurthermore! There is exactly 1 \
+combination of ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["n", "x"], ",", 
+    SubscriptBox["n", "y"], ",", 
+    RowBox[{"and", " ", 
+     SubscriptBox["n", "z"]}]}], TraditionalForm]],ExpressionUUID->
+  "5e694eb9-9a81-4800-b106-cf6018871642"],
+ " for each little cube of volume 1 in the ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["n", "x"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "48f5665b-dab3-42e8-b0b7-0712601b4f25"],
+ "-",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["n", "y"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "a08094ef-ac3b-44ce-b7a1-bb173ddabae6"],
+ "-",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["n", "z"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "0115cd15-d8c1-4c1e-aeb1-54e9b6d0890e"],
+ " space. So if we imagine a spherical shell going from ",
+ Cell[BoxData[
+  FormBox["r", TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "a49412b3-38c4-4162-b2fa-85ee5ccdc5fb"],
+ " to ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"r", "+", 
+    RowBox[{"\[CapitalDelta]", "\[VeryThinSpace]", "r"}]}], TraditionalForm]],
+  
+  FormatType->TraditionalForm,ExpressionUUID->
+  "340d2f8f-fb3f-4f35-a905-c6ebe82e5597"],
+ " then it contains ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"4", "\[Pi]", "\[VeryThinSpace]", 
+    SuperscriptBox["r", "2"], "\[CapitalDelta]", "\[VeryThinSpace]", "r"}], 
+   TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "8da6c431-8a14-42da-9616-9f4d9d92b7e8"],
+ " points on average. (Because the spherical shell\[CloseCurlyQuote]s area is \
+",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"4", "\[Pi]", "\[VeryThinSpace]", 
+    SuperscriptBox["r", "2"]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "5edaa66c-6707-4dfe-b02f-fcf8d1f8f8c3"],
+ " and its thickness is ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[CapitalDelta]", "\[VeryThinSpace]", "r"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "3d88ed5f-fb0d-46df-bd77-ba664543a372"],
+ ", and we just argued that there is on average one ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["n", "x"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "0b0fa91b-9973-4d0f-89f9-b93145bfad94"],
+ "-",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["n", "y"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "5e21ef9e-f30e-41b7-8dd7-8791adad9404"],
+ "-",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["n", "z"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "d6d75e54-7690-4f40-8614-426ee6004bcb"],
+ " combination in each unit volume of space.) The only correction to this is \
+that we have to divide by 8 because we are only doing the octant with \
+positive ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["n", "x"], ",", 
+    SubscriptBox["n", "y"], ",", 
+    RowBox[{"and", " ", 
+     SubscriptBox["n", "z"]}]}], TraditionalForm]],ExpressionUUID->
+  "404ff9e5-787b-457b-a41c-2d5081fe2019"],
+ ".\n\nIf we stuff the box full of fermions until there are ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"2", "N"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "2bba1d69-9fda-400f-9c6e-0ba186dd7e47"],
+ " of them, they must fill up the ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["n", "x"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "6d34c1bb-58df-4070-953d-2acc0483c408"],
+ "-",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["n", "y"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "5fb1b4d9-8bac-4301-9c66-c746a36ae072"],
+ "-",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["n", "z"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "bef3891f-1e11-4f91-88b3-8a15b57961a8"],
+ " space out to a radius ",
+ Cell[BoxData[
+  FormBox["r", TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "c3398d64-dc34-4366-a44f-c0deea45451c"],
+ " and using the approximation just argued, we must have:\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"2", "N"}], "=", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"2", "\[CenterDot]", 
+       FractionBox["1", "8"]}], 
+      RowBox[{
+       SubsuperscriptBox["\[Integral]", "0", "r"], " ", 
+       RowBox[{
+        FormBox[
+         RowBox[{"4", "\[Pi]", "\[VeryThinSpace]", 
+          SuperscriptBox["s", "2"]}],
+         TraditionalForm], "d", "\[VeryThinSpace]", "s"}]}]}], "=", 
+     RowBox[{
+      RowBox[{
+       FractionBox["1", "4"], "\[CenterDot]", "4"}], "\[Pi]", " ", 
+      FractionBox[
+       SuperscriptBox["r", "3"], "3"]}]}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "daf58737-17e8-420b-825e-aa504e5a6fe0"],
+ "\n\nNow we know how far out the ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["n", "x"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "50171ca4-dab0-4850-8a5f-e6147302e80d"],
+ "-",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["n", "y"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "79a5722f-276a-4b6c-8da1-2e899ff76999"],
+ "-",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["n", "z"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "8a5f0eae-e4ca-4cac-99db-3147110b9339"],
+ " space is filled for a given ",
+ Cell[BoxData[
+  FormBox["N", TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "345d20ae-512e-4663-ac8e-1c710d821f4d"],
+ ". As in the 1-D case, the energy to put the last electron in is\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["\[Epsilon]", 
+     StyleBox["F",
+      FontSlant->"Plain"]], "=", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["h", "2"], 
+      SuperscriptBox["r", "2"]}], 
+     RowBox[{"8", "m", "\[VeryThinSpace]", 
+      SuperscriptBox["L", "2"]}]]}], TraditionalForm]],ExpressionUUID->
+  "f880e340-d9fb-4ad7-bd54-94d2bbe363ee"],
+ "\n\nexcept that now instead of ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["n", "max"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "b233ca59-f8eb-422f-9a9e-7093d1ff55a7"],
+ " it is ",
+ Cell[BoxData[
+  FormBox["r", TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "d9042594-2087-4408-b2c0-aa9b8ed42246"],
+ ", the maximum radius, that shows up. So,\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"r", "=", 
+    StyleBox[
+     SqrtBox[
+      StyleBox[
+       FractionBox[
+        RowBox[{"8", "m", "\[VeryThinSpace]", 
+         SuperscriptBox["L", "2"], 
+         SubscriptBox["\[Epsilon]", 
+          StyleBox["F",
+           FontSlant->"Plain"]]}], 
+        SuperscriptBox["h", "2"]],
+       FontSize->24]],
+     FontSize->24]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "d6874e3c-2aa9-4e64-a4f2-45c8bf2db960"],
+ "\n\nWe can stick that into the relationship between ",
+ Cell[BoxData[
+  FormBox["N", TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "b13617e3-bace-4f1b-a00e-d7260afcd0f0"],
+ " and ",
+ Cell[BoxData[
+  FormBox["r", TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "06d33f4b-614b-497e-a344-4bf71fdafaac"],
+ " and we get\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"2", "N"}], "=", 
+    RowBox[{
+     RowBox[{
+      FractionBox["1", "4"], "\[CenterDot]", "4"}], "\[Pi]", " ", 
+     FractionBox["1", "3"], 
+     SuperscriptBox[
+      RowBox[{"(", 
+       StyleBox[
+        FractionBox[
+         RowBox[{"8", "m", "\[VeryThinSpace]", 
+          SuperscriptBox["L", "2"], 
+          SubscriptBox["\[Epsilon]", 
+           StyleBox["F",
+            FontSlant->"Plain"]]}], 
+         SuperscriptBox["h", "2"]],
+        FontSize->24], ")"}], 
+      RowBox[{"3", "/", "2"}]]}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "006b6d30-0a36-4d42-a3d0-4579ffdeeb4b"]
+}], "Text",
  CellChangeTimes->{{3.9195066434964857`*^9, 3.9195069298722267`*^9}, {
    3.919507035943145*^9, 3.919507085181478*^9}, {3.919507127099791*^9, 
    3.919507198360621*^9}, {3.919507273082975*^9, 3.919507351486359*^9}, {
    3.919507389524014*^9, 3.919507400096596*^9}, {3.919507692852813*^9, 
    3.919507737975986*^9}, {3.919507783507575*^9, 3.919507783697631*^9}, {
    3.919611569075592*^9, 3.919611628410412*^9}, 3.9196116647183447`*^9, {
-   3.919614255739382*^9, 3.919614408206973*^9}, 3.9197664830156593`*^9, {
+   3.919614255739382*^9, 3.919614408206973*^9}, 3.919766483015659*^9, {
    3.91976792759217*^9, 3.9197679317207117`*^9}, {3.919788762430169*^9, 
-   3.91978881408856*^9}, {3.91978896396734*^9, 
-   3.91978896610739*^9}},ExpressionUUID->"4f7f7ee6-271e-4648-8b98-\
+   3.91978881408856*^9}, {3.91978896396734*^9, 3.91978896610739*^9}, {
+   3.919855041075742*^9, 3.919855929853993*^9}, {3.919855970447641*^9, 
+   3.91985600579207*^9}, {3.919856537431197*^9, 3.9198565567928543`*^9}, {
+   3.919856625342309*^9, 3.919856679573392*^9}, {3.9198567602854843`*^9, 
+   3.9198567603800917`*^9}, {3.9198568396915417`*^9, 3.919856845132653*^9}, {
+   3.9198569014551764`*^9, 3.919856998814973*^9}, {3.919857033601102*^9, 
+   3.9198572472501297`*^9}, {3.919857926767524*^9, 
+   3.919857965915103*^9}},ExpressionUUID->"4f7f7ee6-271e-4648-8b98-\
 21b0f45a9bd6"]
 }, Open  ]],
 
 Cell[CellGroupData[{
 
-Cell[" White Dwarf Stars", "Subsection",
+Cell["The Energy of the 3-D Fermion Gas", "Subsection",
  CellChangeTimes->{{3.919507761118346*^9, 3.919507777058218*^9}, {
   3.919614164937755*^9, 3.919614173612521*^9}, {3.919622131041226*^9, 
   3.919622143911295*^9}, {3.919766488031982*^9, 3.919766492238309*^9}, {
-  3.919788802568863*^9, 3.9197888057641172`*^9}, {3.919789452591413*^9, 
-  3.919789453265916*^9}},ExpressionUUID->"66538b55-c078-4051-8343-\
-9ce80ee42527"],
+  3.919789480828509*^9, 3.919789506186154*^9}, {3.919789570696891*^9, 
+  3.919789571080983*^9}, {3.919789964231398*^9, 3.919789967426917*^9}, {
+  3.9198572660765867`*^9, 
+  3.919857268417107*^9}},ExpressionUUID->"c3d6006f-d3b7-4de6-98c1-\
+eb278e0716d0"],
 
-Cell["DISCUSSION FORTHCOMING", "Text",
- CellChangeTimes->{{3.9195066434964857`*^9, 3.9195069298722267`*^9}, {
-   3.919507035943145*^9, 3.919507085181478*^9}, {3.919507127099791*^9, 
-   3.919507198360621*^9}, {3.919507273082975*^9, 3.919507351486359*^9}, {
-   3.919507389524014*^9, 3.919507400096596*^9}, {3.919507692852813*^9, 
-   3.919507737975986*^9}, {3.919507783507575*^9, 3.919507783697631*^9}, {
-   3.919611569075592*^9, 3.919611628410412*^9}, 3.9196116647183447`*^9, {
-   3.919614255739382*^9, 3.919614408206973*^9}, 3.9197664830156593`*^9, {
-   3.91976792759217*^9, 3.9197679317207117`*^9}, {3.919788762430169*^9, 
-   3.91978881408856*^9}, {3.91978896396734*^9, 
-   3.91978896610739*^9}},ExpressionUUID->"cd9f5c7c-f0ee-4bf0-bb4f-\
-7119bda1a1f9"]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell[" Supernovae", "Subsection",
- CellChangeTimes->{{3.919507761118346*^9, 3.919507777058218*^9}, {
-  3.919614164937755*^9, 3.919614173612521*^9}, {3.919622131041226*^9, 
-  3.919622143911295*^9}, {3.919766488031982*^9, 3.919766492238309*^9}, {
-  3.919788802568863*^9, 3.9197888057641172`*^9}, {3.919789452591413*^9, 
-  3.919789453265916*^9}, {3.919790269319742*^9, 
-  3.919790271207769*^9}},ExpressionUUID->"1dd478a5-48b0-4697-87bf-\
-a325382d8ead"],
-
-Cell["DISCUSSION FORTHCOMING", "Text",
- CellChangeTimes->{{3.9195066434964857`*^9, 3.9195069298722267`*^9}, {
-   3.919507035943145*^9, 3.919507085181478*^9}, {3.919507127099791*^9, 
-   3.919507198360621*^9}, {3.919507273082975*^9, 3.919507351486359*^9}, {
-   3.919507389524014*^9, 3.919507400096596*^9}, {3.919507692852813*^9, 
-   3.919507737975986*^9}, {3.919507783507575*^9, 3.919507783697631*^9}, {
-   3.919611569075592*^9, 3.919611628410412*^9}, 3.9196116647183447`*^9, {
-   3.919614255739382*^9, 3.919614408206973*^9}, 3.9197664830156593`*^9, {
-   3.91976792759217*^9, 3.9197679317207117`*^9}, {3.919788762430169*^9, 
-   3.91978881408856*^9}, {3.91978896396734*^9, 
-   3.91978896610739*^9}},ExpressionUUID->"7e1bf1b3-09cd-4f32-acaf-\
-fba938fa156d"]
+Cell[TextData[{
+ "\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["E", "TOTAL"], "=", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"2", "\[CenterDot]", 
+       FractionBox["1", "8"]}], 
+      RowBox[{
+       SubsuperscriptBox["\[Integral]", "0", "r"], " ", 
+       RowBox[{
+        FormBox[
+         RowBox[{"4", "\[Pi]", "\[VeryThinSpace]", 
+          SuperscriptBox["s", "2"]}],
+         TraditionalForm], " ", 
+        FractionBox[
+         RowBox[{
+          SuperscriptBox["h", "2"], 
+          SuperscriptBox["s", "2"]}], 
+         RowBox[{"8", "m", "\[VeryThinSpace]", 
+          SuperscriptBox["L", "2"]}]], " ", "d", "\[VeryThinSpace]", 
+        "s"}]}]}], "=", 
+     RowBox[{
+      RowBox[{
+       FractionBox["1", "4"], "\[CenterDot]", "4"}], "\[Pi]", 
+      FractionBox[
+       SuperscriptBox["h", "2"], 
+       RowBox[{"8", "m", "\[VeryThinSpace]", 
+        SuperscriptBox["L", "2"]}]], " ", 
+      FractionBox[
+       SuperscriptBox["r", "5"], "5"]}]}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "ede912c6-1687-4e5d-b63b-cbfafb34b1c2"],
+ "\n\nThat was straightforward, but we want to rewrite this using our \
+relationship between ",
+ Cell[BoxData[
+  FormBox["r", TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "0ecc7d07-484b-40d6-81e9-384986704c7b"],
+ " and ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["\[Epsilon]", "F"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "01f93cef-07d9-49e5-a327-43297b39ccee"],
+ ". It is\n\n ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["E", "TOTAL"], "=", 
+    RowBox[{
+     RowBox[{
+      FractionBox["1", "4"], "\[CenterDot]", "4"}], "\[Pi]", 
+     FractionBox["1", "5"], 
+     FractionBox[
+      SuperscriptBox["h", "2"], 
+      RowBox[{"8", "m", "\[VeryThinSpace]", 
+       SuperscriptBox["L", "2"]}]], " ", 
+     SuperscriptBox[
+      RowBox[{"(", 
+       StyleBox[
+        FractionBox[
+         RowBox[{"8", "m", "\[VeryThinSpace]", 
+          SuperscriptBox["L", "2"], 
+          SubscriptBox["\[Epsilon]", 
+           StyleBox["F",
+            FontSlant->"Plain"]]}], 
+         SuperscriptBox["h", "2"]],
+        FontSize->24], ")"}], 
+      RowBox[{"5", "/", "2"}]]}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "4ecc6f6f-41ae-4bce-8537-38d820f6076e"],
+ "\n \nA popular way, because so much cancels(!), to write this is to \
+calculate the average energy per fermion:\n \n  ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    FractionBox[
+     SubscriptBox["E", "TOTAL"], 
+     RowBox[{"2", "N"}]], "=", 
+    RowBox[{
+     FractionBox[
+      RowBox[{
+       RowBox[{
+        FractionBox["1", "4"], "\[CenterDot]", "4"}], "\[Pi]", 
+       FractionBox["1", "5"], 
+       FractionBox[
+        SuperscriptBox["h", "2"], 
+        RowBox[{"8", "m", "\[VeryThinSpace]", 
+         SuperscriptBox["L", "2"]}]], " ", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         StyleBox[
+          FractionBox[
+           RowBox[{"8", "m", "\[VeryThinSpace]", 
+            SuperscriptBox["L", "2"], 
+            SubscriptBox["\[Epsilon]", 
+             StyleBox["F",
+              FontSlant->"Plain"]]}], 
+           SuperscriptBox["h", "2"]],
+          FontSize->24], ")"}], 
+        RowBox[{"5", "/", "2"}]]}], 
+      RowBox[{
+       RowBox[{
+        FractionBox["1", "4"], "\[CenterDot]", "4"}], "\[Pi]", " ", 
+       FractionBox["1", "3"], 
+       SuperscriptBox[
+        RowBox[{"(", 
+         StyleBox[
+          FractionBox[
+           RowBox[{"8", "m", "\[VeryThinSpace]", 
+            SuperscriptBox["L", "2"], 
+            SubscriptBox["\[Epsilon]", 
+             StyleBox["F",
+              FontSlant->"Plain"]]}], 
+           SuperscriptBox["h", "2"]],
+          FontSize->24], ")"}], 
+        RowBox[{"3", "/", "2"}]]}]], "=", 
+     RowBox[{
+      FractionBox["3", "5"], 
+      SubscriptBox["\[Epsilon]", 
+       StyleBox["F",
+        FontSlant->"Plain"]]}]}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "c961ba59-b294-428a-963a-40fdadc61d5e"]
+}], "Text",
+ CellChangeTimes->{{3.919857294793579*^9, 3.919857492175827*^9}, {
+   3.919857661010324*^9, 3.919857802156147*^9}, {3.919857839260194*^9, 
+   3.9198578772391853`*^9}, {3.919857973744194*^9, 3.919857992376903*^9}, 
+   3.919858155614916*^9},ExpressionUUID->"1ba7b708-2576-4a93-8fd7-\
+83f080ac142e"]
 }, Open  ]]
 }, Open  ]]
 },
-WindowSize->{808, 911},
-WindowMargins->{{160, Automatic}, {Automatic, 50}},
+WindowSize->{1076, 1277},
+WindowMargins->{{Automatic, 422}, {Automatic, 0}},
 PrintingCopies->10,
 PrintingPageRange->{1, Automatic},
 FrontEndVersion->"14.0 for Mac OS X ARM (64-bit) (December 12, 2023)",
@@ -13381,15 +13744,15 @@ CellTagsIndex->{}
 Notebook[{
 Cell[CellGroupData[{
 Cell[580, 22, 303, 5, 67, "Section",ExpressionUUID->"e73eea1c-cf69-4399-ab82-8b5244f4a79b"],
-Cell[886, 29, 1992, 33, 357, "Text",ExpressionUUID->"23ea4677-c6f9-4935-9a9e-c9a3d5b8f635",
+Cell[886, 29, 1992, 33, 288, "Text",ExpressionUUID->"23ea4677-c6f9-4935-9a9e-c9a3d5b8f635",
  InitializationCell->True],
 Cell[CellGroupData[{
 Cell[2903, 66, 322, 5, 54, "Subsection",ExpressionUUID->"633f3ae9-c6cf-45fe-ba4f-f627137ac5c2"],
-Cell[3228, 73, 1140, 19, 127, "Text",ExpressionUUID->"7ff1e2f4-2aa0-4cc7-a425-b93e37c61088"]
+Cell[3228, 73, 1140, 19, 104, "Text",ExpressionUUID->"7ff1e2f4-2aa0-4cc7-a425-b93e37c61088"]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[4405, 97, 358, 6, 54, "Subsection",ExpressionUUID->"168c5f5b-9cd5-4020-9e13-9ea97a201127"],
-Cell[4766, 105, 1677, 26, 196, "Text",ExpressionUUID->"0b7e50cc-9157-4ee2-b1aa-26fdf1e65110"]
+Cell[4766, 105, 1677, 26, 150, "Text",ExpressionUUID->"0b7e50cc-9157-4ee2-b1aa-26fdf1e65110"]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[6480, 136, 319, 5, 54, "Subsection",ExpressionUUID->"375fae2c-411f-4d6f-b7a2-5acc8471d502"],
@@ -13397,24 +13760,20 @@ Cell[6802, 143, 3456, 87, 156, "Text",ExpressionUUID->"16154121-c94b-49f9-9981-1
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[10295, 235, 704, 15, 54, "Subsection",ExpressionUUID->"930a9b1f-3c89-4b7d-9249-a296f9e10306"],
-Cell[11002, 252, 6132, 178, 412, "Text",ExpressionUUID->"5ca98b71-b545-4696-ba6a-e3dc1632cd0d"],
-Cell[17137, 432, 771746, 12656, 203, "Input",ExpressionUUID->"b8fc271a-2e82-47fb-bb37-507491118d31"]
+Cell[11002, 252, 5665, 163, 366, "Text",ExpressionUUID->"5ca98b71-b545-4696-ba6a-e3dc1632cd0d"],
+Cell[16670, 417, 771786, 12657, 183, "Input",ExpressionUUID->"b8fc271a-2e82-47fb-bb37-507491118d31"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[788920, 13093, 372, 6, 54, "Subsection",ExpressionUUID->"0d026eb9-57fe-4bab-a704-be49b452a617"],
-Cell[789295, 13101, 6139, 176, 789, "Text",ExpressionUUID->"e74af92c-ffc9-42bb-988c-15e116521922"]
+Cell[788493, 13079, 372, 6, 54, "Subsection",ExpressionUUID->"0d026eb9-57fe-4bab-a704-be49b452a617"],
+Cell[788868, 13087, 5756, 162, 605, "Text",ExpressionUUID->"e74af92c-ffc9-42bb-988c-15e116521922"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[795471, 13282, 653, 14, 54, "Subsection",ExpressionUUID->"baa84117-1559-43e2-b09f-17345d632d21"],
-Cell[796127, 13298, 753, 11, 35, "Text",ExpressionUUID->"4f7f7ee6-271e-4648-8b98-21b0f45a9bd6"]
+Cell[794661, 13254, 620, 13, 54, "Subsection",ExpressionUUID->"baa84117-1559-43e2-b09f-17345d632d21"],
+Cell[795284, 13269, 10555, 305, 739, "Text",ExpressionUUID->"4f7f7ee6-271e-4648-8b98-21b0f45a9bd6"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[796917, 13314, 407, 6, 54, "Subsection",ExpressionUUID->"66538b55-c078-4051-8343-9ce80ee42527"],
-Cell[797327, 13322, 753, 11, 35, "Text",ExpressionUUID->"cd9f5c7c-f0ee-4bf0-bb4f-7119bda1a1f9"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[798117, 13338, 449, 7, 54, "Subsection",ExpressionUUID->"1dd478a5-48b0-4697-87bf-a325382d8ead"],
-Cell[798569, 13347, 753, 11, 35, "Text",ExpressionUUID->"7e1bf1b3-09cd-4f32-acaf-fba938fa156d"]
+Cell[805876, 13579, 520, 8, 54, "Subsection",ExpressionUUID->"c3d6006f-d3b7-4de6-98c1-eb278e0716d0"],
+Cell[806399, 13589, 4344, 132, 360, "Text",ExpressionUUID->"1ba7b708-2576-4a93-8fd7-83f080ac142e"]
 }, Open  ]]
 }, Open  ]]
 }
