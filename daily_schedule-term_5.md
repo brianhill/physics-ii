@@ -11,17 +11,17 @@ See also [Daily Schedule-Term 4](./daily_schedule-term_4.html)
 
 ### Week 9 &mdash; The Hydrogen Atom, Atomic Spectra, and the Schr&ouml;dinger Equation
 
-* Tuesday, Mar. 19 &mdash; Q10.4 and Q11.1 to Q11.5 &mdash; Presentations: Brian, The [3-D Schr&ouml;dinger Equation - FORTHCOMING](./resources/3DSchrodingerEquation.nb.pdf); Ren and Rebecca, Using the Pauli Exclusion Principle to discover the energy of a [Fermion Gas - IN PROGRESS](./resources/FermionGas.nb.pdf) (ignoring Coulomb repulsion) &mdash; [Problem Set 12](./assignments/AssignmentFor2024-03-19.nb.pdf) for Tuesday
-* Friday, Mar. 22 &mdash; Start Q12
+* Tuesday, Mar. 19 &mdash; Q10.4 and Q11.1 to Q11.5 &mdash; Presentations: Brian, The 3-D Schr&ouml;dinger Equation; Ren and Rebecca, Using the Pauli Exclusion Principle to discover the energy of a [Fermion Gas](./resources/FermionGas.nb.pdf) (ignoring Coulomb repulsion) &mdash; [Problem Set 12](./assignments/AssignmentFor2024-03-19.nb.pdf) for Tuesday
+* Friday, Mar. 22 &mdash; Study Q11.6 and Q12.1 to Q12 &mdash; [Problem Set 13](./assignments/AssignmentFor2024-03-22.nb.pdf) for Friday &mdash; Presentations: Emma, Applying the ideas of Example 11.1 to other molecules (caffeine?!); Brian, Continuation of the quantum tunneling ideas started in Problem Set 13
 
 ### Week 10 &mdash; Continue the Schr&ouml;dinger Equation &mdash; Exam 3
 
-* Tuesday, Mar. 26 &mdash; Continue in Q12
+* Tuesday, Mar. 26 &mdash; Continue in Q12 
 * Friday, Mar. 29 &mdash; Exam 3 covering Problem Sets 10-14 and Moore Chapters Q10, Q11, and Q12
 
 <img src="./resources/DegenerateFermiGas.png" alt="Degenerate Fermi Gas" width="100%">
 
-### Week 11 &mdash; Numerical Methods for Attacking Schr&ouml;dinger's Equation &mdash; The Dawn of Nuclear Physics
+### Week 11 &mdash; Numerical Methods for Solving Schr&ouml;dinger's Equation &mdash; The Dawn of Nuclear Physics
 
 * Tuesday, Apr. 2 &mdash; Finish Q12
 * Friday, Apr. 5 &mdash; The Dawn of Nuclear Physics, the discovery of alpha-particles, beta-particles, gamma-particles, and the neutron
