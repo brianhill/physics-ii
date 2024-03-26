@@ -1,0 +1,1522 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 14.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     51872,       1514]
+NotebookOptionsPosition[     48595,       1447]
+NotebookOutlinePosition[     49049,       1465]
+CellTagsIndexPosition[     49006,       1462]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Harmonic Oscillator Raising and Lowering Operators", "Section",
+ CellChangeTimes->{{3.920309692339552*^9, 3.920309697888428*^9}, {
+  3.920419694021215*^9, 3.920419698742198*^9}, {3.9204239666665697`*^9, 
+  3.9204239743511477`*^9}},ExpressionUUID->"1401d686-6281-49b0-9743-\
+c981b888c908"],
+
+Cell["\<\
+We did some important things with the harmonic oscillator solutions. We \
+normalized the first two of them. We built an oscillating wave packet out of \
+the first two of them.
+
+We have not shown that they are solutions, and we haven\[CloseCurlyQuote]t \
+gotten a taste of where the whacky recursion relations on p. 160 of Moore \
+came from.\
+\>", "Text",
+ CellChangeTimes->{{3.920419723334632*^9, 
+  3.9204198571019917`*^9}},ExpressionUUID->"e8da59ba-e1c8-4ff9-8734-\
+f8ac585a40f4"],
+
+Cell[CellGroupData[{
+
+Cell["The Time-Independent Schr\[ODoubleDot]dinger Equation", "Subsection",
+ CellChangeTimes->{{3.920310155034218*^9, 3.920310163989311*^9}, {
+  3.920310462568035*^9, 3.920310466416088*^9}, {3.920419866279635*^9, 
+  3.920419866876333*^9}, {3.920420043877632*^9, 
+  3.9204200642722178`*^9}},ExpressionUUID->"c448b97f-7c7b-42a3-9db2-\
+329015a96a11"],
+
+Cell[TextData[{
+ "The time-independent Schr\[ODoubleDot]dinger equation for the harmonic \
+oscillator is:\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SubscriptBox["E", "n"], 
+     RowBox[{
+      SubscriptBox["\[Psi]", "n"], "(", "x", ")"}]}], "=", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"-", 
+       FractionBox[
+        SuperscriptBox["\[HBar]", "2"], 
+        RowBox[{"2", "m"}]]}], 
+      StyleBox[
+       FractionBox[
+        RowBox[{
+         SuperscriptBox["d", "2"], 
+         RowBox[{
+          SubscriptBox["\[Psi]", "n"], "(", "x", ")"}]}], 
+        RowBox[{"d", "\[VeryThinSpace]", 
+         SuperscriptBox["x", "2"]}]],
+       FontSize->18]}], "+", 
+     RowBox[{
+      FractionBox["1", "2"], 
+      SubscriptBox["k", 
+       StyleBox["S",
+        FontSlant->"Plain"]], 
+      SuperscriptBox["x", "2"], 
+      RowBox[{
+       SubscriptBox["\[Psi]", "n"], "(", "x", ")"}]}]}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "4f34ae11-ecd7-4913-b087-b0c9b63d7bb2"],
+ "\n\nRecall that this came from the full time-dependent \
+Schr\[ODoubleDot]dinger Equation,\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"i", "\[VeryThinSpace]", "\[HBar]", " ", 
+     FractionBox[
+      RowBox[{"\[VeryThinSpace]", 
+       RowBox[{"\[PartialD]", 
+        RowBox[{"\[Psi]", "(", 
+         RowBox[{"x", ",", "t"}], ")"}]}]}], 
+      RowBox[{"\[PartialD]", "\[VeryThinSpace]", "t"}]]}], "=", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"-", 
+       FractionBox[
+        SuperscriptBox["\[HBar]", "2"], 
+        RowBox[{"2", "m"}]]}], 
+      StyleBox[
+       FractionBox[
+        RowBox[{
+         SuperscriptBox["\[PartialD]", "2"], 
+         RowBox[{"\[Psi]", "(", 
+          RowBox[{"x", ",", "t"}], ")"}]}], 
+        RowBox[{"\[PartialD]", "\[VeryThinSpace]", 
+         SuperscriptBox["x", "2"]}]],
+       FontSize->18]}], "+", 
+     RowBox[{
+      RowBox[{"V", "(", 
+       RowBox[{"x", ",", "t"}], ")"}], 
+      RowBox[{"\[Psi]", "(", 
+       RowBox[{"x", ",", "t"}], ")"}]}]}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "19360abe-16d7-4b26-9604-7be3f42eeeff"],
+ "\n\nThe only two things we did to get the time-independent equation from \
+this equation were to put in the harmonic oscillator potential, which is \
+time-independent, and is just\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"V", "(", "x", ")"}], "=", 
+    RowBox[{
+     FractionBox["1", "2"], 
+     SubscriptBox["k", 
+      StyleBox["S",
+       FontSlant->"Plain"]], 
+     SuperscriptBox["x", "2"]}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "bbc7073b-3f42-40ab-9ee5-b1236b5abe1d"],
+ "\n\nand we put in the ansatz\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"\[Psi]", "(", 
+     RowBox[{"x", ",", "t"}], ")"}], "=", 
+    RowBox[{
+     SuperscriptBox["e", 
+      RowBox[{
+       RowBox[{"-", "i"}], "\[VeryThinSpace]", 
+       SubscriptBox["E", "n"], 
+       RowBox[{"t", " ", "/", " ", "\[HBar]"}]}]], 
+     RowBox[{
+      SubscriptBox["\[Psi]", "n"], "(", "x", ")"}]}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "18c7f548-831a-4540-9d7c-3992fe5aeab4"],
+ "\n"
+}], "Text",
+ CellChangeTimes->{{3.920310595255248*^9, 3.920310683530747*^9}, {
+  3.920310737148698*^9, 3.920310740075357*^9}, {3.920310805047195*^9, 
+  3.920310912610696*^9}, {3.920310959749802*^9, 3.92031103075939*^9}, {
+  3.92031112359926*^9, 3.920311421675984*^9}, {3.920311479153665*^9, 
+  3.920311487246823*^9}, {3.9204198711098843`*^9, 3.920420023943371*^9}, {
+  3.920420066616764*^9, 3.920420214587393*^9}, {3.9204202456404057`*^9, 
+  3.92042040612677*^9}, {3.920420447379726*^9, 3.920420754144435*^9}, {
+  3.92042083567704*^9, 
+  3.9204208859319897`*^9}},ExpressionUUID->"8fa4130b-9828-4390-a009-\
+e6e879368210"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Scaling Energy by ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[HBar]", "\[VeryThinSpace]", "\[Omega]"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "728de509-16ee-4619-9978-da4c894e1332"]
+}], "Subsection",
+ CellChangeTimes->{{3.920310155034218*^9, 3.920310163989311*^9}, {
+  3.920310462568035*^9, 3.920310466416088*^9}, {3.920419866279635*^9, 
+  3.920419866876333*^9}, {3.920420043877632*^9, 3.9204200642722178`*^9}, {
+  3.920420893049715*^9, 
+  3.920420935834853*^9}},ExpressionUUID->"d9af8377-7655-4ee4-93de-\
+359081d44838"],
+
+Cell[TextData[{
+ "One thing we can do to make the equation slightly tidier is to define ",
+ Cell[BoxData[
+  FormBox["\[Omega]", TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "771e40b4-d993-46b4-9712-ac7f00016ca3"],
+ " by ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["k", 
+     StyleBox["S",
+      FontSlant->"Plain"]], "=", 
+    RowBox[{"m", "\[VeryThinSpace]", 
+     SuperscriptBox["\[Omega]", "2"]}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "7b4d01a9-17e2-4283-8fd1-eff18e8ca24f"],
+ ". Then the time-independent equation is\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SubscriptBox["E", "n"], 
+     RowBox[{
+      SubscriptBox["\[Psi]", "n"], "(", "x", ")"}]}], "=", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"-", 
+       FractionBox[
+        SuperscriptBox["\[HBar]", "2"], 
+        RowBox[{"2", "m"}]]}], 
+      StyleBox[
+       FractionBox[
+        RowBox[{
+         SuperscriptBox["d", "2"], 
+         RowBox[{
+          SubscriptBox["\[Psi]", "n"], "(", "x", ")"}]}], 
+        RowBox[{"d", "\[VeryThinSpace]", 
+         SuperscriptBox["x", "2"]}]],
+       FontSize->18]}], "+", 
+     RowBox[{
+      FractionBox["1", "2"], "m", "\[VeryThinSpace]", 
+      SuperscriptBox["\[Omega]", "2"], 
+      SuperscriptBox["x", "2"], 
+      RowBox[{
+       SubscriptBox["\[Psi]", "n"], "(", "x", ")"}]}]}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "014fa1cb-14a6-4ec3-bd5b-8dbc4088c5b9"],
+ "\n\nWe can measure the energy ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["E", "n"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "7257c9f0-f79e-4453-a141-d331dccc5b42"],
+ " in units of ",
+ Cell[BoxData[
+  FormBox["\[HBar]\[Omega]", TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "e832e26c-66b8-41b4-9bfb-4a9d2f6e86a7"],
+ ". Then we have\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SubscriptBox["E", "n"], " ", 
+     FormBox["\[HBar]\[Omega]",
+      TraditionalForm], 
+     RowBox[{
+      SubscriptBox["\[Psi]", "n"], "(", "x", ")"}]}], "=", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"-", 
+       FractionBox[
+        SuperscriptBox["\[HBar]", "2"], 
+        RowBox[{"2", "m"}]]}], 
+      StyleBox[
+       FractionBox[
+        RowBox[{
+         SuperscriptBox["d", "2"], 
+         RowBox[{
+          SubscriptBox["\[Psi]", "n"], "(", "x", ")"}]}], 
+        RowBox[{"d", "\[VeryThinSpace]", 
+         SuperscriptBox["x", "2"]}]],
+       FontSize->18]}], "+", 
+     RowBox[{
+      FractionBox["1", "2"], "m", "\[VeryThinSpace]", 
+      SuperscriptBox["\[Omega]", "2"], 
+      SuperscriptBox["x", "2"], 
+      RowBox[{
+       SubscriptBox["\[Psi]", "n"], "(", "x", ")"}]}]}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "6a96dc7b-7f59-4db2-bf10-1d64b7f847fd"],
+ "\n\nor\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SubscriptBox["E", "n"], " ", 
+     RowBox[{
+      SubscriptBox["\[Psi]", "n"], "(", "x", ")"}]}], "=", 
+    RowBox[{
+     FractionBox["1", "2"], "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"-", 
+        FractionBox["\[HBar]", "m\[Omega]"]}], 
+       StyleBox[
+        FractionBox[
+         RowBox[{
+          SuperscriptBox["d", "2"], 
+          RowBox[{
+           SubscriptBox["\[Psi]", "n"], "(", "x", ")"}]}], 
+         RowBox[{"d", "\[VeryThinSpace]", 
+          SuperscriptBox["x", "2"]}]],
+        FontSize->18]}], "+", 
+      RowBox[{
+       FractionBox[
+        RowBox[{"m", "\[VeryThinSpace]", "\[Omega]"}], "\[HBar]"], 
+       SuperscriptBox["x", "2"], 
+       RowBox[{
+        SubscriptBox["\[Psi]", "n"], "(", "x", ")"}]}]}], "]"}]}], 
+   TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "49bcf259-2359-4c96-9865-114b3ac6e1d9"]
+}], "Text",
+ CellChangeTimes->{{3.920310595255248*^9, 3.920310683530747*^9}, {
+   3.920310737148698*^9, 3.920310740075357*^9}, {3.920310805047195*^9, 
+   3.920310912610696*^9}, {3.920310959749802*^9, 3.92031103075939*^9}, {
+   3.92031112359926*^9, 3.920311421675984*^9}, {3.920311479153665*^9, 
+   3.920311487246823*^9}, {3.9204198711098843`*^9, 3.920420023943371*^9}, {
+   3.920420066616764*^9, 3.920420214587393*^9}, {3.9204202456404057`*^9, 
+   3.92042040612677*^9}, {3.920420447379726*^9, 3.920420754144435*^9}, {
+   3.92042083567704*^9, 3.920420881438869*^9}, 3.920420951933464*^9, {
+   3.920421155478202*^9, 
+   3.920421155478698*^9}},ExpressionUUID->"dfc5c7a7-2df1-47ef-a6f8-\
+054f01da1e49"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Scaling Length by ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[HBar]", "\[VeryThinSpace]", "\[Omega]"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "f3fbc229-f7c6-483d-9f92-7db3a4874f69"]
+}], "Subsection",
+ CellChangeTimes->{{3.920310155034218*^9, 3.920310163989311*^9}, {
+  3.920310462568035*^9, 3.920310466416088*^9}, {3.920419866279635*^9, 
+  3.920419866876333*^9}, {3.920420043877632*^9, 3.9204200642722178`*^9}, {
+  3.920420893049715*^9, 
+  3.920420962619136*^9}},ExpressionUUID->"c230f93e-dfab-4bea-9ee8-\
+45f7427a913e"],
+
+Cell[TextData[{
+ "\nIsn\[CloseCurlyQuote]t it interesting that the constants multiplying ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["x", "2"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "0393d0a6-4fcd-4044-b0b3-6e2bbf9571d9"],
+ ", which is ",
+ Cell[BoxData[
+  FormBox[
+   FractionBox[
+    RowBox[{"m", "\[VeryThinSpace]", "\[Omega]"}], "\[HBar]"], 
+   TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "cbafd669-1b22-4df8-a969-f6e03bc0f6df"],
+ ", is exactly the reciprocal of the constant multiplying ",
+ Cell[BoxData[
+  FormBox[
+   FractionBox[
+    SuperscriptBox["d", "2"], 
+    RowBox[{"d", "\[VeryThinSpace]", 
+     SuperscriptBox["x", "2"]}]], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "69c0b34e-f9c5-4f3d-87d2-8e6e68f22891"],
+ ". This motivates us to notice that ",
+ Cell[BoxData[
+  FormBox[
+   SqrtBox[
+    FractionBox["\[HBar]", 
+     RowBox[{"m", "\[VeryThinSpace]", "\[Omega]"}]]], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "f2f8f6df-5717-4c99-ad89-0f2fc6b837b7"],
+ " has the dimension of length! If we measure ",
+ Cell[BoxData[
+  FormBox["x", TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "586a1f42-f889-49b2-9fdb-7d6d38e6a60a"],
+ " in units of ",
+ Cell[BoxData[
+  FormBox[
+   SqrtBox[
+    FractionBox["\[HBar]", 
+     RowBox[{"m", "\[VeryThinSpace]", "\[Omega]"}]]], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "84716ef2-093a-4093-a623-99fa4f32710e"],
+ ", then we have\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SubscriptBox["E", "n"], " ", 
+     RowBox[{
+      SubscriptBox["\[Psi]", "n"], "(", "x", ")"}]}], "=", 
+    RowBox[{
+     FractionBox["1", "2"], "[", 
+     RowBox[{
+      RowBox[{"-", 
+       StyleBox[
+        FractionBox[
+         RowBox[{
+          SuperscriptBox["d", "2"], 
+          RowBox[{
+           SubscriptBox["\[Psi]", "n"], "(", "x", ")"}]}], 
+         RowBox[{"d", "\[VeryThinSpace]", 
+          SuperscriptBox["x", "2"]}]],
+        FontSize->18]}], "+", 
+      RowBox[{
+       SuperscriptBox["x", "2"], 
+       RowBox[{
+        SubscriptBox["\[Psi]", "n"], "(", "x", ")"}]}]}], "]"}]}], 
+   TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "06411012-feb6-4afd-a8ec-882371c7e55c"]
+}], "Text",
+ CellChangeTimes->{{3.920310595255248*^9, 3.920310683530747*^9}, {
+   3.920310737148698*^9, 3.920310740075357*^9}, {3.920310805047195*^9, 
+   3.920310912610696*^9}, {3.920310959749802*^9, 3.92031103075939*^9}, {
+   3.92031112359926*^9, 3.920311421675984*^9}, {3.920311479153665*^9, 
+   3.920311487246823*^9}, {3.9204198711098843`*^9, 3.920420023943371*^9}, {
+   3.920420066616764*^9, 3.920420214587393*^9}, {3.9204202456404057`*^9, 
+   3.92042040612677*^9}, {3.920420447379726*^9, 3.920420754144435*^9}, {
+   3.92042083567704*^9, 3.920420881438869*^9}, 3.920420953529953*^9, {
+   3.9204209938077517`*^9, 
+   3.920421150596917*^9}},ExpressionUUID->"481f5733-e56a-4327-950c-\
+5f131f338e8f"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["The Solutions Moore Gave Us", "Subsection",
+ CellChangeTimes->{{3.920310155034218*^9, 3.920310163989311*^9}, {
+  3.920310462568035*^9, 3.920310466416088*^9}, {3.920419866279635*^9, 
+  3.920419866876333*^9}, {3.920420043877632*^9, 3.9204200642722178`*^9}, {
+  3.920420893049715*^9, 3.920420935834853*^9}, {3.9204211929624577`*^9, 
+  3.920421198349132*^9}},ExpressionUUID->"6ca8d527-59a1-4963-8d54-\
+163d29c94101"],
+
+Cell[TextData[{
+ "On p. 160, Moore told us\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["E", "n"], " ", "=", 
+    RowBox[{"\[HBar]", "\[VeryThinSpace]", 
+     RowBox[{"\[Omega]", "(", 
+      RowBox[{"n", "+", 
+       FractionBox["1", "2"]}], ")"}]}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "685becc0-4326-48b5-b27f-0b4e782d1238"],
+ "\n\nFor ",
+ Cell[BoxData[
+  FormBox["n", TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "e04ca94c-1f72-4450-87d6-e3c787d2d4a3"],
+ " even, ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SubscriptBox["\[Psi]", "n"], "(", "x", ")"}], "=", 
+    RowBox[{
+     RowBox[{"[", 
+      RowBox[{
+       RowBox[{
+        SubscriptBox["c", "0"], "+", 
+        SuperscriptBox[
+         RowBox[{
+          SubscriptBox["c", "2"], "(", 
+          RowBox[{"b", "\[VeryThinSpace]", "x"}], ")"}], "2"], "+"}], "..."}],
+       "]"}], 
+     SuperscriptBox["e", 
+      RowBox[{
+       RowBox[{"-", 
+        SuperscriptBox[
+         RowBox[{"(", 
+          RowBox[{"b", "\[VeryThinSpace]", "x"}], ")"}], "2"]}], "/", 
+       "2"}]]}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "44e07d82-a542-4cfe-9f0f-0745a7521d8d"],
+ "\n\nFor ",
+ Cell[BoxData[
+  FormBox["n", TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "8395e6d3-6900-4e58-802f-f93d24114cda"],
+ " odd, ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SubscriptBox["\[Psi]", "n"], "(", "x", ")"}], "=", 
+    RowBox[{
+     RowBox[{"[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{
+         SubscriptBox["c", "1"], "b", "\[VeryThinSpace]", "x"}], "+", 
+        SuperscriptBox[
+         RowBox[{
+          SubscriptBox["c", "3"], "(", 
+          RowBox[{"b", "\[VeryThinSpace]", "x"}], ")"}], "3"], "+"}], "..."}],
+       "]"}], 
+     SuperscriptBox["e", 
+      RowBox[{
+       RowBox[{"-", 
+        SuperscriptBox[
+         RowBox[{"(", 
+          RowBox[{"b", "\[VeryThinSpace]", "x"}], ")"}], "2"]}], "/", 
+       "2"}]]}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "36c73212-d6b1-4880-94a3-77d44d3a73e5"],
+ "\n\nwhere there is some whacky recursion relation for the ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["c", 
+    RowBox[{"k", "+", "2"}]], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "cfb92440-fa42-4f26-8817-9e63af8d1ee6"],
+ " in terms of ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["c", "k"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "718cafeb-dad4-4f0f-9898-d959e5c82dbf"],
+ " and ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"b", "=", 
+    SqrtBox[
+     FractionBox[
+      RowBox[{"m", "\[VeryThinSpace]", "\[Omega]"}], "\[HBar]"]]}], 
+   TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "e7da7db2-857a-4ba1-8a26-b799a897989c"],
+ "."
+}], "Text",
+ CellChangeTimes->{{3.920310595255248*^9, 3.920310683530747*^9}, {
+   3.920310737148698*^9, 3.920310740075357*^9}, {3.920310805047195*^9, 
+   3.920310912610696*^9}, {3.920310959749802*^9, 3.92031103075939*^9}, {
+   3.92031112359926*^9, 3.920311421675984*^9}, {3.920311479153665*^9, 
+   3.920311487246823*^9}, {3.9204198711098843`*^9, 3.920420023943371*^9}, {
+   3.920420066616764*^9, 3.920420214587393*^9}, {3.9204202456404057`*^9, 
+   3.92042040612677*^9}, {3.920420447379726*^9, 3.920420754144435*^9}, {
+   3.92042083567704*^9, 3.920420881438869*^9}, 3.920420953529953*^9, {
+   3.9204209938077517`*^9, 3.920421150596917*^9}, {3.920421207926371*^9, 
+   3.920421547590488*^9}, {3.920421592828949*^9, 
+   3.9204216000929213`*^9}},ExpressionUUID->"e88c65c2-23e4-4bbb-9560-\
+1fc00f6938ba"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["The Rescaled Solutions", "Subsection",
+ CellChangeTimes->{{3.920310155034218*^9, 3.920310163989311*^9}, {
+  3.920310462568035*^9, 3.920310466416088*^9}, {3.920419866279635*^9, 
+  3.920419866876333*^9}, {3.920420043877632*^9, 3.9204200642722178`*^9}, {
+  3.920420893049715*^9, 3.920420935834853*^9}, {3.9204211929624577`*^9, 
+  3.920421198349132*^9}, {3.920421554685137*^9, 
+  3.920421557959385*^9}},ExpressionUUID->"70c3de0a-d999-4318-acf1-\
+e8a5b3872499"],
+
+Cell[TextData[{
+ "Now that we have scaled energy and length as we did in the preceding two \
+subsections, Moore\[CloseCurlyQuote]s solutions simplify to\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["E", "n"], " ", "=", 
+    RowBox[{"n", "+", 
+     FractionBox["1", "2"]}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "f6ed9d1c-b8d4-42f8-85d0-d51724f92bb5"],
+ "\n\nFor ",
+ Cell[BoxData[
+  FormBox["n", TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "9d686c86-5063-45c5-8c51-7761797f46de"],
+ " even, ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SubscriptBox["\[Psi]", "n"], "(", "x", ")"}], "=", 
+    RowBox[{
+     RowBox[{"[", 
+      RowBox[{
+       RowBox[{
+        SubscriptBox["c", "0"], "+", 
+        RowBox[{
+         SubscriptBox["c", "2"], 
+         SuperscriptBox["x", "2"]}], "+"}], "..."}], "]"}], 
+     SuperscriptBox["e", 
+      RowBox[{
+       RowBox[{"-", "\[VeryThinSpace]", 
+        SuperscriptBox["x", "2"]}], "/", "2"}]]}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "249f1dd2-42cc-4284-b752-0852801a17b4"],
+ "\n\nFor ",
+ Cell[BoxData[
+  FormBox["n", TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "e75e3ace-e971-4c9f-a2a0-fae35c998ddf"],
+ " odd, ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SubscriptBox["\[Psi]", "n"], "(", "x", ")"}], "=", 
+    RowBox[{
+     RowBox[{"[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{
+         SubscriptBox["c", "1"], "x"}], "+", 
+        RowBox[{
+         SubscriptBox["c", "3"], "\[VeryThinSpace]", 
+         SuperscriptBox["x", "3"]}], "+"}], "..."}], "]"}], 
+     SuperscriptBox["e", 
+      RowBox[{
+       RowBox[{"-", 
+        SuperscriptBox["x", "2"]}], "/", "2"}]]}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "6ddc91c9-2502-4032-b604-6843ab4c1313"],
+ "\n\nWe have no idea where the whacky recursion relations come from. We did \
+calculate, using normalization, that ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["c", "0"], "=", 
+    FractionBox["1", 
+     SuperscriptBox["\[Pi]", 
+      RowBox[{"1", "/", "4"}]]]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "0215afc7-c29d-46ec-ae9a-18a86d0467ba"],
+ ", so\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SubscriptBox["\[Psi]", "0"], "(", "x", ")"}], "=", 
+    RowBox[{
+     FractionBox["1", 
+      SuperscriptBox["\[Pi]", 
+       RowBox[{"1", "/", "4"}]]], 
+     SuperscriptBox["e", 
+      RowBox[{
+       RowBox[{"-", "\[VeryThinSpace]", 
+        SuperscriptBox["x", "2"]}], "/", "2"}]]}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "535c5f47-8e86-49cb-893f-8cdb06cbb230"],
+ "\n\nIf you wished to restore the length that was scaled out, you would have\
+\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SubscriptBox["\[Psi]", "0"], "(", "x", ")"}], "=", 
+    RowBox[{
+     FractionBox["1", 
+      SuperscriptBox["\[Pi]", 
+       RowBox[{"1", "/", "4"}]]], 
+     SuperscriptBox["b", 
+      RowBox[{"1", "/", "2"}]], 
+     SuperscriptBox["e", 
+      RowBox[{
+       RowBox[{"-", "\[VeryThinSpace]", 
+        SuperscriptBox[
+         RowBox[{"(", 
+          RowBox[{"b", "\[VeryThinSpace]", "x"}], ")"}], "2"]}], "/", 
+       "2"}]]}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "004268f8-66b5-4c3d-aa3f-63b7eb81ddd3"],
+ "\n\nbut to keep our lives simple, we are going to keep working in terms of \
+rescaled solutions."
+}], "Text",
+ CellChangeTimes->{{3.920310595255248*^9, 3.920310683530747*^9}, {
+   3.920310737148698*^9, 3.920310740075357*^9}, {3.920310805047195*^9, 
+   3.920310912610696*^9}, {3.920310959749802*^9, 3.92031103075939*^9}, {
+   3.92031112359926*^9, 3.920311421675984*^9}, {3.920311479153665*^9, 
+   3.920311487246823*^9}, {3.9204198711098843`*^9, 3.920420023943371*^9}, {
+   3.920420066616764*^9, 3.920420214587393*^9}, {3.9204202456404057`*^9, 
+   3.92042040612677*^9}, {3.920420447379726*^9, 3.920420754144435*^9}, {
+   3.92042083567704*^9, 3.920420881438869*^9}, 3.920420953529953*^9, {
+   3.9204209938077517`*^9, 3.920421150596917*^9}, {3.920421207926371*^9, 
+   3.920421650967658*^9}, {3.92042174682623*^9, 3.920421791719246*^9}, {
+   3.9204219686222982`*^9, 3.920422034815895*^9}, {3.920422298388245*^9, 
+   3.920422319921584*^9}, {3.9204223755632267`*^9, 3.9204224843518887`*^9}, {
+   3.92042253673575*^9, 
+   3.920422538962699*^9}},ExpressionUUID->"3b7181c2-73d6-407d-8211-\
+a14a8a13459c"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Checking the Ground State", "Subsection",
+ CellChangeTimes->{{3.920310155034218*^9, 3.920310163989311*^9}, {
+  3.920310462568035*^9, 3.920310466416088*^9}, {3.920419866279635*^9, 
+  3.920419866876333*^9}, {3.920420043877632*^9, 3.9204200642722178`*^9}, {
+  3.920420893049715*^9, 3.920420935834853*^9}, {3.9204211929624577`*^9, 
+  3.920421198349132*^9}, {3.920421554685137*^9, 3.920421557959385*^9}, {
+  3.9204225460580587`*^9, 
+  3.9204225509624853`*^9}},ExpressionUUID->"9894f97b-4a20-4f6e-908d-\
+1cd9c42406d1"],
+
+Cell[TextData[{
+ "Show that\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SubscriptBox["\[Psi]", "0"], "(", "x", ")"}], "=", 
+    RowBox[{
+     FractionBox["1", 
+      SuperscriptBox["\[Pi]", 
+       RowBox[{"1", "/", "4"}]]], 
+     SuperscriptBox["e", 
+      RowBox[{
+       RowBox[{"-", "\[VeryThinSpace]", 
+        SuperscriptBox["x", "2"]}], "/", "2"}]]}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "8ac256d1-0f5c-41f9-8c9e-04266698446e"],
+ "\n\nsolves\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SubscriptBox["E", "0"], " ", 
+     RowBox[{
+      SubscriptBox["\[Psi]", "0"], "(", "x", ")"}]}], "=", 
+    RowBox[{
+     FractionBox["1", "2"], "[", 
+     RowBox[{
+      RowBox[{"-", 
+       StyleBox[
+        FractionBox[
+         RowBox[{
+          SuperscriptBox["d", "2"], 
+          RowBox[{
+           SubscriptBox["\[Psi]", "0"], "(", "x", ")"}]}], 
+         RowBox[{"d", "\[VeryThinSpace]", 
+          SuperscriptBox["x", "2"]}]],
+        FontSize->18]}], "+", 
+      RowBox[{
+       SuperscriptBox["x", "2"], 
+       RowBox[{
+        SubscriptBox["\[Psi]", "0"], "(", "x", ")"}]}]}], "]"}]}], 
+   TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "014872d2-783e-4808-9773-6191e9efefff"],
+ "\n\nThe factor of ",
+ Cell[BoxData[
+  FormBox[
+   FractionBox["1", 
+    SuperscriptBox["\[Pi]", 
+     RowBox[{"1", "/", "4"}]]], TraditionalForm]],ExpressionUUID->
+  "7d2fcbea-0f7d-49a1-92cc-c81bfff1ae37"],
+ " obviously doesn\[CloseCurlyQuote]t affect whether or not the equation is \
+solved, so leave it off to make your life easy. When you are done, what is ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["E", "0"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "4c65404a-c737-4179-8ea8-aed21b626121"],
+ "?"
+}], "Text",
+ CellChangeTimes->{{3.920422574127418*^9, 
+  3.920422697714851*^9}},ExpressionUUID->"7e54774d-1370-4261-80bd-\
+0c340b6d85ab"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["The Great Trick", "Subsection",
+ CellChangeTimes->{{3.920310155034218*^9, 3.920310163989311*^9}, {
+  3.920310462568035*^9, 3.920310466416088*^9}, {3.920419866279635*^9, 
+  3.920419866876333*^9}, {3.920420043877632*^9, 3.9204200642722178`*^9}, {
+  3.920420893049715*^9, 3.920420935834853*^9}, {3.9204211929624577`*^9, 
+  3.920421198349132*^9}, {3.920421554685137*^9, 3.920421557959385*^9}, {
+  3.9204225460580587`*^9, 3.9204225509624853`*^9}, {3.9204227252746897`*^9, 
+  3.9204227296055393`*^9}},ExpressionUUID->"f368c4b5-0b6b-44c6-99a4-\
+c01bcaeb7322"],
+
+Cell[TextData[{
+ "I don\[CloseCurlyQuote]t know who came up with this, but one of the best \
+differential-equation solving tricks I have ever seen is this one, which \
+works kind of like a proof by induction.\n\nAssume that ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["\[Psi]", "n"], "(", "x", ")"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "9c3898db-12a4-468e-a824-ab882e411af3"],
+ " exists and solves:\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SubscriptBox["E", "n"], " ", 
+     RowBox[{
+      SubscriptBox["\[Psi]", "n"], "(", "x", ")"}]}], "=", 
+    RowBox[{
+     FractionBox["1", "2"], "[", 
+     RowBox[{
+      RowBox[{"-", 
+       StyleBox[
+        FractionBox[
+         RowBox[{
+          SuperscriptBox["d", "2"], 
+          RowBox[{
+           SubscriptBox["\[Psi]", "n"], "(", "x", ")"}]}], 
+         RowBox[{"d", "\[VeryThinSpace]", 
+          SuperscriptBox["x", "2"]}]],
+        FontSize->18]}], "+", 
+      RowBox[{
+       SuperscriptBox["x", "2"], 
+       RowBox[{
+        SubscriptBox["\[Psi]", "n"], "(", "x", ")"}]}]}], "]"}]}], 
+   TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "a33ddb83-db02-4a63-baeb-9e4a2cce4677"],
+ "\n\nwith ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["E", "n"], "=", 
+    RowBox[{"n", "+", 
+     FractionBox["1", "2"]}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "3e7d35f9-b5e3-48fb-aba9-a52c74a631f7"],
+ "\n\nShow that:\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SubscriptBox["\[Phi]", 
+      RowBox[{"n", "+", "1"}]], "(", "x", ")"}], "\[Congruent]", 
+    RowBox[{
+     FractionBox["1", 
+      SqrtBox["2"]], 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"-", 
+        FractionBox[
+         RowBox[{" ", 
+          SubscriptBox["d\[Psi]", "n"]}], "dx"]}], "+", 
+       RowBox[{"x", "\[VeryThinSpace]", 
+        RowBox[{
+         SubscriptBox["\[Psi]", "n"], "(", "x", ")"}]}]}], ")"}]}]}], 
+   TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "973d2cbe-8bce-4d19-9ef4-1b5e242ff906"],
+ "\n\nsolves\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SubscriptBox["E", 
+      RowBox[{"n", "+", "1"}]], " ", 
+     RowBox[{
+      SubscriptBox["\[Phi]", 
+       RowBox[{"n", "+", "1"}]], "(", "x", ")"}]}], "=", 
+    RowBox[{
+     FractionBox["1", "2"], "[", 
+     RowBox[{
+      RowBox[{"-", 
+       StyleBox[
+        FractionBox[
+         RowBox[{
+          SuperscriptBox["d", "2"], 
+          RowBox[{
+           SubscriptBox["\[Phi]", 
+            RowBox[{"n", "+", "1"}]], "(", "x", ")"}]}], 
+         RowBox[{"d", "\[VeryThinSpace]", 
+          SuperscriptBox["x", "2"]}]],
+        FontSize->18]}], "+", 
+      RowBox[{
+       SuperscriptBox["x", "2"], 
+       RowBox[{
+        SubscriptBox["\[Phi]", 
+         RowBox[{"n", "+", "1"}]], "(", "x", ")"}]}]}], "]"}]}], 
+   TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "9ee20c7c-6362-4b28-9a09-5ccfffe152f5"],
+ "\n\nwith of course\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["E", 
+     RowBox[{"n", "+", "1"}]], "=", 
+    RowBox[{"n", "+", 
+     FractionBox["3", "2"]}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "ea93095e-0456-4b4f-8c1c-9bcb212c7ce5"],
+ "\n\nWhen you are checking that it works, you can leave off the ",
+ Cell[BoxData[
+  FormBox[
+   FractionBox["1", 
+    SqrtBox["2"]], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "d2de4970-d965-48ed-a6f0-b25729e12438"],
+ " in ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["\[Phi]", 
+     RowBox[{"n", "+", "1"}]], "(", "x", ")"}], TraditionalForm]],
+  ExpressionUUID->"9f5c347b-d271-4460-9447-555b106dbb92"],
+ " to make your life easy."
+}], "Text",
+ CellChangeTimes->{{3.9204227434348717`*^9, 3.920423081536084*^9}, {
+  3.920423178590605*^9, 3.920423233778818*^9}, {3.920423270478386*^9, 
+  3.920423367138118*^9}, {3.9204235741642733`*^9, 3.9204235741647463`*^9}, {
+  3.920425869308269*^9, 
+  3.920425870072279*^9}},ExpressionUUID->"3f338fcf-7869-4bd0-9a7a-\
+d841d08b32e0"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["The Meaning of the Great Trick", "Subsection",
+ CellChangeTimes->{{3.920310155034218*^9, 3.920310163989311*^9}, {
+  3.920310462568035*^9, 3.920310466416088*^9}, {3.920419866279635*^9, 
+  3.920419866876333*^9}, {3.920420043877632*^9, 3.9204200642722178`*^9}, {
+  3.920420893049715*^9, 3.920420935834853*^9}, {3.9204211929624577`*^9, 
+  3.920421198349132*^9}, {3.920421554685137*^9, 3.920421557959385*^9}, {
+  3.9204225460580587`*^9, 3.9204225509624853`*^9}, {3.9204227252746897`*^9, 
+  3.9204227296055393`*^9}, {3.9204230984108067`*^9, 
+  3.92042310006345*^9}},ExpressionUUID->"59ca2fd2-43b5-4820-859e-\
+1622042c861f"],
+
+Cell[TextData[{
+ "It must, from what you just showed, that given  ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["\[Psi]", "n"], "(", "x", ")"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "6f1ba35a-d31d-4e2e-b491-339b7244475f"],
+ ", you have discovered how to make ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["\[Psi]", 
+     RowBox[{"n", "+", "1"}]], "(", "x", ")"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "7a060ca7-1edd-478c-8d07-97e35f651d65"],
+ "!! The only thing you haven\[CloseCurlyQuote]t figured out is how to \
+normalize ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["\[Phi]", 
+     RowBox[{"n", "+", "1"}]], "(", "x", ")"}], TraditionalForm]],
+  ExpressionUUID->"b8caca37-7b53-4a40-9029-1ae7321d34bf"],
+ ". I\[CloseCurlyQuote]ll just tell you that the relationship is\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SubscriptBox["\[Psi]", 
+      RowBox[{"n", "+", "1"}]], "(", "x", ")"}], "=", 
+    RowBox[{
+     RowBox[{
+      FractionBox["1", 
+       SqrtBox[
+        RowBox[{"n", "+", "1"}]]], 
+      RowBox[{
+       SubscriptBox["\[Phi]", 
+        RowBox[{"n", "+", "1"}]], "(", "x", ")"}]}], "=", 
+     RowBox[{
+      FractionBox["1", 
+       SqrtBox[
+        RowBox[{"n", "+", "1"}]]], 
+      FractionBox["1", 
+       SqrtBox["2"]], 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"-", 
+         FractionBox[
+          RowBox[{" ", 
+           RowBox[{
+            SubscriptBox["d\[Psi]", "n"], "(", "x", ")"}]}], "dx"]}], "+", 
+        RowBox[{"x", "\[VeryThinSpace]", 
+         RowBox[{
+          SubscriptBox["\[Psi]", "n"], "(", "x", ")"}]}]}], ")"}]}]}]}], 
+   TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "9740d2bc-ae3e-403a-b33a-b32adbc3f5da"],
+ "\n\nUsually people put the",
+ Cell[BoxData[
+  FormBox[
+   SqrtBox[
+    RowBox[{" ", 
+     RowBox[{"n", " ", "+", " ", "1"}]}]], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "741d8aac-1abf-484f-94e0-206f310ca15e"],
+ " on the other side and write this as\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SqrtBox[
+      RowBox[{"n", "+", "1"}]], 
+     RowBox[{
+      SubscriptBox["\[Psi]", 
+       RowBox[{"n", "+", "1"}]], "(", "x", ")"}]}], "=", 
+    RowBox[{
+     FractionBox["1", 
+      SqrtBox["2"]], 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"-", 
+        FractionBox[
+         RowBox[{" ", 
+          RowBox[{
+           SubscriptBox["d\[Psi]", "n"], "(", "x", ")"}]}], "dx"]}], "+", 
+       RowBox[{"x", "\[VeryThinSpace]", 
+        RowBox[{
+         SubscriptBox["\[Psi]", "n"], "(", "x", ")"}]}]}], ")"}]}]}], 
+   TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "ba78b8be-e410-4a73-b349-e144fc3c465c"],
+ "\n\nBecause this operator tells you how to make  ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["\[Psi]", 
+     RowBox[{"n", "+", "1"}]], "(", "x", ")"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "fd3bb8ad-37b3-4edc-945d-7f7e2df9cbb2"],
+ " from ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["\[Psi]", "n"], "(", "x", ")"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "26bf54c7-6b43-41ea-af11-fdf743f45633"],
+ " it is called the raising operator and given the symbol ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["A", "\[Dagger]"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "37f05375-b302-4694-b7ba-bf786eb36d12"],
+ ",\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SuperscriptBox["A", "\[Dagger]"], "\[Congruent]", 
+    RowBox[{
+     FractionBox["1", 
+      SqrtBox["2"]], 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"-", 
+        FractionBox["d", "dx"]}], "+", "x"}], ")"}]}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "123dccd1-9c62-48de-9a89-4a88076d4e2c"],
+ "\n\nso a very fancy way of writing what the raising operator does is\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SuperscriptBox["A", "\[Dagger]"], 
+     RowBox[{
+      SubscriptBox["\[Psi]", "n"], "(", "x", ")"}]}], "=", 
+    RowBox[{
+     SqrtBox[
+      RowBox[{"n", "+", "1"}]], 
+     RowBox[{
+      SubscriptBox["\[Psi]", 
+       RowBox[{"n", "+", "1"}]], "(", "x", ")"}]}]}], TraditionalForm]],
+  ExpressionUUID->"de151cae-5f6f-4eb9-b334-452b1e63f11e"]
+}], "Text",
+ CellChangeTimes->{{3.9204233995141582`*^9, 3.920423470492722*^9}, {
+  3.920423599679523*^9, 3.920423615248892*^9}, {3.920423674045824*^9, 
+  3.9204237866833572`*^9}, {3.920424311257721*^9, 3.9204243118809566`*^9}, {
+  3.920424424580637*^9, 3.920424513237009*^9}, {3.920424580762721*^9, 
+  3.92042462809816*^9}, {3.9204248948199577`*^9, 3.920425046295438*^9}, {
+  3.920425104682706*^9, 3.920425120663858*^9}, {3.9204251797049427`*^9, 
+  3.920425180741454*^9}, {3.9204260276459627`*^9, 
+  3.920426033209614*^9}},ExpressionUUID->"fd4cc4fb-7c55-41a2-adee-\
+4d9534333145"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["The First Excited State", "Subsection",
+ CellChangeTimes->{{3.920310155034218*^9, 3.920310163989311*^9}, {
+  3.920310462568035*^9, 3.920310466416088*^9}, {3.920419866279635*^9, 
+  3.920419866876333*^9}, {3.920420043877632*^9, 3.9204200642722178`*^9}, {
+  3.920420893049715*^9, 3.920420935834853*^9}, {3.9204211929624577`*^9, 
+  3.920421198349132*^9}, {3.920421554685137*^9, 3.920421557959385*^9}, {
+  3.9204225460580587`*^9, 3.9204225509624853`*^9}, {3.9204227252746897`*^9, 
+  3.9204227296055393`*^9}, {3.9204230984108067`*^9, 3.92042310006345*^9}, {
+  3.920423793696046*^9, 
+  3.920423797365301*^9}},ExpressionUUID->"040ec077-e11b-4050-90d5-\
+4857143aa7ae"],
+
+Cell[TextData[{
+ "Apply the trick with ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"n", "=", "0"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "42120329-12fe-455c-b795-5e0482728a1d"],
+ ". In other words, use\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SubscriptBox["\[Psi]", "1"], "(", "x", ")"}], "=", 
+    RowBox[{
+     RowBox[{
+      FractionBox["1", 
+       SqrtBox[
+        RowBox[{"0", "+", "1"}]]], 
+      RowBox[{
+       SubscriptBox["\[Phi]", 
+        RowBox[{"0", "+", "1"}]], "(", "x", ")"}]}], "=", 
+     RowBox[{
+      RowBox[{
+       FractionBox["1", 
+        SqrtBox[
+         RowBox[{"0", "+", "1"}]]], 
+       FractionBox["1", 
+        SqrtBox["2"]], 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"-", 
+          FractionBox[
+           RowBox[{" ", 
+            RowBox[{
+             SubscriptBox["d\[Psi]", "0"], "(", "x", ")"}]}], "dx"]}], "+", 
+         RowBox[{"x", "\[VeryThinSpace]", 
+          RowBox[{
+           SubscriptBox["\[Psi]", "0"], "(", "x", ")"}]}]}], ")"}]}], "=", 
+      RowBox[{
+       FractionBox["1", 
+        SqrtBox["2"]], 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"-", 
+          FractionBox[
+           RowBox[{" ", 
+            RowBox[{
+             SubscriptBox["d\[Psi]", "0"], "(", "x", ")"}]}], "dx"]}], "+", 
+         RowBox[{"x", "\[VeryThinSpace]", 
+          RowBox[{
+           SubscriptBox["\[Psi]", "0"], "(", "x", ")"}]}]}], ")"}]}]}]}]}], 
+   TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "643bc2de-ed8d-4941-bd5e-3224066e34fd"],
+ "\n\nwith  ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SubscriptBox["\[Psi]", "0"], "(", "x", ")"}], "=", 
+    RowBox[{
+     FractionBox["1", 
+      SuperscriptBox["\[Pi]", 
+       RowBox[{"1", "/", "4"}]]], 
+     SuperscriptBox["e", 
+      RowBox[{
+       RowBox[{"-", "\[VeryThinSpace]", 
+        SuperscriptBox["x", "2"]}], "/", "2"}]]}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "73513fff-3372-4596-8771-07708de6aea6"],
+ " to discover the first excited state."
+}], "Text",
+ CellChangeTimes->{{3.92042381301863*^9, 3.9204239402979107`*^9}, {
+  3.920424320917796*^9, 3.920424349881562*^9}, {3.920424417293227*^9, 
+  3.920424420838231*^9}, {3.9204258133498163`*^9, 3.920425840886269*^9}, {
+  3.9204259346189947`*^9, 
+  3.9204259353471107`*^9}},ExpressionUUID->"8ab66e8b-6b19-47b9-bddc-\
+8e1a0189e192"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Companion to the Great Trick", "Subsection",
+ CellChangeTimes->{{3.920310155034218*^9, 3.920310163989311*^9}, {
+  3.920310462568035*^9, 3.920310466416088*^9}, {3.920419866279635*^9, 
+  3.920419866876333*^9}, {3.920420043877632*^9, 3.9204200642722178`*^9}, {
+  3.920420893049715*^9, 3.920420935834853*^9}, {3.9204211929624577`*^9, 
+  3.920421198349132*^9}, {3.920421554685137*^9, 3.920421557959385*^9}, {
+  3.9204225460580587`*^9, 3.9204225509624853`*^9}, {3.9204227252746897`*^9, 
+  3.9204227296055393`*^9}, {3.92042400483025*^9, 
+  3.9204240108692503`*^9}},ExpressionUUID->"210a50ff-9311-4157-b418-\
+534657e75b09"],
+
+Cell[TextData[{
+ "It is similarly shown (doing the same things you did above) that there is a \
+companion trick:\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SubscriptBox["\[Chi]", "n"], "(", "x", ")"}], "\[Congruent]", 
+    RowBox[{
+     FractionBox["1", 
+      SqrtBox["2"]], 
+     RowBox[{"(", 
+      RowBox[{
+       FractionBox[
+        RowBox[{" ", 
+         RowBox[{
+          SubscriptBox["d\[Psi]", 
+           RowBox[{"n", "+", "1"}]], "(", "x", ")"}]}], "dx"], "+", 
+       RowBox[{"x", "\[VeryThinSpace]", 
+        RowBox[{
+         SubscriptBox["\[Psi]", 
+          RowBox[{"n", "+", "1"}]], "(", "x", ")"}]}]}], ")"}]}]}], 
+   TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "e5a05312-b37e-43b0-8ae4-a041613fbc32"],
+ "\n\nor after putting in the normalization:\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SubscriptBox["\[Psi]", "n"], "(", "x", ")"}], "=", 
+    RowBox[{
+     RowBox[{
+      FractionBox["1", 
+       SqrtBox[
+        RowBox[{"n", "+", "1"}]]], 
+      RowBox[{
+       SubscriptBox["\[Chi]", "n"], "(", "x", ")"}]}], "=", 
+     RowBox[{
+      FractionBox["1", 
+       SqrtBox[
+        RowBox[{"n", "+", "1"}]]], 
+      FractionBox["1", 
+       SqrtBox["2"]], 
+      RowBox[{"(", 
+       RowBox[{
+        FractionBox[
+         RowBox[{" ", 
+          RowBox[{
+           SubscriptBox["d\[Psi]", 
+            RowBox[{"n", "+", "1"}]], "(", "x", ")"}]}], "dx"], "+", 
+        RowBox[{"x", "\[VeryThinSpace]", 
+         RowBox[{
+          SubscriptBox["\[Psi]", 
+           RowBox[{"n", "+", "1"}]], "(", "x", ")"}]}]}], ")"}]}]}]}], 
+   TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "e7e99787-7eaf-46cf-ba0a-85eff74e59a5"],
+ "\n\nUsually people put the",
+ Cell[BoxData[
+  FormBox[
+   SqrtBox[
+    RowBox[{" ", 
+     RowBox[{"n", "+", "1"}]}]], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "4ef24bcf-9bed-4ddc-ab5b-27d9f5ce860d"],
+ " on the other side and write this as\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SqrtBox[
+      RowBox[{"n", "+", "1"}]], 
+     RowBox[{
+      SubscriptBox["\[Psi]", "n"], "(", "x", ")"}]}], "=", 
+    RowBox[{
+     FractionBox["1", 
+      SqrtBox["2"]], 
+     RowBox[{"(", 
+      RowBox[{
+       FractionBox[
+        RowBox[{" ", 
+         RowBox[{
+          SubscriptBox["d\[Psi]", 
+           RowBox[{"n", "+", "1"}]], "(", "x", ")"}]}], "dx"], "+", 
+       RowBox[{"x", "\[VeryThinSpace]", 
+        RowBox[{
+         SubscriptBox["\[Psi]", 
+          RowBox[{"n", "+", "1"}]], "(", "x", ")"}]}]}], ")"}]}]}], 
+   TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "06cd8b9d-b689-480b-b938-5a54e8ffe51e"],
+ "\n\nBecause this operator tells you how to make  ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["\[Psi]", "n"], "(", "x", ")"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "4089b128-4b91-48bd-a7d8-28ca20135a15"],
+ " from ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["\[Psi]", 
+     RowBox[{"n", "+", "1"}]], "(", "x", ")"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "030e49a7-3b4c-40d2-86c2-9382fe686fad"],
+ " it is called the lowering operator and it is given the symbol ",
+ Cell[BoxData[
+  FormBox["A", TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "14877724-e902-4d7a-a00b-d0aa41127f1b"],
+ ",\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"A", "\[Congruent]", 
+    RowBox[{
+     FractionBox["1", 
+      SqrtBox["2"]], 
+     RowBox[{"(", 
+      RowBox[{
+       FractionBox["d", "dx"], "+", "x"}], ")"}]}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "ae23a777-ff78-497b-ae93-622a91cb061f"],
+ "\n\nand a fancy way of writing what this combination does is\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"A", "\[VeryThinSpace]", 
+     RowBox[{
+      SubscriptBox["\[Psi]", 
+       RowBox[{"n", "+", "1"}]], "(", "x", ")"}]}], "=", 
+    RowBox[{
+     SqrtBox[
+      RowBox[{"n", "+", "1"}]], 
+     RowBox[{
+      SubscriptBox["\[Psi]", "n"], "(", "x", ")"}]}]}], TraditionalForm]],
+  ExpressionUUID->"1d3efa36-a97a-41f3-ad5e-47dda62f2696"],
+ "\n\nUsually people reduce ",
+ Cell[BoxData[
+  FormBox["n", TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "72a0f158-1cec-4a37-ac61-7f948ad21e78"],
+ " by 1 on both sides of this equation, and write what the lowering operator \
+does as\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"A", "\[VeryThinSpace]", 
+     RowBox[{
+      SubscriptBox["\[Psi]", "n"], "(", "x", ")"}]}], "=", 
+    RowBox[{
+     SqrtBox["n"], 
+     RowBox[{
+      SubscriptBox["\[Psi]", 
+       RowBox[{"n", "-", "1"}]], "(", "x", ")"}]}]}], TraditionalForm]],
+  ExpressionUUID->"f3d27180-8b19-494b-9c18-9871154ab993"]
+}], "Text",
+ CellChangeTimes->{{3.920424033782226*^9, 3.920424198074334*^9}, {
+  3.9204242470983877`*^9, 3.9204242927845783`*^9}, {3.920424360454363*^9, 
+  3.9204243771057377`*^9}, {3.9204246341871843`*^9, 3.9204246951327*^9}, {
+  3.92042506364224*^9, 3.9204250849603367`*^9}, {3.920425129794464*^9, 
+  3.920425227919969*^9}, {3.920425263205814*^9, 3.920425357370851*^9}, {
+  3.920425978280918*^9, 
+  3.920426016054577*^9}},ExpressionUUID->"aa304a2f-2114-4d59-8536-\
+07c4d7fe55aa"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["The State Below the Ground State", "Subsection",
+ CellChangeTimes->{{3.920310155034218*^9, 3.920310163989311*^9}, {
+  3.920310462568035*^9, 3.920310466416088*^9}, {3.920419866279635*^9, 
+  3.920419866876333*^9}, {3.920420043877632*^9, 3.9204200642722178`*^9}, {
+  3.920420893049715*^9, 3.920420935834853*^9}, {3.9204211929624577`*^9, 
+  3.920421198349132*^9}, {3.920421554685137*^9, 3.920421557959385*^9}, {
+  3.9204225460580587`*^9, 3.9204225509624853`*^9}, {3.9204227252746897`*^9, 
+  3.9204227296055393`*^9}, {3.92042400483025*^9, 3.9204240108692503`*^9}, {
+  3.920424715571273*^9, 
+  3.920424719832625*^9}},ExpressionUUID->"e0df6db2-7d91-4964-8a0f-\
+32824540d3f2"],
+
+Cell[TextData[{
+ "Apply ",
+ Cell[BoxData[
+  FormBox["A", TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "a0c2be0b-3ab9-4bc2-b849-5707597bdd8f"],
+ " to ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SubscriptBox["\[Psi]", "0"], "(", "x", ")"}], "=", 
+    RowBox[{
+     FractionBox["1", 
+      SuperscriptBox["\[Pi]", 
+       RowBox[{"1", "/", "4"}]]], 
+     SuperscriptBox["e", 
+      RowBox[{
+       RowBox[{"-", "\[VeryThinSpace]", 
+        SuperscriptBox["x", "2"]}], "/", "2"}]]}]}], TraditionalForm]],
+  ExpressionUUID->"691fb70f-6878-46b3-81c8-2913ef6bad10"],
+ " to discover the state below the ground state. Once you have an answer, \
+argue that this had to be the answer."
+}], "Text",
+ CellChangeTimes->{{3.920424734331482*^9, 3.920424803919024*^9}, {
+  3.92042626997561*^9, 
+  3.920426270223381*^9}},ExpressionUUID->"c9e06fcc-6ad6-4a69-b1a8-\
+d80a3b174874"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["One Last Trick", "Subsection",
+ CellChangeTimes->{{3.920310155034218*^9, 3.920310163989311*^9}, {
+  3.920310462568035*^9, 3.920310466416088*^9}, {3.920419866279635*^9, 
+  3.920419866876333*^9}, {3.920420043877632*^9, 3.9204200642722178`*^9}, {
+  3.920420893049715*^9, 3.920420935834853*^9}, {3.9204211929624577`*^9, 
+  3.920421198349132*^9}, {3.920421554685137*^9, 3.920421557959385*^9}, {
+  3.9204225460580587`*^9, 3.9204225509624853`*^9}, {3.9204227252746897`*^9, 
+  3.9204227296055393`*^9}, {3.92042400483025*^9, 3.9204240108692503`*^9}, {
+  3.920424715571273*^9, 3.920424719832625*^9}, {3.920426061326383*^9, 
+  3.920426063947794*^9}},ExpressionUUID->"6fca5caa-0f7c-4352-8f1b-\
+dc201db84781"],
+
+Cell[TextData[{
+ "Using what you know, what is ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SuperscriptBox["A", "\[Dagger]"], 
+    RowBox[{
+     SubscriptBox["A\[Psi]", "n"], "(", "x", ")"}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "11826952-2784-4c7d-8403-bc9b511fd6db"],
+ "? So from that, what is a snazzy way of writing ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["E", "n"], 
+    RowBox[{
+     SubscriptBox["\[Psi]", "n"], "(", "x", ")"}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "44445c3d-4af4-4890-b3d6-d247eda3aa70"],
+ " using ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SuperscriptBox["A", "\[Dagger]"], "A"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "3931121e-946f-4fc6-8d1e-3e79513d2da2"],
+ "?"
+}], "Text",
+ CellChangeTimes->{{3.920424734331482*^9, 3.920424803919024*^9}, {
+  3.920426085833144*^9, 
+  3.920426263014449*^9}},ExpressionUUID->"dcc40dde-11e9-4709-a0ce-\
+f18dbeb3bc71"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1077, 1234},
+WindowMargins->{{Automatic, 414}, {Automatic, 37}},
+PrintingCopies->1,
+PrintingPageRange->{1, Automatic},
+FrontEndVersion->"14.0 for Mac OS X ARM (64-bit) (December 12, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"edfbe9cd-8ebe-4dde-a30d-381c54ddc9a3"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 294, 4, 67, "Section",ExpressionUUID->"1401d686-6281-49b0-9743-c981b888c908"],
+Cell[877, 28, 492, 11, 104, "Text",ExpressionUUID->"e8da59ba-e1c8-4ff9-8734-f8ac585a40f4"],
+Cell[CellGroupData[{
+Cell[1394, 43, 347, 5, 54, "Subsection",ExpressionUUID->"c448b97f-7c7b-42a3-9db2-329015a96a11"],
+Cell[1744, 50, 3801, 111, 419, "Text",ExpressionUUID->"8fa4130b-9828-4390-a009-e6e879368210"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5582, 166, 567, 13, 54, "Subsection",ExpressionUUID->"d9af8377-7655-4ee4-93de-359081d44838"],
+Cell[6152, 181, 4477, 135, 315, "Text",ExpressionUUID->"dfc5c7a7-2df1-47ef-a6f8-054f01da1e49"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[10666, 321, 567, 13, 54, "Subsection",ExpressionUUID->"c230f93e-dfab-4bea-9ee8-45f7427a913e"],
+Cell[11236, 336, 3002, 84, 160, "Text",ExpressionUUID->"481f5733-e56a-4327-950c-5f131f338e8f"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[14275, 425, 418, 6, 54, "Subsection",ExpressionUUID->"6ca8d527-59a1-4963-8d54-163d29c94101"],
+Cell[14696, 433, 3644, 109, 249, "Text",ExpressionUUID->"e88c65c2-23e4-4bbb-9560-1fc00f6938ba"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[18377, 547, 462, 7, 54, "Subsection",ExpressionUUID->"70c3de0a-d999-4318-acf1-e8a5b3872499"],
+Cell[18842, 556, 4515, 128, 435, "Text",ExpressionUUID->"3b7181c2-73d6-407d-8211-a14a8a13459c"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[23394, 689, 518, 8, 54, "Subsection",ExpressionUUID->"9894f97b-4a20-4f6e-908d-1cd9c42406d1"],
+Cell[23915, 699, 1947, 63, 240, "Text",ExpressionUUID->"7e54774d-1370-4261-80bd-0c340b6d85ab"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[25899, 767, 558, 8, 54, "Subsection",ExpressionUUID->"f368c4b5-0b6b-44c6-99a4-c01bcaeb7322"],
+Cell[26460, 777, 4102, 132, 558, "Text",ExpressionUUID->"3f338fcf-7869-4bd0-9a7a-d841d08b32e0"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[30599, 914, 623, 9, 54, "Subsection",ExpressionUUID->"59ca2fd2-43b5-4820-859e-1622042c861f"],
+Cell[31225, 925, 4936, 151, 402, "Text",ExpressionUUID->"fd4cc4fb-7c55-41a2-adee-4d9534333145"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[36198, 1081, 665, 10, 54, "Subsection",ExpressionUUID->"040ec077-e11b-4050-90d5-4857143aa7ae"],
+Cell[36866, 1093, 2422, 77, 143, "Text",ExpressionUUID->"8ab66e8b-6b19-47b9-bddc-8e1a0189e192"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[39325, 1175, 621, 9, 54, "Subsection",ExpressionUUID->"210a50ff-9311-4157-b418-534657e75b09"],
+Cell[39949, 1186, 5271, 165, 569, "Text",ExpressionUUID->"aa304a2f-2114-4d59-8536-07c4d7fe55aa"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[45257, 1356, 674, 10, 54, "Subsection",ExpressionUUID->"e0df6db2-7d91-4964-8a0f-32824540d3f2"],
+Cell[45934, 1368, 898, 27, 44, "Text",ExpressionUUID->"c9e06fcc-6ad6-4a69-b1a8-d80a3b174874"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[46869, 1400, 702, 10, 54, "Subsection",ExpressionUUID->"6fca5caa-0f7c-4352-8f1b-dc201db84781"],
+Cell[47574, 1412, 993, 31, 35, "Text",ExpressionUUID->"dcc40dde-11e9-4709-a0ce-f18dbeb3bc71"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+

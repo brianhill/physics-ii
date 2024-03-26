@@ -20,7 +20,7 @@ See also [Daily Schedule-Term 4](./daily_schedule-term_4.html)
 
 ### Week 10 &mdash; Continue Schr&ouml;dinger Equation Examples &mdash; Exam 3
 
-* Tuesday, Mar. 26 &mdash; No new reading or problem set &mdash; In-class, we will analyze: (1) [Particle in a finitely-deep potential well](./resources/ParticleInAPotentialWell.nb.pdf), (2) Crafty methods for harmonic oscillator wave functions, and (3) Solving the two-dimensional rotationally-symmetric attractive potential
+* Tuesday, Mar. 26 &mdash; No new reading or problem set &mdash; In-class, we will analyze: (1) [Particle in a finitely-deep potential well](./resources/ParticleInAPotentialWell.nb.pdf), (2) [The raising and lowering operators for the harmonic oscillator](./resources/HarmonicOscillatorRaisingAndLowering.nb.pdf), and (3) Solving the [two- and three-dimensional rotationally-symmetric potential wells](./resources/TwoAndThreeDimensionalPotentialWells.nb.pdf)
 * Friday, Mar. 29 &mdash; Exam 3 covering Problem Sets 10-13 and Moore Chapters Q10, Q11, and Q12 (through Q12.3)
 
 ### Week 11 &mdash; Numerical Methods for Solving Schr&ouml;dinger's Equation &mdash; The Dawn of Nuclear Physics
