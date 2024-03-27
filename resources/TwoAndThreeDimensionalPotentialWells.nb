@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     25264,        764]
-NotebookOptionsPosition[     24279,        737]
-NotebookOutlinePosition[     24733,        755]
-CellTagsIndexPosition[     24690,        752]
+NotebookDataLength[     33509,       1062]
+NotebookOptionsPosition[     32493,       1034]
+NotebookOutlinePosition[     32977,       1053]
+CellTagsIndexPosition[     32934,       1050]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -170,8 +170,7 @@ Cell[TextData[{
  "If the potential is rotationally symmetric it doesn\[CloseCurlyQuote]t \
 depend on ",
  Cell[BoxData[
-  FormBox["\[Phi]", TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+  FormBox["\[Phi]", TraditionalForm]],ExpressionUUID->
   "31e21db1-6a98-4466-bf61-51454e80b40f"],
  ", so we have:\n\n",
  Cell[BoxData[
@@ -215,8 +214,7 @@ depend on ",
       RowBox[{"V", "(", "r", ")"}], 
       RowBox[{"\[Psi]", "(", 
        RowBox[{"r", ",", "\[Phi]"}], ")"}]}]}]}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
-  "989fab47-46d8-4c7e-82c9-52c130af72aa"],
+  ExpressionUUID->"989fab47-46d8-4c7e-82c9-52c130af72aa"],
  "\n\nThe ansatz for solving this is \n\n",
  Cell[BoxData[
   FormBox[
@@ -228,20 +226,17 @@ depend on ",
      RowBox[{
       StyleBox["\[CapitalPhi]",
        FontSize->18], "(", "\[Phi]", ")"}]}]}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
-  "c3358c0c-fd4e-4a75-9887-54bda87ae2e2"],
+  ExpressionUUID->"c3358c0c-fd4e-4a75-9887-54bda87ae2e2"],
  "\n\nwhere ",
  Cell[BoxData[
   FormBox[
    RowBox[{
     StyleBox["\[CapitalPhi]",
-     FontSize->18], "(", "\[Phi]", ")"}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+     FontSize->18], "(", "\[Phi]", ")"}], TraditionalForm]],ExpressionUUID->
   "1fd4aa9f-5f8b-4e4b-8b52-10dfbca27298"],
  " is an unknown function of ",
  Cell[BoxData[
-  FormBox["\[Phi]", TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+  FormBox["\[Phi]", TraditionalForm]],ExpressionUUID->
   "98ab461b-53d8-424d-98ef-a6e37db3a717"],
  ".\n\n",
  Cell[BoxData[
@@ -294,20 +289,20 @@ depend on ",
      RowBox[{
       StyleBox["\[CapitalPhi]",
        FontSize->18], "(", "\[Phi]", ")"}]}]}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
-  "aedbfb9e-4b41-45fc-a540-3bd55a4c7b07"],
+  ExpressionUUID->"aedbfb9e-4b41-45fc-a540-3bd55a4c7b07"],
  "\n\nMultiply through by ",
  Cell[BoxData[
   FormBox[
    FractionBox[
     SuperscriptBox["r", "2"], 
     RowBox[{
-     RowBox[{"\[Psi]", "(", "r", ")"}], 
+     RowBox[{
+      StyleBox["R",
+       FontSize->14], "(", "r", ")"}], 
      RowBox[{
       StyleBox["\[CapitalPhi]",
        FontSize->18], "(", "\[Phi]", ")"}]}]], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
-  "134ed00a-aa14-4c2e-8884-ff710f8c5116"],
+  ExpressionUUID->"134ed00a-aa14-4c2e-8884-ff710f8c5116"],
  "\n\n",
  Cell[BoxData[
   FormBox[
@@ -328,15 +323,23 @@ depend on ",
           FractionBox[
            RowBox[{
             SuperscriptBox["d", "2"], 
-            RowBox[{"\[Psi]", "(", "r", ")"}]}], 
+            RowBox[{
+             StyleBox["R",
+              FontSize->14], "(", "r", ")"}]}], 
            RowBox[{"d", "\[VeryThinSpace]", 
             SuperscriptBox["r", "2"]}]]}], "+", 
          RowBox[{"r", 
           FractionBox[
-           RowBox[{"d\[Psi]", "(", "r", ")"}], 
+           RowBox[{
+            StyleBox[
+             RowBox[{"d", 
+              StyleBox["R",
+               FontSize->14]}]], "(", "r", ")"}], 
            RowBox[{"d", "\[VeryThinSpace]", "r"}]]}]}], "]"}]}], 
       FractionBox["1", 
-       RowBox[{"\[Psi]", "(", "r", ")"}]]}], "-", 
+       RowBox[{
+        StyleBox["R",
+         FontSize->14], "(", "r", ")"}]]}], "-", 
      RowBox[{
       FractionBox[
        SuperscriptBox["\[HBar]", "2"], 
@@ -354,8 +357,7 @@ depend on ",
        SuperscriptBox["d\[Phi]", "2"]]}], " ", "+", 
      RowBox[{
       SuperscriptBox["r", "2"], 
-      RowBox[{"V", "(", "r", ")"}]}]}]}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+      RowBox[{"V", "(", "r", ")"}]}]}]}], TraditionalForm]],ExpressionUUID->
   "0b43a996-f81f-4666-92ed-de07cfcc0fa2"],
  "\n\nRearrange\n\n",
  Cell[BoxData[
@@ -376,15 +378,23 @@ depend on ",
          FractionBox[
           RowBox[{
            SuperscriptBox["d", "2"], 
-           RowBox[{"\[Psi]", "(", "r", ")"}]}], 
+           RowBox[{
+            StyleBox["R",
+             FontSize->14], "(", "r", ")"}]}], 
           RowBox[{"d", "\[VeryThinSpace]", 
            SuperscriptBox["r", "2"]}]]}], "+", 
         RowBox[{"r", 
          FractionBox[
-          RowBox[{"d\[Psi]", "(", "r", ")"}], 
+          RowBox[{
+           StyleBox[
+            RowBox[{"d", 
+             StyleBox["R",
+              FontSize->14]}]], "(", "r", ")"}], 
           RowBox[{"d", "\[VeryThinSpace]", "r"}]]}]}], "]"}], 
       FractionBox["1", 
-       RowBox[{"\[Psi]", "(", "r", ")"}]]}], "-", 
+       RowBox[{
+        StyleBox["R",
+         FontSize->14], "(", "r", ")"}]]}], "-", 
      RowBox[{
       SuperscriptBox["r", "2"], 
       RowBox[{"V", "(", "r", ")"}]}]}], "=", 
@@ -403,13 +413,11 @@ depend on ",
        RowBox[{
         StyleBox["\[CapitalPhi]",
          FontSize->14], "(", "\[Phi]", ")"}]}], 
-      SuperscriptBox["d\[Phi]", "2"]]}]}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+      SuperscriptBox["d\[Phi]", "2"]]}]}], TraditionalForm]],ExpressionUUID->
   "13c301b4-c8ee-4e84-811d-010adbeecf47"],
  "\n\nAll of the \[Phi]-dependence is on the RHS and all of the ",
  Cell[BoxData[
-  FormBox["r", TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+  FormBox["r", TraditionalForm]],ExpressionUUID->
   "5f88e417-cd77-48c1-850f-b230a49f3be3"],
  "-dependence is on the LHS. The LHS and the RHS must be constant!\n\nLet\
 \[CloseCurlyQuote]s call the constant ",
@@ -419,15 +427,13 @@ depend on ",
     FractionBox[
      SuperscriptBox["\[HBar]", "2"], 
      RowBox[{"2", "m"}]], 
-    SuperscriptBox["l", "2"]}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+    SuperscriptBox["l", "2"]}], TraditionalForm]],ExpressionUUID->
   "d6aa0dfa-47a5-4174-af35-38f70496e2ae"],
  ". Of course, it could be negative, and I am predisposing you against that \
 by putting in ",
  Cell[BoxData[
   FormBox[
-   SuperscriptBox["l", "2"], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+   SuperscriptBox["l", "2"], TraditionalForm]],ExpressionUUID->
   "32d9432e-17c7-4fbe-b47c-60602cc7e262"],
  ", but you\[CloseCurlyQuote]ll see that it is positive in a moment. With \
 this constant,\n\n",
@@ -454,8 +460,7 @@ this constant,\n\n",
      FractionBox[
       SuperscriptBox["\[HBar]", "2"], 
       RowBox[{"2", "m"}]], 
-     SuperscriptBox["l", "2"]}]}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+     SuperscriptBox["l", "2"]}]}], TraditionalForm]],ExpressionUUID->
   "b80d74a7-dd4a-4cef-b502-d2c3aaedde10"],
  "\n\nor\n\n",
  Cell[BoxData[
@@ -474,15 +479,13 @@ this constant,\n\n",
      RowBox[{
       StyleBox["\[CapitalPhi]",
        FontSize->18], "(", "\[Phi]", ")"}]}]}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
-  "38529377-b4e7-4d37-ae19-f1998fa61e6d"],
+  ExpressionUUID->"38529377-b4e7-4d37-ae19-f1998fa61e6d"],
  "\n\nThe ",
  Cell[BoxData[
   FormBox[
    RowBox[{
     StyleBox["\[CapitalPhi]",
-     FontSize->18], "(", "\[Phi]", ")"}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+     FontSize->18], "(", "\[Phi]", ")"}], TraditionalForm]],ExpressionUUID->
   "e5459be7-959d-4d66-ac68-29eb487339a0"],
  " that does this is ",
  Cell[BoxData[
@@ -492,44 +495,36 @@ this constant,\n\n",
      StyleBox["\[CapitalPhi]",
       FontSize->18], "(", "\[Phi]", ")"}], " ", "=", 
     SuperscriptBox["e", 
-     RowBox[{"i", "\[VeryThinSpace]", "l\[Phi]"}]]}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
-  "ca7d37ef-db31-48ef-a6f1-ac9dfcacbe24"],
+     RowBox[{"i", "\[VeryThinSpace]", "l", "\[VeryThinSpace]", "\[Phi]"}]]}], 
+   TraditionalForm]],ExpressionUUID->"ca7d37ef-db31-48ef-a6f1-ac9dfcacbe24"],
  ". If the constant had been negative, then \[CapitalPhi](\[Phi]) would have \
 grown exponentially.\n\nWe can\[CloseCurlyQuote]t have discontinuity between ",
  Cell[BoxData[
   FormBox[
-   RowBox[{"\[Phi]", "=", "0"}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+   RowBox[{"\[Phi]", "=", "0"}], TraditionalForm]],ExpressionUUID->
   "d886aa39-d60e-4d68-a4ab-1b10b1de4247"],
  " and ",
  Cell[BoxData[
   FormBox[
    RowBox[{"\[Phi]", "=", 
-    RowBox[{"2", "\[Pi]"}]}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+    RowBox[{"2", "\[Pi]"}]}], TraditionalForm]],ExpressionUUID->
   "27fc3afd-a8c5-4887-97ef-b0713b517cd6"],
  ", so ",
  Cell[BoxData[
-  FormBox["l", TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+  FormBox["l", TraditionalForm]],ExpressionUUID->
   "c56bb03b-59ae-4c56-9208-431f38e09cc8"],
  " has to be an integer.\n\nNow that we know ",
  Cell[BoxData[
-  FormBox["l", TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+  FormBox["l", TraditionalForm]],ExpressionUUID->
   "e279ec8c-f91e-458b-a03c-3df85be4007b"],
  ", from solving the ",
  Cell[BoxData[
   FormBox[
   Cell["\[Phi]",ExpressionUUID->"74ef041b-c3ea-4eb5-b498-269ce8415719"], 
-   TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
-  "41331d10-3c8b-4595-b4ee-14c1d1711329"],
+   TraditionalForm]],ExpressionUUID->"41331d10-3c8b-4595-b4ee-14c1d1711329"],
  " equation, we put it back in to the ",
  Cell[BoxData[
-  FormBox["r", TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+  FormBox["r", TraditionalForm]],ExpressionUUID->
   "455b74ee-4573-4f7b-83cc-ae21ff6e20f5"],
  " equation.\n\n",
  Cell[BoxData[
@@ -550,15 +545,23 @@ grown exponentially.\n\nWe can\[CloseCurlyQuote]t have discontinuity between ",
          FractionBox[
           RowBox[{
            SuperscriptBox["d", "2"], 
-           RowBox[{"\[Psi]", "(", "r", ")"}]}], 
+           RowBox[{
+            StyleBox["R",
+             FontSize->14], "(", "r", ")"}]}], 
           RowBox[{"d", "\[VeryThinSpace]", 
            SuperscriptBox["r", "2"]}]]}], "+", 
         RowBox[{"r", 
          FractionBox[
-          RowBox[{"d\[Psi]", "(", "r", ")"}], 
+          RowBox[{
+           StyleBox[
+            RowBox[{"d", 
+             StyleBox["R",
+              FontSize->14]}]], "(", "r", ")"}], 
           RowBox[{"d", "\[VeryThinSpace]", "r"}]]}]}], "]"}], 
       FractionBox["1", 
-       RowBox[{"\[Psi]", "(", "r", ")"}]]}], "-", 
+       RowBox[{
+        StyleBox["R",
+         FontSize->14], "(", "r", ")"}]]}], "-", 
      RowBox[{
       SuperscriptBox["r", "2"], 
       RowBox[{"V", "(", "r", ")"}]}]}], "=", 
@@ -567,16 +570,16 @@ grown exponentially.\n\nWe can\[CloseCurlyQuote]t have discontinuity between ",
       FractionBox[
        SuperscriptBox["\[HBar]", "2"], 
        RowBox[{"2", "m"}]]}], 
-     SuperscriptBox["l", "2"]}]}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+     SuperscriptBox["l", "2"]}]}], TraditionalForm]],ExpressionUUID->
   "d9b9839f-454b-431b-b659-8e9e5cdd2e9c"],
  "\n\nMultiplying through by ",
  Cell[BoxData[
   FormBox[
    FractionBox[
-    RowBox[{"\[Psi]", "(", "r", ")"}], 
-    SuperscriptBox["r", "2"]], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+    RowBox[{
+     StyleBox["R",
+      FontSize->14], "(", "r", ")"}], 
+    SuperscriptBox["r", "2"]], TraditionalForm]],ExpressionUUID->
   "5d2dac25-00e9-41a8-9cdf-759b4138a90e"],
  " we have\n\n",
  Cell[BoxData[
@@ -585,7 +588,9 @@ grown exponentially.\n\nWe can\[CloseCurlyQuote]t have discontinuity between ",
     RowBox[{
      RowBox[{
       SubscriptBox["E", "n"], 
-      RowBox[{"\[Psi]", "(", "r", ")"}]}], "+", 
+      RowBox[{
+       StyleBox["R",
+        FontSize->14], "(", "r", ")"}]}], "+", 
      RowBox[{
       FractionBox[
        SuperscriptBox["\[HBar]", "2"], 
@@ -594,17 +599,25 @@ grown exponentially.\n\nWe can\[CloseCurlyQuote]t have discontinuity between ",
        FractionBox[
         RowBox[{
          SuperscriptBox["d", "2"], 
-         RowBox[{"\[Psi]", "(", "r", ")"}]}], 
+         RowBox[{
+          StyleBox["R",
+           FontSize->14], "(", "r", ")"}]}], 
         RowBox[{"d", "\[VeryThinSpace]", 
          SuperscriptBox["r", "2"]}]], "+", 
        RowBox[{
         FractionBox["1", "r"], 
         FractionBox[
-         RowBox[{"d\[Psi]", "(", "r", ")"}], 
+         RowBox[{
+          StyleBox[
+           RowBox[{"d", 
+            StyleBox["R",
+             FontSize->14]}]], "(", "r", ")"}], 
          RowBox[{"d", "\[VeryThinSpace]", "r"}]]}]}], "]"}], "-", 
      RowBox[{
       RowBox[{"V", "(", "r", ")"}], 
-      RowBox[{"\[Psi]", "(", "r", ")"}]}]}], "=", 
+      RowBox[{
+       StyleBox["R",
+        FontSize->14], "(", "r", ")"}]}]}], "=", 
     RowBox[{
      RowBox[{"-", 
       FractionBox[
@@ -612,9 +625,10 @@ grown exponentially.\n\nWe can\[CloseCurlyQuote]t have discontinuity between ",
        RowBox[{"2", "m"}]]}], 
      SuperscriptBox["l", "2"], 
      FractionBox[
-      RowBox[{"\[Psi]", "(", "r", ")"}], 
-      SuperscriptBox["r", "2"]]}]}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+      RowBox[{
+       StyleBox["R",
+        FontSize->14], "(", "r", ")"}], 
+      SuperscriptBox["r", "2"]]}]}], TraditionalForm]],ExpressionUUID->
   "eff53a9c-3281-4da8-b9b6-d28ac815de6d"],
  "\n\nor\n\n",
  Cell[BoxData[
@@ -622,7 +636,9 @@ grown exponentially.\n\nWe can\[CloseCurlyQuote]t have discontinuity between ",
    RowBox[{
     RowBox[{
      SubscriptBox["E", "n"], 
-     RowBox[{"\[Psi]", "(", "r", ")"}]}], "=", 
+     RowBox[{
+      StyleBox["R",
+       FontSize->14], "(", "r", ")"}]}], "=", 
     RowBox[{
      RowBox[{"-", 
       RowBox[{
@@ -633,13 +649,19 @@ grown exponentially.\n\nWe can\[CloseCurlyQuote]t have discontinuity between ",
         FractionBox[
          RowBox[{
           SuperscriptBox["d", "2"], 
-          RowBox[{"\[Psi]", "(", "r", ")"}]}], 
+          RowBox[{
+           StyleBox["R",
+            FontSize->14], "(", "r", ")"}]}], 
          RowBox[{"d", "\[VeryThinSpace]", 
           SuperscriptBox["r", "2"]}]], "+", 
         RowBox[{
          FractionBox["1", "r"], 
          FractionBox[
-          RowBox[{"d\[Psi]", "(", "r", ")"}], 
+          RowBox[{
+           StyleBox[
+            RowBox[{"d", 
+             StyleBox["R",
+              FontSize->14]}]], "(", "r", ")"}], 
           RowBox[{"d", "\[VeryThinSpace]", "r"}]]}]}], "]"}]}], "+", 
      RowBox[{
       RowBox[{"V", "(", "r", ")"}], 
@@ -650,39 +672,54 @@ grown exponentially.\n\nWe can\[CloseCurlyQuote]t have discontinuity between ",
        RowBox[{"2", "m"}]], 
       SuperscriptBox["l", "2"], 
       FractionBox[
-       RowBox[{"\[Psi]", "(", "r", ")"}], 
-       SuperscriptBox["r", "2"]]}]}]}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+       RowBox[{
+        StyleBox["R",
+         FontSize->14], "(", "r", ")"}], 
+       SuperscriptBox["r", "2"]]}]}]}], TraditionalForm]],ExpressionUUID->
   "36a1aa71-63b5-4bf4-99ec-0126ba8a049b"],
  "\n\nThis last equation is often a bear to solve, but the nice thing is that \
-it looks like a 1-d equation. There are two constants in it that change from \
-solution to solution. They are ",
+it looks just like a 1-d Schrodinger equation. There are two constants in it \
+that change from solution to solution. They are ",
  Cell[BoxData[
   FormBox[
-   SubscriptBox["E", "n"], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+   SubscriptBox["E", "n"], TraditionalForm]],ExpressionUUID->
   "8a7552f3-da49-48dc-8612-d7b5ef135686"],
  " and ",
  Cell[BoxData[
-  FormBox["l", TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+  FormBox["l", TraditionalForm]],ExpressionUUID->
   "2e38e91a-31a2-48c2-aabe-f285e317cd91"],
- ". So we emphasize that the wave function will depend on these things by \
+ ". We emphasize that the wave function will depend on these things by \
 subscripting it as ",
  Cell[BoxData[
   FormBox[
    RowBox[{
-    SubscriptBox["\[Psi]", 
+    SubscriptBox[
+     StyleBox["R",
+      FontSize->14], 
      RowBox[{"n", ",", "l"}]], "(", "r", ")"}], TraditionalForm]],
   ExpressionUUID->"05a0aa01-3d6e-4720-b3a3-a9de1fb83cd4"],
- ".\n\n",
+ ". ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["E", "n"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "ab9c2f98-2c08-48fe-8c70-1970aa1a2aa9"],
+ " might depend on ",
+ Cell[BoxData[
+  FormBox["l", TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "10b1f7b9-060e-4259-9fcb-3018f5c7c821"],
+ ", so we give it a subscript too.\n\n",
  Cell[BoxData[
   FormBox[
    RowBox[{
     RowBox[{
-     SubscriptBox["E", "n"], 
+     SubscriptBox["E", 
+      RowBox[{"n", ",", "l"}]], 
      RowBox[{
-      SubscriptBox["\[Psi]", 
+      SubscriptBox[
+       StyleBox["R",
+        FontSize->14], 
        RowBox[{"n", ",", "l"}]], "(", "r", ")"}]}], "=", 
     RowBox[{
      RowBox[{"-", 
@@ -695,7 +732,9 @@ subscripting it as ",
          RowBox[{
           SuperscriptBox["d", "2"], 
           RowBox[{
-           SubscriptBox["\[Psi]", 
+           SubscriptBox[
+            StyleBox["R",
+             FontSize->14], 
             RowBox[{"n", ",", "l"}]], "(", "r", ")"}]}], 
          RowBox[{"d", "\[VeryThinSpace]", 
           SuperscriptBox["r", "2"]}]], "+", 
@@ -703,13 +742,19 @@ subscripting it as ",
          FractionBox["1", "r"], 
          FractionBox[
           RowBox[{
-           SubscriptBox["d\[Psi]", 
+           SubscriptBox[
+            StyleBox[
+             RowBox[{"d", 
+              StyleBox["R",
+               FontSize->14]}]], 
             RowBox[{"n", ",", "l"}]], "(", "r", ")"}], 
           RowBox[{"d", "\[VeryThinSpace]", "r"}]]}]}], "]"}]}], "+", 
      RowBox[{
       RowBox[{"V", "(", "r", ")"}], 
       RowBox[{
-       SubscriptBox["\[Psi]", 
+       SubscriptBox[
+        StyleBox["R",
+         FontSize->14], 
         RowBox[{"n", ",", "l"}]], "(", "r", ")"}]}], "+", 
      RowBox[{
       FractionBox[
@@ -718,19 +763,271 @@ subscripting it as ",
       SuperscriptBox["l", "2"], 
       FractionBox[
        RowBox[{
-        SubscriptBox["\[Psi]", 
+        SubscriptBox[
+         StyleBox["R",
+          FontSize->14], 
          RowBox[{"n", ",", "l"}]], "(", "r", ")"}], 
-       SuperscriptBox["r", "2"]]}]}]}], TraditionalForm]],
+       SuperscriptBox["r", "2"]]}]}]}], TraditionalForm]],ExpressionUUID->
+  "5106dbf3-312f-4efc-8a77-e972fc829390"],
+ "\n\nThe next thing that is generally done is to define a new dimensionless \
+radial coordinate:\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[Rho]", "\[Congruent]", 
+    RowBox[{
+     FractionBox[
+      SqrtBox[
+       RowBox[{"2", "m", "\[VeryThinSpace]", 
+        SubscriptBox["E", 
+         RowBox[{"n", ",", "l"}]]}]], "\[HBar]"], "r"}]}], TraditionalForm]],
   FormatType->TraditionalForm,ExpressionUUID->
-  "5106dbf3-312f-4efc-8a77-e972fc829390"]
+  "09ff7158-0949-4ac9-9279-10342f2284d4"],
+ "\n\nThen the equation is:\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SubscriptBox["E", 
+      RowBox[{"n", ",", "l"}]], 
+     RowBox[{
+      SubscriptBox[
+       StyleBox["R",
+        FontSize->14], 
+       RowBox[{"n", ",", "l"}]], "(", "\[Rho]", ")"}]}], "=", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"-", 
+       FractionBox[
+        SuperscriptBox["\[HBar]", "2"], 
+        RowBox[{"2", "m"}]]}], 
+      RowBox[{
+       FractionBox[
+        RowBox[{"2", "m", "\[VeryThinSpace]", 
+         SubscriptBox["E", 
+          RowBox[{"n", ",", "l"}]]}], 
+        SuperscriptBox["\[HBar]", "2"]], "[", 
+       RowBox[{
+        FractionBox[
+         RowBox[{
+          SuperscriptBox["d", "2"], 
+          RowBox[{
+           SubscriptBox[
+            StyleBox["R",
+             FontSize->14], 
+            RowBox[{"n", ",", "l"}]], "(", "\[Rho]", ")"}]}], 
+         RowBox[{"d", "\[VeryThinSpace]", 
+          SuperscriptBox["\[Rho]", "2"]}]], "+", 
+        RowBox[{
+         FractionBox["1", "\[Rho]"], 
+         FractionBox[
+          RowBox[{
+           SubscriptBox[
+            StyleBox[
+             RowBox[{"d", 
+              StyleBox["R",
+               FontSize->14]}]], 
+            RowBox[{"n", ",", "l"}]], "(", "\[Rho]", ")"}], 
+          RowBox[{"d", "\[VeryThinSpace]", "\[Rho]"}]]}]}], "]"}]}], "+", 
+     RowBox[{
+      RowBox[{"V", 
+       StyleBox["(",
+        FontSize->10], 
+       RowBox[{
+        StyleBox[
+         FractionBox["\[HBar]", 
+          SqrtBox[
+           RowBox[{"2", "m", "\[VeryThinSpace]", 
+            SubscriptBox["E", 
+             RowBox[{"n", ",", "l"}]]}]]],
+         FontSize->10], 
+        StyleBox[" ",
+         FontSize->10], 
+        StyleBox["\[Rho]",
+         FontSize->12]}], 
+       StyleBox[")",
+        FontSize->10]}], 
+      RowBox[{
+       SubscriptBox["R", 
+        RowBox[{"n", ",", "l"}]], "(", "\[Rho]", ")"}]}], "+", 
+     RowBox[{
+      FractionBox[
+       SuperscriptBox["\[HBar]", "2"], 
+       RowBox[{"2", "m"}]], 
+      SuperscriptBox["l", "2"], 
+      FractionBox[
+       RowBox[{"2", "m", "\[VeryThinSpace]", 
+        SubscriptBox["E", 
+         RowBox[{"n", ",", "l"}]]}], 
+       SuperscriptBox["\[HBar]", "2"]], 
+      FractionBox[
+       RowBox[{
+        SubscriptBox[
+         StyleBox["R",
+          FontSize->14], 
+         RowBox[{"n", ",", "l"}]], "(", "\[Rho]", ")"}], 
+       SuperscriptBox["\[Rho]", "2"]]}]}]}], TraditionalForm]],ExpressionUUID->
+  "f1a72b0f-4e4d-4c79-b7e7-a262c4370ce2"],
+ "\n\nor, dividing through by ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["E", 
+    RowBox[{"n", ",", "l"}]], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "da9fc6af-1954-4036-9199-143eb021f581"],
+ "\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SubscriptBox[
+      StyleBox["R",
+       FontSize->14], 
+      RowBox[{"n", ",", "l"}]], "(", "r", ")"}], "=", 
+    RowBox[{
+     RowBox[{"-", 
+      RowBox[{"[", 
+       RowBox[{
+        FractionBox[
+         RowBox[{
+          SuperscriptBox["d", "2"], 
+          RowBox[{
+           SubscriptBox[
+            StyleBox["R",
+             FontSize->14], 
+            RowBox[{"n", ",", "l"}]], "(", "\[Rho]", ")"}]}], 
+         RowBox[{"d", "\[VeryThinSpace]", 
+          SuperscriptBox["\[Rho]", "2"]}]], "+", 
+        RowBox[{
+         FractionBox["1", "\[Rho]"], 
+         FractionBox[
+          RowBox[{
+           SubscriptBox[
+            StyleBox[
+             RowBox[{"d", 
+              StyleBox["R",
+               FontSize->14]}]], 
+            RowBox[{"n", ",", "l"}]], "(", "\[Rho]", ")"}], 
+          RowBox[{"d", "\[VeryThinSpace]", "\[Rho]"}]]}]}], "]"}]}], "+", 
+     FractionBox[
+      RowBox[{
+       RowBox[{"V", 
+        StyleBox["(",
+         FontSize->7], 
+        RowBox[{
+         StyleBox[
+          FractionBox["\[HBar]", 
+           SqrtBox[
+            RowBox[{"2", "m", "\[VeryThinSpace]", 
+             SubscriptBox["E", 
+              RowBox[{"n", ",", "l"}]]}]]],
+          FontSize->7], 
+         StyleBox[" ",
+          FontSize->7], 
+         StyleBox["\[Rho]",
+          FontSize->12]}], 
+        StyleBox[")",
+         FontSize->7]}], 
+       RowBox[{
+        SubscriptBox[
+         StyleBox["R",
+          FontSize->14], 
+         RowBox[{"n", ",", "l"}]], "(", "\[Rho]", ")"}]}], 
+      SubscriptBox["E", 
+       RowBox[{"n", ",", "l"}]]], "+", 
+     RowBox[{
+      SuperscriptBox["l", "2"], 
+      FractionBox[
+       RowBox[{
+        SubscriptBox[
+         StyleBox["R",
+          FontSize->14], 
+         RowBox[{"n", ",", "l"}]], "(", "\[Rho]", ")"}], 
+       SuperscriptBox["\[Rho]", "2"]]}]}]}], TraditionalForm]],ExpressionUUID->
+  "fec3902e-402a-4ccf-b187-36424a7e4bfe"],
+ "\n\nor,\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       StyleBox["(",
+        FontSize->14], 
+       RowBox[{
+        SuperscriptBox[
+         StyleBox["\[Rho]",
+          FontSize->14], "2"], "-", 
+        SuperscriptBox["l", "2"]}], ")"}], 
+      RowBox[{
+       SubscriptBox[
+        StyleBox["R",
+         FontSize->14], 
+        RowBox[{"n", ",", "l"}]], "(", "r", ")"}]}], "+", 
+     RowBox[{"[", 
+      RowBox[{
+       RowBox[{
+        SuperscriptBox["\[Rho]", "2"], 
+        FractionBox[
+         RowBox[{
+          SuperscriptBox["d", "2"], 
+          RowBox[{
+           SubscriptBox[
+            StyleBox["R",
+             FontSize->14], 
+            RowBox[{"n", ",", "l"}]], "(", "\[Rho]", ")"}]}], 
+         RowBox[{"d", "\[VeryThinSpace]", 
+          SuperscriptBox["\[Rho]", "2"]}]]}], "+", 
+       RowBox[{"\[Rho]", 
+        FractionBox[
+         RowBox[{
+          SubscriptBox[
+           StyleBox[
+            RowBox[{"d", 
+             StyleBox["R",
+              FontSize->14]}]], 
+           RowBox[{"n", ",", "l"}]], "(", "\[Rho]", ")"}], 
+         RowBox[{"d", "\[VeryThinSpace]", "\[Rho]"}]]}]}], "]"}], "-", 
+     RowBox[{
+      SuperscriptBox["\[Rho]", "2"], 
+      FractionBox[
+       RowBox[{
+        RowBox[{"V", 
+         StyleBox["(",
+          FontSize->7], 
+         RowBox[{
+          StyleBox[
+           FractionBox["\[HBar]", 
+            SqrtBox[
+             RowBox[{"2", "m", "\[VeryThinSpace]", 
+              SubscriptBox["E", 
+               RowBox[{"n", ",", "l"}]]}]]],
+           FontSize->7], 
+          StyleBox[" ",
+           FontSize->7], 
+          StyleBox["\[Rho]",
+           FontSize->12]}], 
+         StyleBox[")",
+          FontSize->7]}], 
+        RowBox[{
+         SubscriptBox[
+          StyleBox["R",
+           FontSize->14], 
+          RowBox[{"n", ",", "l"}]], "(", "\[Rho]", ")"}]}], 
+       SubscriptBox["E", 
+        RowBox[{"n", ",", "l"}]]]}]}], "=", "0"}], TraditionalForm]],
+  ExpressionUUID->"abe1ee4a-7259-42c8-9753-50c30a912f1f"],
+ "\n\n\n"
 }], "Text",
  CellChangeTimes->CompressedData["
-1:eJxTTMoPSmViYGAQAWIQ/U8rQyPN9K3jw98FxiBa6ZCKFYgOzmwC0/ObFjqB
-6EtdwgEgOvHf91AQ/cbnRhyIVtYtzgLRKxdu7QfRl189mQaifz59Ph1E67Q8
-bp4NpCUM/k0D0R17gueA6DenL60D0aZ1WzaB6Aa+I8dA9Ha1N6dBtNl8l08g
-OmBV6R8QfffSXqY5QPqM6tkr84B0yH3zTyBaw4nrB4heUHSWbz6Q5nw7UwJE
-T/vpKg2i335olQfRjJu91EG0qKyxDog+dWtVEIj+J+e2HkT3qR7YAKInHXDQ
-XACyd4UvmJ4h3usLolNdo7eCaBfF1N0gutH3FstCIA0ANJig6A==
+1:eJwdzUsowwEAx/FZK5naxWMrzcz82TQlz3LBmIMsa/M4kFdN+0t5xUlipkQI
+NWRs/+WAvMKSPFqSg9nBOKxJklfpP81Kni3/3w7fPsevuKlNo2OzWCwhEwym
+6qXN2b7C+9/2TJh4kpQHtaQhpMVAKaB7JEoNG4OflZAu89RBSVpXC1yh7BPw
+6vXRBL+fXmag3PgwOM8oSA+a4PCh1gxpp3sDZvftbsN+3ukZ3EumnTDHUhyA
+6tXuP3jrPmKbGS8I1/UiY8VdbgBKFdwvaO108SyMEb45ATR9K+Ogzz8kgmE7
+pSkwRpgph+feVQ0MxpdswnHCsQWnHAUyK77LqpCz/DEV1Clr7LBYrDuAAyov
+h2LMoqr9a4xLZmX4OmNtpTUS9tpv+JCbMSqCnOnJBGiTvRMwusGTDMtG91Oh
+iGPLh8RxaxHsMpLlsOODqIWtb7H1kGYvkFBP/YSserb2wEtSMgP/AZRm5RM=
+
   "],ExpressionUUID->"d8da9753-4369-4daf-b952-5a92a13e2614"]
 }, Open  ]]
 }, Open  ]]
@@ -739,6 +1036,7 @@ WindowSize->{1077, 1234},
 WindowMargins->{{581, Automatic}, {14, Automatic}},
 PrintingCopies->1,
 PrintingPageRange->{1, Automatic},
+Magnification:>1.5 Inherited,
 FrontEndVersion->"14.0 for Mac OS X ARM (64-bit) (December 12, 2023)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"edfbe9cd-8ebe-4dde-a30d-381c54ddc9a3"
@@ -755,15 +1053,15 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 450, 6, 67, "Section",ExpressionUUID->"1401d686-6281-49b0-9743-c981b888c908"],
-Cell[1033, 30, 371, 7, 35, "Text",ExpressionUUID->"e8da59ba-e1c8-4ff9-8734-f8ac585a40f4"],
+Cell[580, 22, 450, 6, 158, "Section",ExpressionUUID->"1401d686-6281-49b0-9743-c981b888c908"],
+Cell[1033, 30, 371, 7, 88, "Text",ExpressionUUID->"e8da59ba-e1c8-4ff9-8734-f8ac585a40f4"],
 Cell[CellGroupData[{
-Cell[1429, 41, 470, 8, 54, "Subsection",ExpressionUUID->"c448b97f-7c7b-42a3-9db2-329015a96a11"],
-Cell[1902, 51, 3815, 100, 225, "Text",ExpressionUUID->"8fa4130b-9828-4390-a009-e6e879368210"]
+Cell[1429, 41, 470, 8, 81, "Subsection",ExpressionUUID->"c448b97f-7c7b-42a3-9db2-329015a96a11"],
+Cell[1902, 51, 3815, 100, 354, "Text",ExpressionUUID->"8fa4130b-9828-4390-a009-e6e879368210"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[5754, 156, 611, 10, 54, "Subsection",ExpressionUUID->"32ee1dac-5c9e-44d2-80e7-1bbfe42048e0"],
-Cell[6368, 168, 17883, 565, 1287, "Text",ExpressionUUID->"d8da9753-4369-4daf-b952-5a92a13e2614"]
+Cell[5754, 156, 611, 10, 81, "Subsection",ExpressionUUID->"32ee1dac-5c9e-44d2-80e7-1bbfe42048e0"],
+Cell[6368, 168, 26097, 862, 2838, "Text",ExpressionUUID->"d8da9753-4369-4daf-b952-5a92a13e2614"]
 }, Open  ]]
 }, Open  ]]
 }

@@ -14,14 +14,12 @@ See also [Daily Schedule-Term 4](./daily_schedule-term_4.html)
 * Tuesday, Mar. 19 &mdash; Q10.4 and Q11.1 to Q11.5 &mdash; Presentations: Brian, The 3-D Schr&ouml;dinger Equation; Ren and Rebecca, Using the Pauli Exclusion Principle to discover the energy of a [Fermion Gas](./resources/FermionGas.nb.pdf) (ignoring Coulomb repulsion) &mdash; [Problem Set 12](./assignments/AssignmentFor2024-03-19.nb.pdf) for Tuesday
 * Friday, Mar. 22 &mdash; Study Q11.6 and Q12.1 to Q12 &mdash; [Problem Set 13](./assignments/AssignmentFor2024-03-22.nb.pdf) for Friday &mdash; Presentations: Emma, Applying the ideas of Example 11.1 to other molecules (caffeine?!); Brian, Continuation of the quantum tunneling ideas started in Problem Set 13
 
-<img src="./resources/ScanningTunnelingMicroscope.png" alt="Scanning Tunneling Microscope" width="80%">
-
-#### Schematic Wave Function for a Scanning Tunneling Microscope (STM)
-
 ### Week 10 &mdash; Continue Schr&ouml;dinger Equation Examples &mdash; Exam 3
 
-* Tuesday, Mar. 26 &mdash; No new reading or problem set &mdash; In-class, we will analyze: (1) [Particle in a finitely-deep potential well](./resources/ParticleInAPotentialWell.nb.pdf), (2) [The raising and lowering operators for the harmonic oscillator](./resources/HarmonicOscillatorRaisingAndLowering.nb.pdf), and (3) Solving the [two- and three-dimensional rotationally-symmetric potential wells](./resources/TwoAndThreeDimensionalPotentialWells.nb.pdf)
+* Tuesday, Mar. 26 &mdash; No new reading or problem set &mdash; In-class, we will analyze [Particle in a finitely-deep potential well](./resources/ParticleInAPotentialWell.nb.pdf), and [The raising and lowering operators for the harmonic oscillator](./resources/HarmonicOscillatorRaisingAndLowering.nb.pdf)
 * Friday, Mar. 29 &mdash; Exam 3 covering Problem Sets 10-13 and Moore Chapters Q10, Q11, and Q12 (through Q12.3)
+
+#### I am sad to hold back on solving the [two- and three-dimensional rotationally-symmetric potential wells](./resources/TwoAndThreeDimensionalPotentialWells.nb.pdf), but it is a bit too much multivariable calculus for where the present.
 
 ### Week 11 &mdash; Numerical Methods for Solving Schr&ouml;dinger's Equation &mdash; The Dawn of Nuclear Physics
 
