@@ -23,7 +23,7 @@ See also [Daily Schedule-Term 4](./daily_schedule-term_4.html)
 
 ### Week 11 &mdash; Numerical Methods for Solving Schr&ouml;dinger's Equation &mdash; The Dawn of Nuclear Physics
 
-* Tuesday, Apr. 2 &mdash; Finish Q12
+* Tuesday, Apr. 2 &mdash; Finish Q12 &mdash; We have three things we can do for Tuesday's class, but not all will fit: (1) The [two-dimensional rotationally-symmetric potential](./resources/TwoAndThreeDimensionalPotentialWells.nb.pdf) is a gateway to the three-dimensional rotationally symmetric one, and we could study how it is solved; (2) We could spend lots of time on 12.4 and 12.5, which is how numerical solutions of Schrödinger's equation are done; (3) We could spend time on 12.6 and 12.7, qualitative graphical solutions of Schrödinger's equation and the application of qualitative methods to tunneling. &mdash; [Problem Set 14](./assignments/AssignmentFor2024-04-02.nb.pdf)
 * Friday, Apr. 5 &mdash; The Dawn of Nuclear Physics, the discovery of alpha-particles, beta-particles, gamma-particles, and the neutron
 
 ### Week 12 &mdash;
