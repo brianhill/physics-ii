@@ -16,12 +16,12 @@ See also [Daily Schedule-Term 4](./daily_schedule-term_4.html)
 
 ### Week 10 &mdash; Continue Schr&ouml;dinger Equation Examples &mdash; Exam 3
 
-* Tuesday, Mar. 26 &mdash; No new reading or problem set &mdash; In-class, we will analyze [Particle in a finitely-deep potential well](./resources/ParticleInAPotentialWell.nb.pdf), and [The raising and lowering operators for the harmonic oscillator](./resources/HarmonicOscillatorRaisingAndLowering.nb.pdf)
+* Tuesday, Mar. 26 &mdash; No new reading or problem set &mdash; In-class, we will analyze the [particle in a finitely-deep potential well](./resources/ParticleInAPotentialWell.nb.pdf), and [the raising and lowering operators for the harmonic oscillator](./resources/HarmonicOscillatorRaisingAndLowering.nb.pdf) (my writeup is a small taste of [operator methods](./HarmonicOscillatorSolutionUsingOperators.pdf) that are used a lot in quantum field theory because free field theories, including quantum electrodynamics (QED) in the absence of any charges, can be analyzed using the same raising and lowering operator methods as are used for the harmonic oscillator)
 * Friday, Mar. 29 &mdash; Exam 3 covering Problem Sets 10-13 and Moore Chapters Q10, Q11, and Q12 (through Q12.3)
 
 ### Week 11 &mdash; Numerical Methods for Solving Schr&ouml;dinger's Equation &mdash; The Dawn of Nuclear Physics
 
-* Tuesday, Apr. 2 &mdash; Finish Q12 &mdash; We have three things we can do for Tuesday's class, but not all will fit: (1) The [two-dimensional rotationally-symmetric potential](./resources/TwoAndThreeDimensionalPotentialWells.nb.pdf) is a gateway to the three-dimensional rotationally symmetric one, and we could study how it is solved, but it may be a bit much multi-variable calculus; (2) We could spend lots of time on 12.4 and 12.5, which is how numerical solutions of Schrödinger's equation are done; (3) We could spend time on 12.6 and 12.7, qualitative graphical solutions of Schrödinger's equation and the application of qualitative methods to tunneling. &mdash; [Problem Set 14](./assignments/AssignmentFor2024-04-02.nb.pdf)
+* Tuesday, Apr. 2 &mdash; Finish Q12 &mdash; We have three things we can do for Tuesday's class, but not all will fit: (1) The [two-dimensional rotationally-symmetric potential](./resources/TwoAndThreeDimensionalPotentialWells.nb.pdf) is a gateway to the three-dimensional rotationally-symmetric one, and we could study how it is solved, but it may be a bit much multi-variable calculus; (2) We could spend lots of time on 12.4 and 12.5, which is how numerical solutions of Schrödinger's equation are done; (3) We could spend time on 12.6 and 12.7, qualitative graphical solutions of Schrödinger's equation and the application of qualitative methods to tunneling. &mdash; [Problem Set 14](./assignments/AssignmentFor2024-04-02.nb.pdf)
 
 <img src="./resources/Ylm.png" alt="Y, l, m of theta and phi" width="100%">
 
