@@ -19,27 +19,27 @@ See also [Daily Schedule-Term 4](./daily_schedule-term_4.html)
 * Tuesday, Mar. 26 &mdash; No new reading or problem set &mdash; In-class, we will analyze the [particle in a finitely-deep potential well](./resources/ParticleInAPotentialWell.nb.pdf), and [the raising and lowering operators for the harmonic oscillator](./resources/HarmonicOscillatorRaisingAndLowering.nb.pdf) (my writeup is a small taste of [operator methods](./HarmonicOscillatorSolutionUsingOperators.pdf) that are used a lot in quantum field theory because free field theories, including quantum electrodynamics (QED) in the absence of any charges, can be analyzed using the same raising and lowering operator methods as are used for the harmonic oscillator)
 * Friday, Mar. 29 &mdash; [Exam 3](./exams/Exam3.nb.pdf) covering Problem Sets 10-13 and Moore Chapters Q10, Q11, and Q12 (through Q12.3)
 
-### Week 11 &mdash; Numerical Methods for Solving Schr&ouml;dinger's Equation &mdash; The Dawn of Nuclear Physics
+### Week 11 &mdash; Numerical Methods for Solving Schr&ouml;dinger's Equation &mdash; The Hydrogen Atom &mdash; Spherical Harmonics &mdash; The Dawn of Nuclear Physics
 
-* Tuesday, Apr. 2 &mdash; Finish Q12 &mdash; We have three things we can do for Tuesday's class, but not all will fit: (1) The [two-dimensional rotationally-symmetric potential](./resources/TwoAndThreeDimensionalPotentialWells.nb.pdf) is a gateway to the three-dimensional rotationally-symmetric one, and we could study how it is solved, but it may be a bit much multi-variable calculus; (2) We could spend lots of time on 12.4 and 12.5, which is how numerical solutions of Schrödinger's equation are done; (3) We could spend time on 12.6 and 12.7, qualitative graphical solutions of Schrödinger's equation and the application of qualitative methods to tunneling. &mdash; [Problem Set 14](./assignments/AssignmentFor2024-04-02.nb.pdf)
+* Tuesday, Apr. 2 &mdash; Finish Q12 &mdash; [Problem Set 14](./assignments/AssignmentFor2024-04-02.nb.pdf) &mdash; Discussion of 12.6 and 12.7, qualitative graphical solutions of Schrödinger's equation and the application of qualitative methods to ramp and barrier wave functions &mdash; The [two-dimensional rotationally-symmetric potential](./resources/TwoAndThreeDimensionalPotentialWells.nb.pdf), which is a gateway to the three-dimensional rotationally-symmetric one, especially hydrogen, and also a gateway to being able to converse with chemists who often think in terms of probability densities and electron clouds &mdash; [Another write up of what I covered](https://phys.libretexts.org/Bookshelves/University_Physics/University_Physics_(OpenStax)/University_Physics_III_-_Optics_and_Modern_Physics_(OpenStax)/08%3A_Atomic_Structure/8.02%3A_The_Hydrogen_Atom)
 
 <img src="./resources/Ylm.png" alt="Y, l, m of theta and phi" width="100%">
 
 #### A graphic from Wolfram MathWorld showing the angular part of the solutions of Schr&ouml;dinger's equations for a three-dimensional rotationally-symmetric potential, such as the Coulomb potential
 
-* Friday, Apr. 5 &mdash; The Dawn of Nuclear Physics, the discovery of alpha-particles, beta-particles, gamma-particles, and the neutron
+* Friday, Apr. 5 &mdash; Nuclear Physics from 1896-1911, the discovery of radioactivity, exponential decay and the nucleus following pp. 19-40 of Reed &mdash; Sections Q13.1, Q13.2 and Q13.6 of Moore &mdash; [Problem Set 15](./assignments/AssignmentFor2024-04-05.nb.pdf) 
 
-### Week 12 &mdash;
+### Week 12 &mdash; Nuclear Physics
 
-* Tuesday, Apr. 9 &mdash;
-* Friday, Apr. 12 &mdash;
+* Tuesday, Apr. 9 &mdash; Finish Q13
+* Friday, Apr. 12 &mdash; Q14
 
-### Week 13 &mdash;
+### Week 13 &mdash; Nuclear Physics Applications
 
-* Tuesday, Apr. 16 &mdash;
-* Friday, Apr. 19 &mdash;
+* Tuesday, Apr. 16 &mdash; Q15
+* Friday, Apr. 19 &mdash; Nuclear Magnetic Resonance (aka NMR or MRI), which is very challenging? &mdash; Exam review?
 
 ### Week 14 &mdash; Exam 4 &mdash; Final Topic
 
-* Tuesday, Apr. 23 &mdash; Exam 4
-* Friday, Apr. 26 &mdash; A Final Blow-Off Top Topic: Nuclear Magnetic Resonance, aka Magnetic Resonance Imaging (MRI)? The Feynman Path Integral? The Cosmic Speed Limit and the Proof of Time Dilation?
+* Tuesday, Apr. 23 &mdash; Exam 4 on Numerical Methods and Nuclear Physics
+* Friday, Apr. 26 &mdash; A Final Blow-Off Top Topic &mdash; The Feynman Path Integral? &mdash; A one-lecture introduction to special relativity, concluding with the proof of time dilation?

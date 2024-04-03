@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    343327,       6357]
+NotebookDataLength[    343326,       6357]
 NotebookOptionsPosition[    341286,       6313]
-NotebookOutlinePosition[    341770,       6332]
-CellTagsIndexPosition[    341727,       6329]
+NotebookOutlinePosition[    341769,       6332]
+CellTagsIndexPosition[    341726,       6329]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -5880,10 +5880,7 @@ YhCT/jJNHJMLjWeI2alKM1irurCDpgEdfMjr63GGo16vFLTOOxdAUceKN+Tz
 RsMhtVkaDaua6QRY8U5lw9Jn21yo4w7TsJj5YU27V9bAY9qtH85rbyLOQkgv
 qs2Hbb/7NOzKuGKViaYroXmrZS9Ur3/I2J65Mw5vx7Zm4VOczyr8B1Y7Elw=
 
-  "],ExpressionUUID->"d8da9753-4369-4daf-b952-5a92a13e2614"],
-
-Cell["", "PageBreak",
- PageBreakBelow->True,ExpressionUUID->"7b792613-dc64-43f7-bef1-b74ee0839470"]
+  "],ExpressionUUID->"d8da9753-4369-4daf-b952-5a92a13e2614"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -6039,7 +6036,10 @@ when he gives you the choice in the pop-up list to study Hydrogen."
    3.921067223710546*^9, 3.9210673260735598`*^9}, {3.9210673819888783`*^9, 
    3.9210674545383053`*^9}, {3.921067491538754*^9, 3.9210675588467627`*^9}, 
    3.921068587506826*^9},ExpressionUUID->"45f8ac8d-b7f1-4bc8-b280-\
-142b3b0eaf30"]
+142b3b0eaf30"],
+
+Cell["", "PageBreak",
+ PageBreakBelow->True,ExpressionUUID->"7b792613-dc64-43f7-bef1-b74ee0839470"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -6311,8 +6311,8 @@ ad44e03d0c0e"]
 }, Open  ]]
 }, Open  ]]
 },
-WindowSize->{1077, 1234},
-WindowMargins->{{304, Automatic}, {Automatic, 39}},
+WindowSize->{1077, 843},
+WindowMargins->{{86, Automatic}, {Automatic, 473}},
 PrintingCopies->1,
 PrintingPageRange->{1, Automatic},
 Magnification:>1.5 Inherited,
@@ -6342,13 +6342,13 @@ Cell[293024, 4869, 3836, 108, 521, "Text",ExpressionUUID->"d0ad4531-e2da-4d04-9b
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[296897, 4982, 609, 10, 81, "Subsection",ExpressionUUID->"32ee1dac-5c9e-44d2-80e7-1bbfe42048e0"],
-Cell[297509, 4994, 27179, 888, 2849, "Text",ExpressionUUID->"d8da9753-4369-4daf-b952-5a92a13e2614"],
-Cell[324691, 5884, 99, 1, 1, "PageBreak",ExpressionUUID->"7b792613-dc64-43f7-bef1-b74ee0839470",
- PageBreakBelow->True]
+Cell[297509, 4994, 27179, 888, 2849, "Text",ExpressionUUID->"d8da9753-4369-4daf-b952-5a92a13e2614"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[324827, 5890, 590, 9, 81, "Subsection",ExpressionUUID->"3af1335b-ccca-4e40-a52c-36a61ed788b5"],
-Cell[325420, 5901, 5570, 140, 569, "Text",ExpressionUUID->"45f8ac8d-b7f1-4bc8-b280-142b3b0eaf30"]
+Cell[324725, 5887, 590, 9, 81, "Subsection",ExpressionUUID->"3af1335b-ccca-4e40-a52c-36a61ed788b5"],
+Cell[325318, 5898, 5570, 140, 569, "Text",ExpressionUUID->"45f8ac8d-b7f1-4bc8-b280-142b3b0eaf30"],
+Cell[330891, 6040, 99, 1, 6, "PageBreak",ExpressionUUID->"7b792613-dc64-43f7-bef1-b74ee0839470",
+ PageBreakBelow->True]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[331027, 6046, 713, 12, 81, "Subsection",ExpressionUUID->"f22b6d6c-3eaa-452e-a65e-638b81be6ecf"],
