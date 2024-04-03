@@ -17,7 +17,7 @@ See also [Daily Schedule-Term 4](./daily_schedule-term_4.html)
 ### Week 10 &mdash; Continue Schr&ouml;dinger Equation Examples &mdash; Exam 3
 
 * Tuesday, Mar. 26 &mdash; No new reading or problem set &mdash; In-class, we will analyze the [particle in a finitely-deep potential well](./resources/ParticleInAPotentialWell.nb.pdf), and [the raising and lowering operators for the harmonic oscillator](./resources/HarmonicOscillatorRaisingAndLowering.nb.pdf) (my writeup is a small taste of [operator methods](./HarmonicOscillatorSolutionUsingOperators.pdf) that are used a lot in quantum field theory because free field theories, including quantum electrodynamics (QED) in the absence of any charges, can be analyzed using the same raising and lowering operator methods as are used for the harmonic oscillator)
-* Friday, Mar. 29 &mdash; Exam 3 covering Problem Sets 10-13 and Moore Chapters Q10, Q11, and Q12 (through Q12.3)
+* Friday, Mar. 29 &mdash; [Exam 3](./exams/Exam3.nb.pdf) covering Problem Sets 10-13 and Moore Chapters Q10, Q11, and Q12 (through Q12.3)
 
 ### Week 11 &mdash; Numerical Methods for Solving Schr&ouml;dinger's Equation &mdash; The Dawn of Nuclear Physics
 
