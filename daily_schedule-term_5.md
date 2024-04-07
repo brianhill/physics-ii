@@ -27,7 +27,7 @@ See also [Daily Schedule-Term 4](./daily_schedule-term_4.html)
 
 #### A graphic from Wolfram MathWorld showing the angular part of the solutions of Schr&ouml;dinger's equations for a three-dimensional rotationally-symmetric potential, such as the Coulomb potential
 
-* Friday, Apr. 5 &mdash; Nuclear Physics from 1896-1911, the discovery of radioactivity, exponential decay and the nucleus following pp. 19-40 of Reed &mdash; Please jump on the historical reading because I would like three groups of two people to springboard from that into class presentations for Friday &mdash; Start Q13: Sections Q13.1, Q13.2 and Q13.6 &mdash; [Problem Set 15](./assignments/AssignmentFor2024-04-05.nb.pdf) 
+* Friday, Apr. 5 &mdash; [Nuclear Physics from 1896-1911](./resources/EarlyNuclearHistory.pages.pdf), the discovery of radioactivity, exponential decay and the nucleus following pp. 19-40 of Reed &mdash; Please jump on the historical reading because I would like three groups of two people to springboard from that into class presentations for Friday &mdash; Start Q13: Sections Q13.1, Q13.2 and Q13.6 &mdash; [Problem Set 15](./assignments/AssignmentFor2024-04-05.nb.pdf) 
 
 ### Week 12 &mdash; Nuclear Physics
 
