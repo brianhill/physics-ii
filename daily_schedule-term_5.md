@@ -22,16 +22,16 @@ See also [Daily Schedule-Term 4](./daily_schedule-term_4.html)
 ### Week 11 &mdash; Numerical Methods for Solving Schr&ouml;dinger's Equation &mdash; Theory of the Hydrogen Atom &mdash; Spherical Harmonics &mdash; The Dawn of Nuclear Physics, 1896-1911
 
 * Tuesday, Apr. 2 &mdash; Finish Q12 &mdash; [Problem Set 14](./assignments/AssignmentFor2024-04-02.nb.pdf) &mdash; Discussion of 12.6 and 12.7, qualitative graphical solutions of Schrödinger's equation and the application of qualitative methods to ramp and barrier wave functions &mdash; The [two-dimensional and three-dimensional rotationally-symmetric potential](./resources/TwoAndThreeDimensionalPotentialWells.nb.pdf), which is especially important for understanding hydrogen, and also a gateway to being able to converse with chemists who often think in terms of probability densities and electron clouds &mdash; [Another, possibly or even probably, better write-up of the what I wrote up](https://tinyurl.com/libretextshydrogen), see especially the state-naming conventions at the end which need to be second nature if you want to be able to converse with chemists &mdash; In a year-long, junior-level quantum mechanics course, you would spend lots more time studying these solutions &mdash; In our semester-long, sophomore-level course, we are being quite ambitious to have even discussed them at all
-
-<img src="./resources/Ylm.png" alt="Y, l, m of theta and phi" width="100%">
-
-#### A graphic from Wolfram MathWorld showing the angular part of the solutions of Schr&ouml;dinger's equations for a three-dimensional rotationally-symmetric potential, such as the Coulomb potential
-
 * Friday, Apr. 5 &mdash; [Nuclear Physics from 1896-1911](./resources/EarlyNuclearHistory.pages.pdf), the discovery of radioactivity, exponential decay and the nucleus following pp. 19-40 of Reed &mdash; Please jump on the historical reading because I would like three groups of two people to springboard from that into class presentations for Friday &mdash; Start Q13: Sections Q13.1, Q13.2 and Q13.6 &mdash; [Problem Set 15](./assignments/AssignmentFor2024-04-05.nb.pdf) 
 
 ### Week 12 &mdash; Nuclear Physics
 
-* Tuesday, Apr. 9 &mdash; Finish Q13
+* Tuesday, Apr. 9 &mdash; Finish your study of Q13 &mdash; Presentations/examples: (1) Brian will present the relativistic kinematics that forced the hypothesis of the neutron; (2) Two people (who did not present last time) pair up and present how Aston's mass spectrometer works and what it accomplished; (3) We will look ahead to Chapter 14 and do an exercise and a problem in-class &mdash; [Problem Set 16](./assignments/AssignmentFor2024-04-09.nb.pdf) 
+
+<img src="./resources/AstonMassSpectrometer.png" alt="Aston mass spectrometer" width="95%">
+
+#### Aston's mass spectrometer (like or perhaps the very same as) used by Aston and Thomson to demononstrate that ordinary Neon is a mixture of what we now call Neon-20 and Neon-22
+
 * Friday, Apr. 12 &mdash; Q14
 
 ### Week 13 &mdash; Nuclear Physics Applications
