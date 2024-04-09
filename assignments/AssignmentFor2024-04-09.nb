@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     47696,        930]
-NotebookOptionsPosition[     45683,        883]
-NotebookOutlinePosition[     46166,        902]
-CellTagsIndexPosition[     46123,        899]
+NotebookDataLength[     34189,        568]
+NotebookOptionsPosition[     32397,        524]
+NotebookOutlinePosition[     32882,        543]
+CellTagsIndexPosition[     32839,        540]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -517,375 +517,16 @@ these units until p. 237.\
    3.9214990630408287`*^9}, {3.921499120655203*^9, 3.921499190441599*^9}, {
    3.921499230887217*^9, 
    3.9214992739877234`*^9}},ExpressionUUID->"2ca6619e-9b6e-480a-9baa-\
-4c515c26e670"],
-
-Cell["", "PageBreak",
- PageBreakBelow->True,ExpressionUUID->"e554533d-fcc1-450f-a671-262c3794ea3a"],
-
-Cell[TextData[{
- "I wanted to make a problem relating to Trey\[CloseCurlyQuote]s presentation \
-on the discovery of the neutron, but I am having trouble making a good \
-problem, so instead I will present the necessary relativistic kinematics in \
-Tuesday\[CloseCurlyQuote]s class.\n\nThe relation between momentum and energy \
-for a particle with mass ",
- Cell[BoxData[
-  FormBox["m", TraditionalForm]],ExpressionUUID->
-  "f4b173d7-77b4-446c-86bf-4a9381093a1d"],
- " is:\n\n",
- Cell[BoxData[
-  FormBox[
-   RowBox[{"E", "=", 
-    SqrtBox[
-     RowBox[{
-      RowBox[{
-       SuperscriptBox["m", "2"], 
-       SuperscriptBox["c", "4"]}], "+", 
-      RowBox[{
-       SuperscriptBox["p", "2"], 
-       SuperscriptBox["c", "2"]}]}]]}], TraditionalForm]],ExpressionUUID->
-  "1a0f73f9-87c4-401f-bc33-62805fd7857d"],
- "\n\n(a) The protons and neutrons in our problem have modest speeds, and we \
-can make some approximations. Rewrite ",
- Cell[BoxData[
-  FormBox[
-   RowBox[{"E", "=", 
-    SqrtBox[
-     RowBox[{
-      RowBox[{
-       SuperscriptBox["m", "2"], 
-       SuperscriptBox["c", "4"]}], "+", 
-      RowBox[{
-       SuperscriptBox["p", "2"], 
-       SuperscriptBox["c", "2"]}]}]]}], TraditionalForm]],ExpressionUUID->
-  "32b2cefb-47f5-4d61-ab16-ee8032182b30"],
- " by factoring out ",
- Cell[BoxData[
-  FormBox[
-   RowBox[{"m", "\[VeryThinSpace]", 
-    SuperscriptBox["c", "2"]}], TraditionalForm]],ExpressionUUID->
-  "e65cf2ca-a5fd-43f8-81ce-5a6732a2773e"],
- ". Use that ",
- Cell[BoxData[
-  FormBox[
-   RowBox[{
-    FractionBox[
-     SuperscriptBox["p", "2"], 
-     RowBox[{
-      SuperscriptBox["m", "2"], 
-      SuperscriptBox["c", "2"]}]], 
-    RowBox[{"<<", "1"}]}], TraditionalForm]],ExpressionUUID->
-  "d7ad12a6-5211-4360-862f-905334102059"],
- " for a nonrelativistic particle and that ",
- Cell[BoxData[
-  FormBox[
-   RowBox[{
-    SqrtBox[
-     RowBox[{"1", "+", "\[Epsilon]"}]], "\[TildeTilde]", 
-    RowBox[{"1", "+", 
-     RowBox[{
-      FractionBox["1", "2"], "\[Epsilon]"}]}]}], TraditionalForm]],
-  ExpressionUUID->"666f7839-3f22-49ce-975d-4a2b29743255"],
- " for small \[Epsilon] to get an approximate, tidy, and vaguely familiar \
-formula for ",
- Cell[BoxData[
-  FormBox["E", TraditionalForm]],ExpressionUUID->
-  "51519b37-e5c9-4a9d-9eb4-498faacdfb98"],
- ".\n\n(b) A photon is perfectly massless. Stick ",
- Cell[BoxData[
-  FormBox[
-   RowBox[{
-    SubscriptBox["m", "\[Gamma]"], "=", "0"}], TraditionalForm]],
-  ExpressionUUID->"61069afd-7003-4d02-b580-bff96d0d26a4"],
- " into \n\n",
- Cell[BoxData[
-  FormBox[
-   RowBox[{
-    SubscriptBox["E", "\[Gamma]"], "=", 
-    SqrtBox[
-     RowBox[{
-      RowBox[{
-       SubsuperscriptBox["m", "\[Gamma]", "2"], 
-       SuperscriptBox["c", "4"]}], "+", 
-      RowBox[{
-       SubsuperscriptBox["p", "\[Gamma]", "2"], 
-       SuperscriptBox["c", "2"]}]}]]}], TraditionalForm]],ExpressionUUID->
-  "7f6cd507-a152-4edc-ad9f-b2dc046b1cca"],
- "\n\nto get a tidy relation between ",
- Cell[BoxData[
-  FormBox[
-   SubscriptBox["E", "\[Gamma]"], TraditionalForm]],ExpressionUUID->
-  "30821bf6-c0b8-4bd0-9003-fcbb88e89975"],
- " and ",
- Cell[BoxData[
-  FormBox[
-   SubscriptBox["p", "\[Gamma]"], TraditionalForm]],ExpressionUUID->
-  "3ffc30d7-87e9-410d-a09d-f92aa087dfef"],
- ". We\[CloseCurlyQuote]ll assume all our particles are at rest or going in \
-the ",
- Cell[BoxData[
-  FormBox[
-   RowBox[{"+", "z"}], TraditionalForm]],ExpressionUUID->
-  "e4c392a9-e3df-4e9f-8f85-bc55e90f2e92"],
- " direction, so we don\[CloseCurlyQuote]t need to put absolute values signs \
-on ",
- Cell[BoxData[
-  FormBox[
-   SubscriptBox["p", "\[Gamma]"], TraditionalForm]],ExpressionUUID->
-  "4e25e9f5-4f3d-43d4-b08c-164fca6e492b"],
- ".\n\nSomething neutral was passing from the beryllium to the paraffin and \
-bashing protons loose. The protons were observed to have energy ",
- Cell[BoxData[
-  FormBox[
-   SubscriptBox["E", 
-    RowBox[{"p", ",", "f"}]], TraditionalForm]],ExpressionUUID->
-  "ce5d4ca0-6f60-47ae-a10a-db6d678d410b"],
- ". So for the proton,\n\n",
- Cell[BoxData[
-  FormBox[
-   RowBox[{
-    SubscriptBox["E", 
-     RowBox[{"proton", ",", "f"}]], "=", 
-    SqrtBox[
-     RowBox[{
-      RowBox[{
-       SubsuperscriptBox["m", "proton", "2"], 
-       SuperscriptBox["c", "4"]}], "+", 
-      RowBox[{
-       SubsuperscriptBox["p", 
-        RowBox[{"proton", ",", "f"}], "2"], 
-       SuperscriptBox["c", "2"]}]}]]}], TraditionalForm]],ExpressionUUID->
-  "ceddbdb9-386d-4ca4-a9bb-7fc9b3395891"],
- "\n\nWhatever hit the proton has a version of the above relationship. ",
- StyleBox["If it is a photon, which is massless, it obeys:",
-  FontSlant->"Italic"],
- "\n\n",
- Cell[BoxData[
-  FormBox[
-   RowBox[{
-    SubscriptBox["E", "\[Gamma]"], "=", 
-    RowBox[{
-     SqrtBox[
-      RowBox[{
-       SubsuperscriptBox["p", "\[Gamma]", "2"], 
-       SuperscriptBox["c", "2"]}]], "=", 
-     RowBox[{
-      SubscriptBox["p", "\[Gamma]"], "c"}]}]}], TraditionalForm]],
-  ExpressionUUID->"0a2134ec-45d3-4920-b50f-56b36a90dafc"],
- "\n\n",
- StyleBox["If, instead, it is a neutron ",
-  FontSlant->"Italic"],
- StyleBox["and the neutron has the same mass as the proton",
-  FontWeight->"Bold",
-  FontSlant->"Italic"],
- StyleBox[" then the neutron obeys:",
-  FontSlant->"Italic"],
- "\n\n",
- Cell[BoxData[
-  FormBox[
-   RowBox[{
-    SubscriptBox["E", "neutron"], "=", 
-    RowBox[{
-     SqrtBox[
-      RowBox[{
-       RowBox[{
-        SubsuperscriptBox["m", "neutron", "2"], 
-        SuperscriptBox["c", "4"]}], "+", 
-       RowBox[{
-        SubsuperscriptBox["p", "neutron", "2"], 
-        SuperscriptBox["c", "2"]}]}]], "=", 
-     SqrtBox[
-      RowBox[{
-       RowBox[{
-        SubsuperscriptBox["m", "proton", "2"], 
-        SuperscriptBox["c", "4"]}], "+", 
-       RowBox[{
-        SubsuperscriptBox["p", "neutron", "2"], 
-        SuperscriptBox["c", "2"]}]}]]}]}], TraditionalForm]],ExpressionUUID->
-  "d829906d-b5a7-4af5-ba25-12f6b1593012"],
- "\n\nBefore it was hit, the proton was at rest and it obeyed:\n\n",
- Cell[BoxData[
-  FormBox[
-   RowBox[{
-    SubscriptBox["E", 
-     RowBox[{"p", ",", "i"}]], "=", 
-    RowBox[{
-     SqrtBox[
-      RowBox[{
-       SubsuperscriptBox["m", "p", "2"], 
-       SuperscriptBox["c", "4"]}]], "=", 
-     RowBox[{"m", "\[VeryThinSpace]", 
-      SuperscriptBox["c", "2"]}]}]}], TraditionalForm]],ExpressionUUID->
-  "c3b09051-230f-4763-917d-917eeb7685ea"],
- "\n\nMomentum must be conserved in a collision, so if we are dealing with a \
-photon that is entirely absorbed in the collision, we have\n\n",
- Cell[BoxData[
-  FormBox[
-   RowBox[{
-    SubscriptBox["p", "\[Gamma]"], "=", 
-    SubscriptBox["p", 
-     RowBox[{"p", ",", "f"}]]}], TraditionalForm]],ExpressionUUID->
-  "2ff13340-bb40-472b-95d4-37f19627b0bc"],
- ".\n\nIf we are dealing with a neutron  that comes to a complete halt in the \
-collision, we have\n\n",
- Cell[BoxData[
-  FormBox[
-   RowBox[{
-    SubscriptBox["p", "n"], "=", 
-    SubscriptBox["p", 
-     RowBox[{"p", ",", "f"}]]}], TraditionalForm]],ExpressionUUID->
-  "e4962baf-8028-42f1-92f4-c3ede487a9ef"],
- ".\n\n(a) Considering the photon case first, solve the energy conservation \
-equation,\n\n",
- Cell[BoxData[
-  FormBox[
-   RowBox[{
-    RowBox[{
-     SubscriptBox["E", "\[Gamma]"], "+", 
-     RowBox[{
-      SubscriptBox["m", "p"], 
-      SuperscriptBox["c", "2"]}]}], "=", 
-    SubscriptBox["E", 
-     RowBox[{"p", ",", "f"}]]}], TraditionalForm]],ExpressionUUID->
-  "84834622-0cab-433d-a7f8-66847c820b9a"],
- "\n\nfor ",
- Cell[BoxData[
-  FormBox[
-   SubscriptBox["E", "\[Gamma]"], TraditionalForm]],ExpressionUUID->
-  "1c2e16a3-72ed-4f6b-85f9-f080d3f05642"],
- ". Apply the nonrelativistic approximation to the proton to simplify the \
-combination:\n\n",
- Cell[BoxData[
-  FormBox[
-   RowBox[{
-    SqrtBox[
-     RowBox[{
-      RowBox[{
-       SubsuperscriptBox["m", "p", "2"], 
-       SuperscriptBox["c", "4"]}], "+", 
-      RowBox[{
-       SubsuperscriptBox["p", 
-        RowBox[{"p", ",", "f"}], "2"], 
-       SuperscriptBox["c", "2"]}]}]], "-", 
-    RowBox[{
-     SubsuperscriptBox["m", "p", "2"], 
-     SuperscriptBox["c", "2"]}]}], TraditionalForm]],ExpressionUUID->
-  "da57f96b-4633-44e6-8c63-e5a26c051c30"],
- "\n\n(The nonrelativistic approximation is obtained by using ",
- Cell[BoxData[
-  FormBox[
-   RowBox[{
-    SubsuperscriptBox["p", 
-     RowBox[{"p", ",", "f"}], "2"], 
-    SuperscriptBox["c", "2"], 
-    RowBox[{"<<", " ", 
-     SubsuperscriptBox["m", "p", "2"]}], 
-    SuperscriptBox["c", "4"]}], TraditionalForm]],ExpressionUUID->
-  "10ead080-f5bc-4841-81cb-d1c77d7bf105"],
- " and ",
- Cell[BoxData[
-  FormBox[
-   RowBox[{
-    SqrtBox[
-     RowBox[{"1", "+", "\[Epsilon]"}]], "\[TildeTilde]", 
-    RowBox[{
-     FractionBox["1", "2"], "\[Epsilon]"}]}], TraditionalForm]],
-  ExpressionUUID->"3a8ef740-fb75-47ec-b7de-98158d271210"],
- " if ",
- Cell[BoxData[
-  FormBox[
-   RowBox[{"\[Epsilon]", 
-    RowBox[{"<<", "1"}]}], TraditionalForm]],ExpressionUUID->
-  "b118dab1-b250-47a1-88bc-7a1cb1caea1e"],
- ".)\n\nThen get rid of ",
- Cell[BoxData[
-  FormBox[
-   SubscriptBox["p", 
-    RowBox[{"p", ",", "f"}]], TraditionalForm]],ExpressionUUID->
-  "9818b854-2f5d-4519-9906-f87349545164"],
- " in this equation by using ",
- Cell[BoxData[
-  FormBox[
-   RowBox[{
-    SubscriptBox["p", "\[Gamma]"], "=", 
-    SubscriptBox["p", 
-     RowBox[{"p", ",", "f"}]]}], TraditionalForm]],ExpressionUUID->
-  "5e04732a-d665-4f35-a97b-132eb8218a85"],
- " and then get rid of ",
- Cell[BoxData[
-  FormBox[
-   SubscriptBox["p", 
-    RowBox[{"\[Gamma]", " "}]], TraditionalForm]],ExpressionUUID->
-  "8086bccf-f694-486b-a7a4-ecc23ac42cb4"],
- " by using ",
- Cell[BoxData[
-  FormBox[
-   RowBox[{
-    SubscriptBox["E", "\[Gamma]"], "=", 
-    RowBox[{
-     SqrtBox[
-      RowBox[{
-       SubsuperscriptBox["p", "\[Gamma]", "2"], 
-       SuperscriptBox["c", "2"]}]], "=", 
-     RowBox[{
-      SubscriptBox["p", "\[Gamma]"], "c"}]}]}], TraditionalForm]],
-  ExpressionUUID->"48d1d2f2-dd45-464a-8ef3-e6055554c271"],
- ". You now have an equation only involving \n\n1. Q13B.11, p. 214\n\n2. \
-Q13B.12, p. 214\n\n3. Q13D.5, p, 215"
-}], "Text",
- CellChangeTimes->{{3.914027554425773*^9, 3.914027601937613*^9}, {
-   3.914027664703047*^9, 3.914027666089014*^9}, {3.914064282574464*^9, 
-   3.914064294837758*^9}, 3.914441391782222*^9, {3.91468973440301*^9, 
-   3.914689742479237*^9}, {3.914722073149221*^9, 3.914722107869542*^9}, {
-   3.9147221455701*^9, 3.914722186846393*^9}, {3.914722338118928*^9, 
-   3.914722452062908*^9}, 3.914722601645062*^9, {3.9147229161327887`*^9, 
-   3.914722925055081*^9}, {3.915036721207067*^9, 3.9150367440671883`*^9}, {
-   3.9150368210921*^9, 3.915036876015964*^9}, {3.915037046933207*^9, 
-   3.91503754596103*^9}, {3.915037689586566*^9, 3.915037838546407*^9}, {
-   3.91503788478733*^9, 3.915037885436859*^9}, {3.915037935447002*^9, 
-   3.915037936832982*^9}, {3.915404676675138*^9, 3.915404708161542*^9}, {
-   3.915404744344537*^9, 3.9154047743587723`*^9}, {3.915404823481412*^9, 
-   3.915404982617275*^9}, {3.9160130114584513`*^9, 3.916013060588373*^9}, {
-   3.916013170606229*^9, 3.916013179719303*^9}, {3.916534315137508*^9, 
-   3.916534353912578*^9}, {3.916534412234235*^9, 3.9165344457278013`*^9}, {
-   3.916534505146703*^9, 3.916534583161029*^9}, {3.9165350902664213`*^9, 
-   3.916535101913106*^9}, 3.916535158554193*^9, {3.916535222673333*^9, 
-   3.916535262568747*^9}, {3.916535318498035*^9, 3.916535387614011*^9}, {
-   3.916535429357146*^9, 3.916535460235654*^9}, {3.916535545773631*^9, 
-   3.916535695165626*^9}, {3.916934842562787*^9, 3.916935133397135*^9}, {
-   3.916935174743766*^9, 3.916935180728987*^9}, {3.916935292113717*^9, 
-   3.916935292143157*^9}, {3.916935373948084*^9, 3.916935599528459*^9}, {
-   3.916938630403386*^9, 3.916938658156447*^9}, {3.9169410685627403`*^9, 
-   3.916941079317276*^9}, {3.919272570988037*^9, 3.919272576164976*^9}, {
-   3.919273009503739*^9, 3.919273119644362*^9}, {3.919273150469096*^9, 
-   3.919273182444955*^9}, {3.91927322323946*^9, 3.919273290133808*^9}, {
-   3.919273333603493*^9, 3.919273435622122*^9}, {3.919273570605556*^9, 
-   3.919273576057166*^9}, {3.919273642042113*^9, 3.919273799241666*^9}, {
-   3.919273905274564*^9, 3.9192739402975073`*^9}, {3.919273979281918*^9, 
-   3.919274040526205*^9}, {3.919274074188523*^9, 3.9192740931776237`*^9}, 
-   3.919274149001862*^9, {3.919714558053597*^9, 3.919714660184144*^9}, {
-   3.919714692696037*^9, 3.919714694644412*^9}, 3.91971475412458*^9, {
-   3.91971537876573*^9, 3.9197153804875*^9}, {3.919871476745599*^9, 
-   3.919871559713085*^9}, {3.919871752780334*^9, 3.919871802955657*^9}, {
-   3.920984836608946*^9, 3.920984853842662*^9}, {3.920984891372758*^9, 
-   3.920984967894993*^9}, {3.920985590772313*^9, 3.920985607582079*^9}, 
-   3.921153962861183*^9, {3.921154796882263*^9, 3.9211548667903566`*^9}, {
-   3.921155197575614*^9, 3.9211552015806704`*^9}, {3.921155842330158*^9, 
-   3.921155895516464*^9}, {3.921339613698772*^9, 3.921339766761978*^9}, {
-   3.921339803782222*^9, 3.9213404158365383`*^9}, {3.921340448374343*^9, 
-   3.921340973481051*^9}, {3.921341019263323*^9, 3.921341217247357*^9}, {
-   3.921341256444228*^9, 3.921341350163315*^9}, {3.921344385664536*^9, 
-   3.921344939465894*^9}, {3.921498239208065*^9, 
-   3.921498309769925*^9}},ExpressionUUID->"a343ea63-3998-4a74-b118-\
-344791468a89"]
+4c515c26e670"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
 },
-WindowSize->{808, 905},
-WindowMargins->{{815, Automatic}, {145, Automatic}},
+WindowSize->{1518, 1149},
+WindowMargins->{{Automatic, 469}, {Automatic, 18}},
 PrintingCopies->1,
 PrintingPageRange->{1, Automatic},
-Magnification:>1.5 Inherited,
+Magnification:>1.25 Inherited,
 FrontEndVersion->"14.0 for Mac OS X ARM (64-bit) (December 12, 2023)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"94a17dbf-c624-4e0e-b97a-5ea811487e94"
@@ -902,33 +543,30 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 814, 14, 160, "Chapter",ExpressionUUID->"0a9f033e-46a1-4578-becc-919930044f24"],
+Cell[580, 22, 814, 14, 80, "Chapter",ExpressionUUID->"0a9f033e-46a1-4578-becc-919930044f24"],
 Cell[CellGroupData[{
-Cell[1419, 40, 2132, 30, 101, "Section",ExpressionUUID->"1f98693e-2fad-4d56-b7a8-8bef2d34ccb2"],
-Cell[3554, 72, 3080, 43, 53, "Text",ExpressionUUID->"93cbf9cc-5e06-4157-9b65-b6f67667eec4",
+Cell[1419, 40, 2132, 30, 84, "Section",ExpressionUUID->"1f98693e-2fad-4d56-b7a8-8bef2d34ccb2"],
+Cell[3554, 72, 3080, 43, 44, "Text",ExpressionUUID->"93cbf9cc-5e06-4157-9b65-b6f67667eec4",
  InitializationCell->True]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[6671, 120, 2246, 31, 101, "Section",ExpressionUUID->"a22801b4-18cc-4953-9b8d-64a6b5f65338"],
-Cell[8920, 153, 3430, 51, 226, "Text",ExpressionUUID->"121c22e2-bd58-4061-90c0-c1b37cc41b48",
+Cell[6671, 120, 2246, 31, 84, "Section",ExpressionUUID->"a22801b4-18cc-4953-9b8d-64a6b5f65338"],
+Cell[8920, 153, 3430, 51, 102, "Text",ExpressionUUID->"121c22e2-bd58-4061-90c0-c1b37cc41b48",
  InitializationCell->True]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[12387, 209, 1416, 20, 101, "Section",ExpressionUUID->"e0d51dc0-12b2-43d1-9537-65a0b526a33d"],
+Cell[12387, 209, 1416, 20, 84, "Section",ExpressionUUID->"e0d51dc0-12b2-43d1-9537-65a0b526a33d"],
 Cell[CellGroupData[{
-Cell[13828, 233, 2765, 40, 73, "Subsection",ExpressionUUID->"b049aef2-0189-464e-9cd7-dd5bf2d52dc0"],
-Cell[16596, 275, 3369, 50, 260, "Text",ExpressionUUID->"fc7b970d-7518-4a1d-8261-ca7bca03bc73"]
+Cell[13828, 233, 2765, 40, 61, "Subsection",ExpressionUUID->"b049aef2-0189-464e-9cd7-dd5bf2d52dc0"],
+Cell[16596, 275, 3369, 50, 102, "Text",ExpressionUUID->"fc7b970d-7518-4a1d-8261-ca7bca03bc73"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[20002, 330, 2715, 39, 73, "Subsection",ExpressionUUID->"a62768c4-c3d5-4266-9db1-e0f745263fb8"],
-Cell[22720, 371, 3368, 51, 260, "Text",ExpressionUUID->"b5492cab-97c7-4aa9-b36f-1f313b82149b"]
+Cell[20002, 330, 2715, 39, 61, "Subsection",ExpressionUUID->"a62768c4-c3d5-4266-9db1-e0f745263fb8"],
+Cell[22720, 371, 3368, 51, 131, "Text",ExpressionUUID->"b5492cab-97c7-4aa9-b36f-1f313b82149b"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[26125, 427, 2770, 40, 73, "Subsection",ExpressionUUID->"d9ad86f3-9f0a-43d7-abe7-cfe5b4aca8a5"],
-Cell[28898, 469, 3459, 50, 157, "Text",ExpressionUUID->"2ca6619e-9b6e-480a-9baa-4c515c26e670"],
-Cell[32360, 521, 99, 1, 1, "PageBreak",ExpressionUUID->"e554533d-fcc1-450f-a671-262c3794ea3a",
- PageBreakBelow->True],
-Cell[32462, 524, 13181, 354, 2760, "Text",ExpressionUUID->"a343ea63-3998-4a74-b118-344791468a89"]
+Cell[26125, 427, 2770, 40, 61, "Subsection",ExpressionUUID->"d9ad86f3-9f0a-43d7-abe7-cfe5b4aca8a5"],
+Cell[28898, 469, 3459, 50, 73, "Text",ExpressionUUID->"2ca6619e-9b6e-480a-9baa-4c515c26e670"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]

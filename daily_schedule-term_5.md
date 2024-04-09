@@ -26,13 +26,12 @@ See also [Daily Schedule-Term 4](./daily_schedule-term_4.html)
 
 ### Week 12 &mdash; Nuclear Physics
 
-* Tuesday, Apr. 9 &mdash; Finish your study of Q13 &mdash; Presentations/examples: (1) Brian will present the relativistic kinematics that forced the hypothesis of the neutron; (2) Two people (who did not present last time) pair up and present how Aston's mass spectrometer works and what it accomplished; (3) We will look ahead to Chapter 14 and do an exercise and a problem in-class &mdash; [Problem Set 16](./assignments/AssignmentFor2024-04-09.nb.pdf) 
-
-<img src="./resources/AstonMassSpectrometer.png" alt="Aston mass spectrometer" width="95%">
-
-#### Aston's mass spectrometer (like or perhaps the very same as) used by Aston and Thomson to demononstrate that ordinary Neon is a mixture of what we now call Neon-20 and Neon-22
-
+* Tuesday, Apr. 9 &mdash; Finish your study of Q13 &mdash; Presentations: (1) Brian will present the relativistic kinematics that forced the hypothesis of the neutron; (2) We had a five-part presentation on mass spectrometry! &mdash; We looked ahead to Section 14.1 and discussed how neutron decay is understood in terms of quarks &mdash; [Problem Set 16](./assignments/AssignmentFor2024-04-09.nb.pdf) 
 * Friday, Apr. 12 &mdash; Q14
+
+<img src="./resources/FeynmanDiagramForBetaDecay.png" alt="Feynman diagram for beta decay" width="95%">
+
+#### Feynman diagram for beta decay (how neutron decay, either in isolation or inside a nucleus, is understood)
 
 ### Week 13 &mdash; Nuclear Physics Applications
 
