@@ -27,18 +27,19 @@ See also [Daily Schedule-Term 4](./daily_schedule-term_4.html)
 ### Week 12 &mdash; Nuclear Physics
 
 * Tuesday, Apr. 9 &mdash; Finish your study of Q13 &mdash; Presentations: (1) Brian will present the relativistic kinematics that forced the hypothesis of the neutron; (2) We had a five-part presentation on mass spectrometry! &mdash; We looked ahead to Section 14.1 and discussed how neutron decay is understood in terms of quarks &mdash; [Problem Set 16](./assignments/AssignmentFor2024-04-09.nb.pdf) 
-* Friday, Apr. 12 &mdash; Q14 &mdash; [Problem Set 17](./assignments/AssignmentFor2024-04-12.nb.pdf)
-
-<img src="./resources/FeynmanDiagramForBetaDecay.png" alt="Feynman diagram for beta decay" width="95%">
-
-#### The Feynman diagram for beta decay (which is how neutron decay, either in isolation or inside a nucleus, is understood)
+* Friday, Apr. 12 &mdash; Study Q14 &mdash; The reasonging behind the mass-deficit formulae &mdash; The traditional definition of the amu (atomic mass unit) &mdash; The traditional definitions of the meter and the kilogram (the distance from the north pole to the equator on a line passing through Paris as 10,000,000 meters was the first definition of the meter) &mdash; The modern definitions of [SI Units](./resources/SIUnits.pdf) and especially of the gram in terms of Avogadro's number and Carbon-12, which is now defined to have an amu of 12.0000 &mdash; Reading decay-chain diagrams (e.g. those in Moore in Fig. Q14.15, p. 237)  &mdash; Why are &beta; decays so slow &mdash; Why is an &alpha;-particle emission a decay mode? &mdash; How is fission induced? &mdash; [Problem Set 17](./assignments/AssignmentFor2024-04-12.nb.pdf)
 
 ### Week 13 &mdash; Nuclear Physics Applications
 
-* Tuesday, Apr. 16 &mdash; Q15
-* Friday, Apr. 19 &mdash; Nuclear Magnetic Resonance (aka NMR or MRI), which is very challenging? &mdash; Exam review?
+* Tuesday, Apr. 16 &mdash; Study Q15 &mdash; Presentation by Miles (maybe someone wants to join him!?): How are atoms or electrons or ions counted so as to make 1 mole (abbreviated mol), *in practice*; and in particular, how is the gram which is now defined as 1/12 of the mass of an Avogadro's number (602,214,076,000,000,000,000,000) of Carbon-12 atoms counted, *in practice* &mdash; [Problem Set 18](./assignments/AssignmentFor2024-04-16.nb.pdf) &mdash; Choose the two remaining special topics
+
+<img src="./resources/DeadSeaScrolls.jpg" alt="Dead Sea Scrolls" width="75%">
+
+#### Some of the scrolls found near Qumran, between late 1946 and 1956
+
+* Friday, Apr. 19 &mdash; Special Topic 1 (your choice, such as an atomic or nuclear physics phenomenon like MRI?)
 
 ### Week 14 &mdash; Exam 4 &mdash; Final Topic
 
-* Tuesday, Apr. 23 &mdash; Exam 4 on Numerical Methods and Nuclear Physics
-* Friday, Apr. 26 &mdash; A Final Blow-Off Top Topic &mdash; The Feynman Path Integral? &mdash; A one-lecture introduction to special relativity, concluding with the proof of time dilation?
+* Tuesday, Apr. 23 &mdash; Exam 4 Covering Problem Sets 14-18 (Moore Q12.5 to end of Q15)
+* Friday, Apr. 26 &mdash; Special Topic 2 (your choice, such as an introduction to special relativity focusing on time dilation or an introdution to the Feynman path integral)
