@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     43235,       1161]
-NotebookOptionsPosition[     41219,       1116]
-NotebookOutlinePosition[     41672,       1134]
-CellTagsIndexPosition[     41629,       1131]
+NotebookDataLength[     44085,       1152]
+NotebookOptionsPosition[     41838,       1103]
+NotebookOutlinePosition[     42291,       1121]
+CellTagsIndexPosition[     42248,       1118]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -517,15 +517,13 @@ Cell["The Resonance Idea", "Subsection",
 Cell[TextData[{
  "If the magnetic field pointed mostly in the ",
  Cell[BoxData[
-  FormBox["z", TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+  FormBox["z", TraditionalForm]],ExpressionUUID->
   "9c424c12-43f8-444c-ba5c-271362299e23"],
  " direction, ",
  StyleBox["but also just a little in the ",
   FontSlant->"Italic"],
  Cell[BoxData[
   FormBox["x", TraditionalForm]],
-  FormatType->TraditionalForm,
   FontSlant->"Italic",ExpressionUUID->
   "d8beb492-a48d-4e71-8502-fb9f1351c9b0"],
  StyleBox[" direction, ",
@@ -564,32 +562,27 @@ Cell[TextData[{
         {
          RowBox[{
           SubscriptBox["\[Psi]", "-"], "(", "t", ")"}]}
-       }], ")"}]}]}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+       }], ")"}]}]}], TraditionalForm]],ExpressionUUID->
   "c1e1d1b1-4524-40cb-a8f3-3e6e7d9eec7b"],
  "\n\nwith ",
  Cell[BoxData[
   FormBox[
    RowBox[{
     SubscriptBox["B", "1"], "\[LessLess]", 
-    SubscriptBox["B", "0"]}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+    SubscriptBox["B", "0"]}], TraditionalForm]],ExpressionUUID->
   "6a65ac54-34de-401d-8516-9cc647be1a5b"],
  ".\n\nHere is the resonance idea. Instead of just letting the magnetic field \
 point a little in the ",
  Cell[BoxData[
-  FormBox["x", TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+  FormBox["x", TraditionalForm]],ExpressionUUID->
   "bb12edb3-047c-4b45-bdc3-799f134b6c19"],
  " direction, let the amount that it points in the ",
  Cell[BoxData[
-  FormBox["x", TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+  FormBox["x", TraditionalForm]],ExpressionUUID->
   "4a933434-e236-440b-8eb7-5563391408c5"],
  " direction oscillate with angular frequency ",
  Cell[BoxData[
-  FormBox["\[Omega]", TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+  FormBox["\[Omega]", TraditionalForm]],ExpressionUUID->
   "32084dea-79cb-4ad1-b8ae-9b9ae8414c36"],
  "! Then we have:\n\n",
  Cell[BoxData[
@@ -626,51 +619,43 @@ point a little in the ",
         {
          RowBox[{
           SubscriptBox["\[Psi]", "-"], "(", "t", ")"}]}
-       }], ")"}]}]}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+       }], ")"}]}]}], TraditionalForm]],ExpressionUUID->
   "408a1216-e50a-4288-b277-373b4179d5ea"],
  "\n\nwhere ",
  Cell[BoxData[
   FormBox[
-   SubscriptBox["B", "0"], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+   SubscriptBox["B", "0"], TraditionalForm]],ExpressionUUID->
   "6924374a-55f9-41a0-827e-32e927475025"],
  " and ",
  Cell[BoxData[
   FormBox[
-   SubscriptBox["B", "1"], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+   SubscriptBox["B", "1"], TraditionalForm]],ExpressionUUID->
   "80fdefc0-74cf-4eb3-8fd5-47c560656048"],
  " are constants and we still have ",
  Cell[BoxData[
   FormBox[
    RowBox[{
     SubscriptBox["B", "1"], "\[LessLess]", 
-    SubscriptBox["B", "0"]}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+    SubscriptBox["B", "0"]}], TraditionalForm]],ExpressionUUID->
   "b0d6eefc-c6a8-4148-be4f-119c291f2bc1"],
  ", and the oscillation with angular frequency \[Omega] is accounted for in \
 the ",
  Cell[BoxData[
   FormBox[
    RowBox[{"cos", "\[VeryThinSpace]", "\[Omega]", "\[VeryThinSpace]", "t"}], 
-   TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
-  "a4fb1b5c-2445-4afa-b210-6c8b15f8399a"],
+   TraditionalForm]],ExpressionUUID->"a4fb1b5c-2445-4afa-b210-6c8b15f8399a"],
  " factor.\n\nJust like we took the mess ",
  Cell[BoxData[
   FormBox[
    RowBox[{"g", 
     FractionBox["e", 
      RowBox[{"2", "m"}]], 
-    SubscriptBox["B", "0"]}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+    SubscriptBox["B", "0"]}], TraditionalForm]],ExpressionUUID->
   "fb10c7c4-ba4c-489b-b2ae-37dac32b08a6"],
  " and gave it the name, ",
  Cell[BoxData[
   FormBox[
-   SubscriptBox["\[Omega]", "0"], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+   SubscriptBox["\[Omega]", "0"], TraditionalForm]],ExpressionUUID->
   "2cf11e2c-d7fe-4de7-8bc0-879e3f2fc74b"],
  ", let\[CloseCurlyQuote]s take the mess ",
  Cell[BoxData[
@@ -678,14 +663,12 @@ the ",
    RowBox[{"g", 
     FractionBox["e", 
      RowBox[{"2", "m"}]], 
-    SubscriptBox["B", "1"]}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+    SubscriptBox["B", "1"]}], TraditionalForm]],ExpressionUUID->
   "5e3ff6a0-1bfd-492b-9f7c-c6fc6c55998c"],
  " and give it the name, ",
  Cell[BoxData[
   FormBox[
-   SubscriptBox["\[Omega]", "1"], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+   SubscriptBox["\[Omega]", "1"], TraditionalForm]],ExpressionUUID->
   "e6b822dc-6a18-4109-8f82-1cf1a357f63b"],
  ". Then we have:\n\n",
  Cell[BoxData[
@@ -719,8 +702,7 @@ the ",
         {
          RowBox[{
           SubscriptBox["\[Psi]", "-"], "(", "t", ")"}]}
-       }], ")"}]}]}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+       }], ")"}]}]}], TraditionalForm]],ExpressionUUID->
   "c752a155-a346-4f95-a997-e11c56f52b9c"],
  "\n\nYou probably remembered that ",
  Cell[BoxData[
@@ -733,8 +715,7 @@ the ",
         {"1", "0"},
         {"0", 
          RowBox[{"-", "1"}]}
-       }], ")"}]}]}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+       }], ")"}]}]}], TraditionalForm]],ExpressionUUID->
   "7da1fc7a-032e-4ebe-aba0-dee4305b3514"],
  " when I used it in the previous section, but you may have forgotten that ",
  Cell[BoxData[
@@ -746,8 +727,7 @@ the ",
      RowBox[{"(", GridBox[{
         {"0", "1"},
         {"1", "0"}
-       }], ")"}]}]}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+       }], ")"}]}]}], TraditionalForm]],ExpressionUUID->
   "eddb79ff-3aab-4da3-8857-b95ecd15e740"],
  " and ",
  Cell[BoxData[
@@ -763,48 +743,22 @@ the ",
        }], ")"}]}]}], TraditionalForm]],ExpressionUUID->
   "8562e8c7-99eb-49e9-b82b-5c6533f8b4a8"],
  ". These matrices were forced upon us by the behavior of electrons in \
-Stern-Gerlach apparatus.",
- ButtonBox[Cell[TextData[StyleBox["1",
-  FontVariations->{"CompatibilityType"->"Superscript"}]], "Citation",
-  Editable->False,
-  TaggingRules->{NoteData -> RowBox[{
-       Cell[
-        BoxData[
-         FormBox[
-          RowBox[{"See", " ", 
-            RowBox[{"p", ".", " ", "108"}], " ", "of", " ", "Moore", " ", 
-            "and", " ", "also", " ", "Problem", " ", "Q7D", ".3"}], 
-          TraditionalForm]]], ",", " ", 
-       Cell[
-        BoxData[
-         FormBox[
-          RowBox[{"which", " ", "some", " ", "of", " ", "you", " ", 
-            RowBox[{"(", 
-              RowBox[{"I", " ", "think", " ", "Rebecca", " ", "and", " ", 
-                RowBox[{"Ren", "?"}]}], ")"}], " ", "demonstrated", " ", "at",
-             " ", "the", " ", 
-            RowBox[{"board", "."}]}], TraditionalForm]]]}]},ExpressionUUID->
-  "1595758b-d711-4671-a7da-c655bdcab8a6"],
-  BaseStyle->"Hyperlink",
-  ButtonData->"0000813C"],
- " These choices aren\[CloseCurlyQuote]t unique, it turns out. They are just \
-the standard ones. Other choices give the same answers, and we will just use \
-these. Anyway, ....\n\nUsing the formulae for ",
+Stern-Gerlach apparatus. Go back to p. 108 in Chapter Q7 and Problem Q7D.3 on \
+pp. 118-119 to refresh yourself. These choices aren\[CloseCurlyQuote]t \
+unique, it turns out. They are just the standard ones. Other choices give the \
+same answers. We will just use these. Anyway, ....\n\nUsing the formulae for ",
  Cell[BoxData[
   FormBox[
-   SubscriptBox["S", "z"], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+   SubscriptBox["S", "z"], TraditionalForm]],ExpressionUUID->
   "2b7c3127-f603-412d-ae8d-60a4d2a714d3"],
  " and ",
  Cell[BoxData[
   FormBox[
-   SubscriptBox["S", "x"], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+   SubscriptBox["S", "x"], TraditionalForm]],ExpressionUUID->
   "79d2c782-8949-4bc8-9166-45aa8148257e"],
  ", again the ",
  Cell[BoxData[
-  FormBox["\[HBar]", TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+  FormBox["\[HBar]", TraditionalForm]],ExpressionUUID->
   "35b87e68-d2c5-418b-8632-83ebd771f2ae"],
  " cancels, and we have\n\n",
  Cell[BoxData[
@@ -872,8 +826,7 @@ these. Anyway, ....\n\nUsing the formulae for ",
          {
           RowBox[{
            SubscriptBox["\[Psi]", "-"], "(", "t", ")"}]}
-        }], ")"}]}]}]}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+        }], ")"}]}]}]}], TraditionalForm]],ExpressionUUID->
   "8859e7a4-3ea5-4fed-90cf-92358ea16d15"],
  "\n\nThis is the differential equation we have to solve. It turns out we can\
 \[CloseCurlyQuote]t solve it exactly, even with good tricks."
@@ -887,21 +840,22 @@ these. Anyway, ....\n\nUsing the formulae for ",
    3.92042040612677*^9}, {3.920420447379726*^9, 3.920420754144435*^9}, {
    3.92042083567704*^9, 3.920420881438869*^9}, 3.920420951933464*^9, {
    3.920421155478202*^9, 3.920421155478698*^9}, 3.922232940911138*^9, {
-   3.9222330330631113`*^9, 3.922233157563854*^9}, {3.922233189103126*^9, 
-   3.92223327832832*^9}, {3.922233322296454*^9, 3.9222333758674603`*^9}, {
-   3.922233425192585*^9, 3.9222337511753798`*^9}, {3.92223380556949*^9, 
+   3.922233033063111*^9, 3.922233157563854*^9}, {3.922233189103126*^9, 
+   3.92223327832832*^9}, {3.922233322296454*^9, 3.9222333758674607`*^9}, {
+   3.922233425192585*^9, 3.92223375117538*^9}, {3.92223380556949*^9, 
    3.922233893270759*^9}, {3.922233949743548*^9, 3.922234201221169*^9}, {
-   3.9222342929239264`*^9, 3.922234297197527*^9}, {3.922234372671894*^9, 
+   3.922234292923927*^9, 3.922234297197527*^9}, {3.922234372671894*^9, 
    3.922234817525342*^9}, {3.922235091437717*^9, 3.922235199496722*^9}, {
    3.922235230427251*^9, 3.9222353104151583`*^9}, {3.922235490421361*^9, 
    3.922235583179694*^9}, {3.922235638239237*^9, 3.9222357220102158`*^9}, {
    3.922235763445409*^9, 3.922236050421661*^9}, {3.9222361279159517`*^9, 
-   3.9222361498481092`*^9}, {3.922236198547442*^9, 3.9222361990222282`*^9}, {
-   3.922236301769815*^9, 3.922236327076777*^9}, {3.9222363877925177`*^9, 
+   3.9222361498481083`*^9}, {3.922236198547442*^9, 3.9222361990222273`*^9}, {
+   3.922236301769815*^9, 3.922236327076777*^9}, {3.922236387792518*^9, 
    3.92223639512578*^9}, {3.922236459252348*^9, 3.922236490193145*^9}, {
    3.922237442084649*^9, 3.922237616152355*^9}, {3.922237698734063*^9, 
-   3.922237732930395*^9}, {3.9222379744533367`*^9, 
-   3.922238023144771*^9}},ExpressionUUID->"965cebbc-2a9f-4273-a3a2-\
+   3.922237732930395*^9}, {3.922237974453337*^9, 3.922238023144771*^9}, {
+   3.922238602694573*^9, 
+   3.922238652465397*^9}},ExpressionUUID->"965cebbc-2a9f-4273-a3a2-\
 2544b243ef40"],
 
 Cell["", "PageBreak",
@@ -963,8 +917,7 @@ know where we will start. The differential equation is:\n\n",
         {
          RowBox[{
           SubscriptBox["\[Psi]", "-"], "(", "t", ")"}]}
-       }], ")"}]}]}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+       }], ")"}]}]}], TraditionalForm]],ExpressionUUID->
   "2d3a1d95-0c0c-42ec-a845-a8d4e46b7c47"],
  "\n\nLet\[CloseCurlyQuote]s remind ourselves what is in it. ",
  Cell[BoxData[
@@ -975,8 +928,7 @@ know where we will start. The differential equation is:\n\n",
  " is the probability amplitude for finding the proton in the ",
  Cell[BoxData[
   FormBox[
-   RowBox[{"+", "z"}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+   RowBox[{"+", "z"}], TraditionalForm]],ExpressionUUID->
   "b8769c2d-b358-40c8-b4a4-2dec30893fe5"],
  " state. If we solve the equation and find it, then  ",
  Cell[BoxData[
@@ -993,8 +945,7 @@ know where we will start. The differential equation is:\n\n",
  " will be the probability that the proton is in the ",
  Cell[BoxData[
   FormBox[
-   RowBox[{"+", "z"}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+   RowBox[{"+", "z"}], TraditionalForm]],ExpressionUUID->
   "bb0009d2-d9f1-4a31-a69d-2ce179105de7"],
  " state (and similarly for  ",
  Cell[BoxData[
@@ -1016,14 +967,12 @@ know where we will start. The differential equation is:\n\n",
 your body first going to the ",
  Cell[BoxData[
   FormBox[
-   RowBox[{"+", "z"}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+   RowBox[{"+", "z"}], TraditionalForm]],ExpressionUUID->
   "3fbdd56e-e274-4c78-9dee-f282577b4387"],
  " state and then to the ",
  Cell[BoxData[
   FormBox[
-   RowBox[{"-", "z"}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+   RowBox[{"-", "z"}], TraditionalForm]],ExpressionUUID->
   "4c359e65-42cf-4e27-ba3a-3c86fc1f54ff"],
  " state and to then detect this by the radio signals that all these \
 simultaneously oscillating protons collectively emit.\n\nPart of keeping it \
@@ -1031,14 +980,12 @@ all straight is to remember that there are three frequencies in the problem. \
 The \[OpenCurlyDoubleQuote]zeroth\[CloseCurlyDoubleQuote] frequency came from \
 the amount of magnetic field in the ",
  Cell[BoxData[
-  FormBox["z", TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+  FormBox["z", TraditionalForm]],ExpressionUUID->
   "7870e58a-145b-4491-9480-4acbc70dc79c"],
  " direction, which is assumed to be large compared to the amount of magnetic \
 field in the ",
  Cell[BoxData[
-  FormBox["x", TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+  FormBox["x", TraditionalForm]],ExpressionUUID->
   "e2b3e125-f2b8-4cca-860a-05865abd5862"],
  " direction. We had for the zeroth and first frequencies:\n\n ",
  Cell[BoxData[
@@ -1048,10 +995,9 @@ field in the ",
     RowBox[{"g", 
      FractionBox["e", 
       RowBox[{"2", "m"}]], 
-     SubscriptBox["B", "0"]}]}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+     SubscriptBox["B", "0"]}]}], TraditionalForm]],ExpressionUUID->
   "e4163911-49e9-4b4f-bcd2-584501ff7586"],
- "  \n \n ",
+ " ,    ",
  Cell[BoxData[
   FormBox[
    RowBox[{
@@ -1061,19 +1007,17 @@ field in the ",
       RowBox[{"2", "m"}]], 
      SubscriptBox["B", "1"]}]}], TraditionalForm]],ExpressionUUID->
   "8a9b7304-5f2a-43da-884e-860baaf9429c"],
- "\n \n ",
+ ",     ",
  Cell[BoxData[
   FormBox[
    RowBox[{
     SubscriptBox["\[Omega]", "0"], "\[GreaterGreater]", 
-    SubscriptBox["\[Omega]", "1"]}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+    SubscriptBox["\[Omega]", "1"]}], TraditionalForm]],ExpressionUUID->
   "3a2fc189-8bf6-43b3-ba05-0156df4d9b99"],
  "\n \n The third frequency, \[Omega], which has no subscript in our \
 notation, is the angular frequency at which the magnetic field in the ",
  Cell[BoxData[
-  FormBox["x", TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+  FormBox["x", TraditionalForm]],ExpressionUUID->
   "64ab8fac-230e-4405-87dd-a3ed0763000f"],
  " direction oscillates.\n \n Even if you can\[CloseCurlyQuote]t keep it all \
 straight how we got to this point, you need to remember that this is where we \
@@ -1094,8 +1038,7 @@ learn the probability amplitudes ",
  Cell[BoxData[
   FormBox[
    RowBox[{
-    SubscriptBox["P", "+"], "(", "t", ")"}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
+    SubscriptBox["P", "+"], "(", "t", ")"}], TraditionalForm]],ExpressionUUID->
   "71680e8c-d86f-496a-b905-f01bd02ec484"],
  " and ",
  Cell[BoxData[
@@ -1105,12 +1048,56 @@ learn the probability amplitudes ",
   "41bf34f6-2517-416f-9350-1c982763e521"],
  "."
 }], "Text",
- CellChangeTimes->{{3.92223651350019*^9, 3.9222368590138702`*^9}, {
+ CellChangeTimes->{{3.92223651350019*^9, 3.92223685901387*^9}, {
   3.9222368936519833`*^9, 3.922237058964467*^9}, {3.922237097195635*^9, 
-  3.922237273351609*^9}, {3.9222377978205223`*^9, 3.922237941285269*^9}, {
+  3.922237273351609*^9}, {3.922237797820523*^9, 3.922237941285269*^9}, {
   3.922238045960412*^9, 3.922238097597748*^9}, {3.922238132538213*^9, 
-  3.922238137403948*^9}},ExpressionUUID->"02ad6b61-a2fb-4d92-859f-\
+  3.922238137403948*^9}, {3.9222387469032297`*^9, 3.922238800980549*^9}, {
+  3.922238859741473*^9, 3.922238913899221*^9}, {3.922238943982003*^9, 
+  3.922238983861414*^9}, {3.922239171011537*^9, 3.922239485052639*^9}, {
+  3.9222395202860317`*^9, 
+  3.9222395284644527`*^9}},ExpressionUUID->"02ad6b61-a2fb-4d92-859f-\
 ec334c15cfb8"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["History", "Subsection",
+ CellChangeTimes->{{3.920310155034218*^9, 3.920310163989311*^9}, {
+  3.920310462568035*^9, 3.920310466416088*^9}, {3.920419866279635*^9, 
+  3.920419866876333*^9}, {3.920420043877632*^9, 3.920420064272218*^9}, {
+  3.9222324935713863`*^9, 3.922232497892695*^9}, {3.922232944959888*^9, 
+  3.922232954836328*^9}, {3.922233015543224*^9, 3.922233017254565*^9}, {
+  3.922233287328161*^9, 3.922233309569278*^9}, {3.922233786041641*^9, 
+  3.922233795932652*^9}, {3.922234962137067*^9, 3.9222349823322678`*^9}, {
+  3.922237758397544*^9, 3.922237762402728*^9}, {3.922239474451118*^9, 
+  3.922239475587007*^9}},ExpressionUUID->"4ebe159b-ff2e-480f-b52f-\
+223202fb1abe"],
+
+Cell["\<\
+We are following the path made easy for us by I. I. Rabi, who won the Nobel \
+Prize in Physics in 1944 for the discovery of nuclear magnetic resonance, \
+bless his heart. When Rabi was asked, upon returning to Los Alamos 40 years \
+after working there, what he felt, he said \[OpenCurlyDoubleQuote]sorrow, \
+that the place still exists.\[CloseCurlyDoubleQuote] From a few minutes after \
+the bomb went off he was moved to devote himself to arms control. Be careful \
+not to assume that anyone who worked on the bomb, while regretting that it \
+still exists in vast quantities and threatens us continuously, believes that \
+it should not have been built under the conditions that the Allies faced at \
+the time. That would be simplistic revisionism. For a nuanced account: \
+https://youtu.be/AdtLxlttrHg.\
+\>", "Text",
+ CellChangeTimes->{{3.92223651350019*^9, 3.92223685901387*^9}, {
+   3.9222368936519833`*^9, 3.922237058964467*^9}, {3.922237097195635*^9, 
+   3.922237273351609*^9}, {3.922237797820523*^9, 3.922237941285269*^9}, {
+   3.922238045960412*^9, 3.922238097597748*^9}, {3.922238132538213*^9, 
+   3.922238137403948*^9}, {3.9222387469032297`*^9, 3.922238800980549*^9}, {
+   3.922238859741473*^9, 3.922238913899221*^9}, {3.922238943982003*^9, 
+   3.922238983861414*^9}, {3.922239171011537*^9, 3.9222394364303427`*^9}, 
+   3.922239480481195*^9, {3.9222395542810926`*^9, 3.9222395552931547`*^9}, {
+   3.922239645487236*^9, 
+   3.922239657432064*^9}},ExpressionUUID->"c82e50b7-a92a-4627-8f2a-\
+794b60ee1fe8"]
 }, Open  ]]
 }, Open  ]]
 },
@@ -1154,13 +1141,17 @@ Cell[13223, 314, 6521, 186, 391, "Text",ExpressionUUID->"52340c4e-1fdd-40b4-a932
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[19781, 505, 608, 9, 54, "Subsection",ExpressionUUID->"f22b5e60-8746-4512-b7e5-56a33b9011c9"],
-Cell[20392, 516, 13215, 388, 749, "Text",ExpressionUUID->"965cebbc-2a9f-4273-a3a2-2544b243ef40"],
-Cell[33610, 906, 99, 1, 4, "PageBreak",ExpressionUUID->"0cc9bd07-4fc0-4459-941f-0767ee3c415c",
+Cell[20392, 516, 11686, 342, 762, "Text",ExpressionUUID->"965cebbc-2a9f-4273-a3a2-2544b243ef40"],
+Cell[32081, 860, 99, 1, 4, "PageBreak",ExpressionUUID->"0cc9bd07-4fc0-4459-941f-0767ee3c415c",
  PageBreakBelow->True]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[33746, 912, 662, 10, 54, "Subsection",ExpressionUUID->"affffc27-ff6d-4bd8-b690-34cf3e3c951f"],
-Cell[34411, 924, 6780, 188, 612, "Text",ExpressionUUID->"02ad6b61-a2fb-4d92-859f-ec334c15cfb8"]
+Cell[32217, 866, 662, 10, 54, "Subsection",ExpressionUUID->"affffc27-ff6d-4bd8-b690-34cf3e3c951f"],
+Cell[32882, 878, 6680, 181, 515, "Text",ExpressionUUID->"02ad6b61-a2fb-4d92-859f-ec334c15cfb8"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[39599, 1064, 686, 10, 54, "Subsection",ExpressionUUID->"4ebe159b-ff2e-480f-b52f-223202fb1abe"],
+Cell[40288, 1076, 1522, 23, 127, "Text",ExpressionUUID->"c82e50b7-a92a-4627-8f2a-794b60ee1fe8"]
 }, Open  ]]
 }, Open  ]]
 }
