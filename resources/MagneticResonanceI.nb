@@ -1,0 +1,1169 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 14.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     43235,       1161]
+NotebookOptionsPosition[     41219,       1116]
+NotebookOutlinePosition[     41672,       1134]
+CellTagsIndexPosition[     41629,       1131]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Magnetic Resonance I \[LongDash] Setting Up the Problem", "Section",
+ CellChangeTimes->{{3.920309692339552*^9, 3.920309697888428*^9}, {
+  3.920419694021215*^9, 3.920419698742198*^9}, {3.9204239666665697`*^9, 
+  3.9204239743511477`*^9}, {3.922231408378591*^9, 3.922231411823165*^9}, {
+  3.922237284151059*^9, 
+  3.9222372980789757`*^9}},ExpressionUUID->"1401d686-6281-49b0-9743-\
+c981b888c908"],
+
+Cell["\<\
+Magnetic resonance is the process of getting a spin to flip by applying an \
+oscillating magnetic field to it.
+
+An important piece of technology combining magnetic resonance and nuclear \
+physics is nuclear magnetic resonance imaging (various acronyms for this are \
+NMR, NMRI, and MRI). The spin that is flipped is the proton which is the \
+simple nucleus of the hydrogen atom. Hydrogen is abundant in water and fat \
+molecules, so a magnetic resonance image is a map of the density of water and \
+fat which varies from tissue to tissue.
+
+To understand the basic, brilliant idea underlying nuclear magnetic resonance \
+imaging, you need to understand how you flip a spin by applying an \
+oscillating magnetic field, and that is going to take us right back to \
+spin-1/2 systems. Protons and electrons are both spin-1/2 particles, and \
+either can be flipped using magnetic resonance, but in medical MRI machines, \
+the resonance is tuned to flip the proton spin.\
+\>", "Text",
+ CellChangeTimes->{{3.920419723334632*^9, 3.920419857101992*^9}, {
+  3.9222314222413797`*^9, 3.922231465225565*^9}, {3.92223159247887*^9, 
+  3.922231727369053*^9}, {3.9222318902725563`*^9, 3.9222322494529676`*^9}, {
+  3.922237330885344*^9, 
+  3.922237406284622*^9}},ExpressionUUID->"e8da59ba-e1c8-4ff9-8734-\
+f8ac585a40f4"],
+
+Cell[CellGroupData[{
+
+Cell["Review of Magnetic Moment", "Subsection",
+ CellChangeTimes->{{3.920310155034218*^9, 3.920310163989311*^9}, {
+  3.920310462568035*^9, 3.920310466416088*^9}, {3.920419866279635*^9, 
+  3.920419866876333*^9}, {3.920420043877632*^9, 3.920420064272218*^9}, {
+  3.9222324935713863`*^9, 
+  3.922232497892695*^9}},ExpressionUUID->"c448b97f-7c7b-42a3-9db2-\
+329015a96a11"],
+
+Cell[TextData[{
+ "Back in Chapter 6, we learned that if something is charged and it is \
+spinning, then it is also a little magnet. We quantify the strength and \
+direction of the little magnet, in a quantity we call the magnetic moment, \
+which in symbols is ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    OverscriptBox["\[Mu]", "\[RightVector]"], " "}], TraditionalForm]],
+  ExpressionUUID->"3ca2ab36-cbcc-4bd7-8acd-e2fe86b05f67"],
+ " and the direction of ",
+ Cell[BoxData[
+  FormBox[
+   OverscriptBox["\[Mu]", "\[RightVector]"], TraditionalForm]],ExpressionUUID->
+  "4e20942c-ade5-4a92-bfa6-1e90b3a60abd"],
+ " is parallel to the spin ",
+ Cell[BoxData[
+  FormBox[
+   OverscriptBox["S", "\[RightVector]"], TraditionalForm]],ExpressionUUID->
+  "c07d2877-7f3f-4dea-86d1-b2dddedbc22a"],
+ " if the particle is positively charged, and negative if it is negatively \
+charged. The proportionality constant includes a flexible fudge factor ",
+ Cell[BoxData[
+  FormBox["g", TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "87740ca6-7c40-4232-96e8-dbb14ae1d946"],
+ " which account for the fact that dimensional analysis and vector analysis \
+doesn\[CloseCurlyQuote]t tell us the exact relation. For the proton, which is \
+positively charged, we have\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    OverscriptBox["\[Mu]", "\[RightVector]"], " ", "=", 
+    RowBox[{"g", 
+     FractionBox["e", 
+      RowBox[{"2", "m"}]], 
+     OverscriptBox["S", "\[RightVector]"]}]}], TraditionalForm]],
+  ExpressionUUID->"8512d31c-f88c-468a-b2a4-ca09cc8277a7"],
+ "\n\nWhere ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"e", "=", 
+    RowBox[{"1.6", "\[Times]", 
+     SuperscriptBox["10", 
+      RowBox[{"-", "19"}]], 
+     StyleBox["C",
+      FontSlant->"Plain"]}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "d46b239b-b34f-4457-b12d-3db9a42cc8fb"],
+ " is a (positive) constant, ",
+ Cell[BoxData[
+  FormBox["m", TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "fb28737d-2cff-41df-a911-c7d9f304d30e"],
+ " is the mass of the proton, and ",
+ Cell[BoxData[
+  FormBox["g", TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "d2de9fe7-cd89-4a33-b372-7e9ba6537d21"],
+ ", the fudge factor, is 5.6 for the proton."
+}], "Text",
+ CellChangeTimes->{{3.916183138199315*^9, 3.916183276135057*^9}, {
+   3.916183378491581*^9, 3.9161836283316307`*^9}, {3.916183672694365*^9, 
+   3.916183754663475*^9}, {3.9161838219647427`*^9, 3.916183842148101*^9}, {
+   3.916183875990089*^9, 3.916183919979402*^9}, {3.916184413425069*^9, 
+   3.91618448224115*^9}, {3.916184705907297*^9, 3.916184856947216*^9}, {
+   3.916184925427369*^9, 3.916185080663451*^9}, {3.91618513231322*^9, 
+   3.9161852289122972`*^9}, {3.916185310062326*^9, 3.916185368393955*^9}, {
+   3.916185409901737*^9, 3.916185449703536*^9}, {3.9161866485826697`*^9, 
+   3.916186686586755*^9}, {3.9164404773166*^9, 3.916440511734693*^9}, {
+   3.922232515239394*^9, 3.922232739349732*^9}, {3.922232769748001*^9, 
+   3.922232836934355*^9}, 3.922232872981719*^9, {3.922232906304237*^9, 
+   3.9222329065294647`*^9}},ExpressionUUID->"418d9b2c-9b34-431f-b1ea-\
+71b3152eaad2"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Torque on a Magnetic Moment in a Magnetic Field", "Subsection",
+ CellChangeTimes->{{3.920310155034218*^9, 3.920310163989311*^9}, {
+   3.920310462568035*^9, 3.920310466416088*^9}, {3.920419866279635*^9, 
+   3.920419866876333*^9}, {3.920420043877632*^9, 3.920420064272218*^9}, {
+   3.9222324935713863`*^9, 3.922232497892695*^9}, {3.922232944959888*^9, 
+   3.922232954836328*^9}, {3.9222330155432243`*^9, 3.9222330172545652`*^9}, 
+   3.922233317378433*^9},ExpressionUUID->"03e88f25-ef7c-4d68-bd41-\
+8b4a11d66ff8"],
+
+Cell[TextData[{
+ "The torque on a magnetic moment in a magnetic field aligns the moment with \
+the field.\n\nIf the field is in the ",
+ Cell[BoxData[
+  FormBox["z", TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "013472b8-5333-4791-9378-5abe4ccb7579"],
+ "-direction, the magnitude of the torque is\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"\[LeftBracketingBar]", 
+     OverscriptBox["\[Tau]", "\[RightVector]"], " ", 
+     "\[RightBracketingBar]"}], "=", 
+    RowBox[{
+     RowBox[{"\[LeftBracketingBar]", 
+      OverscriptBox["\[Mu]", "\[RightVector]"], " ", 
+      "\[RightBracketingBar]"}], 
+     RowBox[{"\[LeftBracketingBar]", 
+      OverscriptBox["B", "\[RightVector]"], " ", "\[RightBracketingBar]"}], 
+     "sin\[Theta]"}]}], TraditionalForm]],ExpressionUUID->
+  "566d4c79-c351-4961-a290-fcb1781a2a1b"],
+ "\n\nwhere \[Theta] is how much the magnetic moment is tipped away from the ",
+ Cell[BoxData[
+  FormBox["z", TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "3dfca8e9-f411-480a-a970-e16c5eee5d67"],
+ "-axis."
+}], "Text",
+ CellChangeTimes->{{3.920310595255248*^9, 3.920310683530747*^9}, {
+   3.920310737148698*^9, 3.920310740075357*^9}, {3.920310805047195*^9, 
+   3.920310912610696*^9}, {3.920310959749802*^9, 3.92031103075939*^9}, {
+   3.92031112359926*^9, 3.920311421675984*^9}, {3.920311479153665*^9, 
+   3.920311487246823*^9}, {3.9204198711098843`*^9, 3.920420023943371*^9}, {
+   3.920420066616764*^9, 3.920420214587393*^9}, {3.920420245640406*^9, 
+   3.92042040612677*^9}, {3.920420447379726*^9, 3.920420754144435*^9}, {
+   3.92042083567704*^9, 3.920420881438869*^9}, 3.920420951933464*^9, {
+   3.920421155478202*^9, 3.920421155478698*^9}, 3.922232940911138*^9, {
+   3.9222330330631113`*^9, 3.922233157563854*^9}, {3.922233189103126*^9, 
+   3.92223327832832*^9}, {3.9222333919127398`*^9, 3.922233409056694*^9}, {
+   3.922233648263871*^9, 
+   3.922233648263962*^9}},ExpressionUUID->"dfc5c7a7-2df1-47ef-a6f8-\
+054f01da1e49"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Potential Energy of a Magnetic Moment in a Magnetic Field", "Subsection",
+ CellChangeTimes->{{3.920310155034218*^9, 3.920310163989311*^9}, {
+  3.920310462568035*^9, 3.920310466416088*^9}, {3.920419866279635*^9, 
+  3.920419866876333*^9}, {3.920420043877632*^9, 3.920420064272218*^9}, {
+  3.9222324935713863`*^9, 3.922232497892695*^9}, {3.922232944959888*^9, 
+  3.922232954836328*^9}, {3.9222330155432243`*^9, 3.9222330172545652`*^9}, {
+  3.9222332873281612`*^9, 
+  3.922233309569278*^9}},ExpressionUUID->"3f9ec106-1f51-4e0f-b65b-\
+c49b5ef9f49a"],
+
+Cell[TextData[{
+ "The potential energy that corresponds to the above torque is\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"V", "=", 
+    RowBox[{
+     RowBox[{"-", 
+      RowBox[{"\[LeftBracketingBar]", 
+       OverscriptBox["\[Mu]", "\[RightVector]"], " ", 
+       "\[RightBracketingBar]"}]}], 
+     RowBox[{"\[LeftBracketingBar]", 
+      OverscriptBox["B", "\[RightVector]"], " ", "\[RightBracketingBar]"}], 
+     "cos\[Theta]"}]}], TraditionalForm]],ExpressionUUID->
+  "1c9b7555-ce06-435f-ac33-cd7ce5e396f7"],
+ "\n\nThe minus sign is because the potential energy is lowest when the \
+magnetic moment is aligned with the field (",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[Theta]", "=", 
+    RowBox[{"0", "\[Degree]"}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "a55b7aa2-99aa-4381-818c-9b474d88993a"],
+ "), and highest when the magnetic moment is anti-aligned with the field (",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[Theta]", "=", 
+    RowBox[{"180", "\[Degree]"}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "0071582e-56bf-4ef2-aaff-0a486ed88f0c"],
+ ").\n\nIt will occur to you that the above is the same as the dot product, \
+so we could write\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"V", "=", 
+    RowBox[{
+     RowBox[{"-", 
+      OverscriptBox["\[Mu]", "\[RightVector]"]}], "\[CenterDot]", 
+     OverscriptBox["B", "\[RightVector]"], " "}]}], TraditionalForm]],
+  ExpressionUUID->"3d17fc88-40b2-483e-933a-44cf4709c05a"],
+ "\n\nand combining that with ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    OverscriptBox["\[Mu]", "\[RightVector]"], " ", "=", 
+    RowBox[{"g", 
+     FractionBox["e", 
+      RowBox[{"2", "m"}]], 
+     OverscriptBox["S", "\[RightVector]"]}]}], TraditionalForm]],
+  ExpressionUUID->"bc4ef04d-11ad-4de1-82e4-abcf2bbd462e"],
+ ", we have\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"V", "=", 
+    RowBox[{
+     RowBox[{"-", "g"}], 
+     FractionBox["e", 
+      RowBox[{"2", "m"}]], 
+     RowBox[{
+      OverscriptBox["S", "\[RightVector]"], "\[CenterDot]", 
+      OverscriptBox["B", "\[RightVector]"], " "}]}]}], TraditionalForm]],
+  ExpressionUUID->"a6a410b6-fd0a-46cb-a0f7-22a19b8c98a5"],
+ "\n\nThis is the vector way of writing the equation for ",
+ Cell[BoxData[
+  FormBox["V", TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "b0108fbd-5307-4190-9f16-ee7f63c3938a"],
+ ", and we can use it no matter which way ",
+ Cell[BoxData[
+  FormBox[
+   OverscriptBox["B", "\[RightVector]"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "5dfa61c8-d984-4506-b9fc-2f3edbb9434f"],
+ " points. "
+}], "Text",
+ CellChangeTimes->{{3.920310595255248*^9, 3.920310683530747*^9}, {
+   3.920310737148698*^9, 3.920310740075357*^9}, {3.920310805047195*^9, 
+   3.920310912610696*^9}, {3.920310959749802*^9, 3.92031103075939*^9}, {
+   3.92031112359926*^9, 3.920311421675984*^9}, {3.920311479153665*^9, 
+   3.920311487246823*^9}, {3.9204198711098843`*^9, 3.920420023943371*^9}, {
+   3.920420066616764*^9, 3.920420214587393*^9}, {3.920420245640406*^9, 
+   3.92042040612677*^9}, {3.920420447379726*^9, 3.920420754144435*^9}, {
+   3.92042083567704*^9, 3.920420881438869*^9}, 3.920420951933464*^9, {
+   3.920421155478202*^9, 3.920421155478698*^9}, 3.922232940911138*^9, {
+   3.9222330330631113`*^9, 3.922233157563854*^9}, {3.922233189103126*^9, 
+   3.92223327832832*^9}, {3.922233322296454*^9, 3.9222333758674603`*^9}, {
+   3.922233425192585*^9, 3.9222337511753798`*^9}, {3.922234211220837*^9, 
+   3.922234289436597*^9}},ExpressionUUID->"1b575866-aa49-4a00-862c-\
+0e5201d0ee05"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+Schrodinger\[CloseCurlyQuote]s Equation for a Magnetic Moment in a Magnetic \
+Field\
+\>", "Subsection",
+ CellChangeTimes->{{3.920310155034218*^9, 3.920310163989311*^9}, {
+  3.920310462568035*^9, 3.920310466416088*^9}, {3.920419866279635*^9, 
+  3.920419866876333*^9}, {3.920420043877632*^9, 3.920420064272218*^9}, {
+  3.9222324935713863`*^9, 3.922232497892695*^9}, {3.922232944959888*^9, 
+  3.922232954836328*^9}, {3.9222330155432243`*^9, 3.9222330172545652`*^9}, {
+  3.9222332873281612`*^9, 3.922233309569278*^9}, {3.922233786041641*^9, 
+  3.922233795932652*^9}},ExpressionUUID->"8df84b91-fefe-4214-b806-\
+2b9ee5fa79b9"],
+
+Cell[TextData[{
+ "We aren\[CloseCurlyQuote]t going to worry about the particle with the spin \
+and the magnetic moment moving around from one place to another. We are just \
+going to study how it reorients itself. In that case, ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"V", "=", 
+    RowBox[{
+     RowBox[{"-", "g"}], 
+     FractionBox["e", 
+      RowBox[{"2", "m"}]], 
+     RowBox[{
+      OverscriptBox["S", "\[RightVector]"], "\[CenterDot]", 
+      OverscriptBox["B", "\[RightVector]"], " "}]}]}], TraditionalForm]],
+  ExpressionUUID->"ad13b213-7887-4776-a76b-d0be1feb6bf2"],
+ " is everything we need to know about the particle\[CloseCurlyQuote]s energy \
+and we can write down Schrodinger\[CloseCurlyQuote]s equation, it is\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"i", "\[VeryThinSpace]", "\[HBar]", 
+     FractionBox["d", 
+      RowBox[{"d", "\[VeryThinSpace]", "t"}]], 
+     RowBox[{"(", GridBox[{
+        {
+         RowBox[{
+          SubscriptBox["\[Psi]", "+"], "(", "t", ")"}]},
+        {
+         RowBox[{
+          SubscriptBox["\[Psi]", "-"], "(", "t", ")"}]}
+       }], ")"}]}], "=", 
+    RowBox[{
+     RowBox[{"-", "g"}], 
+     FractionBox["e", 
+      RowBox[{"2", "m"}]], 
+     RowBox[{
+      OverscriptBox["S", "\[RightVector]"], "\[CenterDot]", 
+      RowBox[{
+       OverscriptBox["B", "\[RightVector]"], "(", GridBox[{
+         {
+          RowBox[{
+           SubscriptBox["\[Psi]", "+"], "(", "t", ")"}]},
+         {
+          RowBox[{
+           SubscriptBox["\[Psi]", "-"], "(", "t", ")"}]}
+        }], ")"}]}]}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "9698386f-c8d2-4d6e-9b9c-e6ffc24746ed"],
+ "\n\nTo make this equation a little more intelligible, \
+let\[CloseCurlyQuote]s remember what it simplifies to when ",
+ Cell[BoxData[
+  FormBox[
+   OverscriptBox["B", "\[RightVector]"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "25fb558f-c95d-44a4-9ff2-143d2aafb80d"],
+ " has magnitude ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["B", "0"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "ff160d5a-e10e-4e36-9a3a-61513d32ee24"],
+ " and points in the ",
+ Cell[BoxData[
+  FormBox["z", TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "11e65d68-9aab-430b-8548-0767f27e518d"],
+ "-direction. In that case it is:\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"i", "\[VeryThinSpace]", "\[HBar]", 
+     FractionBox["d", 
+      RowBox[{"d", "\[VeryThinSpace]", "t"}]], 
+     RowBox[{"(", GridBox[{
+        {
+         RowBox[{
+          SubscriptBox["\[Psi]", "+"], "(", "t", ")"}]},
+        {
+         RowBox[{
+          SubscriptBox["\[Psi]", "-"], "(", "t", ")"}]}
+       }], ")"}]}], "=", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"-", "g"}], 
+      FractionBox["e", 
+       RowBox[{"2", "m"}]], 
+      SubscriptBox["S", "z"], 
+      RowBox[{
+       SubscriptBox["B", "0"], "(", GridBox[{
+         {
+          RowBox[{
+           SubscriptBox["\[Psi]", "+"], "(", "t", ")"}]},
+         {
+          RowBox[{
+           SubscriptBox["\[Psi]", "-"], "(", "t", ")"}]}
+        }], ")"}]}], "=", 
+     RowBox[{
+      RowBox[{"-", "g"}], 
+      FractionBox["e", 
+       RowBox[{"2", "m"}]], 
+      SubscriptBox["B", "0"], 
+      FractionBox["\[HBar]", "2"], 
+      RowBox[{"(", GridBox[{
+         {"1", "0"},
+         {"0", 
+          RowBox[{"-", "1"}]}
+        }], ")"}], 
+      RowBox[{"(", GridBox[{
+         {
+          RowBox[{
+           SubscriptBox["\[Psi]", "+"], "(", "t", ")"}]},
+         {
+          RowBox[{
+           SubscriptBox["\[Psi]", "-"], "(", "t", ")"}]}
+        }], ")"}]}]}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "3a255d95-c1c4-481c-b607-cb69751cb7a5"],
+ "\n\nLet\[CloseCurlyQuote]s take the mess ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"g", 
+    FractionBox["e", 
+     RowBox[{"2", "m"}]], 
+    SubscriptBox["B", "0"]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "3b2066a1-5d5e-46c7-a767-f8f9ccf88dfc"],
+ " and give it the name, ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["\[Omega]", "0"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "caa55a4b-c6d8-44ac-9565-7f4dbcc3e3fd"],
+ ". It is after all, a frequency (how can you quickly deduce that?). The \
+\[HBar] cancels and we just have\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"i", "\[VeryThinSpace]", 
+     FractionBox["d", 
+      RowBox[{"d", "\[VeryThinSpace]", "t"}]], 
+     RowBox[{"(", GridBox[{
+        {
+         RowBox[{
+          SubscriptBox["\[Psi]", "+"], "(", "t", ")"}]},
+        {
+         RowBox[{
+          SubscriptBox["\[Psi]", "-"], "(", "t", ")"}]}
+       }], ")"}]}], "=", 
+    RowBox[{
+     RowBox[{"-", 
+      SubscriptBox["\[Omega]", "0"]}], 
+     FractionBox["1", "2"], 
+     RowBox[{"(", GridBox[{
+        {"1", "0"},
+        {"0", 
+         RowBox[{"-", "1"}]}
+       }], ")"}], 
+     RowBox[{"(", GridBox[{
+        {
+         RowBox[{
+          SubscriptBox["\[Psi]", "+"], "(", "t", ")"}]},
+        {
+         RowBox[{
+          SubscriptBox["\[Psi]", "-"], "(", "t", ")"}]}
+       }], ")"}]}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "0ad658f7-e1ef-4656-a150-784c59a2498d"]
+}], "Text",
+ CellChangeTimes->{{3.920310595255248*^9, 3.920310683530747*^9}, {
+   3.920310737148698*^9, 3.920310740075357*^9}, {3.920310805047195*^9, 
+   3.920310912610696*^9}, {3.920310959749802*^9, 3.92031103075939*^9}, {
+   3.92031112359926*^9, 3.920311421675984*^9}, {3.920311479153665*^9, 
+   3.920311487246823*^9}, {3.9204198711098843`*^9, 3.920420023943371*^9}, {
+   3.920420066616764*^9, 3.920420214587393*^9}, {3.920420245640406*^9, 
+   3.92042040612677*^9}, {3.920420447379726*^9, 3.920420754144435*^9}, {
+   3.92042083567704*^9, 3.920420881438869*^9}, 3.920420951933464*^9, {
+   3.920421155478202*^9, 3.920421155478698*^9}, 3.922232940911138*^9, {
+   3.9222330330631113`*^9, 3.922233157563854*^9}, {3.922233189103126*^9, 
+   3.92223327832832*^9}, {3.922233322296454*^9, 3.9222333758674603`*^9}, {
+   3.922233425192585*^9, 3.9222337511753798`*^9}, {3.92223380556949*^9, 
+   3.922233893270759*^9}, {3.922233949743548*^9, 3.922234201221169*^9}, {
+   3.9222342929239264`*^9, 3.922234297197527*^9}, {3.922234372671894*^9, 
+   3.922234691521449*^9}, {3.922234825678529*^9, 3.922234875666376*^9}, {
+   3.922234908945142*^9, 3.922234951112384*^9}, 3.922235022275091*^9, {
+   3.922235073080731*^9, 
+   3.922235073754746*^9}},ExpressionUUID->"52340c4e-1fdd-40b4-a932-\
+312d8e697fe8"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["The Resonance Idea", "Subsection",
+ CellChangeTimes->{{3.920310155034218*^9, 3.920310163989311*^9}, {
+  3.920310462568035*^9, 3.920310466416088*^9}, {3.920419866279635*^9, 
+  3.920419866876333*^9}, {3.920420043877632*^9, 3.920420064272218*^9}, {
+  3.9222324935713863`*^9, 3.922232497892695*^9}, {3.922232944959888*^9, 
+  3.922232954836328*^9}, {3.9222330155432243`*^9, 3.9222330172545652`*^9}, {
+  3.9222332873281612`*^9, 3.922233309569278*^9}, {3.922233786041641*^9, 
+  3.922233795932652*^9}, {3.922234962137067*^9, 
+  3.9222349823322678`*^9}},ExpressionUUID->"f22b5e60-8746-4512-b7e5-\
+56a33b9011c9"],
+
+Cell[TextData[{
+ "If the magnetic field pointed mostly in the ",
+ Cell[BoxData[
+  FormBox["z", TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "9c424c12-43f8-444c-ba5c-271362299e23"],
+ " direction, ",
+ StyleBox["but also just a little in the ",
+  FontSlant->"Italic"],
+ Cell[BoxData[
+  FormBox["x", TraditionalForm]],
+  FormatType->TraditionalForm,
+  FontSlant->"Italic",ExpressionUUID->
+  "d8beb492-a48d-4e71-8502-fb9f1351c9b0"],
+ StyleBox[" direction, ",
+  FontSlant->"Italic"],
+ "then we would have:\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"i", "\[VeryThinSpace]", "\[HBar]", 
+     FractionBox["d", 
+      RowBox[{"d", "\[VeryThinSpace]", "t"}]], 
+     RowBox[{"(", GridBox[{
+        {
+         RowBox[{
+          SubscriptBox["\[Psi]", "+"], "(", "t", ")"}]},
+        {
+         RowBox[{
+          SubscriptBox["\[Psi]", "-"], "(", "t", ")"}]}
+       }], ")"}]}], "=", 
+    RowBox[{
+     RowBox[{"-", "g"}], 
+     FractionBox["e", 
+      RowBox[{"2", "m"}]], 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{
+        SubscriptBox["S", "z"], 
+        SubscriptBox["B", "0"]}], "+", 
+       RowBox[{
+        SubscriptBox["S", "x"], 
+        SubscriptBox["B", "1"]}]}], ")"}], 
+     RowBox[{"(", GridBox[{
+        {
+         RowBox[{
+          SubscriptBox["\[Psi]", "+"], "(", "t", ")"}]},
+        {
+         RowBox[{
+          SubscriptBox["\[Psi]", "-"], "(", "t", ")"}]}
+       }], ")"}]}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "c1e1d1b1-4524-40cb-a8f3-3e6e7d9eec7b"],
+ "\n\nwith ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["B", "1"], "\[LessLess]", 
+    SubscriptBox["B", "0"]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "6a65ac54-34de-401d-8516-9cc647be1a5b"],
+ ".\n\nHere is the resonance idea. Instead of just letting the magnetic field \
+point a little in the ",
+ Cell[BoxData[
+  FormBox["x", TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "bb12edb3-047c-4b45-bdc3-799f134b6c19"],
+ " direction, let the amount that it points in the ",
+ Cell[BoxData[
+  FormBox["x", TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "4a933434-e236-440b-8eb7-5563391408c5"],
+ " direction oscillate with angular frequency ",
+ Cell[BoxData[
+  FormBox["\[Omega]", TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "32084dea-79cb-4ad1-b8ae-9b9ae8414c36"],
+ "! Then we have:\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"i", "\[VeryThinSpace]", "\[HBar]", 
+     FractionBox["d", 
+      RowBox[{"d", "\[VeryThinSpace]", "t"}]], 
+     RowBox[{"(", GridBox[{
+        {
+         RowBox[{
+          SubscriptBox["\[Psi]", "+"], "(", "t", ")"}]},
+        {
+         RowBox[{
+          SubscriptBox["\[Psi]", "-"], "(", "t", ")"}]}
+       }], ")"}]}], "=", 
+    RowBox[{
+     RowBox[{"-", "g"}], 
+     FractionBox["e", 
+      RowBox[{"2", "m"}]], 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{
+        SubscriptBox["S", "z"], 
+        SubscriptBox["B", "0"]}], "+", 
+       RowBox[{
+        SubscriptBox["S", "x"], 
+        SubscriptBox["B", "1"], "cos", "\[VeryThinSpace]", "\[Omega]", 
+        "\[VeryThinSpace]", "t"}]}], ")"}], 
+     RowBox[{"(", GridBox[{
+        {
+         RowBox[{
+          SubscriptBox["\[Psi]", "+"], "(", "t", ")"}]},
+        {
+         RowBox[{
+          SubscriptBox["\[Psi]", "-"], "(", "t", ")"}]}
+       }], ")"}]}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "408a1216-e50a-4288-b277-373b4179d5ea"],
+ "\n\nwhere ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["B", "0"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "6924374a-55f9-41a0-827e-32e927475025"],
+ " and ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["B", "1"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "80fdefc0-74cf-4eb3-8fd5-47c560656048"],
+ " are constants and we still have ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["B", "1"], "\[LessLess]", 
+    SubscriptBox["B", "0"]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "b0d6eefc-c6a8-4148-be4f-119c291f2bc1"],
+ ", and the oscillation with angular frequency \[Omega] is accounted for in \
+the ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"cos", "\[VeryThinSpace]", "\[Omega]", "\[VeryThinSpace]", "t"}], 
+   TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "a4fb1b5c-2445-4afa-b210-6c8b15f8399a"],
+ " factor.\n\nJust like we took the mess ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"g", 
+    FractionBox["e", 
+     RowBox[{"2", "m"}]], 
+    SubscriptBox["B", "0"]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "fb10c7c4-ba4c-489b-b2ae-37dac32b08a6"],
+ " and gave it the name, ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["\[Omega]", "0"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "2cf11e2c-d7fe-4de7-8bc0-879e3f2fc74b"],
+ ", let\[CloseCurlyQuote]s take the mess ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"g", 
+    FractionBox["e", 
+     RowBox[{"2", "m"}]], 
+    SubscriptBox["B", "1"]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "5e3ff6a0-1bfd-492b-9f7c-c6fc6c55998c"],
+ " and give it the name, ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["\[Omega]", "1"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "e6b822dc-6a18-4109-8f82-1cf1a357f63b"],
+ ". Then we have:\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"i", "\[VeryThinSpace]", "\[HBar]", 
+     FractionBox["d", 
+      RowBox[{"d", "\[VeryThinSpace]", "t"}]], 
+     RowBox[{"(", GridBox[{
+        {
+         RowBox[{
+          SubscriptBox["\[Psi]", "+"], "(", "t", ")"}]},
+        {
+         RowBox[{
+          SubscriptBox["\[Psi]", "-"], "(", "t", ")"}]}
+       }], ")"}]}], "=", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{
+        SubscriptBox["S", "z"], 
+        SubscriptBox["\[Omega]", "0"]}], "+", 
+       RowBox[{
+        SubscriptBox["S", "x"], 
+        SubscriptBox["\[Omega]", "1"], "cos", "\[VeryThinSpace]", "\[Omega]", 
+        "\[VeryThinSpace]", "t"}]}], ")"}], 
+     RowBox[{"(", GridBox[{
+        {
+         RowBox[{
+          SubscriptBox["\[Psi]", "+"], "(", "t", ")"}]},
+        {
+         RowBox[{
+          SubscriptBox["\[Psi]", "-"], "(", "t", ")"}]}
+       }], ")"}]}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "c752a155-a346-4f95-a997-e11c56f52b9c"],
+ "\n\nYou probably remembered that ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["S", "z"], "=", 
+    RowBox[{
+     FractionBox["\[HBar]", "2"], 
+     RowBox[{"(", GridBox[{
+        {"1", "0"},
+        {"0", 
+         RowBox[{"-", "1"}]}
+       }], ")"}]}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "7da1fc7a-032e-4ebe-aba0-dee4305b3514"],
+ " when I used it in the previous section, but you may have forgotten that ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["S", "x"], "=", 
+    RowBox[{
+     FractionBox["\[HBar]", "2"], 
+     RowBox[{"(", GridBox[{
+        {"0", "1"},
+        {"1", "0"}
+       }], ")"}]}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "eddb79ff-3aab-4da3-8857-b95ecd15e740"],
+ " and ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["S", "y"], "=", 
+    RowBox[{
+     FractionBox["\[HBar]", "2"], 
+     RowBox[{"(", GridBox[{
+        {"0", 
+         RowBox[{"-", "i"}]},
+        {"i", "0"}
+       }], ")"}]}]}], TraditionalForm]],ExpressionUUID->
+  "8562e8c7-99eb-49e9-b82b-5c6533f8b4a8"],
+ ". These matrices were forced upon us by the behavior of electrons in \
+Stern-Gerlach apparatus.",
+ ButtonBox[Cell[TextData[StyleBox["1",
+  FontVariations->{"CompatibilityType"->"Superscript"}]], "Citation",
+  Editable->False,
+  TaggingRules->{NoteData -> RowBox[{
+       Cell[
+        BoxData[
+         FormBox[
+          RowBox[{"See", " ", 
+            RowBox[{"p", ".", " ", "108"}], " ", "of", " ", "Moore", " ", 
+            "and", " ", "also", " ", "Problem", " ", "Q7D", ".3"}], 
+          TraditionalForm]]], ",", " ", 
+       Cell[
+        BoxData[
+         FormBox[
+          RowBox[{"which", " ", "some", " ", "of", " ", "you", " ", 
+            RowBox[{"(", 
+              RowBox[{"I", " ", "think", " ", "Rebecca", " ", "and", " ", 
+                RowBox[{"Ren", "?"}]}], ")"}], " ", "demonstrated", " ", "at",
+             " ", "the", " ", 
+            RowBox[{"board", "."}]}], TraditionalForm]]]}]},ExpressionUUID->
+  "1595758b-d711-4671-a7da-c655bdcab8a6"],
+  BaseStyle->"Hyperlink",
+  ButtonData->"0000813C"],
+ " These choices aren\[CloseCurlyQuote]t unique, it turns out. They are just \
+the standard ones. Other choices give the same answers, and we will just use \
+these. Anyway, ....\n\nUsing the formulae for ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["S", "z"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "2b7c3127-f603-412d-ae8d-60a4d2a714d3"],
+ " and ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["S", "x"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "79d2c782-8949-4bc8-9166-45aa8148257e"],
+ ", again the ",
+ Cell[BoxData[
+  FormBox["\[HBar]", TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "35b87e68-d2c5-418b-8632-83ebd771f2ae"],
+ " cancels, and we have\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"i", "\[VeryThinSpace]", 
+     FractionBox["d", 
+      RowBox[{"d", "\[VeryThinSpace]", "t"}]], 
+     RowBox[{"(", GridBox[{
+        {
+         RowBox[{
+          SubscriptBox["\[Psi]", "+"], "(", "t", ")"}]},
+        {
+         RowBox[{
+          SubscriptBox["\[Psi]", "-"], "(", "t", ")"}]}
+       }], ")"}]}], "=", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{"-", 
+        SubscriptBox["\[Omega]", "0"]}], 
+       FractionBox["1", "2"], 
+       RowBox[{"(", GridBox[{
+          {"1", "0"},
+          {"0", 
+           RowBox[{"-", "1"}]}
+         }], ")"}]}], "-", 
+      RowBox[{
+       SubscriptBox["\[Omega]", "1"], "cos", "\[VeryThinSpace]", "\[Omega]", 
+       "\[VeryThinSpace]", 
+       RowBox[{"t", "\[CenterDot]", 
+        FractionBox["1", "2"]}], 
+       RowBox[{"(", GridBox[{
+          {"0", "1"},
+          {"1", "0"}
+         }], ")"}], 
+       RowBox[{"(", GridBox[{
+          {
+           RowBox[{
+            SubscriptBox["\[Psi]", "+"], "(", "t", ")"}]},
+          {
+           RowBox[{
+            SubscriptBox["\[Psi]", "-"], "(", "t", ")"}]}
+         }], ")"}]}]}], "=", 
+     RowBox[{
+      RowBox[{"-", 
+       FractionBox["1", "2"]}], 
+      RowBox[{"(", GridBox[{
+         {
+          SubscriptBox["\[Omega]", "0"], 
+          RowBox[{
+           SubscriptBox["\[Omega]", "1"], "cos", "\[VeryThinSpace]", 
+           "\[Omega]", "\[VeryThinSpace]", "t"}]},
+         {
+          RowBox[{
+           SubscriptBox["\[Omega]", "1"], "cos", "\[VeryThinSpace]", 
+           "\[Omega]", "\[VeryThinSpace]", "t"}], 
+          RowBox[{"-", 
+           SubscriptBox["\[Omega]", "0"]}]}
+        }], ")"}], 
+      RowBox[{"(", GridBox[{
+         {
+          RowBox[{
+           SubscriptBox["\[Psi]", "+"], "(", "t", ")"}]},
+         {
+          RowBox[{
+           SubscriptBox["\[Psi]", "-"], "(", "t", ")"}]}
+        }], ")"}]}]}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "8859e7a4-3ea5-4fed-90cf-92358ea16d15"],
+ "\n\nThis is the differential equation we have to solve. It turns out we can\
+\[CloseCurlyQuote]t solve it exactly, even with good tricks."
+}], "Text",
+ CellChangeTimes->{{3.920310595255248*^9, 3.920310683530747*^9}, {
+   3.920310737148698*^9, 3.920310740075357*^9}, {3.920310805047195*^9, 
+   3.920310912610696*^9}, {3.920310959749802*^9, 3.92031103075939*^9}, {
+   3.92031112359926*^9, 3.920311421675984*^9}, {3.920311479153665*^9, 
+   3.920311487246823*^9}, {3.9204198711098843`*^9, 3.920420023943371*^9}, {
+   3.920420066616764*^9, 3.920420214587393*^9}, {3.920420245640406*^9, 
+   3.92042040612677*^9}, {3.920420447379726*^9, 3.920420754144435*^9}, {
+   3.92042083567704*^9, 3.920420881438869*^9}, 3.920420951933464*^9, {
+   3.920421155478202*^9, 3.920421155478698*^9}, 3.922232940911138*^9, {
+   3.9222330330631113`*^9, 3.922233157563854*^9}, {3.922233189103126*^9, 
+   3.92223327832832*^9}, {3.922233322296454*^9, 3.9222333758674603`*^9}, {
+   3.922233425192585*^9, 3.9222337511753798`*^9}, {3.92223380556949*^9, 
+   3.922233893270759*^9}, {3.922233949743548*^9, 3.922234201221169*^9}, {
+   3.9222342929239264`*^9, 3.922234297197527*^9}, {3.922234372671894*^9, 
+   3.922234817525342*^9}, {3.922235091437717*^9, 3.922235199496722*^9}, {
+   3.922235230427251*^9, 3.9222353104151583`*^9}, {3.922235490421361*^9, 
+   3.922235583179694*^9}, {3.922235638239237*^9, 3.9222357220102158`*^9}, {
+   3.922235763445409*^9, 3.922236050421661*^9}, {3.9222361279159517`*^9, 
+   3.9222361498481092`*^9}, {3.922236198547442*^9, 3.9222361990222282`*^9}, {
+   3.922236301769815*^9, 3.922236327076777*^9}, {3.9222363877925177`*^9, 
+   3.92223639512578*^9}, {3.922236459252348*^9, 3.922236490193145*^9}, {
+   3.922237442084649*^9, 3.922237616152355*^9}, {3.922237698734063*^9, 
+   3.922237732930395*^9}, {3.9222379744533367`*^9, 
+   3.922238023144771*^9}},ExpressionUUID->"965cebbc-2a9f-4273-a3a2-\
+2544b243ef40"],
+
+Cell["", "PageBreak",
+ PageBreakBelow->True,ExpressionUUID->"0cc9bd07-4fc0-4459-941f-0767ee3c415c"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Keeping it All Straight", "Subsection",
+ CellChangeTimes->{{3.920310155034218*^9, 3.920310163989311*^9}, {
+  3.920310462568035*^9, 3.920310466416088*^9}, {3.920419866279635*^9, 
+  3.920419866876333*^9}, {3.920420043877632*^9, 3.920420064272218*^9}, {
+  3.9222324935713863`*^9, 3.922232497892695*^9}, {3.922232944959888*^9, 
+  3.922232954836328*^9}, {3.9222330155432243`*^9, 3.9222330172545652`*^9}, {
+  3.9222332873281612`*^9, 3.922233309569278*^9}, {3.922233786041641*^9, 
+  3.922233795932652*^9}, {3.922234962137067*^9, 3.9222349823322678`*^9}, {
+  3.922237758397544*^9, 
+  3.922237762402728*^9}},ExpressionUUID->"affffc27-ff6d-4bd8-b690-\
+34cf3e3c951f"],
+
+Cell[TextData[{
+ "It was a lot of work just to get to the differential equation we have to \
+solve and this is a good place to stop! Let\[CloseCurlyQuote]s review so we \
+know where we will start. The differential equation is:\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"i", "\[VeryThinSpace]", 
+     FractionBox["d", 
+      RowBox[{"d", "\[VeryThinSpace]", "t"}]], 
+     RowBox[{"(", GridBox[{
+        {
+         RowBox[{
+          SubscriptBox["\[Psi]", "+"], "(", "t", ")"}]},
+        {
+         RowBox[{
+          SubscriptBox["\[Psi]", "-"], "(", "t", ")"}]}
+       }], ")"}]}], "=", 
+    RowBox[{
+     RowBox[{"-", 
+      FractionBox["1", "2"]}], 
+     RowBox[{"(", GridBox[{
+        {
+         SubscriptBox["\[Omega]", "0"], 
+         RowBox[{
+          SubscriptBox["\[Omega]", "1"], "cos", "\[VeryThinSpace]", 
+          "\[Omega]", "\[VeryThinSpace]", "t"}]},
+        {
+         RowBox[{
+          SubscriptBox["\[Omega]", "1"], "cos", "\[VeryThinSpace]", 
+          "\[Omega]", "\[VeryThinSpace]", "t"}], 
+         RowBox[{"-", 
+          SubscriptBox["\[Omega]", "0"]}]}
+       }], ")"}], 
+     RowBox[{"(", GridBox[{
+        {
+         RowBox[{
+          SubscriptBox["\[Psi]", "+"], "(", "t", ")"}]},
+        {
+         RowBox[{
+          SubscriptBox["\[Psi]", "-"], "(", "t", ")"}]}
+       }], ")"}]}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "2d3a1d95-0c0c-42ec-a845-a8d4e46b7c47"],
+ "\n\nLet\[CloseCurlyQuote]s remind ourselves what is in it. ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["\[Psi]", "+"], "(", "t", ")"}], TraditionalForm]],
+  ExpressionUUID->"d2ad059a-766d-4d58-a671-ca41e8f2ecb9"],
+ " is the probability amplitude for finding the proton in the ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"+", "z"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "b8769c2d-b358-40c8-b4a4-2dec30893fe5"],
+ " state. If we solve the equation and find it, then  ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SubscriptBox["P", "+"], "(", "t", ")"}], "=", 
+    SuperscriptBox[
+     RowBox[{"\[LeftBracketingBar]", 
+      RowBox[{
+       SubscriptBox["\[Psi]", "+"], "(", "t", ")"}], 
+      "\[RightBracketingBar]"}], "2"]}], TraditionalForm]],ExpressionUUID->
+  "977ae7a0-e960-405a-ba55-49470a1cb011"],
+ " will be the probability that the proton is in the ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"+", "z"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "bb0009d2-d9f1-4a31-a69d-2ce179105de7"],
+ " state (and similarly for  ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SubscriptBox["P", "-"], "(", "t", ")"}], "=", 
+    RowBox[{
+     RowBox[{"1", "-", 
+      RowBox[{
+       SubscriptBox["P", "+"], "(", "t", ")"}]}], "=", 
+     SuperscriptBox[
+      RowBox[{"\[LeftBracketingBar]", 
+       RowBox[{
+        SubscriptBox["\[Psi]", "-"], "(", "t", ")"}], 
+       "\[RightBracketingBar]"}], "2"]}]}], TraditionalForm]],ExpressionUUID->
+  "3680346d-d1a0-4691-92f7-f6a505e679a8"],
+ ").\n\nThe goal of magnetic resonance imaging is to get a lot of protons in \
+your body first going to the ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"+", "z"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "3fbdd56e-e274-4c78-9dee-f282577b4387"],
+ " state and then to the ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"-", "z"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "4c359e65-42cf-4e27-ba3a-3c86fc1f54ff"],
+ " state and to then detect this by the radio signals that all these \
+simultaneously oscillating protons collectively emit.\n\nPart of keeping it \
+all straight is to remember that there are three frequencies in the problem. \
+The \[OpenCurlyDoubleQuote]zeroth\[CloseCurlyDoubleQuote] frequency came from \
+the amount of magnetic field in the ",
+ Cell[BoxData[
+  FormBox["z", TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "7870e58a-145b-4491-9480-4acbc70dc79c"],
+ " direction, which is assumed to be large compared to the amount of magnetic \
+field in the ",
+ Cell[BoxData[
+  FormBox["x", TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "e2b3e125-f2b8-4cca-860a-05865abd5862"],
+ " direction. We had for the zeroth and first frequencies:\n\n ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["\[Omega]", "0"], "\[Congruent]", 
+    RowBox[{"g", 
+     FractionBox["e", 
+      RowBox[{"2", "m"}]], 
+     SubscriptBox["B", "0"]}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "e4163911-49e9-4b4f-bcd2-584501ff7586"],
+ "  \n \n ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["\[Omega]", "1"], "\[Congruent]", 
+    RowBox[{"g", 
+     FractionBox["e", 
+      RowBox[{"2", "m"}]], 
+     SubscriptBox["B", "1"]}]}], TraditionalForm]],ExpressionUUID->
+  "8a9b7304-5f2a-43da-884e-860baaf9429c"],
+ "\n \n ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["\[Omega]", "0"], "\[GreaterGreater]", 
+    SubscriptBox["\[Omega]", "1"]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "3a2fc189-8bf6-43b3-ba05-0156df4d9b99"],
+ "\n \n The third frequency, \[Omega], which has no subscript in our \
+notation, is the angular frequency at which the magnetic field in the ",
+ Cell[BoxData[
+  FormBox["x", TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "64ab8fac-230e-4405-87dd-a3ed0763000f"],
+ " direction oscillates.\n \n Even if you can\[CloseCurlyQuote]t keep it all \
+straight how we got to this point, you need to remember that this is where we \
+are, that we need to solve this equation, at least approximately, and thereby \
+learn the probability amplitudes ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["\[Psi]", "+"], "(", "t", ")"}], TraditionalForm]],
+  ExpressionUUID->"a70ca47c-5174-439d-805f-151f792f6384"],
+ " and ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["\[Psi]", "-"], "(", "t", ")"}], TraditionalForm]],
+  ExpressionUUID->"7a66ff16-23b3-40c1-8072-3a5dcd7c3a47"],
+ ", and that once we do, we will know ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["P", "+"], "(", "t", ")"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "71680e8c-d86f-496a-b905-f01bd02ec484"],
+ " and ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["P", "-"], "(", "t", ")"}], TraditionalForm]],ExpressionUUID->
+  "41bf34f6-2517-416f-9350-1c982763e521"],
+ "."
+}], "Text",
+ CellChangeTimes->{{3.92223651350019*^9, 3.9222368590138702`*^9}, {
+  3.9222368936519833`*^9, 3.922237058964467*^9}, {3.922237097195635*^9, 
+  3.922237273351609*^9}, {3.9222377978205223`*^9, 3.922237941285269*^9}, {
+  3.922238045960412*^9, 3.922238097597748*^9}, {3.922238132538213*^9, 
+  3.922238137403948*^9}},ExpressionUUID->"02ad6b61-a2fb-4d92-859f-\
+ec334c15cfb8"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1077, 1234},
+WindowMargins->{{388, Automatic}, {Automatic, 0}},
+PrintingCopies->1,
+PrintingPageRange->{1, Automatic},
+FrontEndVersion->"14.0 for Mac OS X ARM (64-bit) (December 12, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"edfbe9cd-8ebe-4dde-a30d-381c54ddc9a3"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 399, 6, 67, "Section",ExpressionUUID->"1401d686-6281-49b0-9743-c981b888c908"],
+Cell[982, 30, 1311, 23, 219, "Text",ExpressionUUID->"e8da59ba-e1c8-4ff9-8734-f8ac585a40f4"],
+Cell[CellGroupData[{
+Cell[2318, 57, 368, 6, 54, "Subsection",ExpressionUUID->"c448b97f-7c7b-42a3-9db2-329015a96a11"],
+Cell[2689, 65, 3153, 73, 201, "Text",ExpressionUUID->"418d9b2c-9b34-431f-b1ea-71b3152eaad2"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5879, 143, 516, 7, 54, "Subsection",ExpressionUUID->"03e88f25-ef7c-4d68-bd41-8b4a11d66ff8"],
+Cell[6398, 152, 1994, 42, 171, "Text",ExpressionUUID->"dfc5c7a7-2df1-47ef-a6f8-054f01da1e49"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8429, 199, 550, 8, 54, "Subsection",ExpressionUUID->"3f9ec106-1f51-4e0f-b65b-c49b5ef9f49a"],
+Cell[8982, 209, 3571, 87, 386, "Text",ExpressionUUID->"1b575866-aa49-4a00-862c-0e5201d0ee05"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[12590, 301, 630, 11, 54, "Subsection",ExpressionUUID->"8df84b91-fefe-4214-b806-2b9ee5fa79b9"],
+Cell[13223, 314, 6521, 186, 391, "Text",ExpressionUUID->"52340c4e-1fdd-40b4-a932-312d8e697fe8"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[19781, 505, 608, 9, 54, "Subsection",ExpressionUUID->"f22b5e60-8746-4512-b7e5-56a33b9011c9"],
+Cell[20392, 516, 13215, 388, 749, "Text",ExpressionUUID->"965cebbc-2a9f-4273-a3a2-2544b243ef40"],
+Cell[33610, 906, 99, 1, 4, "PageBreak",ExpressionUUID->"0cc9bd07-4fc0-4459-941f-0767ee3c415c",
+ PageBreakBelow->True]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[33746, 912, 662, 10, 54, "Subsection",ExpressionUUID->"affffc27-ff6d-4bd8-b690-34cf3e3c951f"],
+Cell[34411, 924, 6780, 188, 612, "Text",ExpressionUUID->"02ad6b61-a2fb-4d92-859f-ec334c15cfb8"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
