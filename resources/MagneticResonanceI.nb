@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    908263,      15269]
-NotebookOptionsPosition[    906019,      15221]
-NotebookOutlinePosition[    906472,      15239]
-CellTagsIndexPosition[    906429,      15236]
+NotebookDataLength[    906373,      15234]
+NotebookOptionsPosition[    904364,      15190]
+NotebookOutlinePosition[    904817,      15208]
+CellTagsIndexPosition[    904774,      15205]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -310,19 +310,23 @@ Cell["The Configuration of an MRI Machine", "Subsection",
 5790791f9f10"],
 
 Cell[TextData[{
- "Below is an MRI scanner cutaway view taken from the National MagLab \
-website. I don\[CloseCurlyQuote]t particularly want to explain the \
+ "On the next page is an MRI scanner cutaway view taken from the National \
+MagLab website. I don\[CloseCurlyQuote]t particularly want to explain the \
 \[OpenCurlyDoubleQuote]gradient coils.\[CloseCurlyDoubleQuote] Those are used \
-to slightly increase or decrease the strength of the overall magnetic field. \
-The \[OpenCurlyDoubleQuote]Radio Frequency Coil\[CloseCurlyDoubleQuote] is \
-incredibly important and we will get to that. For now we want to pay \
-attention to the giant magnet, which is just labeled \
-\[OpenCurlyDoubleQuote]Magnet.\[CloseCurlyDoubleQuote] This is a toroidal \
-magnet and the person is in the middle of it. The magnetic field goes from \
-the feet to the head \[LongDash] or from the head to the feet. The direction \
-(foot-to-head or head-to-foot) is not critical, just the axis which is along \
-the person\[CloseCurlyQuote]s body. We are going to make that the direction \
-that the axial magnetic field points our ",
+to slightly increase or decrease the strength of the overall magnetic field, \
+and as these coils are adjusted, they are responsible for the banging noise \
+that you hear when you are inside an MRI machine.\n\nThe \
+\[OpenCurlyDoubleQuote]Radio Frequency Coil\[CloseCurlyDoubleQuote] is \
+incredibly important but we won\[CloseCurlyQuote]t get to that until the \
+Section titled \[OpenCurlyDoubleQuote]The Resonance Idea\
+\[CloseCurlyDoubleQuote] below.\n\nFor the moment just pay attention to the \
+giant magnet, which is just labeled \[OpenCurlyDoubleQuote]Magnet.\
+\[CloseCurlyDoubleQuote] This is a toroidal magnet and the person is in the \
+middle of it. The magnetic field goes from the feet to the head \[LongDash] \
+or from the head to the feet. The direction (foot-to-head or head-to-foot) is \
+not critical, just the axis, which is along the person\[CloseCurlyQuote]s \
+body.\n\nWe are going to make that the direction that the axial magnetic \
+field points our ",
  Cell[BoxData[
   FormBox[
    RowBox[{"+", "z"}], TraditionalForm]],
@@ -330,8 +334,9 @@ that the axial magnetic field points our ",
   "95fbc7c3-421c-4935-aac4-d1170909a9ac"],
  " axis."
 }], "Text",
- CellChangeTimes->{{3.922300523238741*^9, 
-  3.922300746143702*^9}},ExpressionUUID->"506b78d0-8c59-4426-9f5a-\
+ CellChangeTimes->{{3.922300523238741*^9, 3.922300746143702*^9}, {
+  3.922301703106914*^9, 3.922301805055842*^9}, {3.9223018541988792`*^9, 
+  3.9223019085676947`*^9}},ExpressionUUID->"506b78d0-8c59-4426-9f5a-\
 eb7ef41c8d6b"],
 
 Cell[BoxData[
@@ -14576,16 +14581,17 @@ b309-4816-a73c-f4d18149a03c"]
 Cell[CellGroupData[{
 
 Cell["\<\
-Schrodinger\[CloseCurlyQuote]s Equation for a Magnetic Moment in a Magnetic \
-Field\
+Schr\[ODoubleDot]dinger\[CloseCurlyQuote]s Equation for a Magnetic Moment in \
+a Magnetic Field\
 \>", "Subsection",
  CellChangeTimes->{{3.920310155034218*^9, 3.920310163989311*^9}, {
   3.920310462568035*^9, 3.920310466416088*^9}, {3.920419866279635*^9, 
   3.920419866876333*^9}, {3.920420043877632*^9, 3.920420064272218*^9}, {
   3.9222324935713863`*^9, 3.922232497892695*^9}, {3.922232944959888*^9, 
-  3.922232954836328*^9}, {3.9222330155432243`*^9, 3.9222330172545652`*^9}, {
-  3.9222332873281612`*^9, 3.922233309569278*^9}, {3.922233786041641*^9, 
-  3.922233795932652*^9}},ExpressionUUID->"8df84b91-fefe-4214-b806-\
+  3.922232954836328*^9}, {3.922233015543224*^9, 3.922233017254565*^9}, {
+  3.922233287328161*^9, 3.922233309569278*^9}, {3.922233786041641*^9, 
+  3.922233795932652*^9}, {3.922301951309318*^9, 
+  3.9223019547067823`*^9}},ExpressionUUID->"8df84b91-fefe-4214-b806-\
 2b9ee5fa79b9"],
 
 Cell[TextData[{
@@ -14650,8 +14656,9 @@ let\[CloseCurlyQuote]s remember what it simplifies to when ",
  Cell[BoxData[
   FormBox["z", TraditionalForm]],ExpressionUUID->
   "11e65d68-9aab-430b-8548-0767f27e518d"],
- "-direction, which is how we are setting up our MRI scanner problem. In that \
-Schr\[ODoubleDot]dinger\[CloseCurlyQuote]s equation is:\n\n",
+ "-direction, which is how we are choosing to set up the axes in our MRI \
+scanner problem. In that case Schr\[ODoubleDot]dinger\[CloseCurlyQuote]s \
+equation is:\n\n",
  Cell[BoxData[
   FormBox[
    RowBox[{
@@ -14751,7 +14758,7 @@ Schr\[ODoubleDot]dinger\[CloseCurlyQuote]s equation is:\n\n",
        }], ")"}]}]}], TraditionalForm]],ExpressionUUID->
   "0ad658f7-e1ef-4656-a150-784c59a2498d"],
  "\n\nThis is the matrix way of writing two equations, and it is overly fancy \
-because the matrix is diagonal. It is just two independent equations:\n\n",
+because the matrix is diagonal. It is just two independent equations: ",
  Cell[BoxData[
   FormBox[
    RowBox[{
@@ -14769,7 +14776,7 @@ because the matrix is diagonal. It is just two independent equations:\n\n",
      RowBox[{
       SubscriptBox["\[Psi]", "+"], "(", "t", ")"}]}]}], TraditionalForm]],
   ExpressionUUID->"9e4d693d-8f8a-4559-96fb-6b6731c5f8de"],
- "\n\n",
+ "    and     ",
  Cell[BoxData[
   FormBox[
    RowBox[{
@@ -14786,7 +14793,8 @@ because the matrix is diagonal. It is just two independent equations:\n\n",
        FontSize->18]}], 
      RowBox[{
       SubscriptBox["\[Psi]", "-"], "(", "t", ")"}]}]}], TraditionalForm]],
-  ExpressionUUID->"bfde80f8-467d-4708-ac56-cbfa0780644e"]
+  ExpressionUUID->"bfde80f8-467d-4708-ac56-cbfa0780644e"],
+ "."
 }], "Text",
  CellChangeTimes->{{3.920310595255248*^9, 3.920310683530747*^9}, {
    3.920310737148698*^9, 3.920310740075357*^9}, {3.920310805047195*^9, 
@@ -14806,8 +14814,9 @@ because the matrix is diagonal. It is just two independent equations:\n\n",
    3.922234908945142*^9, 3.922234951112384*^9}, 3.922235022275091*^9, {
    3.922235073080731*^9, 3.922235073754746*^9}, {3.922300780258284*^9, 
    3.922300855611014*^9}, {3.9223009345927153`*^9, 3.922301119976535*^9}, {
-   3.922301231783268*^9, 
-   3.922301240904716*^9}},ExpressionUUID->"52340c4e-1fdd-40b4-a932-\
+   3.922301231783268*^9, 3.922301240904716*^9}, {3.922301936709008*^9, 
+   3.922301948969079*^9}, {3.922302248481073*^9, 
+   3.9223022709835243`*^9}},ExpressionUUID->"52340c4e-1fdd-40b4-a932-\
 312d8e697fe8"]
 }, Open  ]],
 
@@ -14881,14 +14890,15 @@ Cell[TextData[{
     SubscriptBox["B", "1"], "\[LessLess]", 
     SubscriptBox["B", "0"]}], TraditionalForm]],ExpressionUUID->
   "6a65ac54-34de-401d-8516-9cc647be1a5b"],
- ".\n\nNOW THE MATRIX EQUATION ISN\[CloseCurlyQuote]T SO SIMPLE because ",
+ ". NOW THE EQUATION ISN\[CloseCurlyQuote]T SO SIMPLE because ",
  Cell[BoxData[
   FormBox[
    SubscriptBox["S", "x"], TraditionalForm]],
   FormatType->TraditionalForm,ExpressionUUID->
   "d4610733-0b11-42b9-9137-f06a287e3020"],
- " has off-diagonal entries (see below).\n\nHere is the resonance idea. \
-Instead of just letting the magnetic field point a little in the ",
+ " has off-diagonal entries (see below). And the equation is about to get a \
+little worse!\n\nHere is the resonance idea: instead of just letting the \
+magnetic field point a little in the ",
  Cell[BoxData[
   FormBox["x", TraditionalForm]],ExpressionUUID->
   "bb12edb3-047c-4b45-bdc3-799f134b6c19"],
@@ -15058,7 +15068,7 @@ the ",
         {"i", "0"}
        }], ")"}]}]}], TraditionalForm]],ExpressionUUID->
   "8562e8c7-99eb-49e9-b82b-5c6533f8b4a8"],
- ". These matrices were forced upon us by the behavior of electrons in \
+ ". These matrices were consequences of the behavior of electrons in \
 Stern-Gerlach apparatus. Go back to p. 108 in Chapter Q7 and Problem Q7D.3 on \
 pp. 118-119 to refresh yourself. These choices aren\[CloseCurlyQuote]t \
 unique, it turns out. They are just the standard ones. Other choices give the \
@@ -15171,51 +15181,10 @@ same answers. We will just use these. Anyway, ....\n\nUsing the formulae for ",
    3.922237442084649*^9, 3.922237616152355*^9}, {3.922237698734063*^9, 
    3.922237732930395*^9}, {3.922237974453337*^9, 3.922238023144771*^9}, {
    3.922238602694573*^9, 3.922238652465397*^9}, {3.922301279531845*^9, 
-   3.92230131787317*^9}},ExpressionUUID->"965cebbc-2a9f-4273-a3a2-\
+   3.92230131787317*^9}, {3.922302057926237*^9, 3.9223020605655823`*^9}, {
+   3.922302139696561*^9, 3.922302169911376*^9}, {3.922302320709498*^9, 
+   3.922302345842391*^9}},ExpressionUUID->"965cebbc-2a9f-4273-a3a2-\
 2544b243ef40"]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell["History", "Subsection",
- CellChangeTimes->{{3.920310155034218*^9, 3.920310163989311*^9}, {
-  3.920310462568035*^9, 3.920310466416088*^9}, {3.920419866279635*^9, 
-  3.920419866876333*^9}, {3.920420043877632*^9, 3.920420064272218*^9}, {
-  3.9222324935713863`*^9, 3.922232497892695*^9}, {3.922232944959888*^9, 
-  3.922232954836328*^9}, {3.922233015543224*^9, 3.922233017254565*^9}, {
-  3.922233287328161*^9, 3.922233309569278*^9}, {3.922233786041641*^9, 
-  3.922233795932652*^9}, {3.922234962137067*^9, 3.9222349823322678`*^9}, {
-  3.922237758397544*^9, 3.922237762402728*^9}, {3.922239474451118*^9, 
-  3.922239475587007*^9}},ExpressionUUID->"4ebe159b-ff2e-480f-b52f-\
-223202fb1abe"],
-
-Cell["\<\
-We are following the analysis made easy for us by I. I. Rabi, who won the \
-Nobel Prize in Physics in 1944 for the discovery of nuclear magnetic \
-resonance, bless his heart. When Rabi was asked, upon returning to Los Alamos \
-40 years after working there, what he felt, he said \
-\[OpenCurlyDoubleQuote]sorrow, that the place still exists.\
-\[CloseCurlyDoubleQuote] See https://youtu.be/Lm412GwSkIM.
-
-From a few minutes after the first atomic bomb test off Rabi was moved to \
-devote himself to arms control. Be careful not to assume that anyone who \
-worked on the bomb, while regretting that it still exists in vast quantities \
-and threatens us continuously, believes that it should not have been built \
-under the conditions that the Allies faced at the time. That would be \
-simplistic revisionism. For a pensive and carefully thought out statement \
-from Oppenheimer himself, see https://youtu.be/AdtLxlttrHg.\
-\>", "Text",
- CellChangeTimes->{{3.92223651350019*^9, 3.92223685901387*^9}, {
-   3.9222368936519833`*^9, 3.922237058964467*^9}, {3.922237097195635*^9, 
-   3.922237273351609*^9}, {3.922237797820523*^9, 3.922237941285269*^9}, {
-   3.922238045960412*^9, 3.922238097597748*^9}, {3.922238132538213*^9, 
-   3.922238137403948*^9}, {3.9222387469032297`*^9, 3.922238800980549*^9}, {
-   3.922238859741473*^9, 3.922238913899221*^9}, {3.922238943982003*^9, 
-   3.922238983861414*^9}, {3.922239171011537*^9, 3.9222394364303427`*^9}, 
-   3.922239480481195*^9, {3.9222395542810926`*^9, 3.9222395552931547`*^9}, {
-   3.922239645487236*^9, 3.922239657432064*^9}, {3.92230149301297*^9, 
-   3.92230164082206*^9}},ExpressionUUID->"c82e50b7-a92a-4627-8f2a-\
-794b60ee1fe8"]
 }, Open  ]]
 }, Open  ]]
 },
@@ -15255,20 +15224,16 @@ Cell[8982, 209, 3571, 87, 386, "Text",ExpressionUUID->"1b575866-aa49-4a00-862c-0
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[12590, 301, 570, 8, 54, "Subsection",ExpressionUUID->"d2a6ba95-971c-433c-8fb2-5790791f9f10"],
-Cell[13163, 311, 1257, 23, 127, "Text",ExpressionUUID->"506b78d0-8c59-4426-9f5a-eb7ef41c8d6b"],
-Cell[14423, 336, 868130, 14236, 481, "Input",ExpressionUUID->"09df76f2-b309-4816-a73c-f4d18149a03c"]
+Cell[13163, 311, 1627, 28, 265, "Text",ExpressionUUID->"506b78d0-8c59-4426-9f5a-eb7ef41c8d6b"],
+Cell[14793, 341, 868130, 14236, 481, "Input",ExpressionUUID->"09df76f2-b309-4816-a73c-f4d18149a03c"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[882590, 14577, 630, 11, 54, "Subsection",ExpressionUUID->"8df84b91-fefe-4214-b806-2b9ee5fa79b9"],
-Cell[883223, 14590, 7722, 220, 512, "Text",ExpressionUUID->"52340c4e-1fdd-40b4-a932-312d8e697fe8"]
+Cell[882960, 14582, 687, 12, 54, "Subsection",ExpressionUUID->"8df84b91-fefe-4214-b806-2b9ee5fa79b9"],
+Cell[883650, 14596, 7858, 223, 443, "Text",ExpressionUUID->"52340c4e-1fdd-40b4-a932-312d8e697fe8"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[890982, 14815, 602, 9, 54, "Subsection",ExpressionUUID->"f22b5e60-8746-4512-b7e5-56a33b9011c9"],
-Cell[891587, 14826, 11999, 348, 785, "Text",ExpressionUUID->"965cebbc-2a9f-4273-a3a2-2544b243ef40"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[903623, 15179, 686, 10, 54, "Subsection",ExpressionUUID->"4ebe159b-ff2e-480f-b52f-223202fb1abe"],
-Cell[904312, 15191, 1679, 26, 196, "Text",ExpressionUUID->"c82e50b7-a92a-4627-8f2a-794b60ee1fe8"]
+Cell[891545, 14824, 602, 9, 54, "Subsection",ExpressionUUID->"f22b5e60-8746-4512-b7e5-56a33b9011c9"],
+Cell[892150, 14835, 12186, 351, 762, "Text",ExpressionUUID->"965cebbc-2a9f-4273-a3a2-2544b243ef40"]
 }, Open  ]]
 }, Open  ]]
 }
