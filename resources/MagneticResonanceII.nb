@@ -1,0 +1,319 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 14.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     12355,        311]
+NotebookOptionsPosition[     11372,        284]
+NotebookOutlinePosition[     11825,        302]
+CellTagsIndexPosition[     11782,        299]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Magnetic Resonance II \[LongDash] Solving the Problem", "Section",
+ CellChangeTimes->{{3.920309692339552*^9, 3.920309697888428*^9}, {
+  3.920419694021215*^9, 3.920419698742198*^9}, {3.9204239666665697`*^9, 
+  3.9204239743511477`*^9}, {3.922231408378591*^9, 3.922231411823165*^9}, {
+  3.922237284151059*^9, 3.922237298078976*^9}, {3.922302413659676*^9, 
+  3.922302420027372*^9}},ExpressionUUID->"1401d686-6281-49b0-9743-\
+c981b888c908"],
+
+Cell["\<\
+In the previous handout, we set up the magnetic resonance problem. Now we are \
+going to follow I.I. Rabi\[CloseCurlyQuote]s method for solving it.
+
+First we need to review so we can keep it all straight.\
+\>", "Text",
+ CellChangeTimes->{{3.920419723334632*^9, 3.920419857101992*^9}, {
+  3.92223142224138*^9, 3.922231465225565*^9}, {3.92223159247887*^9, 
+  3.922231727369053*^9}, {3.9222318902725573`*^9, 3.9222322494529676`*^9}, {
+  3.922237330885344*^9, 3.922237406284622*^9}, {3.922302434506732*^9, 
+  3.922302469372568*^9}},ExpressionUUID->"e8da59ba-e1c8-4ff9-8734-\
+f8ac585a40f4"],
+
+Cell[CellGroupData[{
+
+Cell["Keeping it All Straight", "Subsection",
+ CellChangeTimes->{{3.920310155034218*^9, 3.920310163989311*^9}, {
+  3.920310462568035*^9, 3.920310466416088*^9}, {3.920419866279635*^9, 
+  3.920419866876333*^9}, {3.920420043877632*^9, 3.920420064272218*^9}, {
+  3.9222324935713863`*^9, 3.922232497892695*^9}, {3.922232944959888*^9, 
+  3.922232954836328*^9}, {3.9222330155432243`*^9, 3.9222330172545652`*^9}, {
+  3.9222332873281612`*^9, 3.922233309569278*^9}, {3.922233786041641*^9, 
+  3.922233795932652*^9}, {3.922234962137067*^9, 3.9222349823322678`*^9}, {
+  3.922237758397544*^9, 
+  3.922237762402728*^9}},ExpressionUUID->"affffc27-ff6d-4bd8-b690-\
+34cf3e3c951f"],
+
+Cell[TextData[{
+ "Let\[CloseCurlyQuote]s review. We found this differential equation:\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"i", "\[VeryThinSpace]", 
+     FractionBox["d", 
+      RowBox[{"d", "\[VeryThinSpace]", "t"}]], 
+     RowBox[{"(", GridBox[{
+        {
+         RowBox[{
+          SubscriptBox["\[Psi]", "+"], "(", "t", ")"}]},
+        {
+         RowBox[{
+          SubscriptBox["\[Psi]", "-"], "(", "t", ")"}]}
+       }], ")"}]}], "=", 
+    RowBox[{
+     RowBox[{"-", 
+      FractionBox["1", "2"]}], 
+     RowBox[{"(", GridBox[{
+        {
+         SubscriptBox["\[Omega]", "0"], 
+         RowBox[{
+          SubscriptBox["\[Omega]", "1"], "cos", "\[VeryThinSpace]", 
+          "\[Omega]", "\[VeryThinSpace]", "t"}]},
+        {
+         RowBox[{
+          SubscriptBox["\[Omega]", "1"], "cos", "\[VeryThinSpace]", 
+          "\[Omega]", "\[VeryThinSpace]", "t"}], 
+         RowBox[{"-", 
+          SubscriptBox["\[Omega]", "0"]}]}
+       }], ")"}], 
+     RowBox[{"(", GridBox[{
+        {
+         RowBox[{
+          SubscriptBox["\[Psi]", "+"], "(", "t", ")"}]},
+        {
+         RowBox[{
+          SubscriptBox["\[Psi]", "-"], "(", "t", ")"}]}
+       }], ")"}]}]}], TraditionalForm]],ExpressionUUID->
+  "2d3a1d95-0c0c-42ec-a845-a8d4e46b7c47"],
+ "\n\nLet\[CloseCurlyQuote]s remind ourselves what is in it. ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["\[Psi]", "+"], "(", "t", ")"}], TraditionalForm]],
+  ExpressionUUID->"d2ad059a-766d-4d58-a671-ca41e8f2ecb9"],
+ " is the probability amplitude for finding the proton in the ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"+", "z"}], TraditionalForm]],ExpressionUUID->
+  "b8769c2d-b358-40c8-b4a4-2dec30893fe5"],
+ " state. If we solve the equation and find it, then  ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SubscriptBox["P", "+"], "(", "t", ")"}], "=", 
+    SuperscriptBox[
+     RowBox[{"\[LeftBracketingBar]", 
+      RowBox[{
+       SubscriptBox["\[Psi]", "+"], "(", "t", ")"}], 
+      "\[RightBracketingBar]"}], "2"]}], TraditionalForm]],ExpressionUUID->
+  "977ae7a0-e960-405a-ba55-49470a1cb011"],
+ " will be the probability that the proton is in the ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"+", "z"}], TraditionalForm]],ExpressionUUID->
+  "bb0009d2-d9f1-4a31-a69d-2ce179105de7"],
+ " state (and similarly for  ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SubscriptBox["P", "-"], "(", "t", ")"}], "=", 
+    RowBox[{
+     RowBox[{"1", "-", 
+      RowBox[{
+       SubscriptBox["P", "+"], "(", "t", ")"}]}], "=", 
+     SuperscriptBox[
+      RowBox[{"\[LeftBracketingBar]", 
+       RowBox[{
+        SubscriptBox["\[Psi]", "-"], "(", "t", ")"}], 
+       "\[RightBracketingBar]"}], "2"]}]}], TraditionalForm]],ExpressionUUID->
+  "3680346d-d1a0-4691-92f7-f6a505e679a8"],
+ ").\n\nThe goal of magnetic resonance imaging is to get a lot of protons in \
+your body first going to the ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"+", "z"}], TraditionalForm]],ExpressionUUID->
+  "3fbdd56e-e274-4c78-9dee-f282577b4387"],
+ " state and then to the ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"-", "z"}], TraditionalForm]],ExpressionUUID->
+  "4c359e65-42cf-4e27-ba3a-3c86fc1f54ff"],
+ " state and to then detect this by the radio signals that all these \
+simultaneously oscillating protons collectively emit.\n\nPart of keeping it \
+all straight is to remember that there are three frequencies in the problem. \
+The \[OpenCurlyDoubleQuote]zeroth\[CloseCurlyDoubleQuote] frequency came from \
+the amount of magnetic field in the ",
+ Cell[BoxData[
+  FormBox["z", TraditionalForm]],ExpressionUUID->
+  "7870e58a-145b-4491-9480-4acbc70dc79c"],
+ " direction, which is assumed to be large compared to the amount of magnetic \
+field in the ",
+ Cell[BoxData[
+  FormBox["x", TraditionalForm]],ExpressionUUID->
+  "e2b3e125-f2b8-4cca-860a-05865abd5862"],
+ " direction. We had for the zeroth and first frequencies:\n\n ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["\[Omega]", "0"], "\[Congruent]", 
+    RowBox[{"g", 
+     FractionBox["e", 
+      RowBox[{"2", "m"}]], 
+     SubscriptBox["B", "0"]}]}], TraditionalForm]],ExpressionUUID->
+  "e4163911-49e9-4b4f-bcd2-584501ff7586"],
+ " ,    ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["\[Omega]", "1"], "\[Congruent]", 
+    RowBox[{"g", 
+     FractionBox["e", 
+      RowBox[{"2", "m"}]], 
+     SubscriptBox["B", "1"]}]}], TraditionalForm]],ExpressionUUID->
+  "8a9b7304-5f2a-43da-884e-860baaf9429c"],
+ ",     ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["\[Omega]", "0"], "\[GreaterGreater]", 
+    SubscriptBox["\[Omega]", "1"]}], TraditionalForm]],ExpressionUUID->
+  "3a2fc189-8bf6-43b3-ba05-0156df4d9b99"],
+ "\n \n The third frequency, \[Omega], which has no subscript in our \
+notation, is the angular frequency at which the magnetic field in the ",
+ Cell[BoxData[
+  FormBox["x", TraditionalForm]],ExpressionUUID->
+  "64ab8fac-230e-4405-87dd-a3ed0763000f"],
+ " direction oscillates.\n \n Even if you can\[CloseCurlyQuote]t keep it all \
+straight how we got to this point, you need to remember that this is where we \
+are, that we need to solve this equation, at least approximately, and thereby \
+learn the probability amplitudes ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["\[Psi]", "+"], "(", "t", ")"}], TraditionalForm]],
+  ExpressionUUID->"a70ca47c-5174-439d-805f-151f792f6384"],
+ " and ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["\[Psi]", "-"], "(", "t", ")"}], TraditionalForm]],
+  ExpressionUUID->"7a66ff16-23b3-40c1-8072-3a5dcd7c3a47"],
+ ", and that once we do, we will know ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["P", "+"], "(", "t", ")"}], TraditionalForm]],ExpressionUUID->
+  "71680e8c-d86f-496a-b905-f01bd02ec484"],
+ " and ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["P", "-"], "(", "t", ")"}], TraditionalForm]],ExpressionUUID->
+  "41bf34f6-2517-416f-9350-1c982763e521"],
+ "."
+}], "Text",
+ CellChangeTimes->{{3.92223651350019*^9, 3.92223685901387*^9}, {
+  3.9222368936519833`*^9, 3.922237058964467*^9}, {3.922237097195635*^9, 
+  3.922237273351609*^9}, {3.922237797820523*^9, 3.922237941285269*^9}, {
+  3.922238045960412*^9, 3.922238097597748*^9}, {3.922238132538213*^9, 
+  3.922238137403948*^9}, {3.9222387469032297`*^9, 3.922238800980549*^9}, {
+  3.922238859741473*^9, 3.922238913899221*^9}, {3.922238943982003*^9, 
+  3.922238983861414*^9}, {3.922239171011537*^9, 3.922239485052639*^9}, {
+  3.9222395202860317`*^9, 3.922239528464453*^9}, {3.922302483664119*^9, 
+  3.922302497667449*^9}},ExpressionUUID->"02ad6b61-a2fb-4d92-859f-\
+ec334c15cfb8"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["History", "Subsection",
+ CellChangeTimes->{{3.920310155034218*^9, 3.920310163989311*^9}, {
+  3.920310462568035*^9, 3.920310466416088*^9}, {3.920419866279635*^9, 
+  3.920419866876333*^9}, {3.920420043877632*^9, 3.920420064272218*^9}, {
+  3.9222324935713863`*^9, 3.922232497892695*^9}, {3.922232944959888*^9, 
+  3.922232954836328*^9}, {3.922233015543224*^9, 3.922233017254565*^9}, {
+  3.922233287328161*^9, 3.922233309569278*^9}, {3.922233786041641*^9, 
+  3.922233795932652*^9}, {3.922234962137067*^9, 3.9222349823322678`*^9}, {
+  3.922237758397544*^9, 3.922237762402728*^9}, {3.922239474451118*^9, 
+  3.922239475587007*^9}},ExpressionUUID->"4ebe159b-ff2e-480f-b52f-\
+223202fb1abe"],
+
+Cell["\<\
+We followed the analysis made easy for us by I. I. Rabi, who won the Nobel \
+Prize in Physics in 1944 for the discovery of nuclear magnetic resonance, \
+bless his heart. When Rabi was asked, upon returning to Los Alamos 40 years \
+after working there, what he felt, he said \[OpenCurlyDoubleQuote]sorrow, \
+that the place still exists.\[CloseCurlyDoubleQuote] See \
+https://youtu.be/Lm412GwSkIM.
+
+From a few minutes after the first atomic bomb test off Rabi was moved to \
+devote himself to arms control. Be careful not to assume that anyone who \
+worked on the bomb, while regretting that it still exists in vast quantities \
+and threatens us continuously, believes that it should not have been built \
+under the conditions that the Allies faced at the time. That would be \
+simplistic revisionism. For a pensive and carefully thought out statement \
+from Oppenheimer himself, see https://youtu.be/AdtLxlttrHg.\
+\>", "Text",
+ CellChangeTimes->{{3.92223651350019*^9, 3.92223685901387*^9}, {
+   3.9222368936519833`*^9, 3.922237058964467*^9}, {3.922237097195635*^9, 
+   3.922237273351609*^9}, {3.922237797820523*^9, 3.922237941285269*^9}, {
+   3.922238045960412*^9, 3.922238097597748*^9}, {3.922238132538213*^9, 
+   3.922238137403948*^9}, {3.9222387469032297`*^9, 3.922238800980549*^9}, {
+   3.922238859741473*^9, 3.922238913899221*^9}, {3.922238943982003*^9, 
+   3.922238983861414*^9}, {3.922239171011537*^9, 3.9222394364303427`*^9}, 
+   3.922239480481195*^9, {3.9222395542810926`*^9, 3.9222395552931547`*^9}, {
+   3.922239645487236*^9, 3.922239657432064*^9}, {3.92230149301297*^9, 
+   3.92230164082206*^9}, {3.9223025111117697`*^9, 
+   3.922302513608316*^9}},ExpressionUUID->"c82e50b7-a92a-4627-8f2a-\
+794b60ee1fe8"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1077, 1234},
+WindowMargins->{{388, Automatic}, {Automatic, 0}},
+PrintingCopies->1,
+PrintingPageRange->{1, Automatic},
+FrontEndVersion->"14.0 for Mac OS X ARM (64-bit) (December 12, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"edfbe9cd-8ebe-4dde-a30d-381c54ddc9a3"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 441, 6, 67, "Section",ExpressionUUID->"1401d686-6281-49b0-9743-c981b888c908"],
+Cell[1024, 30, 595, 11, 81, "Text",ExpressionUUID->"e8da59ba-e1c8-4ff9-8734-f8ac585a40f4"],
+Cell[CellGroupData[{
+Cell[1644, 45, 662, 10, 54, "Subsection",ExpressionUUID->"affffc27-ff6d-4bd8-b690-34cf3e3c951f"],
+Cell[2309, 57, 6583, 179, 492, "Text",ExpressionUUID->"02ad6b61-a2fb-4d92-859f-ec334c15cfb8"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8929, 241, 686, 10, 54, "Subsection",ExpressionUUID->"4ebe159b-ff2e-480f-b52f-223202fb1abe"],
+Cell[9618, 253, 1726, 27, 196, "Text",ExpressionUUID->"c82e50b7-a92a-4627-8f2a-794b60ee1fe8"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
