@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    373466,       6328]
-NotebookOptionsPosition[    371131,       6277]
-NotebookOutlinePosition[    371613,       6296]
-CellTagsIndexPosition[    371570,       6293]
+NotebookDataLength[    374615,       6364]
+NotebookOptionsPosition[    372280,       6313]
+NotebookOutlinePosition[    372762,       6332]
+CellTagsIndexPosition[    372719,       6329]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -5872,7 +5872,6 @@ matrix ",
  Cell[BoxData[
   FormBox[
    RowBox[{"M", "\[VeryThinSpace]", "w"}], TraditionalForm]],
-  FormatType->TraditionalForm,
   FontSize->14,ExpressionUUID->"32771b5a-d529-49f3-b024-bae2d744c63e"],
  StyleBox[" or ",
   FontSize->14],
@@ -5964,8 +5963,8 @@ the case where ",
    RowBox[{
     SubscriptBox["\[Psi]", "-"], "(", "0", ")"}], TraditionalForm]],
   FontSize->14,ExpressionUUID->"a57b0c43-4395-4fc1-92f0-fbd89c2ed62a"],
- StyleBox[", but other than those two unknowns, you will have nice tidy \
-answers for ",
+ StyleBox[", but other than those unknowns, you should get tidy answers for ",
+  
   FontSize->14],
  Cell[BoxData[
   FormBox[
@@ -6021,7 +6020,40 @@ aren\[CloseCurlyQuote]t the solution any more (because ",
   FormBox[
    SubscriptBox["\[Omega]", "1"], TraditionalForm]],
   FontSize->14,ExpressionUUID->"7ff31b3d-ab76-436a-af9d-62d27cc6a864"],
- StyleBox[" is not 0 any more). Now for the ansatz: assume that ",
+ StyleBox[" is not 0 any more). Also, when you are defining ",
+  FontSize->14],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["a", "+"], "(", "t", ")"}], TraditionalForm]],
+  FontSize->14,ExpressionUUID->"ed09947e-472f-47f6-b104-08d06e63066e"],
+ StyleBox[" and ",
+  FontSize->14],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["a", "-"], "(", "t", ")"}], TraditionalForm]],
+  FontSize->14,ExpressionUUID->"39de34a7-063c-4bcb-bb81-8cf344e57d53"],
+ StyleBox[", you can set ",
+  FontSize->14],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SubscriptBox["\[Psi]", "+"], "(", "0", ")"}], "=", "1"}], 
+   TraditionalForm]],
+  FontSize->14,ExpressionUUID->"bdc9fc00-d784-4381-b6bb-57d4b69962c4"],
+ StyleBox[" and ",
+  FontSize->14],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SubscriptBox["\[Psi]", "-"], "(", "0", ")"}], "=", "1"}], 
+   TraditionalForm]],
+  FontSize->14,ExpressionUUID->"1b802ef7-59fb-41a1-ab3e-d27dbac3e293"],
+ ", because we can absorb those constants elsewhere. ",
+ StyleBox["Now for the ansatz: assume that ",
   FontSize->14],
  Cell[BoxData[
   FormBox[
@@ -6047,7 +6079,7 @@ aren\[CloseCurlyQuote]t the solution any more (because ",
      RowBox[{
       SubscriptBox["a", "-"], "(", "t", ")"}]}]}], TraditionalForm]],
   FontSize->14,ExpressionUUID->"2cc7ac67-8a5b-478d-b89c-4f5e0d05b8bd"],
- StyleBox[". Stick the ansatz into the equations you got in Problem 3. Use \
+ StyleBox[". Stick the ansatz into the equations you got in Problem 2. Use \
 product rule to simplify the time derivatives.\n\nHINT/CROSS-CHECK: Make sure \
 that if you put in ",
   FontSize->14],
@@ -6131,14 +6163,16 @@ a column vector ",
     RowBox[{"|", 
      RowBox[{
       RowBox[{"\[Psi]", "(", "t", ")"}], ">"}]}], " ", "=", 
-    RowBox[{"(", GridBox[{
-       {
-        RowBox[{
-         SubscriptBox["\[Psi]", "+"], "(", "t", ")"}]},
-       {
-        RowBox[{
-         SubscriptBox["\[Psi]", "-"], "(", "t", ")"}]}
-      }], ")"}]}], TraditionalForm]],
+    StyleBox[
+     RowBox[{"(", GridBox[{
+        {
+         RowBox[{
+          SubscriptBox["\[Psi]", "+"], "(", "t", ")"}]},
+        {
+         RowBox[{
+          SubscriptBox["\[Psi]", "-"], "(", "t", ")"}]}
+       }], ")"}],
+     FontSize->12]}], TraditionalForm]],
   FontSize->14,ExpressionUUID->"9e053dad-88d8-474d-8dc8-a5355341adae"],
  StyleBox[". Then, using the methods on pp. 114-115 of Moore, calculate: (a) ",
   FontSize->14],
@@ -6151,7 +6185,7 @@ a column vector ",
      RowBox[{"\[Psi]", "(", "t", ")"}], ">"}], 
     SuperscriptBox["|", "2"]}], TraditionalForm]],
   FontSize->14,ExpressionUUID->"e1c9d6a6-e265-4a1e-9c6e-c726366b94e4"],
- StyleBox[", (b) ",
+ StyleBox[",  (b) ",
   FontSize->14],
  Cell[BoxData[
   FormBox[
@@ -6162,7 +6196,7 @@ a column vector ",
      RowBox[{"\[Psi]", "(", "t", ")"}], ">"}], 
     SuperscriptBox["|", "2"]}], TraditionalForm]],
   FontSize->14,ExpressionUUID->"d36bdc37-b96d-41f8-9a00-9a64d5ae4691"],
- StyleBox[", (c) ",
+ StyleBox[",  (c) ",
   FontSize->14],
  Cell[BoxData[
   FormBox[
@@ -6173,7 +6207,7 @@ a column vector ",
      RowBox[{"\[Psi]", "(", "t", ")"}], ">"}], 
     SuperscriptBox["|", "2"]}], TraditionalForm]],
   FontSize->14,ExpressionUUID->"3514c896-b808-4220-accc-19e0d8ca458e"],
- StyleBox[", and (d) ",
+ StyleBox[",  and (d) ",
   FontSize->14],
  Cell[BoxData[
   FormBox[
@@ -6259,17 +6293,19 @@ to add up to 1, and to use that cross-check, you will need to use that  ",
    3.9223083095710173`*^9, 3.922308458445038*^9}, {3.92230862752864*^9, 
    3.922308662928626*^9}, {3.922308706691229*^9, 3.922309035969236*^9}, {
    3.922309092627036*^9, 3.922309341958021*^9}, {3.92230976679642*^9, 
-   3.922309779665907*^9}, {3.922319907464754*^9, 3.9223199621923113`*^9}, {
-   3.922320015740892*^9, 3.9223200332192917`*^9}, {3.9223200675246696`*^9, 
+   3.922309779665907*^9}, {3.922319907464754*^9, 3.922319962192312*^9}, {
+   3.922320015740892*^9, 3.922320033219291*^9}, {3.9223200675246696`*^9, 
    3.922320073365219*^9}, {3.92232011667047*^9, 3.922320314601055*^9}, {
    3.922320348009262*^9, 3.922320385874555*^9}, {3.922320733284666*^9, 
    3.922320751085672*^9}, {3.922320782396707*^9, 3.922320783401051*^9}, {
    3.922321136629376*^9, 3.922321147034546*^9}, {3.922321224434767*^9, 
    3.922321237078475*^9}, {3.922321288326961*^9, 3.922321337720437*^9}, 
    3.922321383270679*^9, {3.922321444857375*^9, 3.92232144520704*^9}, 
-   3.9223215495401497`*^9, 3.9223215869404163`*^9, {3.922321623163862*^9, 
-   3.9223216272885637`*^9}, {3.922321671717252*^9, 
-   3.922321679961134*^9}},ExpressionUUID->"3e149c99-2b8e-4b73-a96d-\
+   3.92232154954015*^9, 3.9223215869404173`*^9, {3.922321623163862*^9, 
+   3.9223216272885637`*^9}, {3.922321671717252*^9, 3.922321679961134*^9}, {
+   3.9223257056203136`*^9, 3.9223257671965714`*^9}, {3.922325831304572*^9, 
+   3.9223258403595533`*^9}, {3.922325900407857*^9, 
+   3.92232592919456*^9}},ExpressionUUID->"3e149c99-2b8e-4b73-a96d-\
 442094caa30d"]
 }, Open  ]]
 }, Open  ]]
@@ -6321,12 +6357,12 @@ Cell[28641, 463, 35588, 588, 261, "Input",ExpressionUUID->"1424ee74-4af1-484f-ba
 Cell[64232, 1053, 99, 1, 1, "PageBreak",ExpressionUUID->"5b882a24-0cbf-4b2e-a347-bb4c4b617d04",
  PageBreakBelow->True],
 Cell[64334, 1056, 4336, 64, 159, "Text",ExpressionUUID->"5013921b-bb7a-4653-9381-f91d0c54ce82"],
-Cell[68673, 1122, 274485, 4504, 891, "Input",ExpressionUUID->"482debe8-1528-49c7-9b98-9c8f95c561b1"],
+Cell[68673, 1122, 274485, 4504, 877, "Input",ExpressionUUID->"482debe8-1528-49c7-9b98-9c8f95c561b1"],
 Cell[343161, 5628, 6393, 108, 338, "Text",ExpressionUUID->"9bc72b82-3f7c-4742-a3b6-685a7e9f8ce9"]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[349591, 5741, 3041, 43, 61, "Subsection",ExpressionUUID->"857f7e1a-b06f-45dc-9832-589bbae96145"],
-Cell[352635, 5786, 18456, 486, 859, "Text",ExpressionUUID->"3e149c99-2b8e-4b73-a96d-442094caa30d"]
+Cell[352635, 5786, 19605, 522, 881, "Text",ExpressionUUID->"3e149c99-2b8e-4b73-a96d-442094caa30d"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
