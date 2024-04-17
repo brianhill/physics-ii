@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    370890,       6271]
-NotebookOptionsPosition[    368677,       6222]
-NotebookOutlinePosition[    369162,       6241]
-CellTagsIndexPosition[    369119,       6238]
+NotebookDataLength[    373466,       6328]
+NotebookOptionsPosition[    371131,       6277]
+NotebookOutlinePosition[    371613,       6296]
+CellTagsIndexPosition[    371570,       6293]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -355,511 +355,6 @@ Cell[TextData[StyleBox["For Problem Set 19",
 
 Cell[CellGroupData[{
 
-Cell[TextData[StyleBox["Magnetic Resonance",
- FontSize->16]], "Subsection",
- CellChangeTimes->{{3.907161511820457*^9, 3.907161517693348*^9}, {
-   3.9071757851311502`*^9, 3.907175786965211*^9}, 3.907818209992303*^9, {
-   3.9078191362206*^9, 3.90781913785112*^9}, {3.907819172116008*^9, 
-   3.907819176110496*^9}, {3.907820387875669*^9, 3.907820402108921*^9}, {
-   3.907820981764664*^9, 3.907821007358383*^9}, {3.907821038037771*^9, 
-   3.907821042290193*^9}, {3.907821088606534*^9, 3.9078210900352592`*^9}, {
-   3.907821135428946*^9, 3.907821158579274*^9}, {3.907821196245142*^9, 
-   3.907821237363723*^9}, {3.907821349401204*^9, 3.907821396425806*^9}, {
-   3.907821450908679*^9, 3.907821516779191*^9}, {3.908397878489965*^9, 
-   3.908397951028851*^9}, {3.908398041423287*^9, 3.908398058613622*^9}, {
-   3.908398130040098*^9, 3.908398139118972*^9}, {3.908398169156537*^9, 
-   3.908398192128955*^9}, {3.908398252159361*^9, 3.908398411595109*^9}, {
-   3.908398456684402*^9, 3.908398536593797*^9}, {3.908398607154119*^9, 
-   3.908398652335915*^9}, {3.908630830378921*^9, 3.90863084576903*^9}, {
-   3.908975491833612*^9, 3.908975522492631*^9}, {3.908975666045314*^9, 
-   3.908975711042753*^9}, {3.908976051229232*^9, 3.908976178825238*^9}, {
-   3.913810107870986*^9, 3.913810533475247*^9}, {3.913810634111455*^9, 
-   3.913810644069963*^9}, {3.913810679147831*^9, 3.91381071872521*^9}, {
-   3.9138108312992373`*^9, 3.913810888253944*^9}, {3.913810965406918*^9, 
-   3.913811021243954*^9}, {3.913811051361785*^9, 3.91381106657822*^9}, {
-   3.9138110987262697`*^9, 3.913811100703505*^9}, {3.91402529255657*^9, 
-   3.914025351909107*^9}, {3.914025416733687*^9, 3.9140259055200663`*^9}, {
-   3.914025936874846*^9, 3.914025951556254*^9}, 3.914025996195584*^9, {
-   3.914027092732191*^9, 3.914027097367485*^9}, {3.914689729790235*^9, 
-   3.914689731758145*^9}, {3.914722046747615*^9, 3.9147220506395493`*^9}, {
-   3.914722493104393*^9, 3.914722498908587*^9}, {3.915036891845689*^9, 
-   3.9150368958269*^9}, {3.915037024343502*^9, 3.91503702475231*^9}, {
-   3.9150376744444027`*^9, 3.915037675054278*^9}, {3.91540499571329*^9, 
-   3.91540499994322*^9}, {3.916012997305713*^9, 3.916013003481572*^9}, {
-   3.916535411446114*^9, 3.916535456925606*^9}, {3.919272865612307*^9, 
-   3.919272866510892*^9}, {3.919273836075861*^9, 3.9192738480110493`*^9}, {
-   3.919714405202058*^9, 3.919714414695334*^9}, {3.919714533232993*^9, 
-   3.919714546161456*^9}, {3.9198714631769533`*^9, 3.9198714652325277`*^9}, {
-   3.920985207729306*^9, 3.92098523278088*^9}, {3.9209853745484343`*^9, 
-   3.920985375377038*^9}, {3.9211551875884643`*^9, 3.921155193615699*^9}, {
-   3.921498741155098*^9, 3.921498747667765*^9}, {3.9216836959865427`*^9, 
-   3.921683731942879*^9}, {3.921683977728266*^9, 3.921683981912298*^9}, {
-   3.921684219393962*^9, 3.9216842201346693`*^9}, {3.921955678777698*^9, 
-   3.921955683029444*^9}, {3.921955748812247*^9, 3.9219557495054417`*^9}, {
-   3.922304822422538*^9, 
-   3.922304824795312*^9}},ExpressionUUID->"857f7e1a-b06f-45dc-9832-\
-589bbae96145"],
-
-Cell[TextData[{
- "On the last page of the \[OpenCurlyDoubleQuote]Magnetic Resonance I\
-\[CloseCurlyDoubleQuote] handout, we got to this equation:\n\n",
- Cell[BoxData[
-  FormBox[
-   RowBox[{
-    RowBox[{"i", "\[VeryThinSpace]", 
-     FractionBox["d", 
-      RowBox[{"d", "\[VeryThinSpace]", "t"}]], 
-     RowBox[{"(", GridBox[{
-        {
-         RowBox[{
-          SubscriptBox["\[Psi]", "+"], "(", "t", ")"}]},
-        {
-         RowBox[{
-          SubscriptBox["\[Psi]", "-"], "(", "t", ")"}]}
-       }], ")"}]}], "=", 
-    RowBox[{
-     RowBox[{"-", 
-      FractionBox["1", "2"]}], 
-     RowBox[{"(", GridBox[{
-        {
-         SubscriptBox["\[Omega]", "0"], 
-         RowBox[{
-          SubscriptBox["\[Omega]", "1"], "cos", "\[VeryThinSpace]", 
-          "\[Omega]", "\[VeryThinSpace]", "t"}]},
-        {
-         RowBox[{
-          SubscriptBox["\[Omega]", "1"], "cos", "\[VeryThinSpace]", 
-          "\[Omega]", "\[VeryThinSpace]", "t"}], 
-         RowBox[{"-", 
-          SubscriptBox["\[Omega]", "0"]}]}
-       }], ")"}], 
-     RowBox[{"(", GridBox[{
-        {
-         RowBox[{
-          SubscriptBox["\[Psi]", "+"], "(", "t", ")"}]},
-        {
-         RowBox[{
-          SubscriptBox["\[Psi]", "-"], "(", "t", ")"}]}
-       }], ")"}]}]}], TraditionalForm]],ExpressionUUID->
-  "4460c547-27c0-4d97-afa0-a1f230d3e105"],
- "\n\nThis is a fancy shorthand for two equations. You may need to review \
-matrix and vector multiplication, because we only used it a little back in Q6 \
-and Q7. Here is the lightning review: if you have a matrix ",
- Cell[BoxData[
-  FormBox["M", TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
-  "fe127e5e-88d1-4eb2-a22a-24de200f6307"],
- " and a column vector ",
- Cell[BoxData[
-  FormBox["w", TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
-  "3ecb82e3-d2c5-4277-9b64-5eac6e6e50a1"],
- " where ",
- Cell[BoxData[
-  FormBox[
-   RowBox[{"M", "=", 
-    RowBox[{"(", GridBox[{
-       {
-        SubscriptBox["m", "11"], 
-        SubscriptBox["m", "12"]},
-       {
-        SubscriptBox["m", "21"], 
-        SubscriptBox["m", "22"]}
-      }], ")"}]}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
-  "74e98bd3-8d8c-49ff-bffd-a1d9973d8a03"],
- " and ",
- Cell[BoxData[
-  FormBox[
-   RowBox[{"w", "=", 
-    RowBox[{"(", GridBox[{
-       {
-        SubscriptBox["w", "1"]},
-       {
-        SubscriptBox["w", "2"]}
-      }], ")"}]}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
-  "bc9e4f9d-3373-40ea-80b2-4c36c4413dfb"],
- ", then when you see ",
- Cell[BoxData[
-  FormBox[
-   RowBox[{"M", "\[VeryThinSpace]", "w", " ", "or", " ", 
-    RowBox[{"(", GridBox[{
-       {
-        SubscriptBox["m", "11"], 
-        SubscriptBox["m", "12"]},
-       {
-        SubscriptBox["m", "21"], 
-        SubscriptBox["m", "22"]}
-      }], ")"}], 
-    RowBox[{"(", GridBox[{
-       {
-        SubscriptBox["w", "1"]},
-       {
-        SubscriptBox["w", "2"]}
-      }], ")"}]}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
-  "7d5033f5-466a-4936-ab81-1d441d7bccbb"],
- " in an equation, this combination is by definition the column vector  ",
- Cell[BoxData[
-  FormBox[
-   RowBox[{"(", GridBox[{
-      {
-       RowBox[{
-        RowBox[{
-         SubscriptBox["m", "11"], 
-         SubscriptBox["w", "1"]}], "+", 
-        RowBox[{
-         SubscriptBox["m", "12"], 
-         SubscriptBox["w", "2"]}]}]},
-      {
-       RowBox[{
-        RowBox[{
-         SubscriptBox["m", "21"], 
-         SubscriptBox["w", "1"]}], "+", 
-        RowBox[{
-         SubscriptBox["m", "22"], 
-         SubscriptBox["w", "2"]}]}]}
-     }], ")"}], TraditionalForm]],ExpressionUUID->
-  "2804a09d-d2a0-4356-8d9f-edc4ce8f2151"],
- ". End of lightning review.\n\n1. Use the matrix multiplication rules above \
-to write out the two equations involving ",
- Cell[BoxData[
-  FormBox[
-   RowBox[{
-    SubscriptBox["\[Psi]", "+"], "(", "t", ")"}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
-  "fe9e38ce-858d-4f26-9b0c-895a04f76d78"],
- " and ",
- Cell[BoxData[
-  FormBox[
-   RowBox[{
-    SubscriptBox["\[Psi]", "-"], "(", "t", ")"}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
-  "c75667d1-dce1-4a9b-b25b-c96f4d0fb0c5"],
- ".\n\nHINT/CROSS-CHECK: Make sure that if you put in ",
- Cell[BoxData[
-  FormBox[
-   RowBox[{
-    SubscriptBox["\[Omega]", "1"], "=", "0"}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
-  "45d5e841-172e-4a30-9cb6-31f86b940ad2"],
- " into your equations that you recover the two equations at the very bottom \
-of p. 3 of the \[OpenCurlyDoubleQuote]Magnetic Resonance I\
-\[CloseCurlyDoubleQuote] handout.\n\n2. The only case we can solve exactly is \
-the case where ",
- Cell[BoxData[
-  FormBox[
-   RowBox[{
-    SubscriptBox["\[Omega]", "1"], "=", "0"}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
-  "7f35be5f-777b-460b-bda7-5704bb5493a6"],
- ". Solve that case. You will have two unknown constants, ",
- Cell[BoxData[
-  FormBox[
-   RowBox[{
-    SubscriptBox["\[Psi]", "+"], "(", "0", ")"}], TraditionalForm]],
-  ExpressionUUID->"c0414340-9482-4f85-bac0-d54b46a61396"],
- " and ",
- Cell[BoxData[
-  FormBox[
-   RowBox[{
-    SubscriptBox["\[Psi]", "-"], "(", "0", ")"}], TraditionalForm]],
-  ExpressionUUID->"a57b0c43-4395-4fc1-92f0-fbd89c2ed62a"],
- ", but other than those two unknowns, you will have nice tidy answers for ",
- Cell[BoxData[
-  FormBox[
-   RowBox[{
-    SubscriptBox["\[Psi]", "+"], "(", "t", ")"}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
-  "b1549f22-1f7f-443f-8752-ea57e665e276"],
- " and ",
- Cell[BoxData[
-  FormBox[
-   RowBox[{
-    SubscriptBox["\[Psi]", "-"], "(", "t", ")"}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
-  "e99924f6-e0da-464c-8a17-264aa5d6a11c"],
- ".\n\n3. Now we are going to assume that ",
- Cell[BoxData[
-  FormBox[
-   SubscriptBox["\[Omega]", "1"], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
-  "62e3c41b-cadc-484f-9c02-6edca7f6ea07"],
- " is small but not 0. I am going to call the two functions that you got in \
-Problem 2, ",
- Cell[BoxData[
-  FormBox[
-   RowBox[{
-    SubscriptBox["a", "+"], "(", "t", ")"}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
-  "25ce77e0-abe0-4ff5-98d8-80567350f66b"],
- " and ",
- Cell[BoxData[
-  FormBox[
-   RowBox[{
-    SubscriptBox["a", "-"], "(", "t", ")"}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
-  "09575cae-2ccd-484c-bc3c-1c8eb653be4d"],
- ". In problem 2 we of course called them ",
- Cell[BoxData[
-  FormBox[
-   RowBox[{
-    SubscriptBox["\[Psi]", "+"], "(", "t", ")"}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
-  "eaeda0ed-7fda-40e5-bb8b-8c6897b09835"],
- " and ",
- Cell[BoxData[
-  FormBox[
-   RowBox[{
-    SubscriptBox["\[Psi]", "-"], "(", "t", ")"}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
-  "c482689e-1221-453c-8a4c-db19cdcf100b"],
- ", but we can\[CloseCurlyQuote]t call them that now, because they aren\
-\[CloseCurlyQuote]t the solution any more (because ",
- Cell[BoxData[
-  FormBox[
-   SubscriptBox["\[Omega]", "1"], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
-  "7ff31b3d-ab76-436a-af9d-62d27cc6a864"],
- " is not 0 any more).\n\nNow for the ansatz: assume that ",
- Cell[BoxData[
-  FormBox[
-   RowBox[{
-    RowBox[{
-     SubscriptBox["\[Psi]", "+"], "(", "t", ")"}], "=", 
-    RowBox[{
-     RowBox[{
-      SubscriptBox["c", "+"], "(", "t", ")"}], 
-     RowBox[{
-      SubscriptBox["a", "+"], "(", "t", ")"}]}]}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
-  "22a2abc5-270b-4acd-aa94-18fcb2437eac"],
- " and that ",
- Cell[BoxData[
-  FormBox[
-   RowBox[{
-    RowBox[{
-     SubscriptBox["\[Psi]", "-"], "(", "t", ")"}], "=", 
-    RowBox[{
-     RowBox[{
-      SubscriptBox["c", "-"], "(", "t", ")"}], 
-     RowBox[{
-      SubscriptBox["a", "-"], "(", "t", ")"}]}]}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
-  "2cc7ac67-8a5b-478d-b89c-4f5e0d05b8bd"],
- ". Stick the ansatz into the equations you got in Problem 1. Use product \
-rule to simplify the time derivatives.\n\nHINT/CROSS-CHECK: Make sure that if \
-you put in ",
- Cell[BoxData[
-  FormBox[
-   RowBox[{
-    SubscriptBox["\[Omega]", "1"], "=", "0"}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
-  "3bba7b44-c1f2-4242-b17d-014d752ee8b1"],
- " into your equations for ",
- Cell[BoxData[
-  FormBox[
-   RowBox[{
-    SubscriptBox["c", "+"], "(", "t", ")"}], TraditionalForm]],ExpressionUUID->
-  "031d79c9-25ca-4307-8e09-3c5099a61ada"],
- " and ",
- Cell[BoxData[
-  FormBox[
-   RowBox[{
-    SubscriptBox["c", "-"], "(", "t", ")"}], TraditionalForm]],ExpressionUUID->
-  "ea64560f-2df7-45dd-bcb1-e6134bb30d8a"],
- " that these functions can then simply be constants.\n\nDISCUSSION (THE IDEA \
-OF THE ANSATZ): Hopefully, if ",
- Cell[BoxData[
-  FormBox[
-   SubscriptBox["\[Omega]", "1"], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
-  "5efbcb17-5980-4af9-aceb-1f56adefcafd"],
- " is small but not zero, then ",
- Cell[BoxData[
-  FormBox[
-   RowBox[{
-    SubscriptBox["c", "+"], "(", "t", ")"}], TraditionalForm]],ExpressionUUID->
-  "ecb48cc8-4638-47d9-99b1-8b6639a01282"],
- " and ",
- Cell[BoxData[
-  FormBox[
-   RowBox[{
-    SubscriptBox["c", "-"], "(", "t", ")"}], TraditionalForm]],ExpressionUUID->
-  "528516b9-f901-43f5-bc2f-97113bff4ee1"],
- " will be slowly varying functions of time. After all, they become constants \
-if ",
- Cell[BoxData[
-  FormBox[
-   RowBox[{
-    SubscriptBox["\[Omega]", "1"], "=", "0"}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
-  "b53305fc-3f23-4747-a7c1-8f3d8e21a5e1"],
- ".\n\n4. Again referring to Problem 2, where you found the solutions for ",
- Cell[BoxData[
-  FormBox[
-   RowBox[{
-    SubscriptBox["\[Psi]", "+"], "(", "t", ")"}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
-  "54d8c9d8-1a5b-4baa-8e0e-612f1e0134f6"],
- " and ",
- Cell[BoxData[
-  FormBox[
-   RowBox[{
-    SubscriptBox["\[Psi]", "-"], "(", "t", ")"}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
-  "da92785a-9d40-429f-a1fd-a857689019a8"],
- " in the case where ",
- Cell[BoxData[
-  FormBox[
-   RowBox[{
-    SubscriptBox["\[Omega]", "1"], "=", "0"}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
-  "4b29ec93-f263-4936-afa8-a4ac3dcb6a38"],
- ". We would be remiss if we didn\[CloseCurlyQuote]t think a little harder \
-about what this solution means. You can reassemble your solution into a \
-column vector ",
- Cell[BoxData[
-  FormBox[
-   RowBox[{
-    RowBox[{"|", 
-     RowBox[{
-      RowBox[{"\[Psi]", "(", "t", ")"}], ">"}]}], " ", "=", 
-    RowBox[{"(", GridBox[{
-       {
-        RowBox[{
-         SubscriptBox["\[Psi]", "+"], "(", "t", ")"}]},
-       {
-        RowBox[{
-         SubscriptBox["\[Psi]", "-"], "(", "t", ")"}]}
-      }], ")"}]}], TraditionalForm]],ExpressionUUID->
-  "9e053dad-88d8-474d-8dc8-a5355341adae"],
- ". Using the methods on pp. 114-115 of Moore, calculate:\n\n(a) ",
- Cell[BoxData[
-  FormBox[
-   RowBox[{"|", 
-    RowBox[{"<", 
-     RowBox[{"+", "z"}]}], "|", 
-    RowBox[{
-     RowBox[{"\[Psi]", "(", "t", ")"}], ">"}], 
-    SuperscriptBox["|", "2"]}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
-  "e1c9d6a6-e265-4a1e-9c6e-c726366b94e4"],
- "\n\n(b) ",
- Cell[BoxData[
-  FormBox[
-   RowBox[{"|", 
-    RowBox[{"<", 
-     RowBox[{"-", "z"}]}], "|", 
-    RowBox[{
-     RowBox[{"\[Psi]", "(", "t", ")"}], ">"}], 
-    SuperscriptBox["|", "2"]}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
-  "d36bdc37-b96d-41f8-9a00-9a64d5ae4691"],
- "\n\n(c) ",
- Cell[BoxData[
-  FormBox[
-   RowBox[{"|", 
-    RowBox[{"<", 
-     RowBox[{"+", "x"}]}], "|", 
-    RowBox[{
-     RowBox[{"\[Psi]", "(", "t", ")"}], ">"}], 
-    SuperscriptBox["|", "2"]}], TraditionalForm]],ExpressionUUID->
-  "3514c896-b808-4220-accc-19e0d8ca458e"],
- "\n\n(d) ",
- Cell[BoxData[
-  FormBox[
-   RowBox[{"|", 
-    RowBox[{"<", 
-     RowBox[{"-", "x"}]}], "|", 
-    RowBox[{
-     RowBox[{"\[Psi]", "(", "t", ")"}], ">"}], 
-    SuperscriptBox["|", "2"]}], TraditionalForm]],ExpressionUUID->
-  "101064f8-a358-4ac2-83ed-f7633b4169e5"],
- "\n\nIn the next class I will add ",
- Cell[BoxData[
-  FormBox[
-   RowBox[{"|", 
-    RowBox[{"<", 
-     RowBox[{"+", "y"}]}], "|", 
-    RowBox[{
-     RowBox[{"\[Psi]", "(", "t", ")"}], ">"}], 
-    SuperscriptBox["|", "2"]}], TraditionalForm]],ExpressionUUID->
-  "916d69e4-d93c-43ae-a9bd-c282f3874306"],
- " and ",
- Cell[BoxData[
-  FormBox[
-   RowBox[{"|", 
-    RowBox[{"<", 
-     RowBox[{"-", "y"}]}], "|", 
-    RowBox[{
-     RowBox[{"\[Psi]", "(", "t", ")"}], ">"}], 
-    SuperscriptBox["|", "2"]}], TraditionalForm]],ExpressionUUID->
-  "b74a5b44-8d56-4e15-93c9-7b705f9dde2d"],
- " to the list of quantities we can calculate, and hopefully an \
-interpretation will emerge."
-}], "Text",
- CellChangeTimes->{{3.914027554425773*^9, 3.914027601937613*^9}, {
-   3.914027664703047*^9, 3.914027666089014*^9}, {3.914064282574464*^9, 
-   3.914064294837758*^9}, 3.914441391782222*^9, {3.91468973440301*^9, 
-   3.914689742479237*^9}, {3.914722073149221*^9, 3.914722107869542*^9}, {
-   3.9147221455701*^9, 3.914722186846393*^9}, {3.914722338118928*^9, 
-   3.914722452062908*^9}, 3.914722601645062*^9, {3.9147229161327887`*^9, 
-   3.914722925055081*^9}, {3.915036721207067*^9, 3.9150367440671883`*^9}, {
-   3.9150368210921*^9, 3.915036876015964*^9}, {3.915037046933207*^9, 
-   3.91503754596103*^9}, {3.915037689586566*^9, 3.915037838546407*^9}, {
-   3.91503788478733*^9, 3.915037885436859*^9}, {3.915037935447002*^9, 
-   3.915037936832982*^9}, {3.915404676675138*^9, 3.915404708161542*^9}, {
-   3.915404744344537*^9, 3.9154047743587723`*^9}, {3.915404823481412*^9, 
-   3.915404982617275*^9}, {3.9160130114584513`*^9, 3.916013060588373*^9}, {
-   3.916013170606229*^9, 3.916013179719303*^9}, {3.916534315137508*^9, 
-   3.916534353912578*^9}, {3.916534412234235*^9, 3.9165344457278013`*^9}, {
-   3.916534505146703*^9, 3.916534583161029*^9}, {3.9165350902664213`*^9, 
-   3.916535101913106*^9}, 3.916535158554193*^9, {3.916535222673333*^9, 
-   3.916535262568747*^9}, {3.916535318498035*^9, 3.916535387614011*^9}, {
-   3.916535429357146*^9, 3.916535460235654*^9}, {3.916535545773631*^9, 
-   3.916535695165626*^9}, {3.916934842562787*^9, 3.916935133397135*^9}, {
-   3.916935174743766*^9, 3.916935180728987*^9}, {3.916935292113717*^9, 
-   3.916935292143157*^9}, {3.916935373948084*^9, 3.916935599528459*^9}, {
-   3.916938630403386*^9, 3.916938658156447*^9}, {3.9169410685627403`*^9, 
-   3.916941079317276*^9}, {3.919272570988037*^9, 3.919272576164976*^9}, {
-   3.919273009503739*^9, 3.919273119644362*^9}, {3.919273150469096*^9, 
-   3.919273182444955*^9}, {3.91927322323946*^9, 3.919273290133808*^9}, {
-   3.919273333603493*^9, 3.919273435622122*^9}, {3.919273570605556*^9, 
-   3.919273576057166*^9}, {3.919273642042113*^9, 3.919273799241666*^9}, {
-   3.919273905274564*^9, 3.9192739402975073`*^9}, {3.919273979281918*^9, 
-   3.919274040526205*^9}, {3.919274074188523*^9, 3.9192740931776237`*^9}, 
-   3.919274149001862*^9, {3.919714558053597*^9, 3.919714660184144*^9}, {
-   3.919714692696037*^9, 3.919714694644412*^9}, 3.91971475412458*^9, {
-   3.91971537876573*^9, 3.9197153804875*^9}, {3.919871476745599*^9, 
-   3.919871559713085*^9}, {3.919871698776689*^9, 3.919871698799308*^9}, {
-   3.919871817897055*^9, 3.919871843410635*^9}, {3.919958969909013*^9, 
-   3.919958969993247*^9}, {3.92098520257545*^9, 3.920985204239929*^9}, {
-   3.920985288120044*^9, 3.920985292773527*^9}, {3.920985566765376*^9, 
-   3.920985576282555*^9}, {3.920985681427232*^9, 3.920985683676508*^9}, {
-   3.9211552050430393`*^9, 3.921155273132989*^9}, {3.92149856587326*^9, 
-   3.92149859338961*^9}, {3.921498637989336*^9, 3.921498723164444*^9}, {
-   3.921498757353968*^9, 3.921498912544216*^9}, {3.921683746928758*^9, 
-   3.921683843523595*^9}, {3.921684006537868*^9, 3.921684181099297*^9}, {
-   3.921684212916451*^9, 3.921684337541898*^9}, {3.92168438911466*^9, 
-   3.921684401882099*^9}, 3.9216844383245*^9, {3.921955686575548*^9, 
-   3.921955742060006*^9}, {3.921955790369754*^9, 3.921955843290721*^9}, {
-   3.921955952732806*^9, 3.921955954397558*^9}, {3.92195637320149*^9, 
-   3.921956377768276*^9}, {3.922306565116558*^9, 3.922306680185705*^9}, {
-   3.922306710765937*^9, 3.922306754437684*^9}, {3.9223067880334377`*^9, 
-   3.922306898276318*^9}, {3.922307072645349*^9, 3.922307078897897*^9}, {
-   3.922307111435482*^9, 3.922307405952045*^9}, {3.922307444284134*^9, 
-   3.9223075341515903`*^9}, {3.922307574428833*^9, 3.922308264457478*^9}, {
-   3.9223083095710173`*^9, 3.922308458445038*^9}, {3.92230862752864*^9, 
-   3.922308662928626*^9}, {3.922308706691229*^9, 3.922309035969236*^9}, {
-   3.922309092627036*^9, 3.922309341958021*^9}, {3.92230976679642*^9, 
-   3.922309779665907*^9}},ExpressionUUID->"3e149c99-2b8e-4b73-a96d-\
-442094caa30d"]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
 Cell[TextData[StyleBox["Fast vs. Thermal Neutrons",
  FontSize->16]], "Subsection",
  CellChangeTimes->{{3.907161511820457*^9, 3.907161517693348*^9}, {
@@ -900,20 +395,19 @@ Cell[TextData[StyleBox["Fast vs. Thermal Neutrons",
    3.921498741155098*^9, 3.921498747667765*^9}, {3.9216836959865427`*^9, 
    3.921683731942879*^9}, {3.921683977728266*^9, 3.921683981912298*^9}, {
    3.921684219393962*^9, 3.9216842201346693`*^9}, {3.921955678777698*^9, 
-   3.921955683029444*^9}, {3.922304810339408*^9, 3.9223048148601027`*^9}, {
-   3.9223093609233303`*^9, 
+   3.921955683029444*^9}, {3.922304810339408*^9, 3.922304814860103*^9}, {
+   3.922309360923331*^9, 
    3.92230937534622*^9}},ExpressionUUID->"5089ab92-c281-4b55-aeea-\
 1a16b94734ff"],
 
 Cell["\<\
-I got flummoxed reading neutron reaction probabilities in class. I made two \
-mistakes: (1) I started off with too high an estimate of the initial energy \
-of the neutrons, and (2) the graph I printed out was missing an important \
-case. Let\[CloseCurlyQuote]s do a better job in this problem and using better \
-graphs.
+I made a mistake reading neutron reaction probabilities in class. \
+Specifically, I started off with too high an estimate of the initial energy \
+of the neutrons. Let\[CloseCurlyQuote]s rectify this.
 
-5. Below is the measured Fission Neutron Spectrum of the neutrons that come \
-out of Uranium-235 fission. Obviously it peaks around 1 MeV.\
+1. Below is the measured fission neutron spectrum for the neutrons that come \
+out of Uranium-235 fission. A quick look at the graph shows that it peaks \
+around 1 MeV.\
 \>", "Text",
  CellChangeTimes->{{3.914027554425773*^9, 3.914027601937613*^9}, {
    3.914027664703047*^9, 3.914027666089014*^9}, {3.914064282574464*^9, 
@@ -962,8 +456,9 @@ out of Uranium-235 fission. Obviously it peaks around 1 MeV.\
    3.921955742060006*^9}, {3.922309378431593*^9, 3.9223093785437326`*^9}, {
    3.922309807586234*^9, 3.922309817723138*^9}, {3.9223102114245453`*^9, 
    3.922310457332254*^9}, {3.922310492897753*^9, 3.922310511155908*^9}, {
-   3.9223105486636972`*^9, 3.922310564032337*^9}, {3.9223108841434383`*^9, 
-   3.922310923114992*^9}},ExpressionUUID->"82cb9075-de92-44c3-969b-\
+   3.9223105486636977`*^9, 3.922310564032337*^9}, {3.9223108841434383`*^9, 
+   3.922310923114992*^9}, {3.922318457968926*^9, 
+   3.922318550261593*^9}},ExpressionUUID->"82cb9075-de92-44c3-969b-\
 a3f887612481"],
 
 Cell[BoxData[
@@ -1551,15 +1046,27 @@ YDAY3g0Scjrm7gUSh9vtNj4iNxgMhneG8m6FfIO99Kmj/C5KL2noF98rGseA
    BoxForm`ImageTag["Byte", ColorSpace -> "RGB", Interleaving -> True],
    Selectable->False],
   DefaultBaseStyle->"ImageGraphics",
+  ImageSize->{247.61562499999894`, Automatic},
   ImageSizeRaw->{431., 341.},
   PlotRange->{{0, 431.}, {0, 341.}}]], "Input",ExpressionUUID->"1424ee74-4af1-\
 484f-ba86-9de4fbcd70e5"],
 
-Cell["\<\
-(a) Now that we know a typical fission neutron energy, find the corresponding \
-place on the graph below. What is the most probable thing that will happen to \
-such a neutron?\
-\>", "Text",
+Cell["", "PageBreak",
+ PageBreakBelow->True,ExpressionUUID->"5b882a24-0cbf-4b2e-a347-bb4c4b617d04"],
+
+Cell[TextData[{
+ "1. (CONT\[CloseCurlyQuote]D)\n\n(a) Now that we know a typical fission \
+neutron energy, find the corresponding place on the graph below and estimate \
+the ratio of probabilities of capture to fission. The vertical axis is \
+steeply logarithmic. To get a good estimate, you need to estimate the \
+position of the blue line, the position of the orange line, and then use the ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["10", "x"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "190e53e1-c5ce-4528-970d-5a7bc08c5a0e"],
+ " function on a calculator."
+}], "Text",
  CellChangeTimes->{{3.914027554425773*^9, 3.914027601937613*^9}, {
    3.914027664703047*^9, 3.914027666089014*^9}, {3.914064282574464*^9, 
    3.914064294837758*^9}, 3.914441391782222*^9, {3.91468973440301*^9, 
@@ -1607,9 +1114,10 @@ such a neutron?\
    3.921955742060006*^9}, {3.922309378431593*^9, 3.9223093785437326`*^9}, {
    3.922309807586234*^9, 3.922309817723138*^9}, {3.9223102114245453`*^9, 
    3.922310457332254*^9}, {3.922310492897753*^9, 3.922310511155908*^9}, {
-   3.9223105486636972`*^9, 3.922310637562784*^9}, {3.922310678121063*^9, 
-   3.922310690655703*^9}, {3.9223111643427134`*^9, 
-   3.9223112838875732`*^9}},ExpressionUUID->"5013921b-bb7a-4653-9381-\
+   3.9223105486636977`*^9, 3.922310637562784*^9}, {3.922310678121063*^9, 
+   3.922310690655703*^9}, {3.922311164342714*^9, 3.9223112838875737`*^9}, {
+   3.9223185951083317`*^9, 3.922318766500483*^9}, {3.9223204586179953`*^9, 
+   3.922320470367734*^9}},ExpressionUUID->"5013921b-bb7a-4653-9381-\
 f91d0c54ce82"],
 
 Cell[BoxData[
@@ -6119,48 +5627,55 @@ fq9e33of9TcBLmj/ALmyhTM=
 1528-49c7-9b98-9c8f95c561b1"],
 
 Cell[TextData[{
- "(b) The typical tempature inside a nuclear reactor isn\[CloseCurlyQuote]t \
-that hot. This isn\[CloseCurlyQuote]t fusion in the Sun. It is just a way of \
-boiling water to make steam to run turbines. The typical temperature in a \
-boiling water reactor is about 285\.baC. Convert this to \.baK.\n\n(c) \
-Neutrons at temperature ",
+ "(b) The typical temperature inside a nuclear reactor isn\[CloseCurlyQuote]t \
+that hot. This isn\[CloseCurlyQuote]t fusion in the Sun. Fission reactors \
+just boil water to make steam to run turbines which produce electricity. The \
+typical temperature in a boiling water reactor is about 285\.baC. Convert \
+this to \.baK.\n\n(c) Neutrons at temperature ",
  Cell[BoxData[
-  FormBox["T", TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
-  "567207b8-8327-44cb-a128-96c8bec3d88b"],
- " have energy ",
+  FormBox["T", TraditionalForm]],ExpressionUUID->
+  "1e4ec6fa-31fd-490c-ae47-2ae3abb133f4"],
+ " have typical kinetic energy of ",
  Cell[BoxData[
   FormBox[
    RowBox[{
     FractionBox["3", "2"], 
-    SubscriptBox["k", "B"], "T"}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
-  "108f3b4b-13fe-436b-bafc-12f9a4893735"],
+    SubscriptBox["k", "B"], "T"}], TraditionalForm]],ExpressionUUID->
+  "7d1d3c28-da6e-4d92-8ccc-46ef9c21a28e"],
  ". Boltzmann\[CloseCurlyQuote]s constant is ",
  Cell[BoxData[
   FormBox[
    RowBox[{"8.3", "\[Times]", 
     SuperscriptBox["10", 
-     RowBox[{"-", "5"}]]}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
-  "f19c6691-7b5f-4f87-a18b-7291f6af07e7"],
+     RowBox[{"-", "5"}]]}], TraditionalForm]],ExpressionUUID->
+  "d2d56d14-ae1c-49c6-b880-4a232ef73738"],
  "eV/\.baK. What is the typical kinetic energy of a neutron that has \
 \[OpenCurlyDoubleQuote]thermalized\[CloseCurlyDoubleQuote] down to the \
-temperature you found in (b)?\n\n(d) Using the kinetic energy you found in \
-(c), what is likely to happen to a thermalized neutron? In other words, what \
-are the odds it will cause another fission vs. the odds it will be captured.\n\
-\nDISCUSSION: So if all the 2-3 neutrons that result from a fission can first \
-be thermalized then about half of those can go on to make more fissions. If \
-instead, they interact with Uranium while they still have their original 1MeV \
-of energy, then the vast majority of them will be captured, and the reactor \
-will not sustain a chain reaction. This is the reason that reactors have rods \
-that \[OpenCurlyDoubleQuote]moderate\[CloseCurlyDoubleQuote] neutrons as well \
-as other rods that absorb neutrons. Inserting and pulling out these rods \
-controls the pace of the nuclear reaction. In Chernobyl, inexperienced \
-operators failed to realize that the graphite-tipped absorber rods they were \
-pushing into the reactor to absorb would initially moderate neutrons before \
-getting in far enough to absorb neutrons. This is now considered to be a bad \
-design as well as operator error."
+temperature you found in (b)? Also, take ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["log", "10"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "cceea1ce-804f-46d9-bcd9-e673b3066493"],
+ " of this number so you can report your answer by specifying the ",
+ Cell[BoxData[
+  FormBox["x", TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "0b09d6ee-1b7b-489c-b75f-17622c3155f3"],
+ "-value in ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["10", "x"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "31541441-5d3d-4687-bcf8-26edbad73833"],
+ " eV.\n\n(d) Using the answer you found in (c), what is likely to happen to \
+a thermalized neutron? In other words, what are the odds it will cause \
+another fission vs. the odds it will be captured.\n\nDISCUSSION: The point of \
+this problem was to show that it is very important to \
+\[OpenCurlyDoubleQuote]moderate\[CloseCurlyDoubleQuote] or \
+\[OpenCurlyDoubleQuote]thermalize\[CloseCurlyDoubleQuote] the neutrons in a \
+reactor, otherwise they just get captured instead of having a chance to cause \
+additional fissions."
 }], "Text",
  CellChangeTimes->{{3.914027554425773*^9, 3.914027601937613*^9}, {
    3.914027664703047*^9, 3.914027666089014*^9}, {3.914064282574464*^9, 
@@ -6209,19 +5724,559 @@ design as well as operator error."
    3.921955742060006*^9}, {3.922309378431593*^9, 3.9223093785437326`*^9}, {
    3.922309807586234*^9, 3.922309817723138*^9}, {3.9223102114245453`*^9, 
    3.922310457332254*^9}, {3.922310492897753*^9, 3.922310511155908*^9}, {
-   3.9223105486636972`*^9, 3.922310637562784*^9}, {3.922310678121063*^9, 
-   3.922310690655703*^9}, {3.9223111643427134`*^9, 3.922311335804755*^9}, {
+   3.9223105486636977`*^9, 3.922310637562784*^9}, {3.922310678121063*^9, 
+   3.922310690655703*^9}, {3.922311164342714*^9, 3.922311335804755*^9}, {
    3.9223113966578093`*^9, 3.922311487040915*^9}, {3.922311522501315*^9, 
    3.922311896129611*^9}, {3.922311976895254*^9, 3.922312043359325*^9}, {
-   3.9223121180421667`*^9, 
-   3.922312206445197*^9}},ExpressionUUID->"9bc72b82-3f7c-4742-a3b6-\
+   3.922312118042167*^9, 3.922312206445197*^9}, {3.9223188495297527`*^9, 
+   3.922318899434985*^9}, {3.9223189951553307`*^9, 3.922319015586957*^9}, {
+   3.9223191733022623`*^9, 3.922319250276211*^9}, {3.922319320744735*^9, 
+   3.922319502232513*^9}, {3.922319621965509*^9, 3.922319637543353*^9}, {
+   3.9223197248930683`*^9, 3.9223198857902*^9}, {3.922320658304962*^9, 
+   3.922320659001112*^9}},ExpressionUUID->"9bc72b82-3f7c-4742-a3b6-\
 685a7e9f8ce9"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[StyleBox["Magnetic Resonance",
+ FontSize->16]], "Subsection",
+ CellChangeTimes->{{3.907161511820457*^9, 3.907161517693348*^9}, {
+   3.9071757851311502`*^9, 3.907175786965211*^9}, 3.907818209992303*^9, {
+   3.9078191362206*^9, 3.90781913785112*^9}, {3.907819172116008*^9, 
+   3.907819176110496*^9}, {3.907820387875669*^9, 3.907820402108921*^9}, {
+   3.907820981764664*^9, 3.907821007358383*^9}, {3.907821038037771*^9, 
+   3.907821042290193*^9}, {3.907821088606534*^9, 3.9078210900352592`*^9}, {
+   3.907821135428946*^9, 3.907821158579274*^9}, {3.907821196245142*^9, 
+   3.907821237363723*^9}, {3.907821349401204*^9, 3.907821396425806*^9}, {
+   3.907821450908679*^9, 3.907821516779191*^9}, {3.908397878489965*^9, 
+   3.908397951028851*^9}, {3.908398041423287*^9, 3.908398058613622*^9}, {
+   3.908398130040098*^9, 3.908398139118972*^9}, {3.908398169156537*^9, 
+   3.908398192128955*^9}, {3.908398252159361*^9, 3.908398411595109*^9}, {
+   3.908398456684402*^9, 3.908398536593797*^9}, {3.908398607154119*^9, 
+   3.908398652335915*^9}, {3.908630830378921*^9, 3.90863084576903*^9}, {
+   3.908975491833612*^9, 3.908975522492631*^9}, {3.908975666045314*^9, 
+   3.908975711042753*^9}, {3.908976051229232*^9, 3.908976178825238*^9}, {
+   3.913810107870986*^9, 3.913810533475247*^9}, {3.913810634111455*^9, 
+   3.913810644069963*^9}, {3.913810679147831*^9, 3.91381071872521*^9}, {
+   3.9138108312992373`*^9, 3.913810888253944*^9}, {3.913810965406918*^9, 
+   3.913811021243954*^9}, {3.913811051361785*^9, 3.91381106657822*^9}, {
+   3.9138110987262697`*^9, 3.913811100703505*^9}, {3.91402529255657*^9, 
+   3.914025351909107*^9}, {3.914025416733687*^9, 3.9140259055200663`*^9}, {
+   3.914025936874846*^9, 3.914025951556254*^9}, 3.914025996195584*^9, {
+   3.914027092732191*^9, 3.914027097367485*^9}, {3.914689729790235*^9, 
+   3.914689731758145*^9}, {3.914722046747615*^9, 3.9147220506395493`*^9}, {
+   3.914722493104393*^9, 3.914722498908587*^9}, {3.915036891845689*^9, 
+   3.9150368958269*^9}, {3.915037024343502*^9, 3.91503702475231*^9}, {
+   3.9150376744444027`*^9, 3.915037675054278*^9}, {3.91540499571329*^9, 
+   3.91540499994322*^9}, {3.916012997305713*^9, 3.916013003481572*^9}, {
+   3.916535411446114*^9, 3.916535456925606*^9}, {3.919272865612307*^9, 
+   3.919272866510892*^9}, {3.919273836075861*^9, 3.9192738480110493`*^9}, {
+   3.919714405202058*^9, 3.919714414695334*^9}, {3.919714533232993*^9, 
+   3.919714546161456*^9}, {3.9198714631769533`*^9, 3.9198714652325277`*^9}, {
+   3.920985207729306*^9, 3.92098523278088*^9}, {3.9209853745484343`*^9, 
+   3.920985375377038*^9}, {3.9211551875884643`*^9, 3.921155193615699*^9}, {
+   3.921498741155098*^9, 3.921498747667765*^9}, {3.9216836959865427`*^9, 
+   3.921683731942879*^9}, {3.921683977728266*^9, 3.921683981912298*^9}, {
+   3.921684219393962*^9, 3.9216842201346693`*^9}, {3.921955678777698*^9, 
+   3.921955683029444*^9}, {3.921955748812247*^9, 3.9219557495054417`*^9}, {
+   3.922304822422538*^9, 
+   3.922304824795312*^9}},ExpressionUUID->"857f7e1a-b06f-45dc-9832-\
+589bbae96145"],
+
+Cell[TextData[{
+ StyleBox["In the \[OpenCurlyDoubleQuote]Magnetic Resonance I\
+\[CloseCurlyDoubleQuote] handout, we got:\n\n",
+  FontSize->14],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"i", "\[VeryThinSpace]", 
+     FractionBox["d", 
+      RowBox[{"d", "\[VeryThinSpace]", "t"}]], 
+     RowBox[{"(", GridBox[{
+        {
+         RowBox[{
+          SubscriptBox["\[Psi]", "+"], "(", "t", ")"}]},
+        {
+         RowBox[{
+          SubscriptBox["\[Psi]", "-"], "(", "t", ")"}]}
+       }], ")"}]}], "=", 
+    RowBox[{
+     RowBox[{"-", 
+      FractionBox["1", "2"]}], 
+     RowBox[{"(", GridBox[{
+        {
+         SubscriptBox["\[Omega]", "0"], 
+         RowBox[{
+          SubscriptBox["\[Omega]", "1"], "cos", "\[VeryThinSpace]", 
+          "\[Omega]", "\[VeryThinSpace]", "t"}]},
+        {
+         RowBox[{
+          SubscriptBox["\[Omega]", "1"], "cos", "\[VeryThinSpace]", 
+          "\[Omega]", "\[VeryThinSpace]", "t"}], 
+         RowBox[{"-", 
+          SubscriptBox["\[Omega]", "0"]}]}
+       }], ")"}], 
+     RowBox[{"(", GridBox[{
+        {
+         RowBox[{
+          SubscriptBox["\[Psi]", "+"], "(", "t", ")"}]},
+        {
+         RowBox[{
+          SubscriptBox["\[Psi]", "-"], "(", "t", ")"}]}
+       }], ")"}]}]}], TraditionalForm]],
+  FontSize->14,ExpressionUUID->"4460c547-27c0-4d97-afa0-a1f230d3e105"],
+ ".",
+ StyleBox["\n\nThis is a fancy shorthand for two equations. You may need to \
+quickly review matrix and vector multiplication, because we only used it a \
+little back in Chapters Q6 and Q7. Here is a lightning review: if you have a \
+matrix ",
+  FontSize->14],
+ Cell[BoxData[
+  FormBox["M", TraditionalForm]],
+  FontSize->14,ExpressionUUID->"fe127e5e-88d1-4eb2-a22a-24de200f6307"],
+ StyleBox[" and a column vector ",
+  FontSize->14],
+ Cell[BoxData[
+  FormBox["w", TraditionalForm]],
+  FontSize->14,ExpressionUUID->"3ecb82e3-d2c5-4277-9b64-5eac6e6e50a1"],
+ StyleBox[" where ",
+  FontSize->14],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"M", "=", 
+    RowBox[{"(", GridBox[{
+       {
+        SubscriptBox["m", "11"], 
+        SubscriptBox["m", "12"]},
+       {
+        SubscriptBox["m", "21"], 
+        SubscriptBox["m", "22"]}
+      }], ")"}]}], TraditionalForm]],
+  FontSize->14,ExpressionUUID->"74e98bd3-8d8c-49ff-bffd-a1d9973d8a03"],
+ StyleBox[" and ",
+  FontSize->14],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"w", "=", 
+    RowBox[{"(", GridBox[{
+       {
+        SubscriptBox["w", "1"]},
+       {
+        SubscriptBox["w", "2"]}
+      }], ")"}]}], TraditionalForm]],
+  FontSize->14,ExpressionUUID->"bc9e4f9d-3373-40ea-80b2-4c36c4413dfb"],
+ StyleBox[", then when you see ",
+  FontSize->14],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"M", "\[VeryThinSpace]", "w"}], TraditionalForm]],
+  FormatType->TraditionalForm,
+  FontSize->14,ExpressionUUID->"32771b5a-d529-49f3-b024-bae2d744c63e"],
+ StyleBox[" or ",
+  FontSize->14],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{" ", 
+    RowBox[{
+     RowBox[{"(", GridBox[{
+        {
+         SubscriptBox["m", "11"], 
+         SubscriptBox["m", "12"]},
+        {
+         SubscriptBox["m", "21"], 
+         SubscriptBox["m", "22"]}
+       }], ")"}], 
+     RowBox[{"(", GridBox[{
+        {
+         SubscriptBox["w", "1"]},
+        {
+         SubscriptBox["w", "2"]}
+       }], ")"}]}]}], TraditionalForm]],
+  FontSize->14,ExpressionUUID->"7d5033f5-466a-4936-ab81-1d441d7bccbb"],
+ StyleBox[" in an equation, this product is by definition the column vector  ",
+  FontSize->14],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"(", GridBox[{
+      {
+       RowBox[{
+        RowBox[{
+         SubscriptBox["m", "11"], 
+         SubscriptBox["w", "1"]}], "+", 
+        RowBox[{
+         SubscriptBox["m", "12"], 
+         SubscriptBox["w", "2"]}]}]},
+      {
+       RowBox[{
+        RowBox[{
+         SubscriptBox["m", "21"], 
+         SubscriptBox["w", "1"]}], "+", 
+        RowBox[{
+         SubscriptBox["m", "22"], 
+         SubscriptBox["w", "2"]}]}]}
+     }], ")"}], TraditionalForm]],
+  FontSize->14,ExpressionUUID->"2804a09d-d2a0-4356-8d9f-edc4ce8f2151"],
+ StyleBox[".\n\n2. Use the matrix multiplication rules above to write out the \
+two equations involving ",
+  FontSize->14],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["\[Psi]", "+"], "(", "t", ")"}], TraditionalForm]],
+  FontSize->14,ExpressionUUID->"fe9e38ce-858d-4f26-9b0c-895a04f76d78"],
+ StyleBox[" and ",
+  FontSize->14],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["\[Psi]", "-"], "(", "t", ")"}], TraditionalForm]],
+  FontSize->14,ExpressionUUID->"c75667d1-dce1-4a9b-b25b-c96f4d0fb0c5"],
+ StyleBox[".\n\nHINT/CROSS-CHECK: Make sure that if you put in ",
+  FontSize->14],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["\[Omega]", "1"], "=", "0"}], TraditionalForm]],
+  FontSize->14,ExpressionUUID->"45d5e841-172e-4a30-9cb6-31f86b940ad2"],
+ StyleBox[" into your equations that you recover the two equations at the \
+very bottom of p. 3 of the \[OpenCurlyDoubleQuote]Magnetic Resonance I\
+\[CloseCurlyDoubleQuote] handout.\n\n3. The only case we can solve exactly is \
+the case where ",
+  FontSize->14],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["\[Omega]", "1"], "=", "0"}], TraditionalForm]],
+  FontSize->14,ExpressionUUID->"7f35be5f-777b-460b-bda7-5704bb5493a6"],
+ StyleBox[". Solve that case. You will have two unknown constants, ",
+  FontSize->14],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["\[Psi]", "+"], "(", "0", ")"}], TraditionalForm]],
+  FontSize->14,ExpressionUUID->"c0414340-9482-4f85-bac0-d54b46a61396"],
+ StyleBox[" and ",
+  FontSize->14],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["\[Psi]", "-"], "(", "0", ")"}], TraditionalForm]],
+  FontSize->14,ExpressionUUID->"a57b0c43-4395-4fc1-92f0-fbd89c2ed62a"],
+ StyleBox[", but other than those two unknowns, you will have nice tidy \
+answers for ",
+  FontSize->14],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["\[Psi]", "+"], "(", "t", ")"}], TraditionalForm]],
+  FontSize->14,ExpressionUUID->"b1549f22-1f7f-443f-8752-ea57e665e276"],
+ StyleBox[" and ",
+  FontSize->14],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["\[Psi]", "-"], "(", "t", ")"}], TraditionalForm]],
+  FontSize->14,ExpressionUUID->"e99924f6-e0da-464c-8a17-264aa5d6a11c"],
+ StyleBox[".\n\n4. Now we are going to assume that ",
+  FontSize->14],
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["\[Omega]", "1"], TraditionalForm]],
+  FontSize->14,ExpressionUUID->"62e3c41b-cadc-484f-9c02-6edca7f6ea07"],
+ StyleBox[" is small but not 0. I am going to call the two functions that you \
+got in Problem 3, ",
+  FontSize->14],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["a", "+"], "(", "t", ")"}], TraditionalForm]],
+  FontSize->14,ExpressionUUID->"25ce77e0-abe0-4ff5-98d8-80567350f66b"],
+ StyleBox[" and ",
+  FontSize->14],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["a", "-"], "(", "t", ")"}], TraditionalForm]],
+  FontSize->14,ExpressionUUID->"09575cae-2ccd-484c-bc3c-1c8eb653be4d"],
+ StyleBox[". In problem 3 we of course called them ",
+  FontSize->14],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["\[Psi]", "+"], "(", "t", ")"}], TraditionalForm]],
+  FontSize->14,ExpressionUUID->"eaeda0ed-7fda-40e5-bb8b-8c6897b09835"],
+ StyleBox[" and ",
+  FontSize->14],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["\[Psi]", "-"], "(", "t", ")"}], TraditionalForm]],
+  FontSize->14,ExpressionUUID->"c482689e-1221-453c-8a4c-db19cdcf100b"],
+ StyleBox[", but we can\[CloseCurlyQuote]t call them that now, because they \
+aren\[CloseCurlyQuote]t the solution any more (because ",
+  FontSize->14],
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["\[Omega]", "1"], TraditionalForm]],
+  FontSize->14,ExpressionUUID->"7ff31b3d-ab76-436a-af9d-62d27cc6a864"],
+ StyleBox[" is not 0 any more). Now for the ansatz: assume that ",
+  FontSize->14],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SubscriptBox["\[Psi]", "+"], "(", "t", ")"}], "=", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["c", "+"], "(", "t", ")"}], 
+     RowBox[{
+      SubscriptBox["a", "+"], "(", "t", ")"}]}]}], TraditionalForm]],
+  FontSize->14,ExpressionUUID->"22a2abc5-270b-4acd-aa94-18fcb2437eac"],
+ StyleBox[" and that ",
+  FontSize->14],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SubscriptBox["\[Psi]", "-"], "(", "t", ")"}], "=", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["c", "-"], "(", "t", ")"}], 
+     RowBox[{
+      SubscriptBox["a", "-"], "(", "t", ")"}]}]}], TraditionalForm]],
+  FontSize->14,ExpressionUUID->"2cc7ac67-8a5b-478d-b89c-4f5e0d05b8bd"],
+ StyleBox[". Stick the ansatz into the equations you got in Problem 3. Use \
+product rule to simplify the time derivatives.\n\nHINT/CROSS-CHECK: Make sure \
+that if you put in ",
+  FontSize->14],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["\[Omega]", "1"], "=", "0"}], TraditionalForm]],
+  FontSize->14,ExpressionUUID->"3bba7b44-c1f2-4242-b17d-014d752ee8b1"],
+ StyleBox[" into your equations for ",
+  FontSize->14],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["c", "+"], "(", "t", ")"}], TraditionalForm]],
+  FontSize->14,ExpressionUUID->"031d79c9-25ca-4307-8e09-3c5099a61ada"],
+ StyleBox[" and ",
+  FontSize->14],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["c", "-"], "(", "t", ")"}], TraditionalForm]],
+  FontSize->14,ExpressionUUID->"ea64560f-2df7-45dd-bcb1-e6134bb30d8a"],
+ StyleBox[" that these functions can then simply be constants.\n\nDISCUSSION \
+(THE IDEA OF THE ANSATZ): Hopefully, if ",
+  FontSize->14],
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["\[Omega]", "1"], TraditionalForm]],
+  FontSize->14,ExpressionUUID->"5efbcb17-5980-4af9-aceb-1f56adefcafd"],
+ StyleBox[" is small but not zero, then ",
+  FontSize->14],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["c", "+"], "(", "t", ")"}], TraditionalForm]],
+  FontSize->14,ExpressionUUID->"ecb48cc8-4638-47d9-99b1-8b6639a01282"],
+ StyleBox[" and ",
+  FontSize->14],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["c", "-"], "(", "t", ")"}], TraditionalForm]],
+  FontSize->14,ExpressionUUID->"528516b9-f901-43f5-bc2f-97113bff4ee1"],
+ StyleBox[" will be slowly varying functions of time. After all, they become \
+constants if ",
+  FontSize->14],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["\[Omega]", "1"], "=", "0"}], TraditionalForm]],
+  FontSize->14,ExpressionUUID->"b53305fc-3f23-4747-a7c1-8f3d8e21a5e1"],
+ StyleBox[".\n\n5. Again refer to Problem 3, where you found the solutions \
+for ",
+  FontSize->14],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["\[Psi]", "+"], "(", "t", ")"}], TraditionalForm]],
+  FontSize->14,ExpressionUUID->"54d8c9d8-1a5b-4baa-8e0e-612f1e0134f6"],
+ StyleBox[" and ",
+  FontSize->14],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["\[Psi]", "-"], "(", "t", ")"}], TraditionalForm]],
+  FontSize->14,ExpressionUUID->"da92785a-9d40-429f-a1fd-a857689019a8"],
+ StyleBox[" in the case where ",
+  FontSize->14],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["\[Omega]", "1"], "=", "0"}], TraditionalForm]],
+  FontSize->14,ExpressionUUID->"4b29ec93-f263-4936-afa8-a4ac3dcb6a38"],
+ StyleBox[". We would be remiss if we didn\[CloseCurlyQuote]t think a little \
+harder about what this solution means. You can reassemble your solution into \
+a column vector ",
+  FontSize->14],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"|", 
+     RowBox[{
+      RowBox[{"\[Psi]", "(", "t", ")"}], ">"}]}], " ", "=", 
+    RowBox[{"(", GridBox[{
+       {
+        RowBox[{
+         SubscriptBox["\[Psi]", "+"], "(", "t", ")"}]},
+       {
+        RowBox[{
+         SubscriptBox["\[Psi]", "-"], "(", "t", ")"}]}
+      }], ")"}]}], TraditionalForm]],
+  FontSize->14,ExpressionUUID->"9e053dad-88d8-474d-8dc8-a5355341adae"],
+ StyleBox[". Then, using the methods on pp. 114-115 of Moore, calculate: (a) ",
+  FontSize->14],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"|", 
+    RowBox[{"<", 
+     RowBox[{"+", "z"}]}], "|", 
+    RowBox[{
+     RowBox[{"\[Psi]", "(", "t", ")"}], ">"}], 
+    SuperscriptBox["|", "2"]}], TraditionalForm]],
+  FontSize->14,ExpressionUUID->"e1c9d6a6-e265-4a1e-9c6e-c726366b94e4"],
+ StyleBox[", (b) ",
+  FontSize->14],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"|", 
+    RowBox[{"<", 
+     RowBox[{"-", "z"}]}], "|", 
+    RowBox[{
+     RowBox[{"\[Psi]", "(", "t", ")"}], ">"}], 
+    SuperscriptBox["|", "2"]}], TraditionalForm]],
+  FontSize->14,ExpressionUUID->"d36bdc37-b96d-41f8-9a00-9a64d5ae4691"],
+ StyleBox[", (c) ",
+  FontSize->14],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"|", 
+    RowBox[{"<", 
+     RowBox[{"+", "x"}]}], "|", 
+    RowBox[{
+     RowBox[{"\[Psi]", "(", "t", ")"}], ">"}], 
+    SuperscriptBox["|", "2"]}], TraditionalForm]],
+  FontSize->14,ExpressionUUID->"3514c896-b808-4220-accc-19e0d8ca458e"],
+ StyleBox[", and (d) ",
+  FontSize->14],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"|", 
+    RowBox[{"<", 
+     RowBox[{"-", "x"}]}], "|", 
+    RowBox[{
+     RowBox[{"\[Psi]", "(", "t", ")"}], ">"}], 
+    SuperscriptBox["|", "2"]}], TraditionalForm]],
+  FontSize->14,ExpressionUUID->"101064f8-a358-4ac2-83ed-f7633b4169e5"],
+ StyleBox[".\n\nHINT/CROSS-CHECK: Obviously the answers to (a) and (b) have \
+to add up to 1, and to use that cross-check, you will need to use that  ",
+  FontSize->14],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SuperscriptBox[
+      RowBox[{"\[LeftBracketingBar]", 
+       RowBox[{
+        SubscriptBox["\[Psi]", "+"], "(", "0", ")"}], 
+       "\[RightBracketingBar]"}], "2"], "+", 
+     SuperscriptBox[
+      RowBox[{"\[LeftBracketingBar]", 
+       RowBox[{
+        SubscriptBox["\[Psi]", "-"], "(", "0", ")"}], 
+       "\[RightBracketingBar]"}], "2"]}], "=", "1"}], TraditionalForm]],
+  FontSize->14,ExpressionUUID->"3a5a5923-580d-4f33-b029-350f0094b906"],
+ StyleBox[".",
+  FontSize->14]
+}], "Text",
+ CellChangeTimes->{{3.914027554425773*^9, 3.914027601937613*^9}, {
+   3.914027664703047*^9, 3.914027666089014*^9}, {3.914064282574464*^9, 
+   3.914064294837758*^9}, 3.914441391782222*^9, {3.91468973440301*^9, 
+   3.914689742479237*^9}, {3.914722073149221*^9, 3.914722107869542*^9}, {
+   3.9147221455701*^9, 3.914722186846393*^9}, {3.914722338118928*^9, 
+   3.914722452062908*^9}, 3.914722601645062*^9, {3.9147229161327887`*^9, 
+   3.914722925055081*^9}, {3.915036721207067*^9, 3.9150367440671883`*^9}, {
+   3.9150368210921*^9, 3.915036876015964*^9}, {3.915037046933207*^9, 
+   3.91503754596103*^9}, {3.915037689586566*^9, 3.915037838546407*^9}, {
+   3.91503788478733*^9, 3.915037885436859*^9}, {3.915037935447002*^9, 
+   3.915037936832982*^9}, {3.915404676675138*^9, 3.915404708161542*^9}, {
+   3.915404744344537*^9, 3.9154047743587723`*^9}, {3.915404823481412*^9, 
+   3.915404982617275*^9}, {3.9160130114584513`*^9, 3.916013060588373*^9}, {
+   3.916013170606229*^9, 3.916013179719303*^9}, {3.916534315137508*^9, 
+   3.916534353912578*^9}, {3.916534412234235*^9, 3.9165344457278013`*^9}, {
+   3.916534505146703*^9, 3.916534583161029*^9}, {3.9165350902664213`*^9, 
+   3.916535101913106*^9}, 3.916535158554193*^9, {3.916535222673333*^9, 
+   3.916535262568747*^9}, {3.916535318498035*^9, 3.916535387614011*^9}, {
+   3.916535429357146*^9, 3.916535460235654*^9}, {3.916535545773631*^9, 
+   3.916535695165626*^9}, {3.916934842562787*^9, 3.916935133397135*^9}, {
+   3.916935174743766*^9, 3.916935180728987*^9}, {3.916935292113717*^9, 
+   3.916935292143157*^9}, {3.916935373948084*^9, 3.916935599528459*^9}, {
+   3.916938630403386*^9, 3.916938658156447*^9}, {3.9169410685627403`*^9, 
+   3.916941079317276*^9}, {3.919272570988037*^9, 3.919272576164976*^9}, {
+   3.919273009503739*^9, 3.919273119644362*^9}, {3.919273150469096*^9, 
+   3.919273182444955*^9}, {3.91927322323946*^9, 3.919273290133808*^9}, {
+   3.919273333603493*^9, 3.919273435622122*^9}, {3.919273570605556*^9, 
+   3.919273576057166*^9}, {3.919273642042113*^9, 3.919273799241666*^9}, {
+   3.919273905274564*^9, 3.9192739402975073`*^9}, {3.919273979281918*^9, 
+   3.919274040526205*^9}, {3.919274074188523*^9, 3.9192740931776237`*^9}, 
+   3.919274149001862*^9, {3.919714558053597*^9, 3.919714660184144*^9}, {
+   3.919714692696037*^9, 3.919714694644412*^9}, 3.91971475412458*^9, {
+   3.91971537876573*^9, 3.9197153804875*^9}, {3.919871476745599*^9, 
+   3.919871559713085*^9}, {3.919871698776689*^9, 3.919871698799308*^9}, {
+   3.919871817897055*^9, 3.919871843410635*^9}, {3.919958969909013*^9, 
+   3.919958969993247*^9}, {3.92098520257545*^9, 3.920985204239929*^9}, {
+   3.920985288120044*^9, 3.920985292773527*^9}, {3.920985566765376*^9, 
+   3.920985576282555*^9}, {3.920985681427232*^9, 3.920985683676508*^9}, {
+   3.9211552050430393`*^9, 3.921155273132989*^9}, {3.92149856587326*^9, 
+   3.92149859338961*^9}, {3.921498637989336*^9, 3.921498723164444*^9}, {
+   3.921498757353968*^9, 3.921498912544216*^9}, {3.921683746928758*^9, 
+   3.921683843523595*^9}, {3.921684006537868*^9, 3.921684181099297*^9}, {
+   3.921684212916451*^9, 3.921684337541898*^9}, {3.92168438911466*^9, 
+   3.921684401882099*^9}, 3.9216844383245*^9, {3.921955686575548*^9, 
+   3.921955742060006*^9}, {3.921955790369754*^9, 3.921955843290721*^9}, {
+   3.921955952732806*^9, 3.921955954397558*^9}, {3.92195637320149*^9, 
+   3.921956377768276*^9}, {3.922306565116558*^9, 3.922306680185705*^9}, {
+   3.922306710765937*^9, 3.922306754437684*^9}, {3.922306788033438*^9, 
+   3.922306898276318*^9}, {3.922307072645349*^9, 3.922307078897897*^9}, {
+   3.922307111435482*^9, 3.922307405952045*^9}, {3.922307444284134*^9, 
+   3.9223075341515903`*^9}, {3.922307574428833*^9, 3.922308264457478*^9}, {
+   3.9223083095710173`*^9, 3.922308458445038*^9}, {3.92230862752864*^9, 
+   3.922308662928626*^9}, {3.922308706691229*^9, 3.922309035969236*^9}, {
+   3.922309092627036*^9, 3.922309341958021*^9}, {3.92230976679642*^9, 
+   3.922309779665907*^9}, {3.922319907464754*^9, 3.9223199621923113`*^9}, {
+   3.922320015740892*^9, 3.9223200332192917`*^9}, {3.9223200675246696`*^9, 
+   3.922320073365219*^9}, {3.92232011667047*^9, 3.922320314601055*^9}, {
+   3.922320348009262*^9, 3.922320385874555*^9}, {3.922320733284666*^9, 
+   3.922320751085672*^9}, {3.922320782396707*^9, 3.922320783401051*^9}, {
+   3.922321136629376*^9, 3.922321147034546*^9}, {3.922321224434767*^9, 
+   3.922321237078475*^9}, {3.922321288326961*^9, 3.922321337720437*^9}, 
+   3.922321383270679*^9, {3.922321444857375*^9, 3.92232144520704*^9}, 
+   3.9223215495401497`*^9, 3.9223215869404163`*^9, {3.922321623163862*^9, 
+   3.9223216272885637`*^9}, {3.922321671717252*^9, 
+   3.922321679961134*^9}},ExpressionUUID->"3e149c99-2b8e-4b73-a96d-\
+442094caa30d"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
 },
-WindowSize->{1518, 1149},
-WindowMargins->{{206, Automatic}, {Automatic, 43}},
+WindowSize->{1518, 843},
+WindowMargins->{{10, Automatic}, {Automatic, 3}},
 PrintingCopies->1,
 PrintingPageRange->{1, Automatic},
 Magnification:>1.25 Inherited,
@@ -6260,16 +6315,18 @@ Cell[16199, 271, 3709, 54, 73, "Text",ExpressionUUID->"7db02205-92fd-4043-b03c-f
 Cell[CellGroupData[{
 Cell[19945, 330, 1592, 23, 78, "Section",ExpressionUUID->"e0d51dc0-12b2-43d1-9537-65a0b526a33d"],
 Cell[CellGroupData[{
-Cell[21562, 357, 3041, 43, 61, "Subsection",ExpressionUUID->"857f7e1a-b06f-45dc-9832-589bbae96145"],
-Cell[24606, 402, 16895, 455, 1227, "Text",ExpressionUUID->"3e149c99-2b8e-4b73-a96d-442094caa30d"]
+Cell[21562, 357, 3045, 43, 61, "Subsection",ExpressionUUID->"5089ab92-c281-4b55-aeea-1a16b94734ff"],
+Cell[24610, 402, 4028, 59, 102, "Text",ExpressionUUID->"82cb9075-de92-44c3-969b-a3f887612481"],
+Cell[28641, 463, 35588, 588, 261, "Input",ExpressionUUID->"1424ee74-4af1-484f-ba86-9de4fbcd70e5"],
+Cell[64232, 1053, 99, 1, 1, "PageBreak",ExpressionUUID->"5b882a24-0cbf-4b2e-a347-bb4c4b617d04",
+ PageBreakBelow->True],
+Cell[64334, 1056, 4336, 64, 159, "Text",ExpressionUUID->"5013921b-bb7a-4653-9381-f91d0c54ce82"],
+Cell[68673, 1122, 274485, 4504, 891, "Input",ExpressionUUID->"482debe8-1528-49c7-9b98-9c8f95c561b1"],
+Cell[343161, 5628, 6393, 108, 338, "Text",ExpressionUUID->"9bc72b82-3f7c-4742-a3b6-685a7e9f8ce9"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[41538, 862, 3049, 43, 61, "Subsection",ExpressionUUID->"5089ab92-c281-4b55-aeea-1a16b94734ff"],
-Cell[44590, 907, 4068, 59, 131, "Text",ExpressionUUID->"82cb9075-de92-44c3-969b-a3f887612481"],
-Cell[48661, 968, 35541, 587, 442, "Input",ExpressionUUID->"1424ee74-4af1-484f-ba86-9de4fbcd70e5"],
-Cell[84205, 1557, 3836, 55, 44, "Text",ExpressionUUID->"5013921b-bb7a-4653-9381-f91d0c54ce82"],
-Cell[88044, 1614, 274485, 4504, 891, "Input",ExpressionUUID->"482debe8-1528-49c7-9b98-9c8f95c561b1"],
-Cell[362532, 6120, 6105, 97, 424, "Text",ExpressionUUID->"9bc72b82-3f7c-4742-a3b6-685a7e9f8ce9"]
+Cell[349591, 5741, 3041, 43, 61, "Subsection",ExpressionUUID->"857f7e1a-b06f-45dc-9832-589bbae96145"],
+Cell[352635, 5786, 18456, 486, 859, "Text",ExpressionUUID->"3e149c99-2b8e-4b73-a96d-442094caa30d"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
