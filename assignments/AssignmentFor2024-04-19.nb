@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    374615,       6364]
-NotebookOptionsPosition[    372280,       6313]
-NotebookOutlinePosition[    372762,       6332]
-CellTagsIndexPosition[    372719,       6329]
+NotebookDataLength[    374694,       6364]
+NotebookOptionsPosition[    372360,       6313]
+NotebookOutlinePosition[    372841,       6332]
+CellTagsIndexPosition[    372798,       6329]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -5827,8 +5827,7 @@ Cell[TextData[{
           SubscriptBox["\[Psi]", "-"], "(", "t", ")"}]}
        }], ")"}]}]}], TraditionalForm]],
   FontSize->14,ExpressionUUID->"4460c547-27c0-4d97-afa0-a1f230d3e105"],
- ".",
- StyleBox["\n\nThis is a fancy shorthand for two equations. You may need to \
+ StyleBox[".\n\nThis is a fancy shorthand for two equations. You may need to \
 quickly review matrix and vector multiplication, because we only used it a \
 little back in Chapters Q6 and Q7. Here is a lightning review: if you have a \
 matrix ",
@@ -6052,8 +6051,8 @@ aren\[CloseCurlyQuote]t the solution any more (because ",
      SubscriptBox["\[Psi]", "-"], "(", "0", ")"}], "=", "1"}], 
    TraditionalForm]],
   FontSize->14,ExpressionUUID->"1b802ef7-59fb-41a1-ab3e-d27dbac3e293"],
- ", because we can absorb those constants elsewhere. ",
- StyleBox["Now for the ansatz: assume that ",
+ StyleBox[", because we can absorb those constants elsewhere. Now for the \
+ansatz: assume that ",
   FontSize->14],
  Cell[BoxData[
   FormBox[
@@ -6236,7 +6235,7 @@ to add up to 1, and to use that cross-check, you will need to use that  ",
         SubscriptBox["\[Psi]", "-"], "(", "0", ")"}], 
        "\[RightBracketingBar]"}], "2"]}], "=", "1"}], TraditionalForm]],
   FontSize->14,ExpressionUUID->"3a5a5923-580d-4f33-b029-350f0094b906"],
- StyleBox[".",
+ StyleBox[". Similarly, (c) and (d) have to add up to 1.",
   FontSize->14]
 }], "Text",
  CellChangeTimes->{{3.914027554425773*^9, 3.914027601937613*^9}, {
@@ -6301,18 +6300,19 @@ to add up to 1, and to use that cross-check, you will need to use that  ",
    3.922321136629376*^9, 3.922321147034546*^9}, {3.922321224434767*^9, 
    3.922321237078475*^9}, {3.922321288326961*^9, 3.922321337720437*^9}, 
    3.922321383270679*^9, {3.922321444857375*^9, 3.92232144520704*^9}, 
-   3.92232154954015*^9, 3.9223215869404173`*^9, {3.922321623163862*^9, 
+   3.92232154954015*^9, 3.9223215869404182`*^9, {3.922321623163862*^9, 
    3.9223216272885637`*^9}, {3.922321671717252*^9, 3.922321679961134*^9}, {
-   3.9223257056203136`*^9, 3.9223257671965714`*^9}, {3.922325831304572*^9, 
-   3.9223258403595533`*^9}, {3.922325900407857*^9, 
-   3.92232592919456*^9}},ExpressionUUID->"3e149c99-2b8e-4b73-a96d-\
+   3.922325705620314*^9, 3.922325767196572*^9}, {3.922325831304572*^9, 
+   3.922325840359554*^9}, {3.922325900407857*^9, 3.92232592919456*^9}, {
+   3.922326464650896*^9, 
+   3.922326480736929*^9}},ExpressionUUID->"3e149c99-2b8e-4b73-a96d-\
 442094caa30d"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
 },
-WindowSize->{1518, 843},
-WindowMargins->{{10, Automatic}, {Automatic, 3}},
+WindowSize->{1496, 843},
+WindowMargins->{{1, Automatic}, {Automatic, 0}},
 PrintingCopies->1,
 PrintingPageRange->{1, Automatic},
 Magnification:>1.25 Inherited,
@@ -6362,7 +6362,7 @@ Cell[343161, 5628, 6393, 108, 338, "Text",ExpressionUUID->"9bc72b82-3f7c-4742-a3
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[349591, 5741, 3041, 43, 61, "Subsection",ExpressionUUID->"857f7e1a-b06f-45dc-9832-589bbae96145"],
-Cell[352635, 5786, 19605, 522, 881, "Text",ExpressionUUID->"3e149c99-2b8e-4b73-a96d-442094caa30d"]
+Cell[352635, 5786, 19685, 522, 907, "Text",ExpressionUUID->"3e149c99-2b8e-4b73-a96d-442094caa30d"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
