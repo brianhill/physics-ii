@@ -40,5 +40,5 @@ See also [Daily Schedule-Term 4](./daily_schedule-term_4.html)
 
 ### Week 14 &mdash; Exam 4 &mdash; Special Topic 2 (Intro to Special Relativity)
 
-* Tuesday, Apr. 23 &mdash; Exam 4 Covering Problem Sets 14-18 (Moore Q12.5 to end of Q15) &mdash; You will need a calculator for this exam, unlike Exams 1-3
+* Tuesday, Apr. 23 &mdash; Exam 4 Covering Problem Sets 14-18 (Moore Q12.5 to end of Q15) &mdash; [Problem sets 14-18 combined](./assignments/ProblemSets14-18.pdf) for your convenience &mdash; You will need a calculator for this exam, unlike Exams 1-3
 * Friday, Apr. 26 &mdash; Special Topic 2: Length Contraction and Time Dilation in Special Relativity &mdash; [Problem Set 20 - FORTHCOMING](./assignments/AssignmentFor2024-04-26.nb.pdf)
