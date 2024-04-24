@@ -37,18 +37,16 @@ See also [Daily Schedule-Term 4](./daily_schedule-term_4.html)
 <img src="./resources/MRIScannerCutaway.png" alt="MRI Scanner Cutaway" width="75%">
 
 #### MRI Scanner Cutaway (from the National MagLab website)
-#### MRI Scanner Cutaway (from the National MagLab website)
-#### MRI Scanner Cutaway (from the National MagLab website)
 
-### Week 14 &mdash; Exam 4 &mdash; Introduction to Special Relativity
+### Week 14 &mdash; Exam 4 &mdash; Special Topic: Introduction to Special Relativity
 
 * Tuesday, Apr. 23 &mdash; [Exam 4](./exams/Exam4.nb.pdf) Covering Problem Sets 14-18 &mdash; For your convenience when reviewing, here are [Problem Sets 14-18 combined](./assignments/ProblemSets14-18.pdf) &mdash; You will need to use a calculator on this exam, unlike Exams 1-3 &mdash; I will bring some spare calculators
 
 <img src="./resources/LightningStrikesTrain.png" alt="Lightning strikes train" width="75%">
 
-#### Einstein's thought experiment: lightning striking both ends of a train, &ldquo;simultenously&rdquo;
+#### Einstein's thought experiment: lightning striking both ends of a train, &ldquo;simultaneously&rdquo;
 
-* Friday, Apr. 26 &mdash; Length Contraction and Time Dilation in Special Relativity &mdash; [Problem Set 20](./assignments/AssignmentFor2024-04-26.nb.pdf) &mdash; Reading: [The Relativity of Simultaneity](./resources/RelativityOfSimultaneity.pdf), chapter from Relativity by Albert Einstein
+* Friday, Apr. 26 &mdash; Length Contraction and Time Dilation in Special Relativity &mdash; [Problem Set 20](./assignments/AssignmentFor2024-04-26.nb.pdf) &mdash; Reading: [The Relativity of Simultaneity](./resources/RelativityOfSimultaneity.pdf), chapter from *Relativity* by Albert Einstein
 
 <img src="./resources/EinsteinAndOppenheimer.png" alt="Einstein and Oppenheimer" width="60%">
 
