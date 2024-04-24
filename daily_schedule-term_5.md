@@ -29,16 +29,28 @@ See also [Daily Schedule-Term 4](./daily_schedule-term_4.html)
 * Tuesday, Apr. 9 &mdash; Finish your study of Q13 &mdash; Presentations: (1) Brian will present the relativistic kinematics that forced the hypothesis of the neutron; (2) We had a five-part presentation on mass spectrometry! &mdash; We looked ahead to Section 14.1 and discussed how neutron decay is understood in terms of quarks &mdash; [Problem Set 16](./assignments/AssignmentFor2024-04-09.nb.pdf) 
 * Friday, Apr. 12 &mdash; Study Q14 &mdash; The reasoning behind the mass-deficit formulae &mdash; The traditional definition of the amu (atomic mass unit) &mdash; The traditional definitions of the meter and the kilogram (the distance from the north pole to the equator on a line passing through Paris as 10,000,000 meters was the first definition of the meter) &mdash; The modern definitions of [SI Units](./resources/SIUnits.pdf) and especially of the gram in terms of Avogadro's number and Carbon-12, which is now defined to have an amu of 12.0000 &mdash; Reading decay-chain diagrams (e.g. those in Moore in Fig. Q14.15, p. 237)  &mdash; Why are &beta; decays so slow &mdash; Why is an &alpha;-particle emission a decay mode? &mdash; How is fission induced? &mdash; [Problem Set 17](./assignments/AssignmentFor2024-04-12.nb.pdf)
 
-### Week 13 &mdash; Nuclear Physics Applications (Fission and Fusion) &mdash; Special Topic 1 (Intro to Magnetic Resonance)
+### Week 13 &mdash; Nuclear Physics Applications (Fission and Fusion) &mdash; Intro to Magnetic Resonance
 
 * Tuesday, Apr. 16 &mdash; Study Q15 &mdash; [Problem Set 18](./assignments/AssignmentFor2024-04-16.nb.pdf) &mdash; Some Q15 topics: (1) [Nuclear stability](./resources/NuclearStability.nb.pdf) (and in particular, why we plot binding energy per nucleon rather than just binding energy) (2) High-energy neutrons (mostly captured) vs. thermal neutrons (the ones that are likely to cause new fissions) in a reactor &mdash; Choose the remaining special topics (you will have homeworks on the special topics but not be tested on them) &mdash; We started our introduction to MRI by considering the behavior of a magnetic moment in the large constant axial magnetic field of an MRI machine
-* Friday, Apr. 19 &mdash; Prepare by studying [Part I of the Introduction to MRI](./resources/MagneticResonanceI.nb.pdf) &mdash; Presentation by Miles: How are atoms or electrons or ions counted so as to make 1 mole (abbreviated mol), *in practice*; and in particular, how is the gram which is now *defined* as 1/12 of the mass of an Avogadro's number (602,214,076,000,000,000,000,000) of Carbon-12 atoms counted *in practice* (or is it Silicon-29 that is now the definition!?) &mdash; Optional Exam Review Q&amp;A scheduled for 11am Sunday (bring anything you want to ask about) &mdash; [Part II of the Introduction to MRI - WRITEUP FORTHCOMING](./resources/MagneticResonanceII.nb.pdf) &mdash; [Problem Set 19](./assignments/AssignmentFor2024-04-19.nb.pdf)
+* Friday, Apr. 19 &mdash; Prepare by studying [Part I of the Introduction to MRI](./resources/MagneticResonanceI.nb.pdf) &mdash; Presentation by Miles: How are atoms or electrons or ions counted so as to make 1 mole (abbreviated mol), *in practice*; and in particular, how is the gram which is now *defined* as 1/12 of the mass of an Avogadro's number (602,214,076,000,000,000,000,000) of Carbon-12 atoms counted *in practice* (or is it Silicon-29 that is now the definition!?) &mdash; Optional Exam Review Q&amp;A scheduled for 11am Sunday (bring anything you want to ask about) &mdash; [Part II of the Introduction to MRI](./resources/MagneticResonanceII.nb.pdf) &mdash; [Problem Set 19](./assignments/AssignmentFor2024-04-19.nb.pdf)
 
 <img src="./resources/MRIScannerCutaway.png" alt="MRI Scanner Cutaway" width="75%">
 
 #### MRI Scanner Cutaway (from the National MagLab website)
+#### MRI Scanner Cutaway (from the National MagLab website)
+#### MRI Scanner Cutaway (from the National MagLab website)
 
-### Week 14 &mdash; Exam 4 &mdash; Special Topic 2 (Intro to Special Relativity)
+### Week 14 &mdash; Exam 4 &mdash; Introduction to Special Relativity
 
-* Tuesday, Apr. 23 &mdash; Exam 4 Covering Problem Sets 14-18 &mdash; For your convenience when reviewing, here are [Problem Sets 14-18 combined](./assignments/ProblemSets14-18.pdf) &mdash; You will need to use a calculator on this exam, unlike Exams 1-3 &mdash; I will bring some spare calculators
-* Friday, Apr. 26 &mdash; Special Topic 2: Length Contraction and Time Dilation in Special Relativity &mdash; [Problem Set 20 - FORTHCOMING](./assignments/AssignmentFor2024-04-26.nb.pdf)
+* Tuesday, Apr. 23 &mdash; [Exam 4](./exams/Exam4.nb.pdf) Covering Problem Sets 14-18 &mdash; For your convenience when reviewing, here are [Problem Sets 14-18 combined](./assignments/ProblemSets14-18.pdf) &mdash; You will need to use a calculator on this exam, unlike Exams 1-3 &mdash; I will bring some spare calculators
+
+<img src="./resources/LightningStrikesTrain.png" alt="Lightning strikes train" width="75%">
+
+#### Einstein's thought experiment: lightning striking both ends of a train, &ldquo;simultenously&rdquo;
+
+* Friday, Apr. 26 &mdash; Length Contraction and Time Dilation in Special Relativity &mdash; [Problem Set 20](./assignments/AssignmentFor2024-04-26.nb.pdf) &mdash; Reading: [The Relativity of Simultaneity](./resources/RelativityOfSimultaneity.pdf), chapter from Relativity by Albert Einstein
+
+<img src="./resources/EinsteinAndOppenheimer.png" alt="Einstein and Oppenheimer" width="60%">
+
+#### Einstein and Oppenheimer
+
