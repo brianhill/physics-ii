@@ -46,7 +46,7 @@ See also [Daily Schedule-Term 4](./daily_schedule-term_4.html)
 
 #### Einstein's thought experiment: lightning striking both ends of a train, &ldquo;simultaneously&rdquo;
 
-* Friday, Apr. 26 &mdash; Length Contraction and Time Dilation in Special Relativity &mdash; [An animation of moving clocks](https://www.compadre.org/PQP/special-relativity/section2_4.cfm) that Emma found &mdash; [Problem Set 20](./assignments/AssignmentFor2024-04-26.nb.pdf) &mdash; Reading: [The Relativity of Simultaneity](./resources/RelativityOfSimultaneity.pdf), chapter from *Relativity* by Albert Einstein  &mdash; An [Aging Paradox](./resources/AgingParadox.nb.pdf) presented by Brian &mdash; The Pole in the Barn Paradox presented by Ethan
+* Friday, Apr. 26 &mdash; Length Contraction and Time Dilation in Special Relativity &mdash; [An animation of moving clocks](https://www.compadre.org/PQP/special-relativity/section2_4.cfm) that Emma found &mdash; [Problem Set 20](./assignments/AssignmentFor2024-04-26.nb.pdf) &mdash; Reading: [The Relativity of Simultaneity](./resources/RelativityOfSimultaneity.pdf), a chapter from *Relativity* by Albert Einstein  &mdash; An [Aging Paradox](./resources/AgingParadox.nb.pdf) presented by Brian &mdash; The Twin Paradox presented by Ethan
 
 <img src="./resources/EinsteinAndOppenheimer.png" alt="Einstein and Oppenheimer" width="60%">
 

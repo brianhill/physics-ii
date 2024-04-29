@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     12355,        311]
-NotebookOptionsPosition[     11372,        284]
-NotebookOutlinePosition[     11825,        302]
-CellTagsIndexPosition[     11782,        299]
+NotebookDataLength[     48675,       1310]
+NotebookOptionsPosition[     46503,       1262]
+NotebookOutlinePosition[     46987,       1281]
+CellTagsIndexPosition[     46944,       1278]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -28,17 +28,52 @@ Cell["Magnetic Resonance II \[LongDash] Solving the Problem", "Section",
   3.922302420027372*^9}},ExpressionUUID->"1401d686-6281-49b0-9743-\
 c981b888c908"],
 
-Cell["\<\
-In the previous handout, we set up the magnetic resonance problem. Now we are \
-going to follow I.I. Rabi\[CloseCurlyQuote]s method for solving it.
-
-First we need to review so we can keep it all straight.\
-\>", "Text",
+Cell[TextData[{
+ "In the previous handout, we set up the magnetic resonance problem, and on \
+Problem Set 19, you did some interpretation of the ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["\[Omega]", "1"], "=", "0"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "dc34b4ff-560c-44d3-8515-218803612e92"],
+ " behavior.\n\nNow we are going to follow I.I. Rabi\[CloseCurlyQuote]s \
+method for solving the problem for non-zero ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["\[Omega]", "1"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "86d9b46f-7272-4484-83c6-6fee56b78fb1"],
+ ". Although both the ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[Omega]", "=", 
+    SubscriptBox["\[Omega]", "0"]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "6faba677-25aa-47f2-9c50-3be7f428df7a"],
+ " and \[Omega] near ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["\[Omega]", "0"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "93c547b3-09c9-4512-8d79-fd622dbfcbfa"],
+ " cases are solvable using Rabi\[CloseCurlyQuote]s method, we are just going \
+to do ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[Omega]", "=", 
+    SubscriptBox["\[Omega]", "0"]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "cab85bd7-cbd2-40de-a563-6d2a61a9fa41"],
+ ", because it is a bit simpler.\n\nFirst we need to review so we can keep it \
+all straight."
+}], "Text",
  CellChangeTimes->{{3.920419723334632*^9, 3.920419857101992*^9}, {
   3.92223142224138*^9, 3.922231465225565*^9}, {3.92223159247887*^9, 
-  3.922231727369053*^9}, {3.9222318902725573`*^9, 3.9222322494529676`*^9}, {
+  3.922231727369053*^9}, {3.9222318902725577`*^9, 3.9222322494529676`*^9}, {
   3.922237330885344*^9, 3.922237406284622*^9}, {3.922302434506732*^9, 
-  3.922302469372568*^9}},ExpressionUUID->"e8da59ba-e1c8-4ff9-8734-\
+  3.922302469372568*^9}, {3.9233981471790113`*^9, 
+  3.923398292619343*^9}},ExpressionUUID->"e8da59ba-e1c8-4ff9-8734-\
 f8ac585a40f4"],
 
 Cell[CellGroupData[{
@@ -56,7 +91,7 @@ Cell["Keeping it All Straight", "Subsection",
 34cf3e3c951f"],
 
 Cell[TextData[{
- "Let\[CloseCurlyQuote]s review. We found this differential equation:\n\n",
+ "The last handout finished with this differential equation:\n\n",
  Cell[BoxData[
   FormBox[
    RowBox[{
@@ -196,10 +231,10 @@ notation, is the angular frequency at which the magnetic field in the ",
  Cell[BoxData[
   FormBox["x", TraditionalForm]],ExpressionUUID->
   "64ab8fac-230e-4405-87dd-a3ed0763000f"],
- " direction oscillates.\n \n Even if you can\[CloseCurlyQuote]t keep it all \
-straight how we got to this point, you need to remember that this is where we \
-are, that we need to solve this equation, at least approximately, and thereby \
-learn the probability amplitudes ",
+ " direction oscillates.\n \n Even if you can\[CloseCurlyQuote]t keep it in \
+your head how we got to this point, you need to remember that this is where \
+we are, that we need to solve this equation, at least approximately, and \
+thereby learn the probability amplitudes ",
  Cell[BoxData[
   FormBox[
    RowBox[{
@@ -233,13 +268,950 @@ learn the probability amplitudes ",
   3.922238859741473*^9, 3.922238913899221*^9}, {3.922238943982003*^9, 
   3.922238983861414*^9}, {3.922239171011537*^9, 3.922239485052639*^9}, {
   3.9222395202860317`*^9, 3.922239528464453*^9}, {3.922302483664119*^9, 
-  3.922302497667449*^9}},ExpressionUUID->"02ad6b61-a2fb-4d92-859f-\
+  3.922302497667449*^9}, {3.92339830008815*^9, 3.923398318786895*^9}, {
+  3.9233983767050667`*^9, 
+  3.923398379180216*^9}},ExpressionUUID->"02ad6b61-a2fb-4d92-859f-\
 ec334c15cfb8"]
 }, Open  ]],
 
 Cell[CellGroupData[{
 
-Cell["History", "Subsection",
+Cell[TextData[{
+ "The ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["\[Omega]", "1"], "=", "0"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "879dcae0-a8ac-479e-af12-07c3a6a42d3d"],
+ " Case"
+}], "Subsection",
+ CellChangeTimes->{{3.920310155034218*^9, 3.920310163989311*^9}, {
+  3.920310462568035*^9, 3.920310466416088*^9}, {3.920419866279635*^9, 
+  3.920419866876333*^9}, {3.920420043877632*^9, 3.920420064272218*^9}, {
+  3.9222324935713863`*^9, 3.922232497892695*^9}, {3.922232944959888*^9, 
+  3.922232954836328*^9}, {3.922233015543224*^9, 3.922233017254565*^9}, {
+  3.922233287328161*^9, 3.922233309569278*^9}, {3.922233786041641*^9, 
+  3.922233795932652*^9}, {3.922234962137067*^9, 3.9222349823322678`*^9}, {
+  3.922237758397544*^9, 3.922237762402728*^9}, {3.9233986994059067`*^9, 
+  3.923398711781766*^9}},ExpressionUUID->"801f524a-61b4-4f91-9cf2-\
+9a7328eb36d2"],
+
+Cell[TextData[{
+ "Problem 3 of Problem Set 19, was to solve the ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["\[Omega]", "1"], "=", "0"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "c704e801-9fd4-482e-9a04-747e754d99e8"],
+ " case. You found:\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"(", GridBox[{
+       {
+        RowBox[{
+         SubscriptBox["\[Psi]", "+"], "(", "t", ")"}]},
+       {
+        RowBox[{
+         SubscriptBox["\[Psi]", "-"], "(", "t", ")"}]}
+      }], ")"}], "=", 
+    RowBox[{"(", GridBox[{
+       {
+        RowBox[{
+         RowBox[{
+          SubscriptBox["\[Psi]", "+"], "(", "0", ")"}], 
+         SuperscriptBox["e", 
+          RowBox[{" ", 
+           RowBox[{
+            FractionBox["i", "2"], 
+            SubscriptBox["\[Omega]", "0"], "t"}]}]]}]},
+       {
+        RowBox[{
+         RowBox[{
+          SubscriptBox["\[Psi]", "-"], "(", "0", ")"}], 
+         SuperscriptBox["e", 
+          RowBox[{" ", 
+           RowBox[{
+            RowBox[{"-", 
+             FractionBox["i", "2"]}], 
+            SubscriptBox["\[Omega]", "0"], "t"}]}]]}]}
+      }], ")"}]}], TraditionalForm]],ExpressionUUID->
+  "88c9ced0-47a6-4eeb-ba34-d515284f2cc4"]
+}], "Text",
+ CellChangeTimes->{{3.92223651350019*^9, 3.92223685901387*^9}, {
+   3.9222368936519833`*^9, 3.922237058964467*^9}, {3.922237097195635*^9, 
+   3.922237273351609*^9}, {3.922237797820523*^9, 3.922237941285269*^9}, {
+   3.922238045960412*^9, 3.922238097597748*^9}, {3.922238132538213*^9, 
+   3.922238137403948*^9}, {3.9222387469032297`*^9, 3.922238800980549*^9}, {
+   3.922238859741473*^9, 3.922238913899221*^9}, {3.922238943982003*^9, 
+   3.922238983861414*^9}, {3.922239171011537*^9, 3.922239485052639*^9}, {
+   3.9222395202860317`*^9, 3.922239528464453*^9}, {3.922302483664119*^9, 
+   3.922302497667449*^9}, {3.92339830008815*^9, 3.923398318786895*^9}, {
+   3.9233983767050667`*^9, 3.923398379180216*^9}, {3.9233987405165167`*^9, 
+   3.9233988882288647`*^9}, 
+   3.923399725840029*^9},ExpressionUUID->"37373eee-0da9-45a5-806c-\
+ba212dc70498"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["The Ansatz", "Subsection",
+ CellChangeTimes->{{3.920310155034218*^9, 3.920310163989311*^9}, {
+  3.920310462568035*^9, 3.920310466416088*^9}, {3.920419866279635*^9, 
+  3.920419866876333*^9}, {3.920420043877632*^9, 3.920420064272218*^9}, {
+  3.9222324935713863`*^9, 3.922232497892695*^9}, {3.922232944959888*^9, 
+  3.922232954836328*^9}, {3.922233015543224*^9, 3.922233017254565*^9}, {
+  3.922233287328161*^9, 3.922233309569278*^9}, {3.922233786041641*^9, 
+  3.922233795932652*^9}, {3.922234962137067*^9, 3.9222349823322678`*^9}, {
+  3.922237758397544*^9, 3.922237762402728*^9}, {3.9233986994059067`*^9, 
+  3.923398711781766*^9}, {3.923398913925354*^9, 
+  3.923398920212961*^9}},ExpressionUUID->"e852562a-e01f-44da-8f4a-\
+8b8603aa7a18"],
+
+Cell[TextData[{
+ "The next step is to return to the full case, ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["\[Omega]", "1"], "\[NotEqual]", "0"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "b642c1d3-4b5b-4bad-b5cf-299734f0ca76"],
+ " . Let\[CloseCurlyQuote]s give the solutions we just found in the ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["\[Omega]", "1"], "=", "0"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "68caccba-a634-485e-b0e7-c08d953567e2"],
+ "  case some names. We can\[CloseCurlyQuote]t call them ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["\[Psi]", "+"], "(", "t", ")"}], TraditionalForm]],
+  ExpressionUUID->"79883561-e276-4041-8c37-1a1ef38f925e"],
+ " and  ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["\[Psi]", "-"], "(", "t", ")"}], TraditionalForm]],
+  ExpressionUUID->"b0b50d6e-bcab-40b7-8785-5eb052a57d3d"],
+ " any more because now we are doing the full case, and those names should be \
+reserved for the solutions. Let\[CloseCurlyQuote]s call ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SubscriptBox["a", "+"], "(", "t", ")"}], "=", 
+    SuperscriptBox["e", 
+     RowBox[{" ", 
+      RowBox[{
+       FractionBox["i", "2"], 
+       SubscriptBox["\[Omega]", "0"], "t"}]}]]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "78ba8079-abca-491c-b3ae-3b892dbf94c8"],
+ " and ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SubscriptBox["a", "-"], "(", "t", ")"}], "=", 
+    SuperscriptBox["e", 
+     RowBox[{" ", 
+      RowBox[{
+       RowBox[{"-", 
+        FractionBox["i", "2"]}], 
+       SubscriptBox["\[Omega]", "0"], "t"}]}]]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "7d3e3c46-8fc2-49f3-bdae-c6d703d6c246"],
+ ".\n\nRabi\[CloseCurlyQuote]s ansatz is to guess that ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SubscriptBox["\[Psi]", "+"], "(", "t", ")"}], "=", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["a", "+"], "(", "t", ")"}], 
+     RowBox[{
+      SubscriptBox["c", "+"], "(", "t", ")"}]}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "b034bbbd-bee7-4c54-9dd7-f6bed0ea6fba"],
+ " and ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SubscriptBox["\[Psi]", "-"], "(", "t", ")"}], "=", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["a", "-"], "(", "t", ")"}], 
+     RowBox[{
+      SubscriptBox["c", "-"], "(", "t", ")"}]}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "71228e20-84cb-4c9f-b7b4-e5421b8fafdf"],
+ " where ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["c", "+"], "(", "t", ")"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "a9dad865-a85a-47b3-bc27-7c2487c03c77"],
+ " and ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["c", "-"], "(", "t", ")"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "d8c64f8b-68d4-41d9-94f9-09cadfce58a1"],
+ " are expected to be slowly varying if ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["\[Omega]", "1"], 
+    RowBox[{"<<", " ", 
+     SubscriptBox["\[Omega]", "0"]}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "42d3581f-a0a9-4f7e-942d-02997e1a0bd4"],
+ ". After all, if ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["\[Omega]", "1"], "=", "0"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "e79f6234-1201-4b24-b7ca-104ce771927f"],
+ ", then ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["c", "+"], "(", "t", ")"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "01af49ac-07fb-4067-aa4f-883835390846"],
+ " and ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["c", "-"], "(", "t", ")"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "11bf07b5-d011-4a68-98c3-17946ed416db"],
+ " are just the constants ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["\[Psi]", "+"], "(", "0", ")"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "67960baf-ebff-4cea-ac5c-c9a6040104a0"],
+ " and ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["\[Psi]", "-"], "(", "0", ")"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "c0c3bb57-fa0a-482a-9a4c-e178e333dca8"],
+ ", so it is reasonable to expect them to be slowly varying if ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["\[Omega]", "1"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "d9f43acc-6529-4972-83a6-82b072ad152f"],
+ " is small.\n\nProblem 4 of Problem Set 19, was to use the ansatz. You \
+found:\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"(", GridBox[{
+       {
+        RowBox[{
+         SuperscriptBox["e", 
+          RowBox[{" ", 
+           RowBox[{
+            FractionBox["i", "2"], 
+            SubscriptBox["\[Omega]", "0"], "t"}]}]], "i", "\[VeryThinSpace]", 
+         
+         FractionBox["d", 
+          RowBox[{"d", "\[VeryThinSpace]", "t"}]], 
+         RowBox[{
+          SubscriptBox["c", "+"], "(", "t", ")"}]}]},
+       {
+        RowBox[{
+         SuperscriptBox["e", 
+          RowBox[{" ", 
+           RowBox[{
+            RowBox[{"-", 
+             FractionBox["i", "2"]}], 
+            SubscriptBox["\[Omega]", "0"], "t"}]}]], "i", "\[VeryThinSpace]", 
+         
+         FractionBox["d", 
+          RowBox[{"d", "\[VeryThinSpace]", "t"}]], 
+         SubscriptBox["c", "-"], 
+         RowBox[{"(", "t", ")"}]}]}
+      }], ")"}], "=", 
+    RowBox[{
+     RowBox[{"-", 
+      FractionBox["1", "2"]}], 
+     SubscriptBox["\[Omega]", "1"], "cos", "\[VeryThinSpace]", "\[Omega]", 
+     "\[VeryThinSpace]", "t", " ", 
+     RowBox[{"(", GridBox[{
+        {"0", 
+         SuperscriptBox["e", 
+          RowBox[{" ", 
+           RowBox[{
+            RowBox[{"-", 
+             FractionBox["i", "2"]}], 
+            SubscriptBox["\[Omega]", "0"], "t"}]}]]},
+        {
+         SuperscriptBox["e", 
+          RowBox[{" ", 
+           RowBox[{
+            FractionBox["i", "2"], 
+            SubscriptBox["\[Omega]", "0"], "t"}]}]], "0"}
+       }], ")"}], 
+     RowBox[{"(", GridBox[{
+        {
+         RowBox[{
+          SubscriptBox["c", "+"], "(", "t", ")"}]},
+        {
+         RowBox[{
+          SubscriptBox["c", "-"], "(", "t", ")"}]}
+       }], ")"}]}]}], TraditionalForm]],ExpressionUUID->
+  "d6799db6-1dc7-415d-8dbb-c940c827dc53"],
+ "\n\nI didn\[CloseCurlyQuote]t have you use the matrix  and column vector \
+notation when doing Problem Set 19. Perhaps it is a little more intelligible \
+as two separate equations:\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     FractionBox["d", 
+      RowBox[{"d", "\[VeryThinSpace]", "t"}]], 
+     RowBox[{
+      SubscriptBox["c", "+"], "(", "t", ")"}]}], "=", 
+    RowBox[{
+     FractionBox["i", "2"], 
+     SubscriptBox["\[Omega]", "1"], "cos", "\[VeryThinSpace]", "\[Omega]", 
+     "\[VeryThinSpace]", 
+     RowBox[{"t", " ", "\[CenterDot]", 
+      SuperscriptBox["e", 
+       RowBox[{" ", 
+        RowBox[{
+         RowBox[{"-", "i"}], "\[VeryThinSpace]", 
+         SubscriptBox["\[Omega]", "0"], "t"}]}]]}], 
+     RowBox[{
+      SubscriptBox["c", "-"], "(", "t", ")"}]}]}], TraditionalForm]],
+  ExpressionUUID->"b8190d1b-5984-4f8a-9678-c945b13414cc"],
+ "\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     FractionBox["d", 
+      RowBox[{"d", "\[VeryThinSpace]", "t"}]], 
+     RowBox[{
+      SubscriptBox["c", "-"], "(", "t", ")"}]}], "=", 
+    RowBox[{
+     FractionBox["i", "2"], 
+     SubscriptBox["\[Omega]", "1"], "cos", "\[VeryThinSpace]", "\[Omega]", 
+     "\[VeryThinSpace]", 
+     RowBox[{"t", " ", "\[CenterDot]", 
+      SuperscriptBox["e", 
+       RowBox[{" ", 
+        RowBox[{
+         RowBox[{"-", "i"}], "\[VeryThinSpace]", 
+         SubscriptBox["\[Omega]", "0"], "t"}]}]]}], 
+     RowBox[{
+      SubscriptBox["c", "+"], "(", "t", ")"}]}]}], TraditionalForm]],
+  ExpressionUUID->"55695cfb-ecd0-4ee8-a062-fb06cdc5711f"]
+}], "Text",
+ CellChangeTimes->{{3.92223651350019*^9, 3.92223685901387*^9}, {
+  3.9222368936519833`*^9, 3.922237058964467*^9}, {3.922237097195635*^9, 
+  3.922237273351609*^9}, {3.922237797820523*^9, 3.922237941285269*^9}, {
+  3.922238045960412*^9, 3.922238097597748*^9}, {3.922238132538213*^9, 
+  3.922238137403948*^9}, {3.9222387469032297`*^9, 3.922238800980549*^9}, {
+  3.922238859741473*^9, 3.922238913899221*^9}, {3.922238943982003*^9, 
+  3.922238983861414*^9}, {3.922239171011537*^9, 3.922239485052639*^9}, {
+  3.9222395202860317`*^9, 3.922239528464453*^9}, {3.922302483664119*^9, 
+  3.922302497667449*^9}, {3.92339830008815*^9, 3.923398318786895*^9}, {
+  3.9233983767050667`*^9, 3.923398379180216*^9}, {3.9233987405165167`*^9, 
+  3.9233988882288647`*^9}, {3.923398935358617*^9, 3.923399468217218*^9}, {
+  3.92339950169151*^9, 3.923399568924625*^9}, {3.9233996022598124`*^9, 
+  3.923399890279704*^9}},ExpressionUUID->"c4a4cc36-5abf-4784-8f76-\
+0ca15e6446ba"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["The Approximation", "Subsection",
+ CellChangeTimes->{{3.920310155034218*^9, 3.920310163989311*^9}, {
+  3.920310462568035*^9, 3.920310466416088*^9}, {3.920419866279635*^9, 
+  3.920419866876333*^9}, {3.920420043877632*^9, 3.920420064272218*^9}, {
+  3.9222324935713863`*^9, 3.922232497892695*^9}, {3.922232944959888*^9, 
+  3.922232954836328*^9}, {3.922233015543224*^9, 3.922233017254565*^9}, {
+  3.922233287328161*^9, 3.922233309569278*^9}, {3.922233786041641*^9, 
+  3.922233795932652*^9}, {3.922234962137067*^9, 3.9222349823322678`*^9}, {
+  3.922237758397544*^9, 3.922237762402728*^9}, {3.9233986994059067`*^9, 
+  3.923398711781766*^9}, {3.923398913925354*^9, 3.923398920212961*^9}, {
+  3.923399904359962*^9, 
+  3.923399906215789*^9}},ExpressionUUID->"9821b0da-462b-4ad9-b1db-\
+689c4feea992"],
+
+Cell[TextData[{
+ "The next step is to use ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"cos", "\[VeryThinSpace]", "\[Omega]", "\[VeryThinSpace]", "t"}], 
+    "=", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["e", 
+       RowBox[{
+       "i", "\[VeryThinSpace]", "\[Omega]", "\[VeryThinSpace]", "t"}]], "+", 
+      SuperscriptBox["e", 
+       RowBox[{
+        RowBox[{"-", "i"}], "\[VeryThinSpace]", "\[Omega]", 
+        "\[VeryThinSpace]", "t"}]]}], "2"]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "627b814a-3ce4-4f36-a847-62482287311b"],
+ ". Then the two equations are:\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     FractionBox["d", 
+      RowBox[{"d", "\[VeryThinSpace]", "t"}]], 
+     RowBox[{
+      SubscriptBox["c", "+"], "(", "t", ")"}]}], "=", 
+    RowBox[{
+     FractionBox["i", "4"], 
+     RowBox[{
+      RowBox[{
+       SubscriptBox["\[Omega]", "1"], "(", 
+       RowBox[{
+        SuperscriptBox["e", 
+         RowBox[{
+         "i", "\[VeryThinSpace]", "\[Omega]", "\[VeryThinSpace]", "t"}]], "+", 
+        SuperscriptBox["e", 
+         RowBox[{
+          RowBox[{"-", "i"}], "\[VeryThinSpace]", "\[Omega]", 
+          "\[VeryThinSpace]", "t"}]]}], ")"}], " ", "\[CenterDot]", 
+      SuperscriptBox["e", 
+       RowBox[{" ", 
+        RowBox[{
+         RowBox[{"-", "i"}], "\[VeryThinSpace]", 
+         SubscriptBox["\[Omega]", "0"], "t"}]}]]}], 
+     RowBox[{
+      SubscriptBox["c", "-"], "(", "t", ")"}]}]}], TraditionalForm]],
+  ExpressionUUID->"f4d987fb-f74e-4d07-b9fc-eacda5da84ce"],
+ "\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     FractionBox["d", 
+      RowBox[{"d", "\[VeryThinSpace]", "t"}]], 
+     RowBox[{
+      SubscriptBox["c", "-"], "(", "t", ")"}]}], "=", 
+    RowBox[{
+     FractionBox["i", "4"], 
+     RowBox[{
+      RowBox[{
+       SubscriptBox["\[Omega]", "1"], "(", 
+       RowBox[{
+        SuperscriptBox["e", 
+         RowBox[{
+         "i", "\[VeryThinSpace]", "\[Omega]", "\[VeryThinSpace]", "t"}]], "+", 
+        SuperscriptBox["e", 
+         RowBox[{
+          RowBox[{"-", "i"}], "\[VeryThinSpace]", "\[Omega]", 
+          "\[VeryThinSpace]", "t"}]]}], ")"}], "\[CenterDot]", 
+      SuperscriptBox["e", 
+       RowBox[{" ", 
+        RowBox[{"i", "\[VeryThinSpace]", 
+         SubscriptBox["\[Omega]", "0"], "t"}]}]]}], 
+     RowBox[{
+      SubscriptBox["c", "+"], "(", "t", ")"}]}]}], TraditionalForm]],
+  ExpressionUUID->"34147303-556d-4684-9d86-f490e058a6db"],
+ "\n\nThe approximation is to notice that if \[Omega] is near ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["\[Omega]", "0"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "c5c3b833-cccb-40e9-9e7a-f1fa0148ac73"],
+ ", which is to say that \[Omega] is tuned to be near resonance, then ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SuperscriptBox["e", 
+     RowBox[{"i", "\[VeryThinSpace]", "\[Omega]", "\[VeryThinSpace]", "t"}]], 
+    
+    SuperscriptBox["e", 
+     RowBox[{" ", 
+      RowBox[{
+       RowBox[{"-", "i"}], "\[VeryThinSpace]", 
+       SubscriptBox["\[Omega]", "0"], "t"}]}]]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "038268ce-7d5f-4c48-9b20-dd5d416a1d8a"],
+ " is slowly varying, but more importantly  ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SuperscriptBox["e", 
+     RowBox[{
+      RowBox[{"-", "i"}], "\[VeryThinSpace]", "\[Omega]", "\[VeryThinSpace]", 
+      "t"}]], 
+    SuperscriptBox["e", 
+     RowBox[{" ", 
+      RowBox[{
+       RowBox[{"-", "i"}], "\[VeryThinSpace]", 
+       SubscriptBox["\[Omega]", "0"], "t"}]}]]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "b28f6efe-7462-4e3c-af21-44a99e63471a"],
+ " is oscillating at approximately  ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["e", 
+    RowBox[{" ", 
+     RowBox[{
+      RowBox[{"-", "2"}], "i", "\[VeryThinSpace]", 
+      SubscriptBox["\[Omega]", "0"], "t"}]}]], TraditionalForm]],
+  ExpressionUUID->"3e8dacba-9faf-4fdd-8bdc-54ac64edf8e9"],
+ ". Rabi says ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SuperscriptBox["e", 
+     RowBox[{" ", 
+      RowBox[{
+       RowBox[{"-", "2"}], "i", "\[VeryThinSpace]", 
+       SubscriptBox["\[Omega]", "0"], "t"}]}]], 
+    RowBox[{
+     SubscriptBox["c", "-"], "(", "t", ")"}]}], TraditionalForm]],
+  ExpressionUUID->"5e20ddf0-9c55-42d6-84a3-7348010780ff"],
+ " averages to zero! So he simplifies the first equation to:\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     FractionBox["d", 
+      RowBox[{"d", "\[VeryThinSpace]", "t"}]], 
+     RowBox[{
+      SubscriptBox["c", "+"], "(", "t", ")"}]}], "=", 
+    RowBox[{
+     RowBox[{
+      FractionBox["i", "4"], 
+      SubscriptBox["\[Omega]", "1"], 
+      SuperscriptBox["e", 
+       RowBox[{
+       "i", "\[VeryThinSpace]", "\[Omega]", "\[VeryThinSpace]", "t"}]], 
+      SuperscriptBox["e", 
+       RowBox[{" ", 
+        RowBox[{
+         RowBox[{"-", "i"}], "\[VeryThinSpace]", 
+         SubscriptBox["\[Omega]", "0"], "t"}]}]], 
+      RowBox[{
+       SubscriptBox["c", "-"], "(", "t", ")"}]}], "=", 
+     RowBox[{
+      FractionBox["i", "4"], 
+      SubscriptBox["\[Omega]", "1"], 
+      SuperscriptBox["e", 
+       RowBox[{
+        RowBox[{"i", "\[VeryThinSpace]", "(", 
+         RowBox[{"\[Omega]", "\[VeryThinSpace]", "-", 
+          SubscriptBox["\[Omega]", "0"]}], ")"}], "t"}]], 
+      RowBox[{
+       SubscriptBox["c", "-"], "(", "t", ")"}]}]}]}], TraditionalForm]],
+  ExpressionUUID->"7da62512-1343-4534-b783-5e810dbd1e30"],
+ "\n\nSimilarly, he simplifies the second equation to:\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     FractionBox["d", 
+      RowBox[{"d", "\[VeryThinSpace]", "t"}]], 
+     RowBox[{
+      SubscriptBox["c", "-"], "(", "t", ")"}]}], "=", 
+    RowBox[{
+     FractionBox["i", "4"], 
+     SubscriptBox["\[Omega]", "1"], 
+     SuperscriptBox["e", 
+      RowBox[{
+       RowBox[{"i", "\[VeryThinSpace]", "(", 
+        RowBox[{
+         SubscriptBox["\[Omega]", "0"], "\[VeryThinSpace]", "-", "\[Omega]"}],
+         ")"}], "t"}]], 
+     RowBox[{
+      SubscriptBox["c", "-"], "(", "t", ")"}]}]}], TraditionalForm]],
+  ExpressionUUID->"4d460339-9e53-4330-82fd-479c7ccd4f0b"],
+ "\n\nThese equations can be solved! But I am not going to do the general \
+case for you. Instead, I\[CloseCurlyQuote]ll just solve them in the case of \
+exact resonance, ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[Omega]", "=", 
+    SubscriptBox["\[Omega]", "0"]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "cbac91d7-7420-4d47-9412-fc9d2376d590"],
+ "."
+}], "Text",
+ CellChangeTimes->CompressedData["
+1:eJxTTMoPSmViYGAQBmIQ3cdo0CNk+dZxfmHCdhDNc3fLbhD96k7cBRC9xEnt
+KohOctB+DaJ3Ou7SEQbSbxRW2oHoTbv3eYPoAwrGQSCay3JiGIhWeasTDqKd
+nscsBtErEuRXgWi1XeUbQXT2MZsdIHpSzv/dIHrLhN8HQHRzXMINEG2xfuF/
+EK2jzskiAqTP3uFjBdFlDqWHjID0vmjTIyBa4VLTZU/rt452ejevgugX/WJ3
+QXTIkVQw7dc+gcsLSN8JYpcF0acqXyuB6OLPbakg+pbCtkwQ3T5NtghEJwV4
+lIHoRKnsuyB6el80qzeQDuB8AKYBUgaG0A==
+  "],ExpressionUUID->"6d9593cf-0d41-4c6a-bfca-abe426784e4e"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["The Solution", "Subsection",
+ CellChangeTimes->{{3.920310155034218*^9, 3.920310163989311*^9}, {
+  3.920310462568035*^9, 3.920310466416088*^9}, {3.920419866279635*^9, 
+  3.920419866876333*^9}, {3.920420043877632*^9, 3.920420064272218*^9}, {
+  3.9222324935713863`*^9, 3.922232497892695*^9}, {3.922232944959888*^9, 
+  3.922232954836328*^9}, {3.922233015543224*^9, 3.922233017254565*^9}, {
+  3.922233287328161*^9, 3.922233309569278*^9}, {3.922233786041641*^9, 
+  3.922233795932652*^9}, {3.922234962137067*^9, 3.9222349823322678`*^9}, {
+  3.922237758397544*^9, 3.922237762402728*^9}, {3.9233986994059067`*^9, 
+  3.923398711781766*^9}, {3.923398913925354*^9, 3.923398920212961*^9}, {
+  3.923399904359962*^9, 3.923399906215789*^9}, {3.923400437763753*^9, 
+  3.923400438584059*^9}},ExpressionUUID->"c707d1c9-cc10-4943-aa1e-\
+eef786d4f12e"],
+
+Cell[TextData[{
+ "Using the ansatz and the approximation above, we got ourselves down to two \
+equations. They are coupled differential equations. The derivative of ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["c", "+"], "(", "t", ")"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "f5954835-a27f-4c75-8520-e9ff4c0d6f6f"],
+ " depends on ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["c", "-"], "(", "t", ")"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "561898f5-f8fd-42e8-be63-90b89edc3454"],
+ " and the derivative of ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["c", "-"], "(", "t", ")"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "6bce993a-4591-412f-9e02-03eb70244fd3"],
+ " depends on ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["c", "+"], "(", "t", ")"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "dad40a10-090f-4dbc-b488-afcbf8096834"],
+ ". You can take a time derivative of either equation and then use the \
+original equations to simplify.  I\[CloseCurlyQuote]m just going to do this \
+for ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[Omega]", "=", 
+    SubscriptBox["\[Omega]", "0"]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "3fe455db-db41-4488-a397-3c55ea6c2bb0"],
+ ", in which case the two equations are just:\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     FractionBox["d", 
+      RowBox[{"d", "\[VeryThinSpace]", "t"}]], 
+     RowBox[{
+      SubscriptBox["c", "+"], "(", "t", ")"}]}], "=", 
+    RowBox[{
+     FractionBox["i", "4"], 
+     SubscriptBox["\[Omega]", "1"], 
+     RowBox[{
+      SubscriptBox["c", "-"], "(", "t", ")"}]}]}], TraditionalForm]],
+  ExpressionUUID->"350dbd75-ec36-4d63-973f-729c26ddc003"],
+ "\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     FractionBox["d", 
+      RowBox[{"d", "\[VeryThinSpace]", "t"}]], 
+     RowBox[{
+      SubscriptBox["c", "-"], "(", "t", ")"}]}], "=", 
+    RowBox[{
+     FractionBox["i", "4"], 
+     SubscriptBox["\[Omega]", "1"], 
+     RowBox[{
+      SubscriptBox["c", "+"], "(", "t", ")"}]}]}], TraditionalForm]],
+  ExpressionUUID->"bf699f4b-5bd4-4ded-8672-f1f53e21f6d3"],
+ "\n\nTake a time derivative of the first equation and get:\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     FractionBox[
+      SuperscriptBox["d", "2"], 
+      RowBox[{"d", "\[VeryThinSpace]", 
+       SuperscriptBox["t", 
+        RowBox[{"\[VeryThinSpace]", "2"}]]}]], 
+     RowBox[{
+      SubscriptBox["c", "+"], "(", "t", ")"}]}], "=", 
+    RowBox[{
+     FractionBox["i", "4"], 
+     SubscriptBox["\[Omega]", "1"], 
+     FractionBox["d", 
+      RowBox[{"d", "\[VeryThinSpace]", "t"}]], 
+     RowBox[{
+      SubscriptBox["c", "-"], "(", "t", ")"}]}]}], TraditionalForm]],
+  ExpressionUUID->"e254bc80-641f-42c7-a57e-72fa501ba73d"],
+ "\n\nUse the second equation and get:\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     FractionBox[
+      SuperscriptBox["d", "2"], 
+      RowBox[{"d", "\[VeryThinSpace]", 
+       SuperscriptBox["t", 
+        RowBox[{"\[VeryThinSpace]", "2"}]]}]], 
+     RowBox[{
+      SubscriptBox["c", "+"], "(", "t", ")"}]}], "=", 
+    RowBox[{
+     RowBox[{
+      FractionBox["i", "4"], 
+      SubscriptBox["\[Omega]", "1"], 
+      FractionBox["i", "4"], 
+      SubscriptBox["\[Omega]", "1"], 
+      RowBox[{
+       SubscriptBox["c", "+"], "(", "t", ")"}]}], "=", 
+     RowBox[{
+      RowBox[{"-", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         FractionBox[
+          SubscriptBox["\[Omega]", "1"], "4"], ")"}], "2"]}], 
+      RowBox[{
+       SubscriptBox["c", "+"], "(", "t", ")"}]}]}]}], TraditionalForm]],
+  ExpressionUUID->"85ec624e-7d02-424d-86c9-11cf79c956ff"],
+ "\n\nThat\[CloseCurlyQuote]s an easy equation! Its solutions are \n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SubscriptBox["c", "+"], "(", "t", ")"}], "=", 
+    RowBox[{
+     RowBox[{"A", "\[VeryThinSpace]", "sin", "\[VeryThinSpace]", 
+      FractionBox[
+       RowBox[{
+        SubscriptBox["\[Omega]", "1"], "t"}], "4"]}], "+", 
+     RowBox[{"B", "\[VeryThinSpace]", "cos", "\[VeryThinSpace]", 
+      FractionBox[
+       RowBox[{
+        SubscriptBox["\[Omega]", "1"], "t"}], "4"]}]}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "c12baf64-1f4a-428a-9db1-6a44c1b26770"],
+ ".\n\nLet\[CloseCurlyQuote]s just use the cosine solution. Putting ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"B", "\[VeryThinSpace]", "cos", "\[VeryThinSpace]", 
+    FractionBox[
+     RowBox[{
+      SubscriptBox["\[Omega]", "1"], "t"}], "4"]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "94a70638-85de-4941-9ab6-869427eba8fd"],
+ " back into ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     FractionBox["d", 
+      RowBox[{"d", "\[VeryThinSpace]", "t"}]], 
+     RowBox[{
+      SubscriptBox["c", "-"], "(", "t", ")"}]}], "=", 
+    RowBox[{
+     FractionBox["i", "4"], 
+     SubscriptBox["\[Omega]", "1"], 
+     RowBox[{
+      SubscriptBox["c", "+"], "(", "t", ")"}]}]}], TraditionalForm]],
+  ExpressionUUID->"b6f35f9c-8d4a-4275-b3e6-17f061c56659"],
+ " we find that\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     FractionBox["d", 
+      RowBox[{"d", "\[VeryThinSpace]", "t"}]], 
+     RowBox[{
+      SubscriptBox["c", "-"], "(", "t", ")"}]}], "=", 
+    RowBox[{
+     FractionBox["i", "4"], 
+     SubscriptBox["\[Omega]", "1"], "B", "\[VeryThinSpace]", "cos", 
+     "\[VeryThinSpace]", 
+     FractionBox[
+      RowBox[{
+       SubscriptBox["\[Omega]", "1"], "t"}], "4"]}]}], TraditionalForm]],
+  ExpressionUUID->"90b5b66f-0351-4ea7-b9e9-e27726c8c830"],
+ "\n\nwhich has the solution.\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SubscriptBox["c", "-"], "(", "t", ")"}], "=", 
+    RowBox[{
+    "i", "\[VeryThinSpace]", "B", "\[VeryThinSpace]", "sin", 
+     "\[VeryThinSpace]", 
+     FractionBox[
+      RowBox[{
+       SubscriptBox["\[Omega]", "1"], "t"}], "4"]}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "2afb3002-7d77-4664-8f9c-aab82d9d221a"],
+ "\n\nIf ",
+ Cell[BoxData[
+  FormBox["B", TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "39cdea0f-17ac-4ee8-a7c9-8e7800e20fec"],
+ " is 1, all the spins are now flipping back and forth between ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"+", "z"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "4deeac67-ea7a-4329-aebb-18621af441a4"],
+ " and ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"-", "z"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "b829c44e-f7d7-450b-81b5-7af29bfcb4d9"],
+ "! If ",
+ Cell[BoxData[
+  FormBox["B", TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "eb474b55-ba05-499f-b129-af4309b3ef66"],
+ " is less than 1, we still have whatever ",
+ Cell[BoxData[
+  FormBox["B", TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "f3a06726-01ae-481a-8017-b001bdeca62e"],
+ " is times all the protons in the tissue\[CloseCurlyQuote]s fat and water \
+(which is of course typically an Avogadro\[CloseCurlyQuote]s number of \
+protons) flipping back and forth."
+}], "Text",
+ CellChangeTimes->CompressedData["
+1:eJxTTMoPSmViYGAQB2IQ3cdo0CNk+dZxfmHCdhDNc3fLbhD96k7cBRC9xEnt
+KohOctB+DaJ3Ou7SEQbSbxRW2oHoTbv3eYPoAwrGQSCay3JiGIhWeasTDqKd
+nscsBtErEuRXgWi1XeUbQXT2MZsdIHpSzv/dIHrLhN8HQHRzXMINEG2xfuF/
+EK2jzskiAqTP3uFjBdFlDqWHjID0vmjTIyBa4VLTZU/rt452ejevgugX/WJ3
+QXTIkVQw7dc+gcsLSN8JYpcF0acqXyuB6OLPbakg+pbCtkwQ3T5NtghEJwV4
+lIHoRKnsuyCa6Vn0QxCtr3bqM4i+4XrvJ4jelWJo5g2k+bx2WoHoB8pXvUG0
+/eNXgSA6iYkjAUQ3aLdlg+gbuhAaACrTpIY=
+  "],ExpressionUUID->"4c677a7c-77f9-4547-8e49-2a0d20d64bd6"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Summary", "Subsection",
+ CellChangeTimes->{{3.920310155034218*^9, 3.920310163989311*^9}, {
+  3.920310462568035*^9, 3.920310466416088*^9}, {3.920419866279635*^9, 
+  3.920419866876333*^9}, {3.920420043877632*^9, 3.920420064272218*^9}, {
+  3.9222324935713863`*^9, 3.922232497892695*^9}, {3.922232944959888*^9, 
+  3.922232954836328*^9}, {3.922233015543224*^9, 3.922233017254565*^9}, {
+  3.922233287328161*^9, 3.922233309569278*^9}, {3.922233786041641*^9, 
+  3.922233795932652*^9}, {3.922234962137067*^9, 3.9222349823322678`*^9}, {
+  3.922237758397544*^9, 3.922237762402728*^9}, {3.9233986994059067`*^9, 
+  3.923398711781766*^9}, {3.923398913925354*^9, 3.923398920212961*^9}, {
+  3.923399904359962*^9, 3.923399906215789*^9}, {3.923400437763753*^9, 
+  3.923400438584059*^9}, {3.923401324699259*^9, 
+  3.923401325587578*^9}},ExpressionUUID->"84916635-bc01-4241-867b-\
+e2a0633cf79d"],
+
+Cell[TextData[{
+ "We found ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SubscriptBox["c", "+"], "(", "t", ")"}], "=", 
+    RowBox[{"B", "\[VeryThinSpace]", "cos", " ", 
+     FractionBox[
+      RowBox[{
+       SubscriptBox["\[Omega]", "1"], "t"}], "4"]}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "35e816b9-c746-44fd-ad0f-ded88ac9e490"],
+ " and ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SubscriptBox["c", "-"], "(", "t", ")"}], "=", 
+    RowBox[{
+    "i", "\[VeryThinSpace]", "B", "\[VeryThinSpace]", "sin", 
+     "\[VeryThinSpace]", 
+     FractionBox[
+      RowBox[{
+       SubscriptBox["\[Omega]", "1"], "t"}], "4"]}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "c532702b-693e-450c-a0ca-a76fec8de7ce"],
+ ". If ",
+ Cell[BoxData[
+  FormBox["B", TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "023a0290-28bf-4954-a208-c6de93c28fa6"],
+ " is 1, all the spins are now flipping back and forth between ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"+", "z"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "9c0d4726-2bb9-4d78-9077-1cd28380e7a3"],
+ " and ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"-", "z"}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "09f65028-e060-484c-9dd6-c54504f7ac42"],
+ "! If ",
+ Cell[BoxData[
+  FormBox["B", TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "87d1afed-1677-4c52-b653-ed77b6e5a989"],
+ " is less than 1, we still have whatever ",
+ Cell[BoxData[
+  FormBox["B", TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "edeeeb73-17c4-44ce-b574-3b8cf5d730f5"],
+ " is times all the protons in the tissue\[CloseCurlyQuote]s fat and water \
+(which is of course typically an Avogadro\[CloseCurlyQuote]s number of \
+protons) flipping back and forth. This signal, the combined flipping of many \
+protons, is what is captured in the radio receiver in an MRI machine."
+}], "Text",
+ CellChangeTimes->{{3.92223651350019*^9, 3.92223685901387*^9}, {
+   3.9222368936519833`*^9, 3.922237058964467*^9}, {3.922237097195635*^9, 
+   3.922237273351609*^9}, {3.922237797820523*^9, 3.922237941285269*^9}, {
+   3.922238045960412*^9, 3.922238097597748*^9}, {3.922238132538213*^9, 
+   3.922238137403948*^9}, {3.9222387469032297`*^9, 3.922238800980549*^9}, {
+   3.922238859741473*^9, 3.922238913899221*^9}, {3.922238943982003*^9, 
+   3.922238983861414*^9}, {3.922239171011537*^9, 3.922239485052639*^9}, {
+   3.9222395202860317`*^9, 3.922239528464453*^9}, {3.922302483664119*^9, 
+   3.922302497667449*^9}, {3.92339830008815*^9, 3.923398318786895*^9}, {
+   3.9233983767050667`*^9, 3.923398379180216*^9}, {3.9233987405165167`*^9, 
+   3.9233988882288647`*^9}, {3.923398935358617*^9, 3.923399468217218*^9}, {
+   3.92339950169151*^9, 3.923399568924625*^9}, {3.9233996022598124`*^9, 
+   3.92340042734697*^9}, {3.923400458871827*^9, 3.923400606317161*^9}, {
+   3.923400654946026*^9, 3.9234011375435457`*^9}, {3.92340117379029*^9, 
+   3.9234013106606293`*^9}, {3.92340135934024*^9, 3.923401472250291*^9}, {
+   3.923401502413433*^9, 3.9234015512746468`*^9}, 3.923401584832165*^9, {
+   3.923401798627301*^9, 
+   3.9234018367270823`*^9}},ExpressionUUID->"776ab548-686f-4273-afb6-\
+95739732cc29"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Some Unrelated History", "Subsection",
  CellChangeTimes->{{3.920310155034218*^9, 3.920310163989311*^9}, {
   3.920310462568035*^9, 3.920310466416088*^9}, {3.920419866279635*^9, 
   3.920419866876333*^9}, {3.920420043877632*^9, 3.920420064272218*^9}, {
@@ -248,24 +1220,29 @@ Cell["History", "Subsection",
   3.922233287328161*^9, 3.922233309569278*^9}, {3.922233786041641*^9, 
   3.922233795932652*^9}, {3.922234962137067*^9, 3.9222349823322678`*^9}, {
   3.922237758397544*^9, 3.922237762402728*^9}, {3.922239474451118*^9, 
-  3.922239475587007*^9}},ExpressionUUID->"4ebe159b-ff2e-480f-b52f-\
+  3.922239475587007*^9}, {3.923401626400756*^9, 3.9234016303313313`*^9}, {
+  3.9234016802344112`*^9, 
+  3.923401683286908*^9}},ExpressionUUID->"4ebe159b-ff2e-480f-b52f-\
 223202fb1abe"],
 
 Cell["\<\
-We followed the analysis made easy for us by I. I. Rabi, who won the Nobel \
-Prize in Physics in 1944 for the discovery of nuclear magnetic resonance, \
-bless his heart. When Rabi was asked, upon returning to Los Alamos 40 years \
-after working there, what he felt, he said \[OpenCurlyDoubleQuote]sorrow, \
-that the place still exists.\[CloseCurlyDoubleQuote] See \
-https://youtu.be/Lm412GwSkIM.
+We have seen an application of quantum mechanics that uses the spin-1/2 \
+formalism you studied half a semester ago, and the nuclear physics you \
+learned in the last few weeks. We followed the analysis made easy for us by \
+I. I. Rabi, who won the Nobel Prize in Physics in 1944 for the discovery of \
+nuclear magnetic resonance, and for which huge numbers of injured and sick \
+people have benefitted from.
 
-From a few minutes after the first atomic bomb test off Rabi was moved to \
-devote himself to arms control. Be careful not to assume that anyone who \
-worked on the bomb, while regretting that it still exists in vast quantities \
-and threatens us continuously, believes that it should not have been built \
-under the conditions that the Allies faced at the time. That would be \
-simplistic revisionism. For a pensive and carefully thought out statement \
-from Oppenheimer himself, see https://youtu.be/AdtLxlttrHg.\
+When Rabi was asked, upon returning to Los Alamos 40 years after working \
+there, what he felt, he said \[OpenCurlyDoubleQuote]sorrow, that the place \
+still exists.\[CloseCurlyDoubleQuote] See https://youtu.be/Lm412GwSkIM. From \
+a few minutes after the first atomic bomb test off Rabi was moved to devote \
+himself to arms control. Be careful not to assume that anyone who worked on \
+the bomb, while regretting that atomic and thermonuclear bombs still exist in \
+vast quantities and threatens u continuously, believes that it should not \
+have been built under the conditions that the Allies faced at the time. That \
+would be simplistic revisionism. For a pensive and carefully thought out \
+statement from Oppenheimer himself, see https://youtu.be/AdtLxlttrHg.\
 \>", "Text",
  CellChangeTimes->{{3.92223651350019*^9, 3.92223685901387*^9}, {
    3.9222368936519833`*^9, 3.922237058964467*^9}, {3.922237097195635*^9, 
@@ -276,16 +1253,18 @@ from Oppenheimer himself, see https://youtu.be/AdtLxlttrHg.\
    3.922238983861414*^9}, {3.922239171011537*^9, 3.9222394364303427`*^9}, 
    3.922239480481195*^9, {3.9222395542810926`*^9, 3.9222395552931547`*^9}, {
    3.922239645487236*^9, 3.922239657432064*^9}, {3.92230149301297*^9, 
-   3.92230164082206*^9}, {3.9223025111117697`*^9, 
-   3.922302513608316*^9}},ExpressionUUID->"c82e50b7-a92a-4627-8f2a-\
+   3.92230164082206*^9}, {3.9223025111117697`*^9, 3.922302513608316*^9}, {
+   3.923401652470785*^9, 
+   3.923401779192424*^9}},ExpressionUUID->"c82e50b7-a92a-4627-8f2a-\
 794b60ee1fe8"]
 }, Open  ]]
 }, Open  ]]
 },
 WindowSize->{1077, 1234},
-WindowMargins->{{388, Automatic}, {Automatic, 0}},
+WindowMargins->{{147, Automatic}, {Automatic, 39}},
 PrintingCopies->1,
 PrintingPageRange->{1, Automatic},
+Magnification:>1.5 Inherited,
 FrontEndVersion->"14.0 for Mac OS X ARM (64-bit) (December 12, 2023)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"edfbe9cd-8ebe-4dde-a30d-381c54ddc9a3"
@@ -302,15 +1281,35 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 441, 6, 67, "Section",ExpressionUUID->"1401d686-6281-49b0-9743-c981b888c908"],
-Cell[1024, 30, 595, 11, 81, "Text",ExpressionUUID->"e8da59ba-e1c8-4ff9-8734-f8ac585a40f4"],
+Cell[580, 22, 441, 6, 101, "Section",ExpressionUUID->"1401d686-6281-49b0-9743-c981b888c908"],
+Cell[1024, 30, 1865, 46, 299, "Text",ExpressionUUID->"e8da59ba-e1c8-4ff9-8734-f8ac585a40f4"],
 Cell[CellGroupData[{
-Cell[1644, 45, 662, 10, 54, "Subsection",ExpressionUUID->"affffc27-ff6d-4bd8-b690-34cf3e3c951f"],
-Cell[2309, 57, 6583, 179, 492, "Text",ExpressionUUID->"02ad6b61-a2fb-4d92-859f-ec334c15cfb8"]
+Cell[2914, 80, 662, 10, 81, "Subsection",ExpressionUUID->"affffc27-ff6d-4bd8-b690-34cf3e3c951f"],
+Cell[3579, 92, 6673, 181, 951, "Text",ExpressionUUID->"02ad6b61-a2fb-4d92-859f-ec334c15cfb8"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[8929, 241, 686, 10, 54, "Subsection",ExpressionUUID->"4ebe159b-ff2e-480f-b52f-223202fb1abe"],
-Cell[9618, 253, 1726, 27, 196, "Text",ExpressionUUID->"c82e50b7-a92a-4627-8f2a-794b60ee1fe8"]
+Cell[10289, 278, 904, 19, 81, "Subsection",ExpressionUUID->"801f524a-61b4-4f91-9cf2-9a7328eb36d2"],
+Cell[11196, 299, 2076, 55, 166, "Text",ExpressionUUID->"37373eee-0da9-45a5-806c-ba212dc70498"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[13309, 359, 740, 11, 81, "Subsection",ExpressionUUID->"e852562a-e01f-44da-8f4a-8b8603aa7a18"],
+Cell[14052, 372, 8963, 266, 751, "Text",ExpressionUUID->"c4a4cc36-5abf-4784-8f76-0ca15e6446ba"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[23052, 643, 796, 12, 81, "Subsection",ExpressionUUID->"9821b0da-462b-4ad9-b1db-689c4feea992"],
+Cell[23851, 657, 6987, 206, 729, "Text",ExpressionUUID->"6d9593cf-0d41-4c6a-bfca-abe426784e4e"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[30875, 868, 837, 12, 81, "Subsection",ExpressionUUID->"c707d1c9-cc10-4943-aa1e-eef786d4f12e"],
+Cell[31715, 882, 7693, 229, 1161, "Text",ExpressionUUID->"4c677a7c-77f9-4547-8e49-2a0d20d64bd6"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[39445, 1116, 881, 13, 81, "Subsection",ExpressionUUID->"84916635-bc01-4241-867b-e2a0633cf79d"],
+Cell[40329, 1131, 3262, 77, 198, "Text",ExpressionUUID->"776ab548-686f-4273-afb6-95739732cc29"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[43628, 1213, 803, 12, 81, "Subsection",ExpressionUUID->"4ebe159b-ff2e-480f-b52f-223202fb1abe"],
+Cell[44434, 1227, 2041, 31, 502, "Text",ExpressionUUID->"c82e50b7-a92a-4627-8f2a-794b60ee1fe8"]
 }, Open  ]]
 }, Open  ]]
 }
