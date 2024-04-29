@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     48675,       1310]
-NotebookOptionsPosition[     46503,       1262]
-NotebookOutlinePosition[     46987,       1281]
-CellTagsIndexPosition[     46944,       1278]
+NotebookDataLength[     50254,       1338]
+NotebookOptionsPosition[     47866,       1287]
+NotebookOutlinePosition[     48350,       1306]
+CellTagsIndexPosition[     48307,       1303]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -1015,7 +1015,32 @@ for ",
         SubscriptBox["\[Omega]", "1"], "t"}], "4"]}]}]}], TraditionalForm]],
   FormatType->TraditionalForm,ExpressionUUID->
   "c12baf64-1f4a-428a-9db1-6a44c1b26770"],
- ".\n\nLet\[CloseCurlyQuote]s just use the cosine solution. Putting ",
+ "."
+}], "Text",
+ CellChangeTimes->{{3.92223651350019*^9, 3.92223685901387*^9}, {
+   3.9222368936519833`*^9, 3.922237058964467*^9}, {3.922237097195635*^9, 
+   3.922237273351609*^9}, {3.922237797820523*^9, 3.922237941285269*^9}, {
+   3.922238045960412*^9, 3.922238097597748*^9}, {3.922238132538213*^9, 
+   3.922238137403948*^9}, {3.9222387469032297`*^9, 3.922238800980549*^9}, {
+   3.922238859741473*^9, 3.922238913899221*^9}, {3.922238943982003*^9, 
+   3.922238983861414*^9}, {3.922239171011537*^9, 3.922239485052639*^9}, {
+   3.9222395202860317`*^9, 3.922239528464453*^9}, {3.922302483664119*^9, 
+   3.922302497667449*^9}, {3.92339830008815*^9, 3.923398318786895*^9}, {
+   3.9233983767050667`*^9, 3.923398379180216*^9}, {3.9233987405165167`*^9, 
+   3.9233988882288647`*^9}, {3.923398935358617*^9, 3.923399468217218*^9}, {
+   3.92339950169151*^9, 3.923399568924625*^9}, {3.9233996022598124`*^9, 
+   3.92340042734697*^9}, {3.923400458871827*^9, 3.923400606317161*^9}, {
+   3.923400654946026*^9, 3.9234011375435457`*^9}, {3.92340117379029*^9, 
+   3.9234013106606293`*^9}, {3.92340135934024*^9, 3.923401472250291*^9}, {
+   3.92340156419281*^9, 3.923401564193096*^9}, 
+   3.923401871738283*^9},ExpressionUUID->"4c677a7c-77f9-4547-8e49-\
+2a0d20d64bd6"],
+
+Cell["", "PageBreak",
+ PageBreakBelow->True,ExpressionUUID->"2fe6ebe6-9974-4832-95c4-300577cbde69"],
+
+Cell[TextData[{
+ "Let\[CloseCurlyQuote]s just use the cosine solution. Putting ",
  Cell[BoxData[
   FormBox[
    RowBox[{"B", "\[VeryThinSpace]", "cos", "\[VeryThinSpace]", 
@@ -1023,7 +1048,7 @@ for ",
      RowBox[{
       SubscriptBox["\[Omega]", "1"], "t"}], "4"]}], TraditionalForm]],
   FormatType->TraditionalForm,ExpressionUUID->
-  "94a70638-85de-4941-9ab6-869427eba8fd"],
+  "ff22c16b-36ea-4e22-bdcf-b2c3551cae7b"],
  " back into ",
  Cell[BoxData[
   FormBox[
@@ -1038,7 +1063,7 @@ for ",
      SubscriptBox["\[Omega]", "1"], 
      RowBox[{
       SubscriptBox["c", "+"], "(", "t", ")"}]}]}], TraditionalForm]],
-  ExpressionUUID->"b6f35f9c-8d4a-4275-b3e6-17f061c56659"],
+  ExpressionUUID->"d62f5538-5d0c-4733-9830-626db5d64a66"],
  " we find that\n\n",
  Cell[BoxData[
   FormBox[
@@ -1055,7 +1080,7 @@ for ",
      FractionBox[
       RowBox[{
        SubscriptBox["\[Omega]", "1"], "t"}], "4"]}]}], TraditionalForm]],
-  ExpressionUUID->"90b5b66f-0351-4ea7-b9e9-e27726c8c830"],
+  ExpressionUUID->"c9aec48e-fa77-4e3f-8936-f59db2fbc239"],
  "\n\nwhich has the solution.\n\n",
  Cell[BoxData[
   FormBox[
@@ -1069,34 +1094,34 @@ for ",
       RowBox[{
        SubscriptBox["\[Omega]", "1"], "t"}], "4"]}]}], TraditionalForm]],
   FormatType->TraditionalForm,ExpressionUUID->
-  "2afb3002-7d77-4664-8f9c-aab82d9d221a"],
+  "ae5e5ff3-36ac-4239-a01e-fc1e159ad980"],
  "\n\nIf ",
  Cell[BoxData[
   FormBox["B", TraditionalForm]],
   FormatType->TraditionalForm,ExpressionUUID->
-  "39cdea0f-17ac-4ee8-a7c9-8e7800e20fec"],
+  "25c8b016-2bd0-4409-bf98-df43dd5cd0f7"],
  " is 1, all the spins are now flipping back and forth between ",
  Cell[BoxData[
   FormBox[
    RowBox[{"+", "z"}], TraditionalForm]],
   FormatType->TraditionalForm,ExpressionUUID->
-  "4deeac67-ea7a-4329-aebb-18621af441a4"],
+  "03d79fe9-7f23-4c00-81ac-a5f1313fb744"],
  " and ",
  Cell[BoxData[
   FormBox[
    RowBox[{"-", "z"}], TraditionalForm]],
   FormatType->TraditionalForm,ExpressionUUID->
-  "b829c44e-f7d7-450b-81b5-7af29bfcb4d9"],
+  "77908146-e6af-4edf-a21a-b348a6a61164"],
  "! If ",
  Cell[BoxData[
   FormBox["B", TraditionalForm]],
   FormatType->TraditionalForm,ExpressionUUID->
-  "eb474b55-ba05-499f-b129-af4309b3ef66"],
+  "b49b0c3b-a3eb-41d0-b9ed-dbbf201628de"],
  " is less than 1, we still have whatever ",
  Cell[BoxData[
   FormBox["B", TraditionalForm]],
   FormatType->TraditionalForm,ExpressionUUID->
-  "f3a06726-01ae-481a-8017-b001bdeca62e"],
+  "3954b675-5ca0-47d8-8734-4926d06a2f58"],
  " is times all the protons in the tissue\[CloseCurlyQuote]s fat and water \
 (which is of course typically an Avogadro\[CloseCurlyQuote]s number of \
 protons) flipping back and forth."
@@ -1109,7 +1134,7 @@ EK2jzskiAqTP3uFjBdFlDqWHjID0vmjTIyBa4VLTZU/rt452ejevgugX/WJ3
 QXTIkVQw7dc+gcsLSN8JYpcF0acqXyuB6OLPbakg+pbCtkwQ3T5NtghEJwV4
 lIHoRKnsuyCa6Vn0QxCtr3bqM4i+4XrvJ4jelWJo5g2k+bx2WoHoB8pXvUG0
 /eNXgSA6iYkjAUQ3aLdlg+gbuhAaACrTpIY=
-  "],ExpressionUUID->"4c677a7c-77f9-4547-8e49-2a0d20d64bd6"]
+  "],ExpressionUUID->"14348d5d-c1b7-41f8-8cf5-06de3d3064b5"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1301,15 +1326,18 @@ Cell[23851, 657, 6987, 206, 729, "Text",ExpressionUUID->"6d9593cf-0d41-4c6a-bfca
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[30875, 868, 837, 12, 81, "Subsection",ExpressionUUID->"c707d1c9-cc10-4943-aa1e-eef786d4f12e"],
-Cell[31715, 882, 7693, 229, 1161, "Text",ExpressionUUID->"4c677a7c-77f9-4547-8e49-2a0d20d64bd6"]
+Cell[31715, 882, 5632, 154, 736, "Text",ExpressionUUID->"4c677a7c-77f9-4547-8e49-2a0d20d64bd6"],
+Cell[37350, 1038, 99, 1, 6, "PageBreak",ExpressionUUID->"2fe6ebe6-9974-4832-95c4-300577cbde69",
+ PageBreakBelow->True],
+Cell[37452, 1041, 3319, 95, 444, "Text",ExpressionUUID->"14348d5d-c1b7-41f8-8cf5-06de3d3064b5"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[39445, 1116, 881, 13, 81, "Subsection",ExpressionUUID->"84916635-bc01-4241-867b-e2a0633cf79d"],
-Cell[40329, 1131, 3262, 77, 198, "Text",ExpressionUUID->"776ab548-686f-4273-afb6-95739732cc29"]
+Cell[40808, 1141, 881, 13, 81, "Subsection",ExpressionUUID->"84916635-bc01-4241-867b-e2a0633cf79d"],
+Cell[41692, 1156, 3262, 77, 198, "Text",ExpressionUUID->"776ab548-686f-4273-afb6-95739732cc29"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[43628, 1213, 803, 12, 81, "Subsection",ExpressionUUID->"4ebe159b-ff2e-480f-b52f-223202fb1abe"],
-Cell[44434, 1227, 2041, 31, 502, "Text",ExpressionUUID->"c82e50b7-a92a-4627-8f2a-794b60ee1fe8"]
+Cell[44991, 1238, 803, 12, 81, "Subsection",ExpressionUUID->"4ebe159b-ff2e-480f-b52f-223202fb1abe"],
+Cell[45797, 1252, 2041, 31, 502, "Text",ExpressionUUID->"c82e50b7-a92a-4627-8f2a-794b60ee1fe8"]
 }, Open  ]]
 }, Open  ]]
 }
