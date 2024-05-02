@@ -1,8 +1,6 @@
-# Modern Introductory Physics, Part II: Quantum Mechanics &amp; Relativity &mdash
+# Modern Introductory Physics, Part II: Quantum Mechanics &amp; Nuclear Physics
 
-*Unofficial Course Title: Quantum Mechanics &amp; Relativity*
-
-*As a class, we should reserve the possibility of modifying this syllabus to go deeper into quantum mechanics &mdash; at the expense of relativity &mdash; based on where we find ourselves early in Term 5.*
+*Unofficial Course Title: Quantum Mechanics &amp; Nuclear Physics*
 
 *Spring 2024, Deep Springs College, [Prof. Brian Hill](https://brianhill.github.io)*
 
@@ -19,26 +17,25 @@ Detailed daily schedules will be kept retrospectively:
 
 ## Overview
 
-In the fall semester, we laid the foundation for quantum mechanics and relativity by taking a modern approach to classical mechanics. We covered the same material as is commonly covered in the first semester of college physics, but we did it with an emphasis on three principles that transcend Newtonian mechanics:
+In the fall semester, we laid the foundation for quantum mechanics and nuclear physics by taking a modern approach to classical mechanics. We covered the same material as is commonly covered in the first semester of college physics, but we did it with an emphasis on three principles that transcend Newtonian mechanics:
 
 * Conservation of momentum
 * Conservation of energy
 * Conservation of angular momentum
  
-The first ten weeks of the spring semester will be a study of quantum mechanics following Volume Q of *Six Ideas that Shaped Physics.* Normally one does not get to study modern physics until the sophomore year as a physics major. To get to quantum mechanics so quickly, we are short-circuiting past electromagnetism. The cost of this is that we have not encountered electromagnetic waves! So to understand quantum-mechanical waves we will first immerse ourselves in other, simple examples of waves. By the end of our quantum mechanics studies, you will be able to do probabilistic calculations using the strange mixture of deterministic time evolution punctuated by non-deterministic measurement events. You will understand how particles behave like waves, including doing all the unexpected things that waves do, such as taking many routes to a destination and exhibiting interference patterns.
+For the spring semester, we will study quantum mechanics, including solutions of Shr&ouml;dinger's equation, and then nuclear physics, following Volume Q of *Six Ideas that Shaped Physics.* Normally one does not get to study modern physics until the sophomore year as a physics major. To get to quantum mechanics so quickly, we are short-circuiting past electromagnetism. The cost of this is that we have not encountered electromagnetic waves! So to understand quantum-mechanical waves we will first immerse ourselves in other, simple examples of waves. By the end of our quantum mechanics studies, you will be able to do probabilistic calculations using the strange mixture of deterministic time evolution punctuated by non-deterministic measurement events. You will understand how particles behave like waves, including doing all the unexpected things that waves do, such as taking many routes to a destination and exhibiting interference patterns. We will then study nuclear physics, and thanks to our study of quantum mechanics, heuristic rules for nuclear stability will be made qualitatively compelling using fermion gas and Coulomb repulsion arguments.
 
-For the last four weeks of the semester, we will tear ourselves away from quantum mechanics, and study Einstein’s theory of Special Relativity. The three paradoxes in this theory will be forced upon us: (1) time dilation, (2) length contraction, and (3) the relativity of simultaneity. Together these three paradoxical behaviors allow the speed of light to be constant, regardless of who measures its speed and how fast the measurer is moving. The three paradoxes are reconciled as the complete theory of Special Relativity emerges.
+As a bonus topic during the last week of the semester, we will finally tear ourselves away from quantum mechanics and nuclear physics, and get a brief introduction to Einstein’s theory of Special Relativity. The three paradoxes in this theory will be forced upon us: (1) time dilation, (2) length contraction, and (3) the relativity of simultaneity.
 
-In sum, in this course you will encounter behaviors and theories so strange and wonderful that no human could have thought them up. Instead, nature rubbed the behaviors in our faces, and eventually, almost miraculously, in the early 20th century, physicists were able to understand and articulate what nature was showing them. The goal of the modern introductory physics sequence is to share these behaviors and theories with you.
+In sum, in this course you will encounter behaviors and theories so strange and wonderful that no human could have thought them up. Instead, nature rubbed the behaviors in our faces, and eventually, almost miraculously, in the early 20th century, physicists were able to understand and articulate what nature was showing them. The goal of the modern introductory physics course is to share as much of these behaviors and theories as can be covered in a year-long, calculus-based physics sequence.
 
 ## Prerequisite / Joining the Class
 
-The prerequisite for the second semester in this sequence is the heaviest I have ever set for a Deep Springs class: one semester of college-level, calculus-based physics. If you had AP physics in high school and at the end they said you were ready for the second semester of college physics, then you are quite likely prepared. The best way of determining whether you are ready for the class is to self-assess by setting aside two hours to take fall semester's final exam. Copies of the final exam are on the [fall semester course website](https://brianhill.github.io/physics/). If you can do the final exam and get half of the points, you should join the class!
+The prerequisite for the second semester in this sequence is one semester of college-level, calculus-based physics. If you had AP physics in high school and at the end they said you were ready for the second semester of college physics, then you are quite likely prepared. The best way of determining whether you are ready for the class is to self-assess by setting aside two hours to take fall semester's final exam. Copies of the final exam are on the [fall semester course website](https://brianhill.github.io/physics/).
 
 ## Texts
 
 * For quantum mechanics: [*Six Ideas that Shaped Physics*, 4th Edition, Volume Q](http://www.physics.pomona.edu/sixideas/) by Thomas Moore
-* For relativity: [*Six Ideas that Shaped Physics*, 4th Edition, Volume R](http://www.physics.pomona.edu/sixideas/) by Thomas Moore and/or [Spacetime Physics, 2nd Edition](http://www.eftaylor.com/spacetimephysics/) by Edwin F. Taylor and John Archibald Wheeler
 
 ## Grading
 
